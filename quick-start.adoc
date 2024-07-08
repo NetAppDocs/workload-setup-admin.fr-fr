@@ -1,0 +1,53 @@
+---
+sidebar: sidebar 
+permalink: quick-start.html 
+keywords: quick start 
+summary: 'Commencez avec Workload Factory en préparant la mise en réseau de la console Workload Factory, en vous inscrivant, en créant un compte, et en ajoutant des informations d"identification pour que Workload Factory puisse gérer directement les ressources AWS.' 
+---
+= Démarrage rapide pour Workload Factory
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Commencez avec Workload Factory en vous inscrivant et en créant un compte, en ajoutant des informations d'identification pour que Workload Factory puisse gérer directement les ressources AWS, puis optimiser vos workloads avec Amazon FSX pour NetApp ONTAP.
+
+Workload Factory est accessible aux utilisateurs en tant que service cloud à partir de la console Web. Avant de commencer, vous devriez avoir une compréhension de link:workload-factory-overview.html["Usine de charges de travail"] et link:operational-modes.html["modes de fonctionnement"].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Une seule"] Inscrivez-vous et créez un compte
+[role="quick-margin-para"]
+Accédez à https://console.workloads.netapp.com["Console Workload Factory"^], inscrivez-vous et créez un compte.
+
+[role="quick-margin-para"]
+link:sign-up-saas.html["Découvrez comment vous inscrire et créer un compte"].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Deux"] Ajoutez les informations d'identification AWS à Workload Factory
+[role="quick-margin-para"]
+Cette étape est facultative. Vous pouvez utiliser Workload Factory en _Basic_ mode sans ajouter d'informations d'identification pour accéder à votre compte AWS. L'ajout d'informations d'identification AWS à Workload Factory en _Read_ mode ou _automate_ mode donne à votre compte Workload Factory les autorisations nécessaires pour créer et gérer des systèmes de fichiers FSX pour ONTAP, et pour déployer et gérer des workloads spécifiques, tels que des bases de données et GenAI.
+
+[role="quick-margin-para"]
+link:add-credentials.html["Découvrez comment ajouter des informations d'identification à votre compte"].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Trois"] Optimisez vos workloads avec FSX for ONTAP
+[role="quick-margin-para"]
+Maintenant que vous vous êtes inscrit, avez créé un compte et, éventuellement, ajouté des identifiants AWS, vous pouvez commencer à utiliser Workload Factory pour optimiser vos workloads à l'aide de FSX for ONTAP. Utilisez les liens ci-dessous pour suivre les instructions détaillées pour chaque type de charge de travail.
+
+[role="quick-margin-list"]
+* https://docs.netapp.com/us-en/workload-fsx-ontap/index.html["Amazon FSX pour NetApp ONTAP"^]
++
+Évaluez et analysez les environnements de données actuels pour réduire les coûts en utilisant FSX pour ONTAP en tant qu'infrastructure de stockage, provisionnez et modélisez les déploiements FSX pour ONTAP en fonction des bonnes pratiques et accédez à des fonctionnalités de gestion avancées.
+
+* https://docs.netapp.com/us-en/workload-genai/index.html["GenAI"^]
++
+Déployez et gérez une infrastructure de génération augmentée par récupération (RAG) pour améliorer la précision et l'unicité de vos applications d'IA. Créez une base de connaissances RAG sur FSX pour ONTAP avec sécurité et conformité intégrées des données.
+
+* https://docs.netapp.com/us-en/workload-databases/index.html["Charges de travail des bases de données"^]
++
+Détectez votre environnement de base de données sur AWS, évaluez les économies potentielles avec FSX pour ONTAP, déployez des bases de données de bout en bout grâce aux bonnes pratiques intégrées pour l'optimisation et automatisez le clonage fin pour les pipelines ci/CD.
+
+* https://docs.netapp.com/us-en/workload-vmware/index.html["Workloads VMware"^]
++
+Rationalisez les migrations et les opérations à l'aide de recommandations intelligentes et de la correction automatique. Déployez des sauvegardes efficaces et une reprise d'activité robuste. Surveillez et résolvez les problèmes de vos VM.
+
+

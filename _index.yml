@@ -1,0 +1,38 @@
+---
+indexpage:
+  title: Documentation de configuration et d'administration de Workload Factory
+  summary: Commencez avec Workload Factory afin d'exploiter pleinement vos workloads
+    avec Amazon FSX pour NetApp ONTAP. Une fois la configuration terminée, vous pouvez
+    créer, optimiser et gérer les systèmes de fichiers FSX pour ONTAP pour vos workloads,
+    explorer les économies réalisables avec FSX pour ONTAP, utiliser le co-pilote
+    Infrastructure-as-Code intégré pour l'automatisation sur l'ensemble des plateformes
+    et gérer vos workloads dans Workload Factory.
+  keywords: workload factory, fsx, account, credentials, users, permissions, log in,
+    calculator, codebox
+  lead: Commencez avec Workload Factory afin d'exploiter pleinement vos workloads
+    avec Amazon FSX pour NetApp ONTAP. Une fois la configuration terminée, vous pouvez
+    créer, optimiser et gérer les systèmes de fichiers FSX pour ONTAP pour vos workloads,
+    explorer les économies réalisables avec FSX pour ONTAP, utiliser le co-pilote
+    Infrastructure-as-Code intégré pour l'automatisation sur l'ensemble des plateformes
+    et gérer vos workloads dans Workload Factory.
+  tiles:
+  - title: Commencez
+    links:
+    - title: Découvrez Workload Factory
+      url: workload-factory-overview.html
+    - title: S'inscrire
+      url: sign-up-saas.html
+  - title: Modes opérationnels et informations d'identification
+    links:
+    - title: Découvrez les modes de fonctionnement
+      url: operational-modes.html
+    - title: Ajoutez des identifiants AWS
+      url: add-credentials.html
+    - title: Supprimer les informations d'identification
+      url: manage-credentials.html
+  - title: Automatisation à l'aide de Codebox
+    links:
+    - title: En savoir plus sur Codebox
+      url: codebox-automation.html
+    - title: Utilisez Codebox pour l'automatisation
+      url: use-codebox.html

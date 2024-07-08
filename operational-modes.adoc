@@ -1,0 +1,122 @@
+---
+sidebar: sidebar 
+permalink: operational-modes.html 
+keywords: modes, zero-trust, full-trust, read, basic, automate, aws, aws accounts, keys, multiple accounts, permissions, aws permissions, policy, policies, credentials 
+summary: 'Workload Factory propose trois modes opérationnels qui vous permettent de contrôler avec soin l"accès entre Workload Factory et votre environnement cloud en fonction de vos stratégies IT. Le mode opérationnel que vous utilisez est déterminé par le niveau d"autorisations AWS que vous fournissez à Workload Factory.' 
+---
+= En savoir plus sur les modes opérationnels et les identifiants AWS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Workload Factory propose trois modes opérationnels qui vous permettent de contrôler avec soin l'accès entre Workload Factory et votre environnement cloud en fonction de vos stratégies IT. Le mode opérationnel que vous utilisez est déterminé par le niveau d'autorisations AWS que vous fournissez à Workload Factory.
+
+
+
+== Modes de fonctionnement
+
+Les modes opérationnels fournissent une organisation logique des fonctionnalités et des capacités offertes par Workload Factory, en fonction du niveau de confiance que vous attribuez. En mode opérationnel, l'objectif principal est de communiquer clairement les tâches que Workload Factory peut ou ne peut pas exécuter au sein de votre compte AWS.
+
+Mode de base:: Relation « zéro confiance » dans laquelle aucune autorisation AWS n'est attribuée à Workload Factory. Il est conçu pour les premières explorations de Workload Factory et l'utilisation des différents assistants pour créer l'IAC (Infrastructure as Code) nécessaire. Vous pouvez copier le code et l'utiliser dans AWS en saisissant manuellement vos identifiants AWS.
+Mode lecture:: Améliore l'expérience du mode de base en ajoutant des autorisations en lecture seule afin que les modèles IAC soient remplis avec vos variables spécifiques (par exemple, VPC, groupes de sécurité, etc.). Cela vous permet d'exécuter le processus IAC directement depuis votre compte AWS sans autorisations de modification pour Workload Factory.
+Mode d'automatisation:: Représente une relation de confiance complète afin que Workload Factory soit affecté avec des autorisations complètes. Ainsi, Workload Factory peut exécuter et automatiser les opérations en votre nom dans AWS avec les identifiants attribués qui disposent des autorisations d'exécution requises.
+
+
+
+
+=== Fonctions du mode opérationnel
+
+Les fonctions disponibles à l'aide de chacun des modes augmentent avec chaque mode.
+
+[cols="12h,22,22,22,22"]
+|===
+| Mode | Automatisation par Workload Factory | L'automatisation dans AWS grâce à IAC | Découverte et exécution automatique des ressources AWS | Suivi de la progression 
+
+
+| Basique | Non | Modèle IAC au minimum complet | Non | Non 
+
+
+| Lecture | Non | Modèle IAC modérément complet | Oui | Oui 
+
+
+| Automatiser | Automatisation totale | Modèle IAC complet avec automatisation complète | Oui | Oui 
+|===
+
+
+=== Conditions requises pour le mode opérationnel
+
+Il n'y a pas de sélecteur que vous devez définir dans Workload Factory pour identifier le mode que vous prévoyez d'utiliser. Le mode est déterminé en fonction des informations d'identification et des autorisations AWS que vous attribuez à votre compte Workload Factory.
+
+[cols="16h,35,35"]
+|===
+| Mode | Identifiants de compte AWS | Lien 
+
+
+| Basique | Non requis | Non requis 
+
+
+| Lecture | Lecture seule | Non requis 
+
+
+| Automatiser | Informations d'identification en lecture-écriture | Obligatoire 
+|===
+https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["En savoir plus sur les liens"^]
+
+
+
+=== Exemples de mode opérationnel
+
+Vous pouvez configurer vos informations d'identification pour fournir un mode pour un composant de charge de travail et un autre mode pour un autre composant. Par exemple, vous pouvez configurer le mode automatisé pour les opérations dans lesquelles vous déployez et gérez des systèmes de fichiers FSX pour ONTAP, mais uniquement pour configurer le mode lecture pour créer et déployer des workloads de base de données à l'aide de Workload Factory.
+
+Vous pouvez offrir ces fonctionnalités dans un seul ensemble d'informations d'identification dans un compte Workload Factory, ou vous pouvez créer plusieurs ensembles d'informations d'identification lorsque chaque information d'identification fournit des fonctionnalités de déploiement de charge de travail uniques.
+
+
+
+==== Exemple 1
+
+Les utilisateurs de comptes qui utilisent les identifiants donnés bénéficient des autorisations suivantes auront un contrôle total (mode automatisé) pour créer des systèmes de fichiers FSX pour ONTAP, déployer des bases de données et afficher d'autres types de stockage AWS utilisés dans le compte.
+
+image:screenshot-credentials1.png["Capture d'écran montrant un ensemble d'informations d'identification qui fournissent deux types d'autorisations de charge de travail."]
+
+Cependant, ils ne disposent pas de contrôles d'automatisation pour la création et le déploiement de workloads VMware (mode de base) depuis Workload Factory. Pour créer des workloads VMware, ils doivent copier le code de la Codebox, se connecter manuellement à leur compte AWS et remplir manuellement les entrées manquantes dans le code généré pour utiliser cette fonctionnalité.
+
+
+
+==== Exemple 2
+
+Dans ce cas, l'utilisateur a créé deux ensembles d'informations d'identification pour permettre différentes capacités opérationnelles en fonction de l'ensemble d'informations d'identification sélectionné. Généralement, chaque ensemble d'informations d'identification est associé à un compte AWS différent.
+
+Le premier ensemble d'informations d'identification inclut des autorisations qui donnent aux utilisateurs un contrôle total pour la création des systèmes de fichiers FSX pour ONTAP (et la possibilité d'afficher les autres types de stockage AWS utilisés dans le compte), mais uniquement des autorisations de lecture lorsque vous travaillez avec des workloads VMware.
+
+image:screenshot-credentials-comparison-example-1.png["Capture d'écran montrant un ensemble d'informations d'identification qui fournissent deux types d'autorisations de charge de travail."]
+
+Le second ensemble d'identifiants fournit uniquement des autorisations qui donnent aux utilisateurs un contrôle total pour la création des systèmes de fichiers FSX pour ONTAP et l'affichage des autres types de stockage AWS utilisés dans le compte.
+
+image:screenshot-credentials-comparison-example-2.png["Capture d'écran montrant un ensemble d'informations d'identification qui fournissent deux types d'autorisations de charge de travail."]
+
+
+
+== Identifiants AWS
+
+Nous avons conçu un flux d'enregistrement des informations d'identification du rôle AWS supposé qui :
+
+* Prend en charge des autorisations de compte AWS plus alignées : vous pouvez spécifier les fonctionnalités des workloads que vous souhaitez utiliser et définir les exigences de règles IAM en fonction de ces sélections.
+* Vous permet d'ajuster les autorisations accordées au compte AWS lorsque vous acceptez ou désabonnez-vous de certaines fonctionnalités de workloads.
+* Simplifie la création manuelle de règles IAM grâce à des fichiers de règles JSON personnalisés que vous pouvez appliquer dans la console AWS.
+* Simplifie également le processus d'enregistrement des identifiants en offrant aux utilisateurs une option automatisée pour la création de règles IAM et de rôles requises à l'aide de piles AWS CloudFormation.
+* Il est mieux adapté aux utilisateurs de FSX for ONTAP qui préfèrent stocker leurs identifiants dans les limites de l'écosystème cloud AWS en permettant le stockage des identifiants de services FSX pour ONTAP dans un système de gestion des secrets basé sur AWS.
+
+
+
+
+=== Une ou plusieurs identifiants AWS
+
+Lorsque vous utilisez votre première fonctionnalité (ou fonctionnalités) Workload Factory, vous devez créer les informations d'identification à l'aide des autorisations requises pour ces capacités de charge de travail. Vous ajouterez les informations d'identification à Workload Factory, mais vous devrez accéder à la console de gestion AWS pour créer le rôle et la règle IAM. Ces informations d'identification seront disponibles au sein de votre compte lors de l'utilisation de n'importe quelle fonctionnalité dans Workload Factory.
+
+Votre ensemble initial d'identifiants AWS peut inclure une règle IAM pour une fonctionnalité ou pour de nombreuses fonctionnalités. Cela dépend simplement des besoins de votre entreprise.
+
+L'ajout de plusieurs identifiants AWS à Workload Factory permet d'obtenir des autorisations supplémentaires pour utiliser des fonctionnalités supplémentaires, telles que FSX pour les systèmes de fichiers ONTAP, le déploiement de bases de données sur FSX pour ONTAP, la migration des workloads VMware, etc.
+
+link:add-credentials.html["Découvrez comment ajouter des informations d'identification AWS à Workload Factory"].
