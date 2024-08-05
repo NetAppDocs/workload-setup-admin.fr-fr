@@ -392,7 +392,6 @@
   <block id="6b2932e540d5f7ea082e1ac798f02299" category="paragraph">Les étapes d'utilisation du code CLoudFormation peuvent être différentes selon que vous déployez un système de fichiers FSX pour ONTAP, que vous créez des informations d'identification de compte ou que vous effectuez d'autres actions Workload Factory.</block>
   <block id="db45cb70284a7cbad935a33a0ef0b6dc" category="paragraph">Notez que le code d'un fichier YAML généré par CloudFormation expire après 7 jours pour des raisons de sécurité.</block>
   <block id="f4beed69f4c72e3f9969d0e2daa8cc67" category="list-text">Pour utiliser une pile CloudFormation, vous devez disposer des autorisations d'utilisateur suivantes :</block>
-  <block id="e1e1a8055c6ecfa43b025a1584c3155f" category="list-text">Après avoir utilisé l'interface utilisateur pour définir l'opération que vous souhaitez effectuer, sélectionnez <block ref="4b7dbf915ce902400e3f4172621123eb" category="inline-image-macro-rx" type="image"></block> pour copier le code dans la zone de code.</block>
   <block id="99ca7c9c85fef7c6ab0e44eb58675162" category="list-text">Sélectionnez *rediriger vers CloudFormation* et la page rediriger vers CloudFormation s'affiche.</block>
   <block id="7463b18d69a514063d0f320bc1d16b0d" category="list-text">Ouvrez une autre fenêtre de navigateur et connectez-vous à la console de gestion AWS.</block>
   <block id="3bc22cebdcd7af89d94afadce527cc1d" category="list-text">Connectez-vous au compte AWS sur lequel le code doit être exécuté.</block>
@@ -402,11 +401,9 @@
   <block id="05c017ebdfb63b85bc91ed2748f0a19f" category="paragraph">Vous pouvez utiliser les API REST de Workload Factory générées par Codebox pour déployer et gérer vos systèmes de fichiers FSX pour ONTAP et d'autres ressources AWS.</block>
   <block id="3c3f00270f1d36904ead2ac33f53a58f" category="paragraph">Vous pouvez exécuter les API depuis n'importe quel hôte qui prend en charge curl et qui dispose d'une connectivité Internet.</block>
   <block id="ed172ca8e9fe57859bcb8978982d2e0d" category="paragraph">Notez que les tokens d'authentification sont masqués dans Codebox, mais ils sont renseignés lorsque vous copiez et collez l'appel API.</block>
-  <block id="50bea3d64c18b01d7ce7b30ec89500d8" category="list-text">Après avoir utilisé l'interface utilisateur pour définir l'opération que vous souhaitez effectuer, sélectionnez <block ref="4b7dbf915ce902400e3f4172621123eb" category="inline-image-macro-rx" type="image"></block> pour copier le code API dans la zone de code.</block>
   <block id="b68f0143fe964c9ac34ce1d33e961f82" category="list-text">Collez le code et exécutez-le sur votre système hôte.</block>
   <block id="b4c82b8569210de2a2777b454448b42e" category="section-title">Utilisez le code de l'interface de ligne de commande AWS de Codebox</block>
   <block id="8d03c4936e76f2455607364517b82e3e" category="paragraph">Vous pouvez utiliser l'interface de ligne de commande Amazon Web Services générée par Codebox pour déployer et gérer vos systèmes de fichiers FSX pour ONTAP et d'autres ressources AWS.</block>
-  <block id="4002cdda8ab65bc08a255c31321855ab" category="list-text">Après avoir utilisé l'interface utilisateur pour définir l'opération que vous souhaitez effectuer, sélectionnez pour copier l'interface <block ref="4b7dbf915ce902400e3f4172621123eb" category="inline-image-macro-rx" type="image"></block> de ligne de commande AWS dans la zone de code.</block>
   <block id="b28a0d67dfa6e54814b9650389eea71b" category="list-text">Collez le code et exécutez-le.</block>
   <block id="3c9ee3abb878e5099cd76beeedcb2d04" category="summary">Découvrez les nouveautés des fonctionnalités d'administration de Workload Factory : informations d'identification du fournisseur cloud, améliorations de Codebox et bien plus encore.</block>
   <block id="490414e0366b091220802d406e52c076" category="doc">Quoi de neuf</block>
@@ -498,4 +495,16 @@
   <block id="3700c3dfbf95d68b06191b4a4cbb7592" category="sidebar">Automatisez les tâches à l'aide de Codebox</block>
   <block id="733ae60890dc5503303e1f5780ac5c9b" category="sidebar">Utilisez Codebox pour générer du code</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">Connaissances et support</block>
+  <block id="c419efd1c7454d477938da03ab909ff4" category="list-text">Une fois que vous avez utilisé l'interface utilisateur pour définir l'opération que vous souhaitez effectuer, copiez le code dans la zone de code.</block>
+  <block id="ac8312e3b09c390dd9da069d9697ab8c" category="list-text">Une fois que vous avez utilisé l'interface utilisateur pour définir l'opération que vous souhaitez effectuer, copiez le code API dans la zone de code.</block>
+  <block id="1b2b6bf8e053a2f8088251c3a2cc65f9" category="list-text">Après avoir utilisé l'interface utilisateur pour définir l'opération que vous souhaitez effectuer, copiez l'interface de ligne de commande AWS dans la zone de code.</block>
+  <block id="2532cd63354e6e99119077d45134b5ef" category="section-title">Utiliser Terraform à partir de Codebox</block>
+  <block id="a5a1cedd11df4667bf63eec57c1622aa" category="paragraph">Vous pouvez utiliser Terraform pour déployer et gérer vos systèmes de fichiers FSX pour ONTAP et d'autres ressources AWS.</block>
+  <block id="372393cee3187826465089e7fa3db98e" category="list-text">Vous aurez besoin d'un serveur Terraform pour exécuter les commandes à partir de.</block>
+  <block id="90d8257298c061974c94790388e32bbd" category="list-text">Après avoir utilisé l'interface utilisateur pour définir l'opération que vous souhaitez effectuer, copiez ou téléchargez le code Terraform dans la zone de code.</block>
+  <block id="a2417f4d64bad3dff09f2bdbce4dc0e2" category="list-text">Connectez-vous à votre serveur.</block>
+  <block id="691e71734464aaf43017f5b033e54559" category="section-title">4 août 2024</block>
+  <block id="efa42d5c66cb9948f402ee559611e12d" category="section-title">Prise en charge de Terraform</block>
+  <block id="1571710cf3c95e6290fc41ea04917d42" category="paragraph">Terraform est pris en charge pour le déploiement du système de fichiers Amazon FSX pour NetApp ONTAP et la création de machines virtuelles de stockage. Le guide d'installation et d'administration contient maintenant des instructions sur l'utilisation de Terraform à partir de la Codebox.</block>
+  <block id="1a83a24f33c92a88ea922a23bd6cf4e5" category="paragraph"><block ref="1a83a24f33c92a88ea922a23bd6cf4e5" category="inline-link-macro-rx"></block></block>
 </blocks>
