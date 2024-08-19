@@ -13,6 +13,8 @@ summary: 'NetApp Workload Factory est une puissante plateforme de gestion du cyc
 [role="lead"]
 NetApp Workload Factory est une puissante plateforme de gestion du cycle de vie conçue pour vous aider à optimiser vos workloads à l'aide des systèmes de fichiers Amazon FSX pour NetApp ONTAP. Parmi les charges de travail pouvant être rationalisées à l'aide de Workload Factory et FSX pour ONTAP figurent les bases de données, les migrations VMware vers VMware Cloud sur AWS, les chatbots d'IA, etc.
 
+Une charge de travail englobe une combinaison de ressources, de code, de services ou d'applications conçus pour répondre à un objectif métier. Il peut s'agir d'une application orientée client ou d'un processus back-end. Les workloads peuvent impliquer un sous-ensemble de ressources au sein d'un même compte AWS ou s'étendre sur plusieurs comptes.
+
 Amazon FSX pour NetApp ONTAP fournit des volumes de stockage NFS, SMB/CIFS et iSCSI natifs AWS entièrement gérés pour les applications stratégiques, les bases de données, les conteneurs, les datastores VMware dans le cloud et les fichiers utilisateur. Vous pouvez gérer FSX pour ONTAP via Workload Factory et à l'aide d'outils de gestion AWS natifs.
 
 
@@ -106,9 +108,9 @@ link:codebox-automation.html["En savoir plus sur Codebox"].
 
 
 
-=== Calculateurs de stockage
+=== Calculateurs d'économies
 
-Workload Factory fournit un calculateur de stockage. Vous pouvez ainsi comparer les coûts du stockage sur les systèmes de fichiers FSX pour ONTAP avec Elastic Block Store (EBS), Elastic File Systems (EFS) et FSX pour le serveur de fichiers Windows. En fonction de vos besoins en stockage, vous constaterez peut-être que les systèmes de fichiers FSX pour ONTAP sont l'option la plus économique pour vous.
+Workload Factory fournit un calculateur d'économies. Vous pouvez donc comparer les coûts de stockage sur les systèmes de fichiers FSX pour ONTAP avec Elastic Block Store (EBS), Elastic File Systems (EFS) et FSX pour le serveur de fichiers Windows. En fonction de vos besoins en stockage, vous constaterez peut-être que les systèmes de fichiers FSX pour ONTAP sont l'option la plus économique pour vous.
 
 Les critères comparés entre les différents types de systèmes de stockage comprennent la capacité totale requise et les performances totales, lesquelles incluent les IOPS requises et le débit requis.
 
