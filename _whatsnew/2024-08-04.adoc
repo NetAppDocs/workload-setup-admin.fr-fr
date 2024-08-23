@@ -1,0 +1,11 @@
+= Prise en charge de Terraform
+:allow-uri-read: 
+
+
+
+
+=== Prise en charge de Terraform
+
+Terraform est pris en charge pour le déploiement du système de fichiers Amazon FSX pour NetApp ONTAP et la création de machines virtuelles de stockage. Le guide d'installation et d'administration contient maintenant des instructions sur l'utilisation de Terraform à partir de la Codebox.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html["Utiliser Terraform à partir de Codebox"^]
