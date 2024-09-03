@@ -508,4 +508,14 @@
   <block id="fb44c12e7a424c0619764b1060434a74" category="section-title">Calculateurs d'économies</block>
   <block id="6904c85b1af908213d1642916b521739" category="paragraph">Workload Factory fournit un calculateur d'économies. Vous pouvez donc comparer les coûts de stockage sur les systèmes de fichiers FSX pour ONTAP avec Elastic Block Store (EBS), Elastic File Systems (EFS) et FSX pour le serveur de fichiers Windows. En fonction de vos besoins en stockage, vous constaterez peut-être que les systèmes de fichiers FSX pour ONTAP sont l'option la plus économique pour vous.</block>
   <block id="11cb17d1b990bbf37a24337d5692efa1" category="paragraph"><block ref="11cb17d1b990bbf37a24337d5692efa1" category="inline-link-macro-rx"></block></block>
+  <block id="2fd1745cefcdce50d6467d96e693f6b7" category="doc">Abonnement RSS</block>
+  <block id="0fa776fabe30e41d70bd8d9c9e64c974" category="paragraph">L'abonnement RSS est disponible sur le <block ref="372504cb6bb48559009ff8f8cdb9a245" category="inline-link-macro-rx"></block>. L'utilisation d'un flux RSS est un moyen facile de consommer et d'être conscient des changements dans l'usine de charge de travail BlueXP .</block>
+  <block id="447fb3de7bec10468f55367375163603" category="inline-image-macro">Capture d'écran du menu déroulant d'aide de la console Workload Factory. Un nouveau bouton permettant de s'abonner à RSS apparaît sous forme d'option dans le menu déroulant.</block>
+  <block id="c508966f04ada556baaaa0b94e781209" category="paragraph"><block ref="c508966f04ada556baaaa0b94e781209" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="80f4b5aa553e3a44455088c83954a088" category="section-title">Prise en charge d'une seule stratégie d'autorisation par charge de travail</block>
+  <block id="c876ca70d1ae73b09cdc0004b328448e" category="paragraph">Lorsque vous ajoutez des identifiants AWS dans Workload Factory, vous pouvez désormais sélectionner une règle d'autorisation unique, soit en mode lecture ou automatisation, pour chaque charge de travail et gestion du stockage.</block>
+  <block id="41b3a089d4fbacfb53e9a5634cfc6647" category="inline-image-macro">Capture d'écran de la section de configuration des autorisations de la page informations d'identification, dans laquelle vous pouvez sélectionner lecture ou automatisation des stratégies d'autorisations pour la gestion du stockage, les workloads d'IA, les workloads de bases de données et les workloads VMware.</block>
+  <block id="fa5f572610383fbc01cbba40c0f535e2" category="paragraph"><block ref="fa5f572610383fbc01cbba40c0f535e2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1db25aada4bff8233b24c1d7b39230cd" category="paragraph"><block ref="1db25aada4bff8233b24c1d7b39230cd" category="inline-link-macro-rx"></block></block>
+  <block id="b5cef683aab00353096b98823a237e69" category="section-title">1er septembre 2024</block>
 </blocks>
