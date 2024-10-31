@@ -120,12 +120,12 @@ Vous pouvez utiliser l'interface de ligne de commande Amazon Web Services géné
 Vous pouvez utiliser Terraform pour déployer et gérer vos systèmes de fichiers FSX pour ONTAP et d'autres ressources AWS.
 
 .Avant de commencer
-* Vous aurez besoin d'un serveur Terraform pour exécuter les commandes à partir de.
+* Vous aurez besoin d'un système où Terraform est installé (Windows/Mac/Linux).
 * Vous devez disposer de identifiants pour vous connecter à votre compte AWS.
 
 
 .Étapes
-. Après avoir utilisé l'interface utilisateur pour définir l'opération que vous souhaitez effectuer, copiez ou téléchargez le code Terraform dans la zone de code.
-. Connectez-vous à votre serveur.
-. Collez le code et exécutez-le.
+. Une fois que vous avez utilisé l'interface utilisateur pour définir l'opération que vous souhaitez exécuter, téléchargez le code Terraform à partir de la zone de code.
+. Copiez l'archive de script téléchargée dans le système sur lequel Terraform est installé.
+. Extrayez le fichier zip et suivez les étapes du fichier README.md.
 
