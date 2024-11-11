@@ -2,33 +2,33 @@
 sidebar: sidebar 
 permalink: sign-up-saas.html 
 keywords: sign up, signing up, sign in, signing in, login with netapp, log in with netapp, create account, account, log in with nss, nss, nss login 
-summary: Workload Factory est accessible depuis une console Web. Lorsque vous commencez à utiliser Workload Factory, vous commencez par vous inscrire en utilisant vos identifiants du site du support NetApp ou en créant un identifiant cloud NetApp. 
+summary: 'L"usine de charges de travail est accessible depuis une console Web. Lorsque vous commencez à utiliser l"usine de workloads, vous devez d"abord vous inscrire à l"aide de vos identifiants du site du support NetApp ou en créant un identifiant de connexion au cloud NetApp.' 
 ---
-= Inscrivez-vous à Workload Factory
+= Inscrivez-vous à l'usine de workloads BlueXP 
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Workload Factory est accessible depuis une console Web. Lorsque vous commencez à utiliser Workload Factory, vous commencez par vous inscrire en utilisant vos identifiants du site du support NetApp ou en créant un identifiant cloud NetApp.
+L'usine de workloads BlueXP  est accessible depuis une console Web. Lorsque vous commencez à utiliser l'usine de workloads, vous devez d'abord vous inscrire à l'aide de vos identifiants du site du support NetApp ou en créant un identifiant de connexion au cloud NetApp.
 
 .Description de la tâche
-Vous pouvez vous inscrire à Workload Factory en utilisant l'une des options suivantes :
+Vous pouvez vous inscrire à l'usine de workloads à l'aide de l'une des options suivantes :
 
 * Vos identifiants existants du site de support NetApp (NSS)
 * Une connexion au cloud NetApp en indiquant votre adresse e-mail et votre mot de passe
 
 
 .Étapes
-. Ouvrez un navigateur Web et accédez à https://console.workloads.netapp.com["Console Workload Factory"^]
+. Ouvrez un navigateur Web et accédez à https://console.workloads.netapp.com["console d'usine de charge de travail"^]
 . Si vous possédez un compte sur le site de support NetApp, entrez l'adresse e-mail associée à votre compte NSS directement sur la page *connexion*.
 +
 Vous pouvez ignorer la page d'inscription si vous avez un compte NSS. Workload Factory vous inscrira dans le cadre de cette connexion initiale.
 
 . Si vous ne possédez pas de compte NSS et que vous souhaitez vous inscrire en créant un identifiant cloud NetApp, sélectionnez *s'inscrire*.
 +
-image:screenshot-sign-up1.png["Capture d'écran de la page d'inscription dans laquelle vous pouvez ajouter votre nom d'utilisateur et votre mot de passe pour accéder à Workload Factory."]
+image:screenshot-sign-up1.png["Capture d'écran de la page d'inscription dans laquelle vous pouvez ajouter votre nom d'utilisateur et votre mot de passe pour accéder à l'usine de workloads."]
 
 . Sur la page *s'inscrire*, entrez les informations requises pour créer une connexion NetApp Cloud et sélectionnez *Suivant*.
 +
@@ -47,8 +47,8 @@ Un compte est l'élément de premier niveau de la plateforme d'identités NetApp
 +
 image:screenshot-account-selection.png["Capture d'écran de la page compte qui s'affiche lorsque vous vous connectez avec un nouveau compte."]
 
-. Sélectionnez *Create* et la page d'accueil Workload Factory s'affiche.
+. Sélectionnez *Create* et la page d'accueil de l'usine de la charge de travail s'affiche.
 
 
 .Résultat
-Vous disposez désormais d'un identifiant Workload Factory et d'un compte. Vous êtes considéré comme un administrateur de compte et vous avez accès à toutes les fonctionnalités de Workload Factory.
+Vous disposez désormais d'un identifiant d'usine de charge de travail et d'un compte. Vous êtes considéré comme un administrateur de compte et vous avez accès à toutes les fonctionnalités d'usine de la charge de travail.

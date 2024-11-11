@@ -2,36 +2,36 @@
 sidebar: sidebar 
 permalink: quick-start.html 
 keywords: quick start 
-summary: 'Commencez avec Workload Factory en préparant la mise en réseau de la console Workload Factory, en vous inscrivant, en créant un compte, et en ajoutant des informations d"identification pour que Workload Factory puisse gérer directement les ressources AWS.' 
+summary: 'Commencez avec l"usine de workloads en préparant la mise en réseau de la console d"usine de la charge de travail, en vous inscrivant et en créant un compte, puis en ajoutant des identifiants pour que l"usine de workloads puisse gérer les ressources AWS directement.' 
 ---
-= Démarrage rapide pour Workload Factory
+= Démarrage rapide pour l'usine de workloads BlueXP 
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Commencez avec Workload Factory en vous inscrivant et en créant un compte, en ajoutant des informations d'identification pour que Workload Factory puisse gérer directement les ressources AWS, puis optimiser vos workloads avec Amazon FSX pour NetApp ONTAP.
+Commencez avec l'usine de workloads en vous inscrivant et en créant un compte, en ajoutant des informations d'identification pour que l'usine de workloads puisse gérer les ressources AWS directement, puis optimiser vos workloads avec Amazon FSX pour NetApp ONTAP.
 
-Workload Factory est accessible aux utilisateurs en tant que service cloud à partir de la console Web. Avant de commencer, vous devriez avoir une compréhension de link:workload-factory-overview.html["Usine de charges de travail"] et link:operational-modes.html["modes de fonctionnement"].
+L'usine de workloads est accessible aux utilisateurs en tant que service cloud à partir de la console Web. Avant de commencer, vous devriez avoir une compréhension de link:workload-factory-overview.html["usine de charge de travail"] et link:operational-modes.html["modes de fonctionnement"].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Une seule"] Inscrivez-vous et créez un compte
 [role="quick-margin-para"]
-Accédez à https://console.workloads.netapp.com["Console Workload Factory"^], inscrivez-vous et créez un compte.
+Accédez à https://console.workloads.netapp.com["console d'usine de charge de travail"^], inscrivez-vous et créez un compte.
 
 [role="quick-margin-para"]
 link:sign-up-saas.html["Découvrez comment vous inscrire et créer un compte"].
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Deux"] Ajoutez les informations d'identification AWS à Workload Factory
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Deux"] Ajoutez les identifiants AWS à l'usine des workloads
 [role="quick-margin-para"]
-Cette étape est facultative. Vous pouvez utiliser Workload Factory en _Basic_ mode sans ajouter d'informations d'identification pour accéder à votre compte AWS. L'ajout d'informations d'identification AWS à Workload Factory en _Read_ mode ou _automate_ mode donne à votre compte Workload Factory les autorisations nécessaires pour créer et gérer des systèmes de fichiers FSX pour ONTAP, et pour déployer et gérer des workloads spécifiques, tels que des bases de données et GenAI.
+Cette étape est facultative. Vous pouvez utiliser l'usine de workloads en _Basic_ mode sans ajouter d'informations d'identification pour accéder à votre compte AWS. L'ajout des identifiants AWS à l'usine de workloads en _Read_ mode ou _automate_ mode donne au compte d'usine de votre workload les autorisations nécessaires pour créer et gérer les systèmes de fichiers FSX pour ONTAP, et pour déployer et gérer des workloads spécifiques, tels que des bases de données et GenAI.
 
 [role="quick-margin-para"]
 link:add-credentials.html["Découvrez comment ajouter des informations d'identification à votre compte"].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Trois"] Optimisez vos workloads avec FSX for ONTAP
 [role="quick-margin-para"]
-Maintenant que vous vous êtes inscrit, avez créé un compte et, éventuellement, ajouté des identifiants AWS, vous pouvez commencer à utiliser Workload Factory pour optimiser vos workloads à l'aide de FSX for ONTAP. Utilisez les liens ci-dessous pour suivre les instructions détaillées pour chaque type de charge de travail.
+Maintenant que vous vous êtes inscrit, avez créé un compte et, éventuellement, ajouté des identifiants AWS, vous pouvez commencer à utiliser l'usine de workloads pour optimiser vos workloads à l'aide de FSX pour ONTAP. Utilisez les liens ci-dessous pour suivre les instructions détaillées pour chaque type de charge de travail.
 
 [role="quick-margin-list"]
 * https://docs.netapp.com/us-en/workload-fsx-ontap/index.html["Amazon FSX pour NetApp ONTAP"^]

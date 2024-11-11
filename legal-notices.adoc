@@ -4,10 +4,10 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= Mentions légales
+= Mentions légales pour l'usine de charge de travail BlueXP
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]

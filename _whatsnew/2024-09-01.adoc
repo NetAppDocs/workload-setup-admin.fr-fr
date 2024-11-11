@@ -6,16 +6,16 @@
 
 === Abonnement RSS
 
-L'abonnement RSS est disponible sur le link:https://console.workloads.netapp.com/["Console Workload Factory"^]. L'utilisation d'un flux RSS est un moyen facile de consommer et d'être conscient des changements dans l'usine de charge de travail BlueXP .
+L'abonnement RSS est disponible sur le link:https://console.workloads.netapp.com/["console d'usine de charge de travail"^]. L'utilisation d'un flux RSS est un moyen facile de consommer et d'être conscient des changements dans l'usine de la charge de travail BlueXP .
 
-image:screenshot-rss-subscribe-button.png["Capture d'écran du menu déroulant d'aide de la console Workload Factory. Un nouveau bouton permettant de s'abonner à RSS apparaît sous forme d'option dans le menu déroulant."]
+image:screenshot-rss-subscribe-button.png["Capture d'écran du menu déroulant d'aide de la console d'usine de la charge de travail. Un nouveau bouton permettant de s'abonner à RSS apparaît sous forme d'option dans le menu déroulant."]
 
 
 
 === Prise en charge d'une seule stratégie d'autorisation par charge de travail
 
-Lorsque vous ajoutez des identifiants AWS dans Workload Factory, vous pouvez désormais sélectionner une règle d'autorisation unique, soit en mode lecture ou automatisation, pour chaque charge de travail et gestion du stockage.
+Lors de l'ajout d'identifiants AWS en usine de workloads, vous pouvez désormais sélectionner une règle d'autorisation unique, en mode lecture ou automatisation, pour chaque charge de travail et pour la gestion du stockage.
 
 image:screenshot-single-permission-policy-support.png["Capture d'écran de la section de configuration des autorisations de la page informations d'identification, dans laquelle vous pouvez sélectionner lecture ou automatisation des stratégies d'autorisations pour la gestion du stockage, les workloads d'IA, les workloads de bases de données et les workloads VMware."]
 
-link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Ajoutez les informations d'identification AWS à Workload Factory"^]
+link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Ajoutez les identifiants AWS à l'usine des workloads"^]

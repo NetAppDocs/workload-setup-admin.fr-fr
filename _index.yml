@@ -1,24 +1,25 @@
 ---
 indexpage:
-  title: Documentation de configuration et d'administration de Workload Factory
-  summary: Commencez avec Workload Factory afin d'exploiter pleinement vos workloads
-    avec Amazon FSX pour NetApp ONTAP. Une fois la configuration terminée, vous pouvez
-    créer, optimiser et gérer les systèmes de fichiers FSX pour ONTAP pour vos workloads,
-    explorer les économies réalisables avec FSX pour ONTAP, utiliser le co-pilote
-    Infrastructure-as-Code intégré pour l'automatisation sur l'ensemble des plateformes
-    et gérer vos workloads dans Workload Factory.
+  title: Documentation sur la configuration d'usine et l'administration des charges
+    de travail BlueXP 
+  summary: Commencez à utiliser l'usine de workloads BlueXP  pour tirer le meilleur
+    parti de vos workloads avec Amazon FSX pour NetApp ONTAP. Une fois la configuration
+    terminée, vous pouvez créer, optimiser et gérer les systèmes de fichiers FSX pour
+    ONTAP pour vos workloads, explorer les économies réalisables avec FSX pour ONTAP,
+    utiliser le co-pilote Infrastructure-as-Code intégré pour l'automatisation sur
+    l'ensemble des plateformes et gérer vos workloads en usine.
   keywords: workload factory, fsx, account, credentials, users, permissions, log in,
     calculator, codebox
-  lead: Commencez avec Workload Factory afin d'exploiter pleinement vos workloads
-    avec Amazon FSX pour NetApp ONTAP. Une fois la configuration terminée, vous pouvez
-    créer, optimiser et gérer les systèmes de fichiers FSX pour ONTAP pour vos workloads,
-    explorer les économies réalisables avec FSX pour ONTAP, utiliser le co-pilote
-    Infrastructure-as-Code intégré pour l'automatisation sur l'ensemble des plateformes
-    et gérer vos workloads dans Workload Factory.
+  lead: Commencez à utiliser l'usine de workloads BlueXP  pour tirer le meilleur parti
+    de vos workloads avec Amazon FSX pour NetApp ONTAP. Une fois la configuration
+    terminée, vous pouvez créer, optimiser et gérer les systèmes de fichiers FSX pour
+    ONTAP pour vos workloads, explorer les économies réalisables avec FSX pour ONTAP,
+    utiliser le co-pilote Infrastructure-as-Code intégré pour l'automatisation sur
+    l'ensemble des plateformes et gérer vos workloads en usine.
   tiles:
   - title: Commencez
     links:
-    - title: Découvrez Workload Factory
+    - title: Découvrez l'usine de workloads BlueXP 
       url: workload-factory-overview.html
     - title: S'inscrire
       url: sign-up-saas.html

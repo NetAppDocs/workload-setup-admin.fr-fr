@@ -1,0 +1,44 @@
+---
+sidebar: sidebar 
+permalink: console-experiences.html 
+keywords: console, consoles, access, saas, workload factory, bluexp, bluexp workload factory 
+summary: 'L"usine de charges de travail BlueXP  est accessible via deux consoles Web.' 
+---
+= Expériences de la console
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+L'usine de charges de travail BlueXP  est accessible via deux consoles Web. Découvrez comment accéder à l'usine de workloads BlueXP  à l'aide de la console d'usine de workloads BlueXP  et de la console BlueXP .
+
+Vous pouvez utiliser deux consoles pour accéder à l'usine de la charge de travail BlueXP .
+
+* *Console BlueXP * : offre une expérience hybride dans laquelle vous pouvez gérer vos environnements de travail et vos charges de travail au même endroit.
+* *Workload Factory console* : offre une expérience d'usine de workloads dédiée aux workloads exécutés sur Amazon FSX pour NetApp ONTAP.
+
+
+
+
+== Accéder à l'usine de la charge de travail dans la console BlueXP 
+
+Vous pouvez accéder à l'usine des workloads à partir de BlueXP . En plus de l'utilisation de BluXP Workload Factory pour les fonctionnalités de stockage et de workloads AWS, vous pouvez également accéder à d'autres services de plateforme BlueXP  tels que la copie et la synchronisation, le portefeuille digital et bien plus encore.
+
+.Étapes
+. Connectez-vous au link:https://console.workloads.netapp.com["console d'usine de charge de travail"^]
+. Naviguez jusqu'à la charge de travail que vous souhaitez utiliser et sélectionnez une option pour commencer.
+
+
+
+
+== Accédez à l'usine de charge de travail dans la console Workload Factory
+
+Vous pouvez accéder à l'usine de la charge de travail depuis la console Workload Factory.
+
+.Étapes
+. Connectez-vous au link:https://console.bluexp.netapp.com["Console BlueXP"^]
+. Sélectionnez *workloads* dans le menu de navigation de gauche.
+. Sélectionnez *Home* pour afficher toutes les charges de travail ou sélectionnez une charge de travail comme *Storage* ou *Databases*.
+. Sélectionnez une option pour commencer dans la charge de travail.
+
