@@ -23,7 +23,7 @@ Découvrez les nouveautés des fonctionnalités d'administration des usines de w
 
 Vous pouvez désormais utiliser l'usine de charge de travail à partir de link:https://console.bluexp.netapp.com["Console BlueXP"^]. L'expérience de la console BlueXP  offre les mêmes fonctionnalités que la console d'usine de la charge de travail.
 
-link:https://docs.netapp.com/workload-setup-admin/console-experiences.html["Découvrez comment accéder à l'usine des workloads à partir de la console BlueXP "]
+link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["Découvrez comment accéder à l'usine des workloads à partir de la console BlueXP "]
 
 
 
