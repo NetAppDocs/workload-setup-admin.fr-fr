@@ -25,7 +25,7 @@ La plate-forme d'usine de charge de travail offre les principales fonctionnalit�
 
 Stockage flexible et à faible coût:: Découvrez, déployez et gérez les systèmes de fichiers Amazon FSX pour NetApp ONTAP dans le cloud. FSX pour ONTAP allie toutes les capacités d'ONTAP à un service géré AWS natif pour une expérience de cloud hybride homogène.
 Migrez les environnements vSphere sur site vers VMware Cloud on AWS:: VMware Cloud on AWS migration Advisor vous permet d'analyser les configurations actuelles de vos serveurs virtuels dans les environnements vSphere sur site, de générer un plan de déploiement des infrastructures de serveurs virtuels recommandées dans VMware Cloud on AWS et d'utiliser les systèmes de fichiers Amazon FSX for NetApp ONTAP personnalisés en tant que datastores externes.
-Un déploiement de base de données optimisé:: Déployez des serveurs, des bases de données et des clones de bases de données Microsoft SQL Server, notamment le provisionnement des ressources AWS, le provisionnement du stockage, la mise en réseau et les configurations de système d'exploitation, à l'aide de configurations de déploiement optimisées, pour garantir un processus de configuration cohérent et sans erreur.
+Gestion du cycle de vie des bases de données:: Découvrez les workloads de bases de données et analysez les économies réalisées avec Amazon FSX pour NetApp ONTAP ; tirez parti des avantages liés au stockage et aux applications lors de la migration de bases de données SQL Server vers FSX pour le stockage ONTAP ; déployez des serveurs, des bases de données et des clones de bases de données SQL qui mettent en œuvre les meilleures pratiques des fournisseurs ; utilisez un co-pilote Infrastructure-Code pour automatiser les opérations ; et surveillez et optimisez en continu les environnements SQL Server pour améliorer les performances, la disponibilité, la protection et la rentabilité
 Développement d'un chatbot par IA:: Utilisez vos systèmes de fichiers FSX pour ONTAP pour stocker les sources du chatbot de votre entreprise et les bases de données du moteur d'IA. Vous pouvez ainsi intégrer les données non structurées de votre entreprise dans une application de chatbot
 Calculateurs d'économies pour réduire les coûts:: Analysez vos déploiements actuels qui utilisent le stockage Amazon Elastic Block Store (EBS), Elastic File System (EFS) ou le serveur de fichiers Amazon FSX pour Windows pour voir les économies que vous pouvez réaliser en adoptant Amazon FSX pour NetApp ONTAP. Vous pouvez également utiliser le calculateur pour effectuer un scénario de simulation pour un déploiement futur que vous prévoyez.
 
@@ -112,11 +112,11 @@ link:codebox-automation.html["En savoir plus sur Codebox"].
 
 === Calculateurs d'économies
 
-Workload Factory fournit un calculateur d'économies. Vous pouvez donc comparer les coûts de stockage sur les systèmes de fichiers FSX pour ONTAP avec Elastic Block Store (EBS), Elastic File Systems (EFS) et FSX pour le serveur de fichiers Windows. En fonction de vos besoins en stockage, vous constaterez peut-être que les systèmes de fichiers FSX pour ONTAP sont l'option la plus économique pour vous.
+L'usine de workloads fournit des calculateurs d'économies. Vous pouvez donc comparer les coûts de vos environnements de stockage et de vos workloads de base de données dans les systèmes de fichiers FSX pour ONTAP avec Elastic Block Store (EBS), Elastic File Systems (EFS) et FSX pour serveur de fichiers Windows. En fonction de vos besoins en stockage, vous constaterez peut-être que les systèmes de fichiers FSX pour ONTAP sont l'option la plus économique pour vous.
 
-Les critères comparés entre les différents types de systèmes de stockage comprennent la capacité totale requise et les performances totales, lesquelles incluent les IOPS requises et le débit requis.
+* link:https://docs.netapp.com/us-en/workload-fsx-ontap/explore-savings.html["Découvrez comment explorer les économies pour vos environnements de stockage"^]
+* link:https://docs.netapp.com/us-en/workload-databases/explore-savings.html["Découvrez comment réaliser des économies pour vos charges de travail de base de données"^]
 
-https://docs.netapp.com/us-en/workload-fsx-ontap/explore-savings.html["Découvrez comment explorer les économies à l'aide de calculateurs de stockage"^]
 
 
 
