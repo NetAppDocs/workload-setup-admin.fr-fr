@@ -28,6 +28,7 @@ Migrez les environnements vSphere sur site vers VMware Cloud on AWS:: VMware Clo
 Gestion du cycle de vie des bases de données:: Découvrez les workloads de bases de données et analysez les économies réalisées avec Amazon FSX pour NetApp ONTAP ; tirez parti des avantages liés au stockage et aux applications lors de la migration de bases de données SQL Server vers FSX pour le stockage ONTAP ; déployez des serveurs, des bases de données et des clones de bases de données SQL qui mettent en œuvre les meilleures pratiques des fournisseurs ; utilisez un co-pilote Infrastructure-Code pour automatiser les opérations ; et surveillez et optimisez en continu les environnements SQL Server pour améliorer les performances, la disponibilité, la protection et la rentabilité
 Développement d'un chatbot par IA:: Utilisez vos systèmes de fichiers FSX pour ONTAP pour stocker les sources du chatbot de votre entreprise et les bases de données du moteur d'IA. Vous pouvez ainsi intégrer les données non structurées de votre entreprise dans une application de chatbot
 Calculateurs d'économies pour réduire les coûts:: Analysez vos déploiements actuels qui utilisent le stockage Amazon Elastic Block Store (EBS), Elastic File System (EFS) ou le serveur de fichiers Amazon FSX pour Windows pour voir les économies que vous pouvez réaliser en adoptant Amazon FSX pour NetApp ONTAP. Vous pouvez également utiliser le calculateur pour effectuer un scénario de simulation pour un déploiement futur que vous prévoyez.
+Comptes de service pour promouvoir l'automatisation:: Utilisez des comptes de service pour automatiser les opérations d'usine des workloads BlueXP  de manière sécurisée et fiable. Les comptes de service offrent une automatisation fiable et durable sans restrictions de gestion des utilisateurs. Ils sont plus sécurisés, car ils ne fournissent qu'un accès aux API.
 
 
 
@@ -64,12 +65,20 @@ Lorsque vous vous connectez à l'usine de la charge de travail pour la première
 
 image:screenshot-account-selection.png["Capture d'écran de l'assistant de configuration d'usine de la charge de travail qui vous invite à saisir le compte d'usine de la charge de travail."]
 
-Lorsque vous créez un compte, vous êtes le seul utilisateur Admin de compte pour ce compte.
+Lorsque vous créez un compte, vous êtes l'utilisateur _account admin_ unique pour ce compte.
 
 Si votre entreprise a besoin d'une gestion de compte ou d'utilisateurs supplémentaire, contactez-nous via le chat interne au produit.
 
 
 TIP: Si vous utilisez NetApp BlueXP , vous appartenez déjà à un compte, car la fabrique de workloads exploite les comptes BlueXP .
+
+
+
+==== Comptes de service
+
+Un compte de service agit comme un « utilisateur » qui peut effectuer des appels d'API autorisés vers l'usine de workloads BlueXP  à des fins d'automatisation. Il est ainsi plus facile de gérer l'automatisation, car il n'est pas nécessaire de créer des scripts d'automatisation basés sur le compte d'utilisateur réel d'une personne qui quitte l'entreprise à tout moment. Tous les titulaires de compte dans Workload Factory sont considérés comme des administrateurs de compte. Les administrateurs de comptes peuvent créer et supprimer plusieurs comptes de service.
+
+link:manage-service-accounts.html["Découvrez comment gérer des comptes de service"].
 
 
 

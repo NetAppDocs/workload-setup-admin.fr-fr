@@ -41,6 +41,8 @@ sidebar:
     entries:
     - title: Connectez-vous à l'usine de la charge de travail
       url: "/log-in.html"
+    - title: Gestion des comptes de service
+      url: "/manage-service-accounts.html"
     - title: Automatisez les tâches à l'aide de Codebox
       entries:
       - title: En savoir plus sur Codebox

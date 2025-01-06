@@ -1,0 +1,11 @@
+= Prise en charge des comptes de service en usine de charges de travail BlueXP 
+:allow-uri-read: 
+
+
+
+
+=== Prise en charge des comptes de service en usine de charges de travail BlueXP 
+
+Les comptes de service sont désormais pris en charge par l'usine de workloads BlueXP . Vous pouvez créer des comptes de service qui agissent en tant qu'utilisateurs de machines pour automatiser les opérations d'infrastructure.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/manage-service-accounts.html["Création et gestion de comptes de service"]
