@@ -29,6 +29,8 @@ sidebar:
         url: "/operational-modes.html"
       - title: Expériences de la console
         url: "/console-experiences.html"
+      - title: Autorisations
+        url: "/permissions-reference.html"
     - title: Démarrage rapide
       url: "/quick-start.html"
     - title: Inscrivez-vous à l'usine de workloads

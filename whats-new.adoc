@@ -15,6 +15,18 @@ Découvrez les nouveautés des fonctionnalités d'administration des usines de w
 
 
 
+== 22 janvier 2025
+
+
+
+=== Autorisations d'usine des workloads BlueXP 
+
+Vous pouvez désormais afficher les autorisations utilisées par l'usine de workloads BlueXP  pour exécuter diverses opérations, depuis la découverte de vos environnements de stockage jusqu'au déploiement des ressources AWS, telles que les systèmes de fichiers dans le stockage ou les bases de connaissances pour les charges de travail GenAI. Vous pouvez afficher les règles et autorisations IAM pour les workloads Storage, Databases, VMware et GenAI.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html["Autorisations d'usine des workloads BlueXP "]
+
+
+
 == 05 janvier 2025
 
 
