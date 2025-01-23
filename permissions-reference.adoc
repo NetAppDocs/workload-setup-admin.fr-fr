@@ -1688,6 +1688,9 @@ Le tableau suivant fournit des détails sur les autorisations pour les charges d
 | Affiche les modèles de base disponibles dans une région | Bedrock:ListFoundationModels | Déploiement | Automatiser 
 
 
+| Vérifiez l'accès au modèle de base | Bedrock:GetFoundationModelAvailability | Déploiement | Automatiser 
+
+
 | Obtenez des régions qui prennent en charge FSX et Bedrock pendant l'assistant du moteur d'IA | ssm:GetParametersByPath | Déploiement | Automatiser 
 
 
@@ -1782,9 +1785,6 @@ Le tableau suivant fournit des détails sur les autorisations pour les charges d
 
 
 | Journaux:TagResource | Déploiement | Automatiser 
-
-
-| Vérifiez l'accès au modèle de base | Bedrock:GetFoundationModelAvailability | Dépannage | Automatiser 
 |===
 ====
 
