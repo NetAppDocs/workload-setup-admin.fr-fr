@@ -315,10 +315,18 @@ Le tableau suivant affiche les autorisations pour le stockage.
 .3+| Obtenez des détails de clé KMS et utilisez-les pour le chiffrement FSX for ONTAP | Kms:CreateGrant | Déploiement | Automatiser 
 
 
-| Km:décrire* | Déploiement | Automatiser 
+| Km:décrire* | Déploiement  a| 
+* Lecture
+* Automatiser
 
 
-| Km:liste* | Déploiement | Automatiser 
+
+
+| Km:liste* | Déploiement  a| 
+* Lecture
+* Automatiser
+
+
 
 
 | Décrivez Elastic File System dans le calculateur d'économies | Élastickfilesystem:description* | Découvrez les économies | Lecture 
