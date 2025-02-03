@@ -1373,7 +1373,11 @@ Le tableau suivant affiche les autorisations pour les charges de travail de la b
 | Détacher le rôle du profil d'instance EC2 provisionné | iam:RemoveRoleFromInstanceProfile | Déploiement | Automatiser 
 
 
-| Validez les autorisations disponibles dans le rôle et comparez-les aux autorisations requises | iam:SimulatePrincipalPolicy | Déploiement | Automatiser 
+| Validez les autorisations disponibles dans le rôle et comparez-les aux autorisations requises | iam:SimulatePrincipalPolicy | Déploiement  a| 
+* Lecture
+* Automatiser
+
+
 |===
 . L'autorisation est limitée aux ressources commençant par WLMDB.
 . "iam:CreateServiceLinkedRole" limité par "iam:AWSServiceName": "ec2.amazonaws.com"*
@@ -2073,3 +2077,9 @@ Le tableau suivant fournit des détails sur les autorisations pour les charges d
 == Journal des modifications
 
 Lorsque des autorisations sont ajoutées et supprimées, nous les noterons dans les sections ci-dessous.
+
+
+
+=== 3 février 2025
+
+L'autorisation suivante est maintenant disponible en _read_ mode pour les bases de données : `iam:SimulatePrincipalPolicy`.

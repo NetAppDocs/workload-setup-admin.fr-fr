@@ -15,6 +15,12 @@ Découvrez les nouveautés des fonctionnalités d'administration des usines de w
 
 
 
+== 02 février 2025
+
+inclure: _whatsnew/2025-02-02.adoc[]
+
+
+
 == 22 janvier 2025
 
 
@@ -27,7 +33,7 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.ht
 
 
 
-== 05 janvier 2025
+== 5 janvier 2025
 
 
 

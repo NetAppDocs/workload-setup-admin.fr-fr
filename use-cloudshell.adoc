@@ -1,0 +1,189 @@
+---
+sidebar: sidebar 
+permalink: use-cloudshell.html 
+keywords: cloudshell, command line, aws cli, ontap cli, bluexp workload factory, workload factory 
+summary: 'Vous pouvez utiliser CloudShell à partir de n"importe quel emplacement de l"interface utilisateur d"usine des workloads BlueXP  pour lancer des commandes de l"interface de ligne de commande AWS ou ONTAP.' 
+---
+= Utilisez CloudShell en usine de workloads BlueXP 
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Ouvrez CloudShell pour exécuter les commandes de l'interface de ligne de commande AWS ou ONTAP à partir de n'importe quel emplacement de l'interface utilisateur d'usine des workloads BlueXP .
+
+
+
+== Description de la tâche
+
+CloudShell vous permet d'exécuter des commandes CLI AWS ou des commandes CLI ONTAP dans un environnement de type shell à partir de l'interface utilisateur d'usine des workloads BlueXP . Il simule les sessions de terminal dans le navigateur, en fournissant des fonctions de terminal et en proxyant des messages via le backend de l'usine de workloads. Il vous permet d'utiliser les identifiants AWS et ONTAP que vous avez fournis dans votre compte BlueXP .
+
+Les fonctionnalités de CloudShell sont les suivantes :
+
+* Sessions CloudShell multiples : déployez plusieurs sessions CloudShell simultanément pour émettre plusieurs séquences de commandes en parallèle,
+* Vues multiples : fractionnez les sessions de l'onglet CloudShell pour afficher deux onglets ou plus horizontalement ou verticalement en même temps
+* Changement de nom de session : renommez les sessions si nécessaire
+* Persistance du contenu de la dernière session : rouvrez la dernière session si vous la fermez par erreur
+* Préférences des paramètres : modifiez la taille de la police et le type de sortie
+
+
+
+
+== Avant de commencer
+
+CloudShell fonctionne dans le contexte de vos identifiants AWS. Pour utiliser CloudShell, vous devez fournir au moins une information d'identification AWS.
+
+
+NOTE: CloudShell vous permet d'exécuter n'importe quelle commande d'interface de ligne de commande AWS ou ONTAP. Toutefois, si vous voulez travailler dans le contexte d'un système de fichiers FSX pour ONTAP, assurez-vous d'exécuter la commande suivante : `using fsx <file-system-name>`.
+
+
+
+== Déployez CloudShell
+
+Vous pouvez déployer CloudShell à partir de n'importe quel emplacement de la console d'usine des workloads BlueXP . Vous pouvez également déployer CloudShell à partir du stockage à partir d'un système de fichiers FSX pour ONTAP.
+
+[role="tabbed-block"]
+====
+.Déploiement depuis la console d'usine de la charge de travail
+--
+.Étapes
+. Connectez-vous à l'aide de l'un des link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^].
+. Ouvrez CloudShell dans la barre de navigation supérieure.
++
+image:screenshot-select-cloudshell-icon.png["Capture d'écran affichant l'icône CloudShell dans la barre de navigation supérieure."]
+
+. Sélectionnez les informations d'identification et la région pour la session CloudShell, puis sélectionnez la flèche pour continuer.
++
+image:screenshot-deploy-cloudshell-session.png["Capture d'écran affichant une nouvelle session CloudShell."]
+
+. Entrez `help` pour afficher les commandes et instructions CloudShell disponibles ou reportez-vous aux documents de référence CLI suivants pour connaître les commandes disponibles :
++
+** link:https://docs.aws.amazon.com/cli/latest/reference/["Référence CLI AWS"^]: Pour les commandes liées à FSX pour ONTAP, sélectionnez *fsx*.
+** link:https://docs.netapp.com/us-en/ontap-cli/["Référence CLI ONTAP"^]
+
+
+. Exécutez des commandes dans la session CloudShell.
+
+
+--
+.Déploiement à partir du stockage
+--
+.Étapes
+. Connectez-vous à l'aide de l'un des link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^].
+. Dans *stockage*, sélectionnez *aller à l'inventaire de stockage*.
+. Dans l'onglet *FSX pour ONTAP*, sélectionnez le menu à trois points du système de fichiers, puis sélectionnez *Ouvrir CloudShell*.
++
+Une session CloudShell s'ouvre dans le contexte du système de fichiers sélectionné.
+
+. Entrez `help` pour afficher les commandes et instructions CloudShell disponibles ou reportez-vous aux documents de référence CLI suivants pour connaître les commandes disponibles :
++
+** link:https://docs.aws.amazon.com/cli/latest/reference/["Référence CLI AWS"^]: Pour les commandes liées à FSX pour ONTAP, sélectionnez *fsx*.
+** link:https://docs.netapp.com/us-en/ontap-cli/["Référence CLI ONTAP"^]
+
+
+. Exécutez des commandes dans la session CloudShell.
+
+
+--
+====
+Les tâches CloudShell affichées dans cette capture d'écran peuvent être effectuées en sélectionnant le menu à trois points d'un onglet de session CloudShell ouvert. Les instructions pour chacune de ces tâches sont les suivantes.
+
+image:screenshot-cloudshell-tab-menu.png["Capture d'écran affichant le menu à trois points de l'onglet CloudShell avec des options telles que renommer, dupliquer, fermer d'autres onglets et tout fermer."]
+
+
+
+== Renommer un onglet de session CloudShell
+
+Vous pouvez renommer un onglet de session CloudShell pour vous aider à identifier la session.
+
+.Étapes
+. Sélectionnez le menu à trois points de l'onglet session CloudShell.
+. Sélectionnez *Renommer*.
+. Entrez un nouveau nom pour l'onglet session, puis cliquez en dehors du nom de l'onglet pour définir le nouveau nom.
+
+
+.Résultat
+Le nouveau nom apparaît dans l'onglet de session CloudShell.
+
+
+
+== Dupliquer l'onglet de session CloudShell
+
+Vous pouvez dupliquer un onglet de session CloudShell pour créer une nouvelle session avec le même nom, les mêmes informations d'identification et la même région. Le code de l'onglet d'origine n'est pas dupliqué dans l'onglet dupliqué.
+
+.Étapes
+. Sélectionnez le menu à trois points de l'onglet session CloudShell.
+. Sélectionnez *Dupliquer*.
+
+
+.Résultat
+Le nouvel onglet s'affiche avec le même nom que l'onglet d'origine.
+
+
+
+== Fermez les onglets de session CloudShell
+
+Vous pouvez fermer les onglets CloudShell un par un, fermer les autres onglets sur lequel vous ne travaillez pas ou fermer tous les onglets en même temps.
+
+.Étapes
+. Sélectionnez le menu à trois points de l'onglet session CloudShell.
+. Sélectionnez l'une des options suivantes :
++
+** Sélectionnez « X » dans la fenêtre de l'onglet CloudShell pour fermer un onglet à la fois.
+** Sélectionnez *Fermer les autres onglets* pour fermer tous les autres onglets ouverts, sauf celui sur lequel vous travaillez.
+** Sélectionnez *Fermer tous les onglets* pour fermer tous les onglets.
+
+
+
+
+.Résultat
+Les onglets de session CloudShell sélectionnés se ferment.
+
+
+
+== Fractionner les onglets de session CloudShell
+
+Vous pouvez fractionner les onglets de session CloudShell pour afficher deux onglets ou plus en même temps.
+
+.Étape
+Faites glisser et déposez les onglets de session CloudShell en haut, en bas, à gauche ou à droite de la fenêtre CloudShell pour fractionner la vue.
+
+image:screenshot-cloudshell-split-view.png["Capture d'écran affichant deux onglets CloudShell divisés horizontalement. Les onglets apparaissent côte à côte."]
+
+
+
+== Rouvrez votre dernière session CloudShell
+
+Si, par accident, vous fermez votre session CloudShell, vous pouvez la rouvrir.
+
+.Étape
+Sélectionnez l'icône CloudShell dans la barre de navigation supérieure.
+
+image:screenshot-select-cloudshell-icon.png["Capture d'écran affichant l'icône CloudShell dans la barre de navigation supérieure."]
+
+.Résultat
+Les dernières sessions CloudShell s'ouvrent.
+
+
+
+== Mettre à jour les paramètres d'une session CloudShell
+
+Vous pouvez mettre à jour les paramètres de police et de type de sortie pour les sessions CloudShell.
+
+.Étapes
+. Déployez une session CloudShell.
+. Dans l'onglet CloudShell, sélectionnez l'icône Paramètres.
++
+La boîte de dialogue des paramètres s'affiche.
+
+. Mettez à jour la taille de police et le type de sortie selon vos besoins.
++
+
+NOTE: La sortie enrichie s'applique aux objets JSON et au formatage de la table. Toutes les autres sorties apparaissent sous forme de texte brut.
+
+. Sélectionnez *appliquer*.
+
+
+.Résultat
+Les paramètres CloudShell sont mis à jour.

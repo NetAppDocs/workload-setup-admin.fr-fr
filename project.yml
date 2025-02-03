@@ -51,6 +51,8 @@ sidebar:
         url: "/codebox-automation.html"
       - title: Utilisez Codebox pour générer du code
         url: "/use-codebox.html"
+    - title: Utilisez CloudShell
+      url: "/use-cloudshell.html"
     - title: Supprimer les informations d'identification
       url: "/manage-credentials.html"
   - title: Connaissances et support
