@@ -49,11 +49,8 @@ Vous pouvez déployer CloudShell à partir de n'importe quel emplacement de la c
 --
 .Étapes
 . Connectez-vous à l'aide de l'un des link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^].
-. Ouvrez CloudShell dans la barre de navigation supérieure.
-+
-image:screenshot-select-cloudshell-icon.png["Capture d'écran affichant l'icône CloudShell dans la barre de navigation supérieure."]
-
-. Sélectionnez les informations d'identification et la région pour la session CloudShell, puis sélectionnez la flèche pour continuer.
+. Ouvrez CloudShell image:cloudshell-icon.png["Capture d'écran de l'icône cloudshell"] dans la barre de navigation supérieure.
+. Dans la fenêtre CloudShell, sélectionnez les informations d'identification et la région pour la session CloudShell, puis sélectionnez la flèche pour continuer.
 +
 image:screenshot-deploy-cloudshell-session.png["Capture d'écran affichant une nouvelle session CloudShell."]
 
