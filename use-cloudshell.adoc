@@ -155,9 +155,7 @@ image:screenshot-cloudshell-split-view.png["Capture d'écran affichant deux ongl
 Si, par accident, vous fermez votre session CloudShell, vous pouvez la rouvrir.
 
 .Étape
-Sélectionnez l'icône CloudShell dans la barre de navigation supérieure.
-
-image:screenshot-select-cloudshell-icon.png["Capture d'écran affichant l'icône CloudShell dans la barre de navigation supérieure."]
+Sélectionnez l'icône CloudShell image:cloudshell-icon.png["Capture d'écran de l'icône cloudshell"]dans la barre de navigation supérieure.
 
 .Résultat
 Les dernières sessions CloudShell s'ouvrent.
