@@ -1652,6 +1652,15 @@ Le tableau suivant fournit des détails sur les autorisations pour les charges d
 | Balisez les ressources créées par la création d'une pile de moteur d'IA pendant les opérations de déploiement et de reconstruction | ec2:CreateTags | Déploiement | Automatiser 
 
 
+.2+| Publier des événements enrysés sur le back-end WLMAI à partir de la pile de moteur ai | Km:GenerateDataKey | Déploiement | Automatiser 
+
+
+| Km:déchiffrer | Déploiement | Automatiser 
+
+
+| Pour publier des événements et des ressources personnalisées sur le backend WLMAI à partir de la pile ai-Engine | sns:publier | Déploiement | Automatiser 
+
+
 | Répertorier les VPC pendant l'assistant de déploiement du moteur d'IA | ec2 : descriptif | Déploiement | Automatiser 
 
 
@@ -1706,6 +1715,9 @@ Le tableau suivant fournit des détails sur les autorisations pour les charges d
 | Vérifiez l'accès au modèle de base | Bedrock:GetFoundationModelAvailability | Déploiement | Automatiser 
 
 
+| Vérifiez qu'il est nécessaire de créer un groupe de journaux CloudWatch pendant les opérations de déploiement et de reconstruction | Journaux:DescribeLogGroups | Déploiement | Automatiser 
+
+
 | Obtenez des régions qui prennent en charge FSX et Bedrock pendant l'assistant du moteur d'IA | ssm:GetParametersByPath | Déploiement | Automatiser 
 
 
@@ -1715,13 +1727,10 @@ Le tableau suivant fournit des détails sur les autorisations pour les charges d
 | Obtenir la réponse SSM de la commande envoyée au moteur ai | ssm:GetCommandInvocation | Déploiement | Automatiser 
 
 
-.3+| Vérifier la connexion SSM au moteur ai | ssm:SendCommand | Déploiement | Automatiser 
+.2+| Vérifier la connexion SSM au moteur ai | ssm:SendCommand | Déploiement | Automatiser 
 
 
 | ssm:GetConnectionStatus | Déploiement | Automatiser 
-
-
-| ssm:SendCommand | Déploiement | Automatiser 
 
 
 .8+| Créez un profil d'instance de moteur d'IA lors de la création de la pile lors des opérations de déploiement et de reconstruction | iam:CreateRole | Déploiement | Automatiser 
@@ -1773,9 +1782,6 @@ Le tableau suivant fournit des détails sur les autorisations pour les charges d
 
 
 | ssm:PutParameter | Déploiement | Automatiser 
-
-
-| Vérifiez qu'il est nécessaire de créer un groupe de journaux CloudWatch pendant les opérations de déploiement et de reconstruction | Journaux:DescribeLogGroups | Déploiement | Automatiser 
 
 
 .2+| Envoyez les journaux du moteur d'IA au groupe de journaux CloudWatch pendant les opérations de déploiement et de reconstruction | Journaux:CreateLogGroup | Déploiement | Automatiser 
@@ -1917,6 +1923,30 @@ Le tableau suivant fournit des détails sur les autorisations pour les charges d
 | Objectif | Action | Cas d'utilisation | Mode 
 
 
+| Associez des groupes de sécurité et modifiez les règles pour les nœuds provisionnés | ec2:AuthoreSecurityGroupIngress | Déploiement | Automatiser 
+
+
+| Création de volumes EBS | ec2 : CreateVolume | Déploiement | Automatiser 
+
+
+| Balisez les valeurs personnalisées des ressources FSX pour NetApp ONTAP créées par les workloads VMware | fsx:TagResource | Déploiement | Automatiser 
+
+
+| Créez et validez le modèle CloudFormation | Cloudformation:CreateStack | Déploiement | Automatiser 
+
+
+| Gérer les balises et la sécurité du réseau sur les instances créées | ec2:CreateSecurityGroup | Déploiement | Automatiser 
+
+
+| Démarrez les instances créées | ec2:RunInstances | Déploiement | Automatiser 
+
+
+| Consultez les détails de l'instance EC2 | ec2:descriptifs | Déploiement | Automatiser 
+
+
+| Répertoriez les images pendant la création de la pile pendant les opérations de déploiement et de reconstruction | ec2:descriptifs | Déploiement | Automatiser 
+
+
 | Obtenir les VPC dans l'environnement sélectionné pour remplir le formulaire de déploiement | ec2 : descriptif  a| 
 * Déploiement
 * Inventaire
@@ -2021,13 +2051,16 @@ Le tableau suivant fournit des détails sur les autorisations pour les charges d
 | Automatiser 
 
 
-.4+| Obtenez des détails de clés KMS et utilisez-les pour le chiffrement Amazon FSX for NetApp ONTAP | Kms:CreateGrant | Déploiement | Automatiser 
+.5+| Obtenez des détails de clés KMS et utilisez-les pour le chiffrement Amazon FSX for NetApp ONTAP | Kms:CreateGrant | Déploiement | Automatiser 
 
 
 | Km:décrire* | Déploiement | Automatiser 
 
 
 | Km:liste* | Déploiement | Automatiser 
+
+
+| Km:déchiffrer | Déploiement | Automatiser 
 
 
 | Km:GenerateDataKey | Déploiement | Automatiser 
