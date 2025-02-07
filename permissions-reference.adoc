@@ -763,6 +763,9 @@ Le tableau suivant affiche les autorisations pour les charges de travail de la b
 
 
 
+| Créez des terminaux VPC s'ils n'existent pas pour les services requis, quelle que soit la connectivité du réseau public sur les instances EC2 | ec2:CreateVpcEndpoint | Déploiement | Automatiser 
+
+
 | Obtenir les types d'instances disponibles dans la région pour les nœuds de validation (t2.micro/t3.micro) | ec2:DécribeInstanceTypeOfferings | Déploiement  a| 
 * Lecture
 * Automatiser
@@ -810,6 +813,13 @@ Le tableau suivant affiche les autorisations pour les charges de travail de la b
 
 
 | Obtenez la liste des piles CloudFormation exécutées dans l'environnement pour vérifier la limite de quota | Cloudformation:ListSacks | Déploiement  a| 
+* Lecture
+* Automatiser
+
+
+
+
+| Vérifiez les limites des comptes pour les ressources avant de déclencher le déploiement | Cloudformation:DescribeAccountLimits | Déploiement  a| 
 * Lecture
 * Automatiser
 
@@ -948,6 +958,48 @@ Le tableau suivant affiche les autorisations pour les charges de travail de la b
 * Automatiser
 
 
+
+
+| Vérifiez si le compte est inscrit à AWS Compute Optimizer | Optimiseur-calcul:GetInscriptStatus  a| 
+* Découvrez les économies
+* Optimisation
+
+| Automatiser 
+
+
+| Mettez à jour une préférence de recommandation existante dans AWS Compute Optimizer afin d'adapter les suggestions aux charges de travail SQL Server | Compute-Optimizer:PutrecommandationPreferences  a| 
+* Découvrez les économies
+* Optimisation
+
+| Automatiser 
+
+
+| Obtenir les préférences de recommandation en vigueur pour une ressource donnée à partir d'AWS Compute Optimizer | Compute-Optimizer:GetEffectiveRecommandation Preferences  a| 
+* Découvrez les économies
+* Optimisation
+
+| Automatiser 
+
+
+| Recommandations générées par AWS Compute Optimizer pour les instances Amazon Elastic Compute Cloud (Amazon EC2 | Compute-Optimizer:GetEC2InstanceRecommendations  a| 
+* Découvrez les économies
+* Optimisation
+
+| Automatiser 
+
+
+.2+| Vérifiez l'association de l'instance aux groupes de mise à l'échelle automatique | Mise à l'échelle automatique:DescribeAutoScalingGroups  a| 
+* Découvrez les économies
+* Optimisation
+
+| Automatiser 
+
+
+| Mise à l'échelle automatique:DescribeAutoScatingInstances  a| 
+* Découvrez les économies
+* Optimisation
+
+| Automatiser 
 
 
 .4+| Obtenez, répertoriez, créez et supprimez les paramètres SSM pour les informations d'identification d'utilisateur AD, FSX pour ONTAP et SQL utilisées lors du déploiement ou gérées dans votre compte AWS | ssm:getParameter ^1^  a| 
