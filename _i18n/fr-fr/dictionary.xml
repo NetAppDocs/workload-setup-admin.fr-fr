@@ -366,7 +366,6 @@
   <block id="1571710cf3c95e6290fc41ea04917d42" category="paragraph">Terraform est pris en charge pour le déploiement du système de fichiers Amazon FSX pour NetApp ONTAP et la création de machines virtuelles de stockage. Le guide d'installation et d'administration contient maintenant des instructions sur l'utilisation de Terraform à partir de la Codebox.</block>
   <block id="462c14d3e045d4b0b69cee0781df3207" category="paragraph">Une charge de travail englobe une combinaison de ressources, de code, de services ou d'applications conçus pour répondre à un objectif métier. Il peut s'agir d'une application orientée client ou d'un processus back-end. Les workloads peuvent impliquer un sous-ensemble de ressources au sein d'un même compte AWS ou s'étendre sur plusieurs comptes.</block>
   <block id="fb44c12e7a424c0619764b1060434a74" category="section-title">Calculateurs d'économies</block>
-  <block id="11cb17d1b990bbf37a24337d5692efa1" category="paragraph"><block ref="11cb17d1b990bbf37a24337d5692efa1" category="inline-link-macro-rx"></block></block>
   <block id="2fd1745cefcdce50d6467d96e693f6b7" category="doc">Abonnement RSS</block>
   <block id="80f4b5aa553e3a44455088c83954a088" category="section-title">Prise en charge d'une seule stratégie d'autorisation par charge de travail</block>
   <block id="41b3a089d4fbacfb53e9a5634cfc6647" category="inline-image-macro">Capture d'écran de la section de configuration des autorisations de la page informations d'identification, dans laquelle vous pouvez sélectionner lecture ou automatisation des stratégies d'autorisations pour la gestion du stockage, les workloads d'IA, les workloads de bases de données et les workloads VMware.</block>
@@ -379,15 +378,12 @@
   <block id="ebcd96574a726227b2c1017e8efe81c1" category="doc">Version initiale de l'usine de workloads BlueXP </block>
   <block id="d2587bb8ad424cee3050c3b7958dd388" category="paragraph">La fabrique de workloads BlueXP  est une plateforme puissante de gestion du cycle de vie conçue pour vous aider à optimiser vos workloads à l'aide des systèmes de fichiers Amazon FSX pour NetApp ONTAP. Parmi les charges de travail pouvant être rationalisées grâce à l'usine de workloads, FSX pour ONTAP figurent les bases de données, les migrations VMware vers VMware Cloud sur AWS, les chatbots d'IA, etc.</block>
   <block id="e5d3c7248ff4540f88c13fbf9252d0a3" category="inline-link-macro">console d'usine de charge de travail</block>
-  <block id="3171014553de64cf509a3b587c8baeb3" category="paragraph">L'abonnement RSS est disponible sur le <block ref="9d5ad87a67c1830e37fdd19a7a179db6" category="inline-link-macro-rx"></block>. L'utilisation d'un flux RSS est un moyen facile de consommer et d'être conscient des changements dans l'usine de la charge de travail BlueXP .</block>
   <block id="0796995437665af1d920169e03b4542b" category="inline-image-macro">Capture d'écran du menu déroulant d'aide de la console d'usine de la charge de travail. Un nouveau bouton permettant de s'abonner à RSS apparaît sous forme d'option dans le menu déroulant.</block>
   <block id="482a329f24c123c31a109c24729cb2cd" category="paragraph"><block ref="482a329f24c123c31a109c24729cb2cd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4e47b743d0cc8e0b8906e37286d9b43b" category="paragraph">Lors de l'ajout d'identifiants AWS en usine de workloads, vous pouvez désormais sélectionner une règle d'autorisation unique, en mode lecture ou automatisation, pour chaque charge de travail et pour la gestion du stockage.</block>
   <block id="9f46892803d8b6c63d3b7f51fd44a421" category="inline-link-macro">Ajoutez les identifiants AWS à l'usine des workloads</block>
-  <block id="d9dd14fb1d1e7ca9c6da6770d9176783" category="paragraph"><block ref="d9dd14fb1d1e7ca9c6da6770d9176783" category="inline-link-macro-rx"></block></block>
   <block id="dfc4a97a3fe947a314ae908cf036cbfe" category="doc">Intégration en usine des charges de travail dans la console BlueXP </block>
   <block id="5975f7e9036c78e6217b16f295f0ca75" category="inline-link-macro">Console BlueXP</block>
-  <block id="d2feef96259a41a7842dc5e7af577d63" category="paragraph">Vous pouvez désormais utiliser l'usine de charge de travail à partir de <block ref="391de7a3bac2bc77fa53dffb3f53801a" category="inline-link-macro-rx"></block>. L'expérience de la console BlueXP  offre les mêmes fonctionnalités que la console d'usine de la charge de travail.</block>
   <block id="717f9c6475fbb39a24ab9942c1a903c0" category="inline-link-macro">Découvrez comment accéder à l'usine des workloads à partir de la console BlueXP </block>
   <block id="4fa2f246a664251a157926c2e11e1eb3" category="summary">Ajoutez des identifiants AWS pour que l'usine de workloads dispose des autorisations dont elle a besoin pour déployer et gérer des ressources cloud dans vos comptes AWS.</block>
   <block id="188c7f44ffe17186c8dcbc38640d54e1" category="paragraph">Ajoutez et gérez les identifiants AWS pour que l'usine de workloads dispose des autorisations nécessaires pour déployer et gérer des ressources cloud de vos comptes AWS.</block>
@@ -1068,4 +1064,8 @@
   <block id="38b28dd168a209df2daf8eaf5b0fc216" category="cell">Vérifiez l'association de l'instance aux groupes de mise à l'échelle automatique</block>
   <block id="841ea3d3891ce9dc21992730680d4dac" category="cell">Mise à l'échelle automatique:DescribeAutoScalingGroups</block>
   <block id="9d85d66bd60c64faffe2799f428cd8b3" category="cell">Mise à l'échelle automatique:DescribeAutoScatingInstances</block>
+  <block id="7115d78353263dbb2dbe063624f9f601" category="paragraph"><block ref="7115d78353263dbb2dbe063624f9f601" category="inline-link-macro-rx"></block></block>
+  <block id="bf2cca138f5e3f74f2e6b73d8e8b2452" category="paragraph">L'abonnement RSS est disponible sur le <block ref="a65cf6b405017af965199f55f7b4fce1" category="inline-link-macro-rx"></block>. L'utilisation d'un flux RSS est un moyen facile de consommer et d'être conscient des changements dans l'usine de la charge de travail BlueXP .</block>
+  <block id="1a88151efda7b7ae7945b1161fe70fdc" category="paragraph"><block ref="1a88151efda7b7ae7945b1161fe70fdc" category="inline-link-macro-rx"></block></block>
+  <block id="cf1f4a083afa7ccb1141e827deb4cdc2" category="paragraph">Vous pouvez désormais utiliser l'usine de charge de travail à partir de <block ref="4623dd80d89c29fbf0d2b04387a56c33" category="inline-link-macro-rx"></block>. L'expérience de la console BlueXP  offre les mêmes fonctionnalités que la console d'usine de la charge de travail.</block>
 </blocks>
