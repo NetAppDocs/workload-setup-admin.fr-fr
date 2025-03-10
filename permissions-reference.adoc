@@ -1558,6 +1558,7 @@ Les politiques IAM GenAI sont uniquement disponibles en mode fonctionnement :
         "bedrock:InvokeModelWithResponseStream",
         "bedrock:InvokeModel",
         "bedrock:ListFoundationModels",
+        "bedrock:GetFoundationModel",
         "bedrock:GetFoundationModelAvailability",
         "bedrock:GetModelInvocationLoggingConfiguration"
       ],
@@ -1762,6 +1763,9 @@ Le tableau suivant fournit des détails sur les autorisations pour les charges d
 
 
 | Affiche les modèles de base disponibles dans une région | Bedrock:ListFoundationModels | Déploiement | Automatiser 
+
+
+| Obtenez des informations sur un modèle de base | Bedrock:GetFoundationModel | Déploiement | Automatiser 
 
 
 | Vérifiez l'accès au modèle de base | Bedrock:GetFoundationModelAvailability | Déploiement | Automatiser 
@@ -2165,6 +2169,12 @@ Le tableau suivant fournit des détails sur les autorisations pour les charges d
 == Journal des modifications
 
 Lorsque des autorisations sont ajoutées et supprimées, nous les noterons dans les sections ci-dessous.
+
+
+
+=== 2 mars 2025
+
+L'autorisation suivante est maintenant disponible en _read_ mode pour les bases de données : `iam:SimulatePrincipalPolicy`.
 
 
 
