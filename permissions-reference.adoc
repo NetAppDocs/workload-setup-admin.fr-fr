@@ -2174,7 +2174,7 @@ Lorsque des autorisations sont ajoutées et supprimées, nous les noterons dans 
 
 === 2 mars 2025
 
-L'autorisation suivante est maintenant disponible en _read_ mode pour les bases de données : `iam:SimulatePrincipalPolicy`. L'autorisation suivante est maintenant disponible en _automate_ mode pour GenAI: `bedrock:GetFoundationModel`.
+L'autorisation suivante est maintenant disponible en _automate_ mode pour GenAI: `bedrock:GetFoundationModel`.
 
 
 
