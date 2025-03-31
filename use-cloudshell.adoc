@@ -26,6 +26,57 @@ Les fonctionnalités de CloudShell sont les suivantes :
 * Changement de nom de session : renommez les sessions si nécessaire
 * Persistance du contenu de la dernière session : rouvrez la dernière session si vous la fermez par erreur
 * Préférences des paramètres : modifiez la taille de la police et le type de sortie
+* Réponses d'erreur générées par l'IA pour les commandes de l'interface de ligne de commande ONTAP
+
+
+
+
+=== Commandes CloudShell
+
+Dans l'interface graphique de CloudShell, vous pouvez entrer `help` pour afficher les commandes CloudShell disponibles. Après avoir émis la `help` commande, la référence suivante s'affiche.
+
+Description:: NetApp CloudShell est une interface graphique intégrée à l'usine de workloads BlueXP  qui vous permet d'exécuter des commandes de la CLI AWS ou des commandes de l'interface de ligne de commande ONTAP dans un environnement de type shell. Il simule les sessions de terminal dans le navigateur, en fournissant des fonctions de terminal et en proxyant les messages via le backend dans l'usine de charge de travail. Il vous permet d'utiliser les identifiants AWS et ONTAP que vous avez fournis dans votre compte BlueXP .
+Commandes disponibles::
++
+--
+* `clear`
+* `help`
+* `[--fsx <fsxId>] <ontap-command> [parameters]`
+* `aws <aws-command> <aws-sub-command> [parameters]`
+
+
+--
+Contexte:: Chaque session de terminal s'exécute dans un contexte spécifique : informations d'identification, région et, éventuellement, système de fichiers FSX pour ONTAP.
++
+--
+Toutes les commandes AWS s'exécutent dans le contexte fourni. Les commandes AWS réussissent uniquement si les informations d'identification fournies disposent d'autorisations dans la région spécifiée.
+
+Vous pouvez spécifier des commandes ONTAP avec une option `fsxId`. Si vous fournissez une `fsxId` commande avec une ONTAP individuelle, cet ID remplace l'ID dans le contexte. Si la session de terminal n'a pas de contexte d'ID de système de fichiers FSX pour ONTAP, vous devez fournir `fsxId` chaque commande ONTAP.
+
+Pour mettre à jour différents détails de contexte, procédez comme suit : * pour modifier les informations d'identification : « utilisation des informations d'identification <credentialId> » * pour changer de région : « utilisation de la région <regionCode> » * pour modifier le système de fichiers FSX pour ONTAP : « utilisation de fsx <fileSystemId> »
+
+--
+Affichage des éléments::
++
+--
+* Pour afficher les informations d'identification disponibles : « Afficher les informations d'identification »
+* Pour afficher les régions disponibles : « Afficher les régions »
+* Pour afficher l'historique des commandes : « show history »
+
+
+--
+Variables:: Voici des exemples de définition et d'utilisation de variables. Si une valeur de variable contient des espaces, vous devez la définir entre guillemets.
++
+--
+* Pour définir une variable : $<variable> = <value>
+* Pour utiliser une variable : $<variable>
+* Exemple de définition d'une variable : $svm1 = svm123
+* Exemple d'utilisation d'une variable : --fsx filesystem-1 volumes show --vserver $svm1
+* Exemple de définition d'une variable avec la valeur de chaîne $comment1 = "Un commentaire avec des espaces"
+
+
+--
+Opérateurs:: Les opérateurs de shell tels que pipe `|`, l'exécution en arrière-plan `&` et la redirection `>` ne sont pas pris en charge. L'exécution de la commande échoue si vous incluez ces opérateurs.
 
 
 
@@ -54,13 +105,16 @@ Vous pouvez déployer CloudShell à partir de n'importe quel emplacement de la c
 +
 image:screenshot-deploy-cloudshell-session.png["Capture d'écran affichant une nouvelle session CloudShell."]
 
-. Entrez `help` pour afficher les commandes et instructions CloudShell disponibles ou reportez-vous aux documents de référence CLI suivants pour connaître les commandes disponibles :
+. Entrez `help` pour afficher les instructions et disponibles ou consultez les documents de référence de l'interface de ligne de commande suivants pour <<Commandes CloudShell,Commandes CloudShell>>connaître les commandes disponibles :
 +
 ** link:https://docs.aws.amazon.com/cli/latest/reference/["Référence CLI AWS"^]: Pour les commandes liées à FSX pour ONTAP, sélectionnez *fsx*.
 ** link:https://docs.netapp.com/us-en/ontap-cli/["Référence CLI ONTAP"^]
 
 
 . Exécutez des commandes dans la session CloudShell.
++
+Si une erreur se produit après l'émission d'une commande de l'interface de ligne de commande ONTAP, sélectionnez l'icône d'ampoule pour obtenir une brève réponse d'erreur générée par l'IA, avec une description de la défaillance, la cause de la défaillance et une résolution détaillée. Sélectionnez *Lire plus* pour plus de détails.
+
 
 
 --
@@ -80,6 +134,9 @@ Une session CloudShell s'ouvre dans le contexte du système de fichiers sélecti
 
 
 . Exécutez des commandes dans la session CloudShell.
++
+Si une erreur se produit après l'émission d'une commande de l'interface de ligne de commande ONTAP, sélectionnez l'icône d'ampoule pour obtenir une brève réponse d'erreur générée par l'IA, avec une description de la défaillance, la cause de la défaillance et une résolution détaillée. Sélectionnez *Lire plus* pour plus de détails.
+
 
 
 --
