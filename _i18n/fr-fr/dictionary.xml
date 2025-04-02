@@ -1129,5 +1129,5 @@
   <block id="e388026a0cea886de58a344e102aff29" category="cell">Extraire l'état d'association SSM pour un groupe d'instances EC2 gérées (nœuds SQL)</block>
   <block id="3320749a6854264e1889d72d7f41a0bf" category="cell">ssm:DescribeInstanceinformation</block>
   <block id="99e26a6b02df18a6d3fcaa201c832eff" category="section-title">2 avril 2025</block>
-  <block id="3721724ce177d539f2733638cda0c562" category="paragraph">L'autorisation suivante est désormais disponible en _read mode_ pour les bases de données : 'smm:DescribeInstanceInformations'.</block>
+  <block id="ecffd7b63fa9fc5c65235a6db0f2a9b2" category="paragraph">L'autorisation suivante est maintenant disponible en _read mode_ pour les bases de données :<block ref="3320749a6854264e1889d72d7f41a0bf" prefix=" " category="inline-code"></block>.</block>
 </blocks>
