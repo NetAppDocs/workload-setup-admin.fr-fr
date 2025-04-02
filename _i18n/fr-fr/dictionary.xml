@@ -1126,4 +1126,8 @@
   <block id="bc7864e70344eae19121f3e6408c5e04" category="list-text">Entrez<block ref="657f8b8da628ef83cf69101b6817150a" prefix=" " category="inline-code"></block> pour afficher les instructions et disponibles ou consultez les documents de référence de l'interface de ligne de commande suivants pour <block ref="0bdecf44265be755040a6284b4703b71" category="inline-xref-macro-rx"></block>connaître les commandes disponibles :</block>
   <block id="34b14d4981e88ee13798aea3eecf0674" category="paragraph">Si une erreur se produit après l'émission d'une commande de l'interface de ligne de commande ONTAP, sélectionnez l'icône d'ampoule pour obtenir une brève réponse d'erreur générée par l'IA, avec une description de la défaillance, la cause de la défaillance et une résolution détaillée. Sélectionnez *Lire plus* pour plus de détails.</block>
   <block id="ef74d01649997b60252254da8a1573fd" category="doc">CloudShell signale les réponses d'erreur générées par l'IA pour les commandes de l'interface de ligne de commande ONTAP</block>
+  <block id="e388026a0cea886de58a344e102aff29" category="cell">Extraire l'état d'association SSM pour un groupe d'instances EC2 gérées (nœuds SQL)</block>
+  <block id="3320749a6854264e1889d72d7f41a0bf" category="cell">ssm:DescribeInstanceinformation</block>
+  <block id="99e26a6b02df18a6d3fcaa201c832eff" category="section-title">2 avril 2025</block>
+  <block id="3721724ce177d539f2733638cda0c562" category="paragraph">L'autorisation suivante est désormais disponible en _read mode_ pour les bases de données : 'smm:DescribeInstanceInformations'.</block>
 </blocks>

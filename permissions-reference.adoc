@@ -419,6 +419,7 @@ Sélectionnez votre mode opérationnel pour afficher les politiques IAM requises
         "ssm:DescribePatchBaselines",
         "ssm:DescribeInstancePatchStates",
         "ssm:ListCommands",
+        "ssm:DescribeInstanceInformation",
         "fsx:ListTagsForResource"
       ],
       "Resource": [
@@ -437,7 +438,6 @@ Sélectionnez votre mode opérationnel pour afficher les politiques IAM requises
       "Resource": "arn:aws:ssm:*:*:parameter/netapp/wlmdb/*"
     },
     {
-      "Sid": "IAMGroup",
       "Effect": "Allow",
       "Action": [
         "iam:SimulatePrincipalPolicy"
@@ -954,6 +954,9 @@ Le tableau suivant affiche les autorisations pour les charges de travail de la b
 * Automatiser
 
 
+
+
+| Extraire l'état d'association SSM pour un groupe d'instances EC2 gérées (nœuds SQL) | ssm:DescribeInstanceinformation | Inventaire | Lecture 
 
 
 | Obtenez la liste des lignes de base de correctifs disponibles pour l'évaluation des correctifs du système d'exploitation | ssm:DescribePatchBasines | Optimisation  a| 
@@ -2227,6 +2230,12 @@ Le tableau suivant fournit des détails sur les autorisations pour les charges d
 == Journal des modifications
 
 Lorsque des autorisations sont ajoutées et supprimées, nous les noterons dans les sections ci-dessous.
+
+
+
+=== 2 avril 2025
+
+L'autorisation suivante est désormais disponible en _read mode_ pour les bases de données : 'smm:DescribeInstanceInformations'.
 
 
 
