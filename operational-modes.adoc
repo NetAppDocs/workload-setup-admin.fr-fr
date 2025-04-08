@@ -24,7 +24,7 @@ Mode lecture:: Améliore l'expérience du mode de base en ajoutant des autorisat
 Mode d'automatisation:: Représente une relation de confiance totale afin que l'usine de workloads soit affectée avec des autorisations complètes. Cela permet à l'usine de workloads d'exécuter et d'automatiser les opérations en votre nom dans AWS avec les identifiants attribués qui disposent des autorisations d'exécution requises.
 
 
-En savoir plus sur link:https://review.docs.netapp.com/us-en/workload-setup-admin_simulation-permission-update/permissions-reference.html["Autorisations pour l'usine de workloads BlueXP "].
+En savoir plus sur link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html["Autorisations pour l'usine de workloads BlueXP "].
 
 
 
