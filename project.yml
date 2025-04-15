@@ -23,7 +23,7 @@ sidebar:
     entries:
     - title: Découvrez les bases
       entries:
-      - title: Présentation de l'usine des charges de travail
+      - title: Découvrez l'usine de workloads BlueXP 
         url: "/workload-factory-overview.html"
       - title: Modes de fonctionnement
         url: "/operational-modes.html"
