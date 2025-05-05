@@ -11,7 +11,7 @@ summary: 'Codebox est un co-pilote IAC (Infrastructure-as-Code) qui aide les dé
 
 
 [role="lead"]
-Codebox est un co-pilote IAC (Infrastructure-as-Code) qui aide les développeurs et le DevOps à générer le code nécessaire pour exécuter toute opération prise en charge par l'usine de workloads. Codebox est aligné sur les modes de fonctionnement d'usine des charges de travail (Basic, Read et automate) et définit un chemin clair pour la préparation à l'exécution et fournit un catalogue d'automatisation pour une réutilisation future rapide.
+Codebox est un co-pilote IAC (Infrastructure-as-Code) qui aide les développeurs et le DevOps à générer le code nécessaire pour exécuter toute opération prise en charge par l'usine de workloads. Codebox est aligné sur les modes de fonctionnement d'usine de la charge de travail (Basic, Read-Only et Read/Write) et définit un chemin clair pour la préparation de l'exécution et fournit un catalogue d'automatisation pour une réutilisation future rapide.
 
 
 
@@ -23,7 +23,7 @@ Codebox offre deux fonctionnalités IAC clés :
 * _Codebox Automation Catalog_ affiche tous les travaux IAC enregistrés, ce qui vous permet de les référencer facilement pour une utilisation ultérieure. Les travaux du catalogue d'automatisation sont enregistrés en tant que modèles et affichés dans le contexte des ressources qui s'y appliquent.
 
 
-En outre, lors de la configuration des informations d'identification d'usine des workloads, Codebox affiche de manière dynamique les autorisations AWS requises pour créer des règles IAM. Les autorisations sont fournies pour chaque fonctionnalité d'usine de workloads que vous prévoyez d'utiliser (bases de données, IA, FSX pour ONTAP, etc.). Elles sont personnalisées selon que les utilisateurs de la règle bénéficieront d'autorisations en lecture seule ou d'autorisations d'exploitation complètes. Il vous suffit de copier les autorisations de Codebox, puis de les coller dans la console AWS Management Console de sorte que cette fabrique de workloads dispose des autorisations appropriées pour gérer vos workloads.
+En outre, lors de la configuration des informations d'identification d'usine des workloads, Codebox affiche de manière dynamique les autorisations AWS requises pour créer des règles IAM. Les autorisations sont fournies pour chaque fonctionnalité d'usine de workloads que vous prévoyez d'utiliser (bases de données, IA, FSX pour ONTAP, etc.). Elles sont personnalisées selon que les utilisateurs de la règle bénéficieront d'autorisations en lecture seule ou d'autorisations complètes en lecture/écriture. Il vous suffit de copier les autorisations de Codebox, puis de les coller dans la console AWS Management Console de sorte que cette fabrique de workloads dispose des autorisations appropriées pour gérer vos workloads.
 
 
 

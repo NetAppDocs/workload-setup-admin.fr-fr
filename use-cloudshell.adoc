@@ -27,6 +27,7 @@ Les fonctionnalités de CloudShell sont les suivantes :
 * Persistance du contenu de la dernière session : rouvrez la dernière session si vous la fermez par erreur
 * Préférences des paramètres : modifiez la taille de la police et le type de sortie
 * Réponses d'erreur générées par l'IA pour les commandes de l'interface de ligne de commande ONTAP
+* Prise en charge de la saisie automatique : commencez à taper une commande et utilisez la touche *Tab* pour afficher les options disponibles
 
 
 

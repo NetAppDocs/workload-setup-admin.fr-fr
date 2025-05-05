@@ -20,8 +20,8 @@ Workload Factory propose trois modes opérationnels qui vous permettent de contr
 Les modes opérationnels fournissent une organisation logique des fonctionnalités et des capacités offertes par l'usine de charges de travail, en fonction du niveau de confiance que vous attribuez. En modes opérationnels, l'objectif principal est de communiquer clairement quelles tâches l'usine de workloads peut ou ne peut pas exécuter au sein de votre compte AWS.
 
 Mode de base:: Relation « zéro confiance » dans laquelle aucune autorisation AWS n'est attribuée à l'usine de workloads. Il est conçu pour les premières explorations de l'usine de workloads et l'utilisation des différents assistants pour créer l'IAC (Infrastructure as Code) nécessaire. Vous pouvez copier le code et l'utiliser dans AWS en saisissant manuellement vos identifiants AWS.
-Mode lecture:: Améliore l'expérience du mode de base en ajoutant des autorisations en lecture seule afin que les modèles IAC soient remplis avec vos variables spécifiques (par exemple, VPC, groupes de sécurité, etc.). Cela vous permet d'exécuter le processus IAC directement depuis votre compte AWS sans autorisations de modification pour l'usine de workloads.
-Mode d'automatisation:: Représente une relation de confiance totale afin que l'usine de workloads soit affectée avec des autorisations complètes. Cela permet à l'usine de workloads d'exécuter et d'automatiser les opérations en votre nom dans AWS avec les identifiants attribués qui disposent des autorisations d'exécution requises.
+Mode lecture seule:: Améliore l'expérience du mode de base en ajoutant des autorisations en lecture seule afin que les modèles IAC soient remplis avec vos variables spécifiques (par exemple, VPC, groupes de sécurité, etc.). Cela vous permet d'exécuter le processus IAC directement depuis votre compte AWS sans autorisations de modification pour l'usine de workloads.
+Mode lecture/écriture:: Représente une relation de confiance totale afin que l'usine de workloads soit affectée avec des autorisations complètes. Cela permet à l'usine de workloads d'exécuter et d'automatiser les opérations en votre nom dans AWS avec les identifiants attribués qui disposent des autorisations d'exécution requises.
 
 
 En savoir plus sur link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html["Autorisations pour l'usine de workloads BlueXP "].
@@ -40,10 +40,10 @@ Les fonctions disponibles à l'aide de chacun des modes augmentent avec chaque m
 | Basique | Non | Modèle IAC au minimum complet | Non | Non 
 
 
-| Lecture | Non | Modèle IAC modérément complet | Oui | Oui 
+| Lecture seule | Non | Modèle IAC modérément complet | Oui | Oui 
 
 
-| Automatiser | Automatisation totale | Modèle IAC complet avec automatisation complète | Oui | Oui 
+| Lecture/écriture | Automatisation totale | Modèle IAC complet avec automatisation complète | Oui | Oui 
 |===
 
 
@@ -59,10 +59,10 @@ Il n'y a pas de sélecteur que vous devez définir en usine de la charge de trav
 | Basique | Non requis | Non requis 
 
 
-| Lecture | Lecture seule | Non requis 
+| Lecture seule | Lecture seule | Non requis 
 
 
-| Automatiser | Informations d'identification en lecture-écriture | Obligatoire 
+| Lecture/écriture | Informations d'identification en lecture-écriture | Obligatoire 
 |===
 https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["En savoir plus sur les liens"^]
 
@@ -70,7 +70,7 @@ https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["En savoir 
 
 === Exemples de mode opérationnel
 
-Vous pouvez configurer vos informations d'identification pour fournir un mode pour un composant de charge de travail et un autre mode pour un autre composant. Par exemple, vous pouvez configurer le mode automatisé pour les opérations dans lesquelles vous déployez et gérez des systèmes de fichiers FSX pour ONTAP, mais uniquement pour configurer le mode lecture pour créer et déployer des workloads de base de données à l'aide de l'usine de workloads.
+Vous pouvez configurer vos informations d'identification pour fournir un mode pour un composant de charge de travail et un autre mode pour un autre composant. Par exemple, vous pouvez configurer le mode lecture/écriture pour les opérations dans lesquelles vous déployez et gérez des systèmes de fichiers FSX pour ONTAP, mais seulement pour configurer le mode lecture pour créer et déployer des workloads de base de données à l'aide de l'usine de workloads.
 
 Vous pouvez offrir ces fonctionnalités dans un seul ensemble d'informations d'identification dans un compte d'usine de charge de travail ou créer plusieurs ensembles d'informations d'identification lorsque chaque information d'identification fournit des fonctionnalités de déploiement de charge de travail uniques.
 
@@ -78,11 +78,11 @@ Vous pouvez offrir ces fonctionnalités dans un seul ensemble d'informations d'i
 
 ==== Exemple 1
 
-Les utilisateurs de comptes qui utilisent les identifiants donnés bénéficient des autorisations suivantes auront un contrôle total (mode automatisé) pour créer des systèmes de fichiers FSX pour ONTAP, déployer des bases de données et afficher d'autres types de stockage AWS utilisés dans le compte.
+Les utilisateurs de comptes qui utilisent les informations d'identification données avec les autorisations suivantes auront un contrôle total (mode lecture/écriture) pour créer des systèmes de fichiers FSX pour ONTAP, déployer des bases de données et afficher d'autres types de stockage AWS utilisés dans le compte.
 
 image:screenshot-credentials1.png["Capture d'écran montrant un ensemble d'informations d'identification qui fournissent deux types d'autorisations de charge de travail."]
 
-Cependant, ils ne disposent pas de contrôles d'automatisation pour la création et le déploiement de workloads VMware (mode de base) à partir de l'usine de workloads. Pour créer des workloads VMware, ils doivent copier le code de la Codebox, se connecter manuellement à leur compte AWS et remplir manuellement les entrées manquantes dans le code généré pour utiliser cette fonctionnalité.
+Cependant, ils ne disposent pas de contrôles d'automatisation pour la création et le déploiement de charges de travail VMware (mode de base) à partir de l'usine des charges de travail. Pour créer des workloads VMware, ils doivent copier le code de la Codebox, se connecter manuellement à leur compte AWS et remplir manuellement les entrées manquantes dans le code généré pour utiliser cette fonctionnalité.
 
 
 

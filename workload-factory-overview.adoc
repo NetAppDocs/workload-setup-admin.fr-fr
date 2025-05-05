@@ -87,8 +87,8 @@ link:manage-service-accounts.html["Découvrez comment gérer des comptes de serv
 Workload Factory propose trois modes opérationnels qui vous permettent de contrôler soigneusement l'accès à votre environnement cloud et d'attribuer une confiance incrémentielle à l'usine de workloads en fonction de vos stratégies IT.
 
 * *Le mode de base* représente une relation de confiance zéro et est conçu pour l'exploration précoce de l'usine de charge de travail et l'utilisation des divers assistants pour créer l'infrastructure en tant que code nécessaire. Ce code peut être copié et utilisé manuellement par l'utilisateur avec ses informations d'identification AWS pertinentes.
-* *Le mode lecture* améliore l'expérience du mode de base en aidant l'utilisateur à détecter diverses ressources et outils et, par conséquent, à compléter les assistants pertinents.
-* *Le mode d'automatisation* représente une relation de confiance totale et est conçu pour exécuter et automatiser au nom de l'utilisateur avec les informations d'identification attribuées qui ont les autorisations requises et validées pour l'exécution.
+* *Le mode lecture seule* améliore l'expérience du mode de base en aidant l'utilisateur à détecter diverses ressources et outils et, par conséquent, en aidant à compléter les assistants pertinents.
+* *Le mode lecture/écriture* représente une relation de confiance totale et est conçu pour exécuter et automatiser au nom de l'utilisateur avec les informations d'identification attribuées qui ont les autorisations requises et validées pour l'exécution.
 
 
 link:operational-modes.html["En savoir plus sur les modes de fonctionnement d'usine des charges de travail"].
@@ -127,18 +127,7 @@ L'usine de workloads fournit des calculateurs d'économies. Vous pouvez donc com
 * link:https://docs.netapp.com/us-en/workload-databases/explore-savings.html["Découvrez comment réaliser des économies pour vos charges de travail de base de données"^]
 
 
-
-
-== Outils pour utiliser l'usine de charge de travail
-
-Vous pouvez utiliser l'usine de workloads BlueXP  avec les outils suivants :
-
-* *Workload Factory console*: La console de fabrique de charge de travail fournit une interface visuelle qui vous donne une vue globale de vos applications et projets
-* *Console BlueXP * : la console BlueXP  offre une interface hybride pour que vous puissiez utiliser la fabrique de workloads BlueXP  avec d'autres services BlueXP
-* *API REST* : les API REST d'usine de workloads vous permettent de déployer et de gérer vos systèmes de fichiers FSX pour ONTAP et d'autres ressources AWS
-* *CloudFormation* : le code AWS CloudFormation vous permet d'effectuer les actions que vous avez définies dans la console d'usine de la charge de travail pour modéliser, provisionner et gérer les ressources AWS et tierces à partir de la pile CloudFormation de votre compte AWS
-* *Terraform BlueXP  Workload Factory Provider*: Terraform vous permet de créer et de gérer des flux de travail d'infrastructure générés dans la console d'usine de la charge de travail
-
+https://raw.githubusercontent.com/NetAppDocs/workload-family/main/_include/learn-about-tools.adoc[]
 
 
 
