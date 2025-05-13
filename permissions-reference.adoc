@@ -421,6 +421,7 @@ Sélectionnez votre mode opérationnel pour afficher les politiques IAM requises
         "ssm:ListCommands",
         "ssm:DescribeInstanceInformation",
         "fsx:ListTagsForResource"
+        "logs:DescribeLogGroups"
       ],
       "Resource": [
         "*"
@@ -568,6 +569,7 @@ Sélectionnez votre mode opérationnel pour afficher les politiques IAM requises
         "logs:ListLogDeliveries",
         "logs:PutLogEvents",
         "logs:TagResource",
+        "logs:PutRetentionPolicy",
         "servicequotas:ListServiceQuotas",
         "sns:ListTopics",
         "sns:Publish",
@@ -674,17 +676,6 @@ Le tableau suivant affiche les autorisations pour les charges de travail de la b
 [cols="2, 2, 1, 1"]
 |===
 | Objectif | Action | Cas d'utilisation | Mode 
-
-
-| L'usine de charge de travail passe aux journaux Amazon CloudWatch pour l'instance SQL lorsqu'une troncature de sortie SSM se produit. | Journaux:GetLogEvents  a| 
-* Évaluation du stockage
-* Inventaire
-
- a| 
-* Lecture seule
-* Lecture/écriture
-
-
 
 
 | Obtenez des statistiques de metrics pour FSX for ONTAP, EBS et FSX for Windows File Server | cloudwatch:GetMetricStatistics  a| 
@@ -1345,6 +1336,35 @@ Le tableau suivant affiche les autorisations pour les charges de travail de la b
 
 
 | Journaux:TagResource | Déploiement | Lecture/écriture 
+
+
+| L'usine de charge de travail passe aux journaux Amazon CloudWatch pour l'instance SQL lorsqu'une troncature de sortie SSM se produit | Journaux:GetLogEvents  a| 
+* Évaluation du stockage (optimisation)
+* Inventaire
+
+ a| 
+* Lecture seule
+* Lecture/écriture
+
+
+
+
+| Autoriser l'usine de la charge de travail à obtenir les groupes de journaux actuels et vérifier que la rétention est définie pour les groupes de journaux créés par l'usine de la charge de travail | Journaux:DescribeLogGroups  a| 
+* Évaluation du stockage (optimisation)
+* Inventaire
+
+| Lecture seule 
+
+
+| Permet à l'usine de la charge de travail de définir une stratégie de conservation d'un jour pour les groupes de journaux créés par l'usine de la charge de travail afin d'éviter l'accumulation inutile de flux de journaux pour les sorties de commandes SSM | Journaux:PutRetentionPolicy  a| 
+* Évaluation du stockage (optimisation)
+* Inventaire
+
+ a| 
+* Lecture seule
+* Lecture/écriture
+
+
 
 
 | Créez des secrets dans un compte utilisateur pour les informations d'identification fournies pour SQL, Domain et FSX pour ONTAP | Servicecotas:ListServiceQuotas | Déploiement | Lecture/écriture 
@@ -2284,7 +2304,14 @@ Lorsque des autorisations sont ajoutées et supprimées, nous les noterons dans 
 
 L'autorisation suivante est maintenant disponible en mode _Read/Write_ pour GenAI: `qbusiness:ListApplications`.
 
-L'autorisation suivante est maintenant disponible en mode _lecture seule_ pour les bases de données : `logs:GetLogEvents`.
+Les autorisations suivantes sont désormais disponibles en mode _lecture seule_ pour les bases de données :
+
+* `logs:GetLogEvents`
+* `logs:DescribeLogGroups`
+
+
+L'autorisation suivante est maintenant disponible en mode _Read/Write_ pour les bases de données :
+`logs:PutRetentionPolicy`.
 
 
 
