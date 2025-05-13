@@ -1356,7 +1356,7 @@ Le tableau suivant affiche les autorisations pour les charges de travail de la b
 | Lecture seule 
 
 
-| Permet à l'usine de la charge de travail de définir une stratégie de conservation d'un jour pour les groupes de journaux créés par l'usine de la charge de travail afin d'éviter l'accumulation inutile de flux de journaux pour les sorties de commandes SSM | Journaux:PutRetentionPolicy  a| 
+| Permettre à l'usine de charge de travail de définir une stratégie de conservation d'un jour pour les groupes de journaux créés par l'usine de charge de travail afin d'éviter l'accumulation inutile de flux de journaux pour les sorties de commande SSM | Journaux:PutRetentionPolicy  a| 
 * Évaluation du stockage (optimisation)
 * Inventaire
 
