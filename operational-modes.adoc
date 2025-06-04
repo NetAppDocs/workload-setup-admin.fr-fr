@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: operational-modes.html 
-keywords: modes, zero-trust, full-trust, read, basic, automate, aws, aws accounts, keys, multiple accounts, permissions, aws permissions, policy, policies, credentials 
-summary: 'Workload Factory propose trois modes opérationnels qui vous permettent de contrôler soigneusement l"accès entre l"usine de workloads et votre environnement cloud en fonction de vos stratégies IT. Le mode opérationnel que vous utilisez dépend du niveau d"autorisations AWS que vous fournissez à l"usine de vos workloads.' 
+keywords: modes, zero-trust, full-trust, read-only, basic, read/write, aws, aws accounts, keys, multiple accounts, permissions, aws permissions, policy, policies, credentials 
+summary: 'Workload Factory propose trois modes opérationnels qui vous permettent de contrôler soigneusement l"accès entre l"usine de workloads et votre environnement cloud en fonction de vos stratégies IT.' 
 ---
 = En savoir plus sur les modes opérationnels et les identifiants AWS
 :allow-uri-read: 
@@ -62,7 +62,7 @@ Il n'y a pas de sélecteur que vous devez définir en usine de la charge de trav
 | Lecture seule | Lecture seule | Non requis 
 
 
-| Lecture/écriture | Informations d'identification en lecture-écriture | Obligatoire 
+| Lecture/écriture | Informations d'identification en lecture/écriture | Obligatoire 
 |===
 https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["En savoir plus sur les liens"^]
 
@@ -70,7 +70,7 @@ https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["En savoir 
 
 === Exemples de mode opérationnel
 
-Vous pouvez configurer vos informations d'identification pour fournir un mode pour un composant de charge de travail et un autre mode pour un autre composant. Par exemple, vous pouvez configurer le mode lecture/écriture pour les opérations dans lesquelles vous déployez et gérez des systèmes de fichiers FSX pour ONTAP, mais seulement pour configurer le mode lecture pour créer et déployer des workloads de base de données à l'aide de l'usine de workloads.
+Vous pouvez configurer vos informations d'identification pour fournir un mode pour un composant de charge de travail et un autre mode pour un autre composant. Par exemple, vous pouvez configurer le mode lecture/écriture pour les opérations dans lesquelles vous déployez et gérez les systèmes de fichiers FSx for ONTAP, mais configurer uniquement le mode lecture seule pour la création et le déploiement de charges de travail de base de données à l'aide de la fabrique de charges de travail.
 
 Vous pouvez offrir ces fonctionnalités dans un seul ensemble d'informations d'identification dans un compte d'usine de charge de travail ou créer plusieurs ensembles d'informations d'identification lorsque chaque information d'identification fournit des fonctionnalités de déploiement de charge de travail uniques.
 
@@ -78,7 +78,7 @@ Vous pouvez offrir ces fonctionnalités dans un seul ensemble d'informations d'i
 
 ==== Exemple 1
 
-Les utilisateurs de comptes qui utilisent les informations d'identification données avec les autorisations suivantes auront un contrôle total (mode lecture/écriture) pour créer des systèmes de fichiers FSX pour ONTAP, déployer des bases de données et afficher d'autres types de stockage AWS utilisés dans le compte.
+Les utilisateurs de compte qui utilisent les informations d'identification auxquelles ont été accordées les autorisations suivantes auront un contrôle total (mode lecture/écriture) pour créer des systèmes de fichiers FSx pour ONTAP, déployer des bases de données et afficher d'autres types de stockage AWS utilisés dans le compte.
 
 image:screenshot-credentials1.png["Capture d'écran montrant un ensemble d'informations d'identification qui fournissent deux types d'autorisations de charge de travail."]
 
@@ -90,7 +90,7 @@ Cependant, ils ne disposent pas de contrôles d'automatisation pour la création
 
 Dans ce cas, l'utilisateur a créé deux ensembles d'informations d'identification pour permettre différentes capacités opérationnelles en fonction de l'ensemble d'informations d'identification sélectionné. Généralement, chaque ensemble d'informations d'identification est associé à un compte AWS différent.
 
-Le premier ensemble d'informations d'identification inclut des autorisations qui donnent aux utilisateurs un contrôle total pour la création des systèmes de fichiers FSX pour ONTAP (et la possibilité d'afficher les autres types de stockage AWS utilisés dans le compte), mais uniquement des autorisations de lecture lorsque vous travaillez avec des workloads VMware.
+Le premier ensemble d'informations d'identification inclut des autorisations qui donnent aux utilisateurs un contrôle total pour la création de systèmes de fichiers FSx pour ONTAP (et la possibilité d'afficher d'autres types de stockage AWS utilisés dans le compte), mais uniquement des autorisations en lecture seule lors de l'utilisation de charges de travail VMware.
 
 image:screenshot-credentials-comparison-example-1.png["Capture d'écran montrant un ensemble d'informations d'identification qui fournissent deux types d'autorisations de charge de travail."]
 

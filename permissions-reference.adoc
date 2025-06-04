@@ -20,7 +20,7 @@ Pour utiliser les fonctionnalités et les services d'usine des workloads BlueXP�
 
 == Pourquoi utiliser des autorisations
 
-Lorsque vous fournissez des autorisations de mode lecture seule ou lecture/écriture, l'usine de workloads associe une règle à l'instance avec des autorisations pour gérer les ressources et les processus au sein de ce compte AWS. Ainsi, l'usine de workloads peut exécuter diverses opérations depuis la découverte de vos environnements de stockage jusqu'au déploiement des ressources AWS, telles que les systèmes de fichiers dans des bases de connaissances ou de gestion du stockage pour les charges de travail GenAI.
+Lorsque vous fournissez des autorisations en mode _lecture seule_ ou _lecture/écriture_, Workload Factory attache une stratégie à l'instance avec des autorisations pour gérer les ressources et les processus au sein de ce compte AWS. Ainsi, l'usine de workloads peut exécuter diverses opérations depuis la découverte de vos environnements de stockage jusqu'au déploiement des ressources AWS, telles que les systèmes de fichiers dans des bases de connaissances ou de gestion du stockage pour les charges de travail GenAI.
 
 Pour les charges de travail de base de données, par exemple, lorsque l'usine de workloads est accordée avec les autorisations requises, il analyse toutes les instances EC2 d'un compte et d'une région donnés et filtre tous les serveurs Windows. Si l'agent AWS Systems Manager (SSM) est installé et exécuté sur l'hôte et que la mise en réseau de System Manager est configurée correctement, l'usine de la charge de travail peut accéder à la machine Windows et vérifier si le logiciel SQL Server est installé ou non.
 
@@ -1512,7 +1512,7 @@ Le tableau suivant affiche les autorisations pour les charges de travail de la b
 
 Les règles IAM pour les workloads VMware fournissent les autorisations dont l'usine de workloads VMware a besoin pour gérer les ressources et les processus dans votre environnement de cloud public en fonction du mode opérationnel dans lequel vous travaillez.
 
-Les règles IAM GenAI sont uniquement disponibles en mode lecture/écriture :
+Les politiques IAM GenAI ne sont disponibles qu'en mode _lecture/écriture_ :
 
 .Règles IAM pour les workloads GenAI
 [%collapsible]
@@ -2327,14 +2327,14 @@ Les autorisations suivantes sont désormais disponibles en mode _lecture seule_ 
 * `logs:DescribeLogGroups`
 
 
-L'autorisation suivante est maintenant disponible en mode _Read/Write_ pour les bases de données :
-`logs:PutRetentionPolicy`.
+L'autorisation suivante est désormais disponible en mode _lecture/écriture_ pour les bases de données : 
+`logs:PutRetentionPolicy` .
 
 
 
 === 2 avril 2025
 
-L'autorisation suivante est maintenant disponible en mode _lecture seule_ pour les bases de données : `ssm:DescribeInstanceInformation`.
+L'autorisation suivante est désormais disponible en mode _lecture seule_ pour les bases de données :  `ssm:DescribeInstanceInformation` .
 
 
 
@@ -2344,7 +2344,7 @@ L'autorisation suivante est maintenant disponible en mode _lecture seule_ pour l
 
 ==== Mise à jour des autorisations de charge de travail GenAI
 
-Les autorisations suivantes sont désormais disponibles en _mode lecture/écriture_ pour GenAI :
+Les autorisations suivantes sont désormais disponibles en mode lecture/écriture pour GenAI :
 
 * `bedrock:PutModelInvocationLoggingConfiguration`
 * `iam:AttachRolePolicy`
@@ -2353,7 +2353,7 @@ Les autorisations suivantes sont désormais disponibles en _mode lecture/écritu
 * `bedrock:ListInferenceProfiles`
 
 
-L'autorisation suivante a été supprimée de _Read/Write mode_ pour GenAI: `Bedrock:GetFoundationModel`.
+L'autorisation suivante a été supprimée du _mode lecture/écriture_ pour GenAI :  `Bedrock:GetFoundationModel` .
 
 
 
@@ -2365,10 +2365,10 @@ L'autorisation suivante a été supprimée de _Read/Write mode_ pour GenAI: `Bed
 
 === 2 mars 2025
 
-L'autorisation suivante est maintenant disponible en mode _Read/Write_ pour GenAI: `bedrock:GetFoundationModel`.
+L'autorisation suivante est désormais disponible en mode _lecture/écriture_ pour GenAI :  `bedrock:GetFoundationModel` .
 
 
 
 === 3 février 2025
 
-L'autorisation suivante est maintenant disponible en mode _lecture seule_ pour les bases de données : `iam:SimulatePrincipalPolicy`.
+L'autorisation suivante est désormais disponible en mode _lecture seule_ pour les bases de données :  `iam:SimulatePrincipalPolicy` .

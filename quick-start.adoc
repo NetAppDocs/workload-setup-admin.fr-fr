@@ -24,7 +24,7 @@ link:sign-up-saas.html["Découvrez comment vous inscrire et créer un compte"].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Deux"] Ajoutez les identifiants AWS à l'usine des workloads
 [role="quick-margin-para"]
-Cette étape est facultative. Vous pouvez utiliser l'usine de workloads en _Basic_ mode sans ajouter d'informations d'identification pour accéder à votre compte AWS. L'ajout des identifiants AWS à l'usine de workloads en mode _lecture seule_ ou _lecture/écriture_ mode donne à votre compte d'usine de workloads les autorisations nécessaires pour créer et gérer des systèmes de fichiers FSX pour ONTAP, et pour déployer et gérer des workloads spécifiques, tels que des bases de données et GenAI.
+Cette étape est facultative. Vous pouvez utiliser l'usine de workloads en _Basic_ mode sans ajouter d'informations d'identification pour accéder à votre compte AWS. L'ajout d'informations d'identification AWS à la fabrique de charges de travail en mode _lecture seule_ ou en mode _lecture/écriture_ donne à votre compte de fabrique de charges de travail les autorisations nécessaires pour créer et gérer les systèmes de fichiers FSx pour ONTAP et pour déployer et gérer des charges de travail spécifiques, telles que les bases de données et GenAI.
 
 [role="quick-margin-para"]
 link:add-credentials.html["Découvrez comment ajouter des informations d'identification à votre compte"].

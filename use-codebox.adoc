@@ -13,7 +13,7 @@ summary: 'Vous pouvez utiliser Codebox pour générer le code nécessaire à l"e
 [role="lead"]
 Vous pouvez utiliser Codebox pour générer le code nécessaire à l'exécution de toute opération prise en charge par l'usine de charges de travail BlueXP . Vous pouvez générer du code qui peut être consommé et exécuté à l'aide des API REST d'usine des workloads, de l'interface de ligne de commande AWS et d'AWS CloudFormation.
 
-Codebox est aligné avec les modes de fonctionnement d'usine de la charge de travail (Basic, Read-Only et Read/Write) en remplissant les données appropriées dans le code en fonction des autorisations AWS fournies dans le compte d'usine de la charge de travail pour chaque utilisateur. Le code peut être utilisé comme un modèle dans lequel vous pouvez saisir des informations manquantes (par exemple, des informations d'identification) ou personnaliser certaines données avant d'exécuter le code.
+Codebox est aligné sur les modes de fonctionnement de l'usine de charge de travail (_basic_, _read-only_ et _read/write_) en remplissant les données appropriées dans le code en fonction des autorisations AWS fournies dans le compte de l'usine de charge de travail pour chaque utilisateur. Le code peut être utilisé comme un modèle dans lequel vous pouvez saisir des informations manquantes (par exemple, des informations d'identification) ou personnaliser certaines données avant d'exécuter le code.
 
 
 
