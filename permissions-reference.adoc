@@ -1762,6 +1762,14 @@ Les règles IAM GenAI sont uniquement disponibles en mode lecture/écriture :
       "Resource": "*"
     },
     {
+      "Sid": "S3",
+      "Effect": "Allow",
+      "Action": [
+        "s3:ListAllMyBuckets"
+      ],
+      "Resource": "*"
+    },
+    {
       "Effect": "Allow",
       "Action": [
         "iam:SimulatePrincipalPolicy"
@@ -1792,6 +1800,9 @@ Le tableau suivant fournit des détails sur les autorisations pour les charges d
 
 
 | Afficher les balises du moteur ai | ec2:Etiquettes descriptives | Déploiement | Lecture/écriture 
+
+
+| Lister les buckets S3 | s3:ListAllMyseaux | Déploiement | Lecture/écriture 
 
 
 | Répertoriez les terminaux VPC avant la création de la pile du moteur d'IA | ec2:CreateVpcEndpoint | Déploiement | Lecture/écriture 
@@ -2297,6 +2308,12 @@ Le tableau suivant fournit des détails sur les autorisations pour les charges d
 == Journal des modifications
 
 Lorsque des autorisations sont ajoutées et supprimées, nous les noterons dans les sections ci-dessous.
+
+
+
+=== 3 juin 2025
+
+L'autorisation suivante est maintenant disponible en mode _Read/Write_ pour GenAI: `s3:ListAllMyBuckets`.
 
 
 
