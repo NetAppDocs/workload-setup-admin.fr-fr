@@ -406,12 +406,9 @@
   <block id="7c885f0d7689b3eaa27baf9e745bd117" category="list-text">*Console BlueXP * : offre une expérience hybride dans laquelle vous pouvez gérer vos environnements de travail et vos charges de travail au même endroit.</block>
   <block id="d6cbd5ec207032cc9ad715f4df3e1ee7" category="list-text">*Workload Factory console* : offre une expérience d'usine de workloads dédiée aux workloads exécutés sur Amazon FSX pour NetApp ONTAP.</block>
   <block id="bf8cfad5e1358abe0fd4e5fef21dd9f4" category="section-title">Accéder à l'usine de la charge de travail dans la console BlueXP </block>
-  <block id="3157f6c73ade7ecbbcac5d33056a5d8f" category="paragraph">Vous pouvez accéder à l'usine des workloads à partir de BlueXP . En plus de l'utilisation de BluXP Workload Factory pour les fonctionnalités de stockage et de workloads AWS, vous pouvez également accéder à d'autres services de plateforme BlueXP  tels que la copie et la synchronisation, le portefeuille digital et bien plus encore.</block>
-  <block id="24ce5e66a7f3b6327369dda310753d6b" category="list-text">Connectez-vous au <block ref="fe6e1b2479e1125e03c713ad62b5343f" category="inline-link-macro-rx"></block></block>
   <block id="e9b538368b121a44c13005613e75a0bc" category="list-text">Naviguez jusqu'à la charge de travail que vous souhaitez utiliser et sélectionnez une option pour commencer.</block>
   <block id="61a543bd3a5368f0882b3ec3b11123da" category="section-title">Accédez à l'usine de charge de travail dans la console Workload Factory</block>
   <block id="3e17b2b248f83510c2368a4d20dddc41" category="paragraph">Vous pouvez accéder à l'usine de la charge de travail depuis la console Workload Factory.</block>
-  <block id="a5d4e8da7b06fff401452c5df2871465" category="list-text">Connectez-vous au <block ref="391de7a3bac2bc77fa53dffb3f53801a" category="inline-link-macro-rx"></block></block>
   <block id="8f4910cf6ea086594183ea8e5bb4539b" category="list-text">Sélectionnez *workloads* dans le menu de navigation de gauche.</block>
   <block id="08b9f59ea9ae19318566e44120b9fb3f" category="list-text">Sélectionnez *Home* pour afficher toutes les charges de travail ou sélectionnez une charge de travail comme *Storage* ou *Databases*.</block>
   <block id="cc8da163faea82ccff66b041eb816fa5" category="list-text">Sélectionnez une option pour commencer dans la charge de travail.</block>
@@ -1158,4 +1155,66 @@
   <block id="55f22225cc1ccda19b672a8426d01c4f" category="paragraph">Cette étape est facultative. Vous pouvez utiliser l'usine de workloads en _Basic_ mode sans ajouter d'informations d'identification pour accéder à votre compte AWS. L'ajout d'informations d'identification AWS à la fabrique de charges de travail en mode _lecture seule_ ou en mode _lecture/écriture_ donne à votre compte de fabrique de charges de travail les autorisations nécessaires pour créer et gérer les systèmes de fichiers FSx pour ONTAP et pour déployer et gérer des charges de travail spécifiques, telles que les bases de données et GenAI.</block>
   <block id="645b29e11b1f5ed9b9e706422adfcc73" category="paragraph">Codebox est aligné sur les modes de fonctionnement de l'usine de charge de travail (_basic_, _read-only_ et _read/write_) en remplissant les données appropriées dans le code en fonction des autorisations AWS fournies dans le compte de l'usine de charge de travail pour chaque utilisateur. Le code peut être utilisé comme un modèle dans lequel vous pouvez saisir des informations manquantes (par exemple, des informations d'identification) ou personnaliser certaines données avant d'exécuter le code.</block>
   <block id="81e8b2bcfbc370ff332013804c18a385" category="paragraph">Codebox est aligné sur les modes de fonctionnement de l'usine de charge de travail (_basic_, _read-only_ et _read/write_) et définit un chemin clair pour la préparation à l'exécution ainsi qu'un catalogue d'automatisation pour une réutilisation future rapide.</block>
+  <block id="64c17706e0528a5c44c7beee628cc101" category="doc">Prise en charge du service de notification de l'usine de charge de travail BlueXP</block>
+  <block id="c0ae6f0ec7cb1322a1c6b72f77e783f2" category="paragraph">Le service de notification de l'usine de charge de travail BlueXP permet à l'usine de charge de travail d'envoyer des notifications au service d'alertes BlueXP ou à une rubrique Amazon SNS. Les notifications envoyées aux alertes BlueXP apparaissent dans le panneau des alertes BlueXP. Lorsque l'usine de charge de travail publie des notifications sur une rubrique Amazon SNS, les abonnés à cette rubrique (tels que les personnes ou d'autres applications) reçoivent les notifications aux points de terminaison configurés pour cette rubrique (tels que les e-mails ou les SMS).</block>
+  <block id="76490568879e4523bb6bd6d8263472a9" category="inline-link">Configurer les notifications de l'usine de charge de travail BlueXP</block>
+  <block id="533a43c23a4d81612b2392465e022a51" category="paragraph"><block ref="533a43c23a4d81612b2392465e022a51" category="inline-link-rx"></block></block>
+  <block id="2dda35be60147096ab6dcce42dede6b8" category="summary">Vous pouvez configurer la fabrique de charges de travail BlueXP pour envoyer des notifications à une personne ou à une autre application lorsque certains types d'événements se produisent.</block>
+  <block id="72d9710675d7970263ff88acdf0fcb66" category="paragraph">Vous pouvez configurer le service de notification de la fabrique de charges de travail BlueXP pour envoyer des notifications au service d'alertes BlueXP ou à une rubrique Amazon SNS. Les notifications envoyées aux alertes BlueXP apparaissent dans le panneau des alertes BlueXP. Lorsque la fabrique de charges de travail publie des notifications dans une rubrique Amazon SNS, les abonnés à cette rubrique (tels que les personnes ou d'autres applications) reçoivent les notifications aux points de terminaison configurés pour cette rubrique (tels que les e-mails ou les SMS).</block>
+  <block id="0a7323d1562ccdc63a56a3101b1dfc69" category="section-title">Types de notifications et messages</block>
+  <block id="5a7513075d19cc4be93d3cf73f88603e" category="paragraph">Workload Factory envoie des notifications pour les événements suivants :</block>
+  <block id="a4ecfc70574394990cf17bd83df499f7" category="cell">Événement</block>
+  <block id="9e89e978c220a2a733d027866cb12907" category="cell">Type de notification</block>
+  <block id="007cc9547ae8884ad597cd92ba505422" category="cell">Gravité</block>
+  <block id="68eaabb91b0d1c52be44217a24f27b91" category="cell">Charge de travail</block>
+  <block id="53a002434dc37d0a5f8e2aac58da6296" category="cell">Type de ressource</block>
+  <block id="05c77d02041a1213dcefbe713f2f79fc" category="cell">Certaines instances de base de données de votre compte ne sont pas bien architecturées</block>
+  <block id="11091ad57516013f76674cb4ef3a9a6a" category="cell">Toutes les instances Microsoft SQL Server de votre compte ont été analysées pour détecter les problèmes d'architecture. La description de cet événement indique le nombre d'instances bien architecturées et non optimisées. Consultez les résultats et recommandations concernant l'état d'architecture dans l'inventaire des bases de données de la console Workload Factory.</block>
+  <block id="64096d5dd63fb80716eda8d7d149213d" category="cell">Bien architecturé</block>
+  <block id="c76e3867213cff8946148c6510af0736" category="cell">Recommandation</block>
+  <block id="ea2ef9b0d095bf991f4973633b485340" category="cell">Les bases de données</block>
+  <block id="49e4c802abd20d6ed77d1f0421411716" category="cell">Instance Microsoft SQL Server</block>
+  <block id="434aae113a8df34dcafb760acae04817" category="cell">Déploiement réussi du serveur Microsoft SQL Server/PostgreSQL</block>
+  <block id="9f65a8622771b19d6c80a1fea621d39f" category="cell">Le déploiement de l'hôte Microsoft SQL Server ou PostgreSQL a réussi. Pour plus d'informations, consultez la section « Surveillance des tâches ».</block>
+  <block id="505a83f220c02df2f85c3810cd9ceb38" category="cell">Réussite</block>
+  <block id="a2e86ce39492ca1b92893ce168dc6fbb" category="cell">FSx pour ONTAP, hôte de base de données</block>
+  <block id="1ec0c15b651e4cd44325912e997a204c" category="cell">Échec du déploiement du serveur Microsoft SQL Server/PostgreSQL</block>
+  <block id="3a966eb1052bbc81baf1db313011eddf" category="cell">Le déploiement de l'hôte Microsoft SQL Server ou PostgreSQL a échoué. Pour plus d'informations, consultez la section Surveillance des tâches.</block>
+  <block id="902b0d55fddef6f8d651fe1035b7d4bd" category="cell">Erreur</block>
+  <block id="237aaa83425818925b08506a76908e10" category="section-title">Configurer les notifications de la fabrique de charges de travail</block>
+  <block id="cd052ec21a26111d70b96d3c1780fed2" category="paragraph">Configurez les notifications de Workload Factory à l'aide de la console BlueXP ou de la console Workload Factory. Si vous utilisez la console BlueXP, vous pouvez configurer Workload Factory pour envoyer des notifications aux alertes BlueXP ou à une rubrique Amazon SNS. Vous pouvez configurer les alertes BlueXP depuis la section « Paramètres d'alertes et de notifications » de BlueXP.</block>
+  <block id="9ccebe6954a81c5c1f9a57ddc658596a" category="list-text">Vous devez configurer Amazon SNS et créer des rubriques Amazon SNS à l’aide de la console Amazon SNS ou de l’AWS CLI.</block>
+  <block id="b5dff08e1a7f13984de22b0326ba3d57" category="list-text">Notez que Workload Factory prend en charge le type de sujet « Standard ». Ce type de sujet ne garantit pas que les notifications sont envoyées aux abonnés dans l'ordre de réception. Pensez-y donc si vous avez des notifications critiques ou urgentes.</block>
+  <block id="5d146607ad7e1a4c8178f137a935e71b" category="open-title">Configurer les notifications depuis la console BlueXP</block>
+  <block id="413b76e8d3566fbbd4af2e2a84ed79cb" category="list-text">Connectez-vous au <block ref="391de7a3bac2bc77fa53dffb3f53801a" category="inline-link-macro-rx"></block>.</block>
+  <block id="7330391de12fa6f64dbbe05f2bf2943a" category="list-text">Dans la barre de menus de l’usine de charge de travail, sélectionnez le menu de configuration.</block>
+  <block id="ebb0c20a2883844bf338eec0442bd3d9" category="list-text">Dans le menu, sélectionnez *Configuration des notifications Workload Factory*.</block>
+  <block id="c1f26547e61b3cf682eb671f8d31e7ea" category="list-text">Facultatif : sélectionnez *Activer les notifications BlueXP* pour configurer la fabrique de charges de travail afin d’envoyer des notifications aux alertes BlueXP.</block>
+  <block id="9bc635b321d7a10ffec6283dfaa84aa0" category="list-text">Sélectionnez *Activer les notifications SNS*.</block>
+  <block id="677c7dc689b0afdcb0633b635edd3a87" category="list-text">Suivez les instructions pour configurer Amazon SNS à partir de la console Amazon SNS.</block>
+  <block id="5fda11ac3857aaeb1a1a9e3bb6aedef5" category="paragraph">Après avoir créé le sujet, copiez l'ARN du sujet et saisissez-le dans le champ *ARN du sujet SNS* dans la boîte de dialogue *Configuration des notifications*.</block>
+  <block id="2339afaee28d73e91f81e490b67a4b5c" category="list-text">Après avoir vérifié la configuration en envoyant une notification de test, sélectionnez *Appliquer*.</block>
+  <block id="a596c719a1239c601cd009ed03cda388" category="paragraph">Workload Factory est configuré pour envoyer des notifications à la rubrique Amazon SNS que vous avez spécifiée.</block>
+  <block id="99405553b799dda5850e27264cbad120" category="open-title">Configurer les notifications depuis la console de l'usine de charge de travail</block>
+  <block id="2e600fc81eb21acd31aa44d1697dc84f" category="list-text">Connectez-vous au <block ref="fe6e1b2479e1125e03c713ad62b5343f" category="inline-link-macro-rx"></block>.</block>
+  <block id="bbb5c9d7fd1535e42e50af70cae99495" category="list-text">Ouvrez le menu du compte à partir de la barre de navigation supérieure.</block>
+  <block id="5bbc9d3e1cf8f1e46acf248093877f06" category="list-text">Dans le menu, sélectionnez *Configuration des notifications*.</block>
+  <block id="5e5392f4dcdf5502f0937be76da274d0" category="section-title">Abonnez-vous au sujet Amazon SNS</block>
+  <block id="cbde2df6a7c89370edc449dc5705d30c" category="inline-link">instructions</block>
+  <block id="f796ddcb3cbbbd6b219cbc54c800ab86" category="paragraph">Après avoir configuré la fabrique de charges de travail pour envoyer des notifications à un sujet, suivez les instructions <block ref="88c7b6108316e02c36e39863bedc2019" category="inline-link-rx"></block> dans la documentation Amazon SNS pour vous abonner à la rubrique afin de pouvoir recevoir des notifications de Workload Factory.</block>
+  <block id="e457faf451b04c78c6b2c6bc25491ad1" category="section-title">Filtrer les notifications</block>
+  <block id="3180a00483bf6ffa5db8c6178c4eb67a" category="paragraph">Vous pouvez réduire le trafic de notifications inutiles et cibler des types de notifications spécifiques pour des utilisateurs spécifiques en appliquant des filtres aux notifications. Pour ce faire, utilisez une politique Amazon SNS pour les notifications SNS et les paramètres de notifications BlueXP.</block>
+  <block id="4ccc3070ee3f76f6afb040d5f99b3bdd" category="section-title">Filtrer les notifications Amazon SNS</block>
+  <block id="103130451f8943db9cb57de31a66dc79" category="paragraph">Lorsque vous vous abonnez à une rubrique Amazon SNS, vous recevez par défaut toutes les notifications publiées sur cette rubrique. Si vous souhaitez recevoir uniquement des notifications spécifiques de cette rubrique, vous pouvez utiliser une stratégie de filtrage pour contrôler les notifications que vous recevez.</block>
+  <block id="3f6971d458153040675cf8e95795f3b0" category="inline-link">Documentation Amazon SNS</block>
+  <block id="c7fbd94f814dfe1f2c13e1ea015a39d7" category="paragraph">Pour plus d'informations sur la création de politiques de filtrage, reportez-vous à la <block ref="c589c7fc86bb393dc58d099c6c8ea47e" category="inline-link-rx"></block> .</block>
+  <block id="aacb2329b4899fc1a4b8f0f2f67b0398" category="inline-link">Exemples de politiques de filtrage Amazon SNS</block>
+  <block id="0ef8ad02e6dcecafa6e5e696fe553279" category="paragraph">Pour des exemples de politiques de filtrage, reportez-vous à <block ref="7c3f3bfbc0dabec1aca15cb9aeb0e326" category="inline-link-rx"></block> .</block>
+  <block id="92bb95ca7ce65dc7bedcbf84528f75fd" category="section-title">Filtrer les notifications BlueXP</block>
+  <block id="ac6e44b462d88f56828f381faa7907ca" category="paragraph">Vous pouvez utiliser les paramètres d'alertes et de notifications BlueXP pour filtrer les alertes et les notifications que vous recevez dans BlueXP par niveau de gravité, tel que Critique, Info ou Avertissement.</block>
+  <block id="eeb8e055593f1709925a03e2ebb13265" category="inline-link">Documentation BlueXP</block>
+  <block id="7572b4e37ed025014a17bc1ae86c60a9" category="paragraph">Pour plus d'informations sur le filtrage des notifications dans BlueXP, reportez-vous à la <block ref="f8c744992c7f60894906e0753601fc52" category="inline-link-rx"></block> .</block>
+  <block id="cec87015738d7f42431131824e107880" category="paragraph">Vous pouvez accéder à l'usine des workloads à partir de BlueXP . En plus d'utiliser BlueXP Workload Factory pour les capacités de stockage et de charge de travail AWS, vous pouvez également accéder à d'autres services de la plateforme BlueXP tels que Copy and Sync, Digital Wallet, etc.</block>
+  <block id="4aa37f4d9a391345e9a54c68333e2503" category="section-title">03 juin 2025</block>
+  <block id="19a5158f1235c29843008925adb7baf8" category="sidebar">Configurez les notifications</block>
 </blocks>
