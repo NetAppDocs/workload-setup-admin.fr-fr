@@ -15,18 +15,6 @@ Découvrez les nouveautés des fonctionnalités d'administration des usines de w
 
 
 
-== 03 juin 2025
-
-
-
-=== Prise en charge du service de notification de l'usine de charge de travail BlueXP
-
-Le service de notification de l'usine de charge de travail BlueXP permet à l'usine de charge de travail d'envoyer des notifications au service d'alertes BlueXP ou à une rubrique Amazon SNS. Les notifications envoyées aux alertes BlueXP apparaissent dans le panneau des alertes BlueXP. Lorsque l'usine de charge de travail publie des notifications sur une rubrique Amazon SNS, les abonnés à cette rubrique (tels que les personnes ou d'autres applications) reçoivent les notifications aux points de terminaison configurés pour cette rubrique (tels que les e-mails ou les SMS).
-
-https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.html["Configurer les notifications de l'usine de charge de travail BlueXP"]
-
-
-
 == 04 mai 2025
 
 
