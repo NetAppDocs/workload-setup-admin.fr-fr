@@ -1,6 +1,14 @@
-= Prise en charge du service de notification de l'usine de charge de travail BlueXP
+= Mise à jour des autorisations pour les bases de données
 :allow-uri-read: 
 
+
+
+
+=== Mise à jour des autorisations pour les bases de données
+
+L'autorisation suivante est désormais disponible en mode _lecture seule_ pour les bases de données :  `cloudwatch:GetMetricData` .
+
+https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html#change-log["Journal des modifications de référence des autorisations"]
 
 
 

@@ -362,13 +362,13 @@ Le tableau suivant affiche les autorisations pour le stockage.
 ====
 
 
-=== Autorisations pour les workloads de bases de données
+=== Autorisations pour les charges de travail de la base de données
 
-Les règles IAM disponibles pour les workloads de bases de données fournissent les autorisations dont l'usine de workloads a besoin pour gérer les ressources et les processus dans votre environnement de cloud public en fonction du mode opérationnel dans lequel vous travaillez.
+Les politiques IAM disponibles pour les charges de travail de base de données fournissent les autorisations dont Workload Factory a besoin pour gérer les ressources et les processus au sein de votre environnement de cloud public en fonction du mode opérationnel dans lequel vous opérez.
 
 Sélectionnez votre mode opérationnel pour afficher les politiques IAM requises :
 
-.Règles IAM pour les workloads de bases de données
+.Politiques IAM pour les charges de travail de base de données
 [%collapsible]
 ====
 [role="tabbed-block"]
@@ -385,6 +385,7 @@ Sélectionnez votre mode opérationnel pour afficher les politiques IAM requises
       "Effect": "Allow",
       "Action": [
         "cloudwatch:GetMetricStatistics",
+        "cloudwatch:GetMetricData",
         "sns:ListTopics",
         "ec2:DescribeInstances",
         "ec2:DescribeVpcs",
@@ -678,7 +679,7 @@ Le tableau suivant affiche les autorisations pour les charges de travail de la b
 | Objectif | Action | Cas d'utilisation | Mode 
 
 
-| Obtenez des statistiques de metrics pour FSX for ONTAP, EBS et FSX for Windows File Server | cloudwatch:GetMetricStatistics  a| 
+| Obtenez des statistiques métriques pour FSx pour ONTAP, EBS et FSx pour Windows File Server et pour des recommandations d'optimisation de calcul | cloudwatch:GetMetricStatistics  a| 
 * Inventaire
 * Découvrez les économies
 
@@ -687,6 +688,9 @@ Le tableau suivant affiche les autorisations pour les charges de travail de la b
 * Lecture/écriture
 
 
+
+
+| Collectez les indicateurs de performances enregistrés dans Amazon CloudWatch à partir des nœuds SQL enregistrés. Les données sont générées dans les graphiques de tendances de performances sur l'écran de gestion des instances pour les instances SQL enregistrées. | cloudwatch:GetMetricData | Inventaire | Lecture seule 
 
 
 | Répertoriez et définissez les déclencheurs des événements | sns:ListTopics | Déploiement  a| 
@@ -1209,9 +1213,6 @@ Le tableau suivant affiche les autorisations pour les charges de travail de la b
 
 
 | Déformation:ValidéeTemplate | Déploiement | Lecture/écriture 
-
-
-| Récupérer les metrics pour l'optimisation du calcul | cloudwatch:GetMetricStatistics | Découvrez les économies | Lecture/écriture 
 
 
 | Extraire les répertoires disponibles dans la région | ds:DescribeDirectories | Déploiement | Lecture/écriture 
@@ -2311,17 +2312,23 @@ Lorsque des autorisations sont ajoutées et supprimées, nous les noterons dans 
 
 
 
+=== 29 juin 2025
+
+L'autorisation suivante est désormais disponible en mode _lecture seule_ pour les bases de données :  `cloudwatch:GetMetricData` .
+
+
+
 === 3 juin 2025
 
-L'autorisation suivante est maintenant disponible en mode _Read/Write_ pour GenAI: `s3:ListAllMyBuckets`.
+L'autorisation suivante est désormais disponible en mode _lecture/écriture_ pour GenAI :  `s3:ListAllMyBuckets` .
 
 
 
 === 4 mai 2025
 
-L'autorisation suivante est maintenant disponible en mode _Read/Write_ pour GenAI: `qbusiness:ListApplications`.
+L'autorisation suivante est désormais disponible en mode _lecture/écriture_ pour GenAI :  `qbusiness:ListApplications` .
 
-Les autorisations suivantes sont désormais disponibles en mode _lecture seule_ pour les bases de données :
+Les autorisations suivantes sont désormais disponibles en mode _lecture seule_ pour les bases de données :
 
 * `logs:GetLogEvents`
 * `logs:DescribeLogGroups`
