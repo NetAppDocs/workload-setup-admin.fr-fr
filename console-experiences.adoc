@@ -26,8 +26,10 @@ Vous pouvez utiliser deux consoles pour accéder à l'usine de la charge de trav
 Vous pouvez accéder à l'usine des workloads à partir de BlueXP . En plus d'utiliser BlueXP Workload Factory pour les capacités de stockage et de charge de travail AWS, vous pouvez également accéder à d'autres services de la plateforme BlueXP tels que Copy and Sync, Digital Wallet, etc.
 
 .Étapes
-. Connectez-vous au link:https://console.workloads.netapp.com["console d'usine de charge de travail"^].
-. Naviguez jusqu'à la charge de travail que vous souhaitez utiliser et sélectionnez une option pour commencer.
+. Connectez-vous au link:https://console.bluexp.netapp.com["Console BlueXP"^].
+. Sélectionnez *workloads* dans le menu de navigation de gauche.
+. Sélectionnez *Home* pour afficher toutes les charges de travail ou sélectionnez une charge de travail comme *Storage* ou *Databases*.
+. Sélectionnez une option pour commencer dans la charge de travail.
 
 
 
@@ -37,8 +39,6 @@ Vous pouvez accéder à l'usine des workloads à partir de BlueXP . En plus d'u
 Vous pouvez accéder à l'usine de la charge de travail depuis la console Workload Factory.
 
 .Étapes
-. Connectez-vous au link:https://console.bluexp.netapp.com["Console BlueXP"^].
-. Sélectionnez *workloads* dans le menu de navigation de gauche.
-. Sélectionnez *Home* pour afficher toutes les charges de travail ou sélectionnez une charge de travail comme *Storage* ou *Databases*.
-. Sélectionnez une option pour commencer dans la charge de travail.
+. Connectez-vous au link:https://console.workloads.netapp.com["console d'usine de charge de travail"^].
+. Naviguez jusqu'à la charge de travail que vous souhaitez utiliser et sélectionnez une option pour commencer.
 
