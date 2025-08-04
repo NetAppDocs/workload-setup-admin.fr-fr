@@ -98,11 +98,79 @@ Vous pouvez réduire le trafic de notifications inutiles et cibler des types de 
 
 === Filtrer les notifications Amazon SNS
 
-Lorsque vous vous abonnez à une rubrique Amazon SNS, vous recevez par défaut toutes les notifications publiées sur cette rubrique. Si vous souhaitez recevoir uniquement des notifications spécifiques de cette rubrique, vous pouvez utiliser une stratégie de filtrage pour contrôler les notifications que vous recevez.
+Lorsque vous vous abonnez à une rubrique Amazon SNS, vous recevez par défaut toutes les notifications publiées sur cette rubrique.  Si vous souhaitez recevoir uniquement des notifications spécifiques du sujet, vous pouvez utiliser une stratégie de filtrage pour contrôler les notifications que vous recevez.  Les politiques de filtrage obligent Amazon SNS à envoyer uniquement les notifications correspondant à la politique de filtrage à l'abonné.
 
-Pour plus d'informations sur la création de politiques de filtrage, reportez-vous à la  https://docs.aws.amazon.com/sns/latest/dg/sns-message-filtering.html["Documentation Amazon SNS"^] .
+Vous pouvez filtrer les notifications Amazon SNS selon les critères suivants :
 
-Pour des exemples de politiques de filtrage, reportez-vous à  https://docs.aws.amazon.com/sns/latest/dg/example-filter-policies.html["Exemples de politiques de filtrage Amazon SNS"^] .
+[cols="3*"]
+|===
+| Description | Nom du champ de la politique de filtrage | Valeurs possibles 
+
+
+| Type de ressource | `resourceType`  a| 
+* `DB`
+* `Microsoft SQL Server host`
+* `PostgreSQL Server host`
+
+
+
+
+| Charge de travail | `workload` | `WLMDB` 
+
+
+| Priorité | `priority`  a| 
+* `Success`
+* `Info`
+* `Recommendation`
+* `Warning`
+* `Error`
+* `Critical`
+
+
+
+
+| Type de notification | `notificationType`  a| 
+* `Deployment`
+* `Well-architected`
+
+
+|===
+.Étapes
+. Dans la console Amazon SNS, modifiez les détails de l’abonnement pour la rubrique SNS.
+. Dans la zone *Politique de filtrage d'abonnement*, sélectionnez le filtrage par *Attributs de message*.
+. Activez l'option *Politique de filtrage d'abonnement*.
+. Saisissez une politique de filtrage JSON dans la case *Éditeur JSON*.
++
+Par exemple, la stratégie de filtrage JSON suivante accepte les notifications de la ressource Microsoft SQL Server qui sont liées à la charge de travail WLMDB, ont une priorité de réussite ou d'erreur et fournissent des détails sur l'état Bien architecturé :
+
++
+[source, json]
+----
+{
+  "accountId": [
+    "account-a"
+  ],
+  "resourceType": [
+    "Microsoft SQL Server host"
+  ],
+  "workload": [
+    "WLMDB"
+  ],
+  "priority": [
+    "Success",
+    "Error"
+  ],
+  "notificationType": [
+    "Well-architected"
+  ]
+}
+----
+. Sélectionnez *Enregistrer les modifications*.
+
+
+Pour d'autres exemples de politiques de filtrage, reportez-vous à https://docs.aws.amazon.com/sns/latest/dg/example-filter-policies.html["Exemples de politiques de filtrage Amazon SNS"^] .
+
+Pour plus d'informations sur la création de politiques de filtrage, reportez-vous à la https://docs.aws.amazon.com/sns/latest/dg/sns-message-filtering.html["Documentation Amazon SNS"^] .
 
 
 
