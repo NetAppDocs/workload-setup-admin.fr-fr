@@ -31,6 +31,12 @@ Workload Factory envoie des notifications pour les événements suivants :
 
 
 | Échec du déploiement du serveur Microsoft SQL Server/PostgreSQL | Le déploiement de l'hôte Microsoft SQL Server ou PostgreSQL a échoué. Pour plus d'informations, consultez la section Surveillance des tâches. | Déploiement | Erreur | Les bases de données | FSx pour ONTAP, hôte de base de données 
+
+
+| Échec de la création de la relation de réplication | La création d’une relation de réplication SnapMirror a échoué.  Pour plus d'informations, rendez-vous sur Tracker. | Réplication | Primordial | Stockage général | FSx pour ONTAP 
+
+
+| Échec de la création de FSx pour ONTAP | Un processus de création de système de fichiers FSx pour ONTAP a échoué.  Pour plus d'informations, rendez-vous sur Tracker. | Action du système de fichiers FSx pour ONTAP | Primordial | Stockage général | FSx pour ONTAP 
 |===
 
 
