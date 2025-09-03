@@ -2,28 +2,28 @@
 sidebar: sidebar 
 permalink: whats-next.html 
 keywords: what you can do 
-summary: 'Maintenant que vous vous êtes connecté et que vous avez configuré l"usine de workloads, vous pouvez créer et gérer les systèmes de fichiers FSX pour ONTAP et utiliser d"autres fonctionnalités d"usine de workloads.' 
+summary: 'Une fois connecté et configuré Workload Factory, vous pouvez créer et gérer les systèmes de fichiers FSx for ONTAP et utiliser d"autres fonctionnalités de Workload Factory.' 
 ---
-= Allez encore plus loin avec l'usine de workloads BlueXP 
+= Optimisez les charges de travail avec Workload Factory
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Maintenant que vous vous êtes connecté et que vous avez configuré l'usine de workloads BlueXP , vous pouvez commencer à utiliser plusieurs fonctionnalités d'usine pour les workloads, telles que la création des systèmes de fichiers Amazon FSX pour ONTAP, le déploiement des bases de données sur les systèmes de fichiers FSX pour ONTAP et la migration des configurations de machines virtuelles vers VMware Cloud sur AWS à l'aide de systèmes de fichiers FSX pour ONTAP comme datastores externes.
+Une fois connecté et configuré Workload Factory, vous pouvez commencer à utiliser plusieurs fonctionnalités de Workload Factory, telles que la création de systèmes de fichiers Amazon FSx pour ONTAP , le déploiement de bases de données sur les systèmes de fichiers FSx pour ONTAP et la migration de configurations de machines virtuelles vers VMware Cloud sur AWS à l'aide des systèmes de fichiers FSx pour ONTAP comme banques de données externes.
 
 * https://docs.netapp.com/us-en/workload-fsx-ontap/index.html["Amazon FSX pour NetApp ONTAP"^]
 +
 Évaluez et analysez les environnements de données actuels pour réduire les coûts en utilisant FSX pour ONTAP en tant qu'infrastructure de stockage, provisionnez et modélisez les déploiements FSX pour ONTAP en fonction des bonnes pratiques et accédez à des fonctionnalités de gestion avancées.
 
-* https://docs.netapp.com/us-en/workload-genai/index.html["GenAI"^]
-+
-Déployez et gérez une infrastructure de génération augmentée par récupération (RAG) pour améliorer la précision et l'unicité de vos applications d'IA. Créez une base de connaissances RAG sur FSX pour ONTAP avec sécurité et conformité intégrées des données.
-
 * https://docs.netapp.com/us-en/workload-databases/index.html["Charges de travail des bases de données"^]
 +
 Détectez votre environnement de base de données sur AWS, évaluez les économies potentielles en passant à FSX pour ONTAP, déployez des bases de données de bout en bout grâce aux bonnes pratiques intégrées pour l'optimisation et automatisez le clonage fin pour les pipelines ci/CD.
+
+* https://docs.netapp.com/us-en/workload-genai/index.html["GenAI"^]
++
+Déployez et gérez une infrastructure de génération augmentée par récupération (RAG) pour améliorer la précision et l'unicité de vos applications d'IA. Créez une base de connaissances RAG sur FSX pour ONTAP avec sécurité et conformité intégrées des données.
 
 * https://docs.netapp.com/us-en/workload-vmware/index.html["Workloads VMware"^]
 +
