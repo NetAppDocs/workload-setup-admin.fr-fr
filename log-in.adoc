@@ -2,26 +2,26 @@
 sidebar: sidebar 
 permalink: log-in.html 
 keywords: logging in, log in, sign in, signing in, user account, login with netapp, log in with netapp, sign up, create account 
-summary: 'Une fois que vous vous êtes inscrit à l"usine de workloads, vous pouvez vous connecter à tout moment à partir de la console web pour commencer à gérer vos workloads et vos systèmes de fichiers FSX pour ONTAP.' 
+summary: Après vous être inscrit à Workload Factory, vous pouvez vous connecter à tout moment à partir de la console Web pour commencer à gérer vos charges de travail et vos systèmes de fichiers FSx for ONTAP . 
 ---
-= Connectez-vous à l'usine de workloads BlueXP 
+= Connectez-vous à NetApp Workload Factory
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Une fois que vous vous êtes inscrit à l'usine de workloads BlueXP , vous pouvez vous connecter à tout moment à partir de la console web pour commencer à gérer vos workloads et vos systèmes de fichiers FSX pour ONTAP.
+Une fois inscrit à NetApp Workload Factory, vous pouvez vous connecter à tout moment à partir de la console Web pour commencer à gérer vos charges de travail et vos systèmes de fichiers FSx for ONTAP .
 
 .Description de la tâche
-Vous pouvez vous connecter à la console Web d'usine de la charge de travail à l'aide de l'une des options suivantes :
+Vous pouvez vous connecter à la console Web Workload Factory à l’aide de l’une des options suivantes :
 
 * Vos identifiants existants du site de support NetApp (NSS)
 * Un identifiant NetApp Cloud avec votre adresse e-mail et un mot de passe
 
 
 .Étapes
-. Ouvrez un navigateur Web et accédez à https://console.workloads.netapp.com["console d'usine de charge de travail"^].
+. Ouvrez un navigateur Web et accédez à la https://console.workloads.netapp.com["Console Workload Factory"^] .
 . Sur la page *connexion*, entrez l'adresse e-mail associée à votre connexion.
 . En fonction de la méthode d'authentification associée à votre connexion, vous serez invité à saisir vos informations d'identification :
 +
@@ -32,7 +32,7 @@ Vous pouvez vous connecter à la console Web d'usine de la charge de travail à 
 
 . Sélectionnez *connexion*.
 +
-Si vous vous êtes connecté avec succès par le passé, la page d'accueil de l'usine de charge de travail s'affiche et vous utiliserez le compte par défaut.
+Si vous vous êtes connecté avec succès dans le passé, vous verrez la page d'accueil de Workload Factory et vous utiliserez le compte par défaut.
 
 +
 Si c'est la première fois que vous vous connectez, vous serez dirigé vers la page *compte*.
@@ -45,4 +45,4 @@ Si c'est la première fois que vous vous connectez, vous serez dirigé vers la p
 
 
 .Résultat
-Vous êtes désormais connecté et pouvez commencer à utiliser l'usine de workloads pour gérer les systèmes de fichiers FSX pour ONTAP et vos workloads.
+Vous êtes maintenant connecté et pouvez commencer à utiliser Workload Factory pour gérer les systèmes de fichiers FSx for ONTAP et vos charges de travail.

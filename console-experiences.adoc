@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: console-experiences.html 
-keywords: console, consoles, access, saas, workload factory, bluexp, bluexp workload factory 
-summary: 'L"usine de charges de travail BlueXP  est accessible via deux consoles Web.' 
+keywords: console, consoles, access, saas, Workload Factory, bluexp, NetApp Workload Factory, NetApp Console 
+summary: NetApp Workload Factory est accessible via deux consoles Web. 
 ---
 = Expériences de la console
 :allow-uri-read: 
@@ -11,34 +11,29 @@ summary: 'L"usine de charges de travail BlueXP  est accessible via deux console
 
 
 [role="lead"]
-L'usine de charges de travail BlueXP  est accessible via deux consoles Web. Découvrez comment accéder à l'usine de workloads BlueXP  à l'aide de la console d'usine de workloads BlueXP  et de la console BlueXP .
+NetApp Workload Factory est accessible via deux consoles Web.  Découvrez comment accéder à Workload Factory à l’aide de la console Workload Factory et de la console NetApp .
 
-Vous pouvez utiliser deux consoles pour accéder à l'usine de la charge de travail BlueXP .
-
-* *Console BlueXP * : offre une expérience hybride dans laquelle vous pouvez gérer vos environnements de travail et vos charges de travail au même endroit.
-* *Workload Factory console* : offre une expérience d'usine de workloads dédiée aux workloads exécutés sur Amazon FSX pour NetApp ONTAP.
+* * Console NetApp * : offre une expérience hybride où vous pouvez gérer vos systèmes de fichiers FSx for ONTAP et vos charges de travail exécutées sur Amazon FSx for NetApp ONTAP au même endroit.
+* *Console Workload Factory* : offre une expérience Workload Factory dédiée axée sur les charges de travail exécutées sur Amazon FSx for NetApp ONTAP.
 
 
 
 
-== Accéder à l'usine de la charge de travail dans la console BlueXP 
+== Accéder à Workload Factory dans la console NetApp
 
-Vous pouvez accéder à l'usine des workloads à partir de BlueXP . En plus d'utiliser BlueXP Workload Factory pour les capacités de stockage et de charge de travail AWS, vous pouvez également accéder à d'autres services de la plateforme BlueXP tels que Copy and Sync, Digital Wallet, etc.
+Vous pouvez accéder à Workload Factory à partir de la console NetApp .  Outre l'utilisation des capacités de stockage et de charge de travail de Workload Factory pour AWS, vous pouvez également accéder à d'autres services de données tels que NetApp Copy and Sync, NetApp Digital Wallet, etc.
 
 .Étapes
-. Connectez-vous au link:https://console.bluexp.netapp.com["Console BlueXP"^].
-. Sélectionnez *workloads* dans le menu de navigation de gauche.
-. Sélectionnez *Home* pour afficher toutes les charges de travail ou sélectionnez une charge de travail comme *Storage* ou *Databases*.
-. Sélectionnez une option pour commencer dans la charge de travail.
+. Connectez-vous à lalink:https://console.netapp.com["Console NetApp"^] .
+. Dans le menu de la console NetApp , sélectionnez *Charges de travail*, puis *Vue d’ensemble*.
 
 
 
 
-== Accédez à l'usine de charge de travail dans la console Workload Factory
+== Accéder à Workload Factory dans la console Workload Factory
 
-Vous pouvez accéder à l'usine de la charge de travail depuis la console Workload Factory.
+Vous pouvez accéder à Workload Factory depuis la console Workload Factory.
 
-.Étapes
-. Connectez-vous au link:https://console.workloads.netapp.com["console d'usine de charge de travail"^].
-. Naviguez jusqu'à la charge de travail que vous souhaitez utiliser et sélectionnez une option pour commencer.
+.Étape
+. Connectez-vous à lalink:https://console.workloads.netapp.com["Console Workload Factory"^] .
 

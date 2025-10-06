@@ -2,36 +2,36 @@
 sidebar: sidebar 
 permalink: use-codebox.html 
 keywords: codebox, automation, cloudformation, rest api, aws cli, permissions 
-summary: 'Vous pouvez utiliser Codebox pour générer le code nécessaire à l"exécution de toute opération prise en charge par l"usine de charges de travail BlueXP .' 
+summary: 'Vous pouvez utiliser Codebox pour générer le code nécessaire à l"exécution de toute opération prise en charge par NetApp Workload Factory.' 
 ---
-= Utilisez Codebox pour l'automatisation dans l'usine de workloads BlueXP 
+= Utiliser Codebox pour l'automatisation dans NetApp Workload Factory
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Vous pouvez utiliser Codebox pour générer le code nécessaire à l'exécution de toute opération prise en charge par l'usine de charges de travail BlueXP . Vous pouvez générer du code qui peut être consommé et exécuté à l'aide des API REST d'usine des workloads, de l'interface de ligne de commande AWS et d'AWS CloudFormation.
+Vous pouvez utiliser Codebox pour générer le code nécessaire à l'exécution de toute opération prise en charge par NetApp Workload Factory.  Vous pouvez générer du code qui peut être consommé et exécuté à l'aide des API REST Workload Factory, de l'AWS CLI et d'AWS CloudFormation.
 
-Codebox est aligné sur les modes de fonctionnement de l'usine de charge de travail (_basic_, _read-only_ et _read/write_) en remplissant les données appropriées dans le code en fonction des autorisations AWS fournies dans le compte de l'usine de charge de travail pour chaque utilisateur. Le code peut être utilisé comme un modèle dans lequel vous pouvez saisir des informations manquantes (par exemple, des informations d'identification) ou personnaliser certaines données avant d'exécuter le code.
+Codebox est aligné sur les modes de fonctionnement de Workload Factory (_basic_, _read-only_ et _read/write_) en remplissant les données appropriées dans le code en fonction des autorisations AWS fournies dans le compte Workload Factory pour chaque utilisateur.  Le code peut être utilisé comme un modèle dans lequel vous pouvez compléter les informations manquantes (par exemple, les informations d'identification) ou personnaliser certaines données avant d'exécuter le code.
 
 
 
 == Comment utiliser Codebox
 
-Lorsque vous entrez des valeurs dans les assistants de l'interface utilisateur de charge de travail, vous pouvez voir la mise à jour des données dans Codebox lorsque vous complétez chaque champ. Lorsque vous avez terminé l'assistant, mais avant de sélectionner le bouton *Créer* en bas de la page, sélectionnez image:button-copy-codebox.png["le bouton copier"] pour copier dans Codebox afin de capturer le code requis pour construire votre configuration. Par exemple, cette capture d'écran de la création d'un nouveau serveur Microsoft SQL Server affiche les entrées de l'assistant pour VPC et les zones de disponibilité, ainsi que les entrées équivalentes dans Codebox pour une implémentation de l'API REST.
+Lorsque vous saisissez des valeurs dans les assistants de l'interface utilisateur de Workload Factory, vous pouvez voir la mise à jour des données dans Codebox à mesure que vous remplissez chaque champ.  Lorsque vous avez terminé l'assistant, mais avant de sélectionner le bouton *Créer* en bas de la page, sélectionnezimage:button-copy-codebox.png["le bouton copier"] à copier dans Codebox pour capturer le code nécessaire à la construction de votre configuration.  Par exemple, cette capture d’écran de la création d’un nouveau serveur Microsoft SQL Server affiche les entrées de l’assistant pour les zones VPC et de disponibilité et les entrées équivalentes dans Codebox pour une implémentation d’API REST.
 
 image:screenshot-codebox-example1.png["Capture d'écran montrant comment créer un serveur Microsoft SQL dans l'interface utilisateur et les entrées correspondantes pour VPC et zones de disponibilité dans Codebox."]
 
-Avec certains formats de code, vous pouvez également sélectionner le bouton Télécharger pour enregistrer le code dans un fichier que vous pouvez apporter à un autre système. Si nécessaire, vous pouvez modifier le code une fois qu'il a été téléchargé afin de l'adapter à d'autres comptes AWS.
+Avec certains formats de code, vous pouvez également sélectionner le bouton de téléchargement pour enregistrer le code dans un fichier que vous pouvez importer sur un autre système.  Si nécessaire, vous pouvez modifier le code après son téléchargement afin de pouvoir l'adapter à d'autres comptes AWS.
 
 
 
 == Utilisez le code CloudFormation de Codebox
 
-Vous pouvez copier le code CloudFormation généré à partir de Codebox, puis lancer la pile Amazon Web Services CloudFormation dans votre compte AWS. CloudFormation exécute les actions que vous avez définies dans l'interface utilisateur de l'usine de la charge de travail.
+Vous pouvez copier le code CloudFormation généré à partir de Codebox, puis lancer la pile Amazon Web Services CloudFormation dans votre compte AWS.  CloudFormation exécutera les actions que vous avez définies dans l'interface utilisateur de Workload Factory.
 
-Les étapes d'utilisation du code CLoudFormation peuvent être différentes selon que vous déployez un système de fichiers FSX pour ONTAP, que vous créez des informations d'identification de compte ou que vous effectuez d'autres actions d'usine de charge de travail.
+Les étapes d'utilisation du code CloudFormation peuvent être différentes selon que vous déployez un système de fichiers FSx pour ONTAP , créez des informations d'identification de compte ou effectuez d'autres actions Workload Factory.
 
 Notez que le code d'un fichier YAML généré par CloudFormation expire après 7 jours pour des raisons de sécurité.
 
@@ -76,28 +76,28 @@ Notez que le code d'un fichier YAML généré par CloudFormation expire après 7
 
 
 .Étapes
-. Une fois que vous avez utilisé l'interface utilisateur pour définir l'opération que vous souhaitez effectuer, copiez le code dans la zone de code.
+. Après avoir utilisé la console Workload Factory pour définir l’opération que vous souhaitez effectuer, copiez le code dans la zone Codebox.
 . Sélectionnez *rediriger vers CloudFormation* et la page rediriger vers CloudFormation s'affiche.
 . Ouvrez une autre fenêtre de navigateur et connectez-vous à la console de gestion AWS.
 . Sélectionnez *Continuer* à partir de la page rediriger vers CloudFormation.
 . Connectez-vous au compte AWS sur lequel le code doit être exécuté.
 . Sur la page pile de création rapide, sous fonctionnalités, sélectionnez *Je reconnais que AWS CloudFormation pourrait ...*.
 . Sélectionnez *Créer pile*.
-. Surveillez la progression depuis AWS ou depuis l'usine des workloads.
+. Surveillez la progression depuis AWS ou depuis Workload Factory.
 
 
 
 
 == Utilisez le code API REST de Codebox
 
-Vous pouvez utiliser les API REST d'usine de workloads générées par Codebox pour déployer et gérer vos systèmes de fichiers FSX pour ONTAP et d'autres ressources AWS.
+Vous pouvez utiliser les API REST Workload Factory générées à partir de Codebox pour déployer et gérer vos systèmes de fichiers FSx for ONTAP et d'autres ressources AWS.
 
 Vous pouvez exécuter les API depuis n'importe quel hôte qui prend en charge curl et qui dispose d'une connectivité Internet.
 
 Notez que les tokens d'authentification sont masqués dans Codebox, mais ils sont renseignés lorsque vous copiez et collez l'appel API.
 
 .Étapes
-. Une fois que vous avez utilisé l'interface utilisateur pour définir l'opération que vous souhaitez effectuer, copiez le code API dans la zone de code.
+. Après avoir utilisé la console Workload Factory pour définir l’opération que vous souhaitez effectuer, copiez le code API dans la Codebox.
 . Collez le code et exécutez-le sur votre système hôte.
 
 
@@ -108,7 +108,7 @@ Notez que les tokens d'authentification sont masqués dans Codebox, mais ils son
 Vous pouvez utiliser l'interface de ligne de commande Amazon Web Services générée par Codebox pour déployer et gérer vos systèmes de fichiers FSX pour ONTAP et d'autres ressources AWS.
 
 .Étapes
-. Après avoir utilisé l'interface utilisateur pour définir l'opération que vous souhaitez effectuer, copiez l'interface de ligne de commande AWS dans la zone de code.
+. Après avoir utilisé la console Workload Factory pour définir l’opération que vous souhaitez effectuer, copiez l’AWS CLI dans la Codebox.
 . Ouvrez une autre fenêtre de navigateur et connectez-vous à la console de gestion AWS.
 . Collez le code et exécutez-le.
 
@@ -125,7 +125,7 @@ Vous pouvez utiliser Terraform pour déployer et gérer vos systèmes de fichier
 
 
 .Étapes
-. Une fois que vous avez utilisé l'interface utilisateur pour définir l'opération que vous souhaitez exécuter, téléchargez le code Terraform à partir de la zone de code.
+. Après avoir utilisé la console Workload Factory pour définir l’opération que vous souhaitez effectuer, téléchargez le code Terraform depuis Codebox.
 . Copiez l'archive de script téléchargée dans le système sur lequel Terraform est installé.
 . Extrayez le fichier zip et suivez les étapes du fichier README.md.
 

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: codebox-automation.html 
 keywords: codebox, automation 
-summary: 'Codebox est un co-pilote IAC (Infrastructure-as-Code) qui aide les développeurs et le DevOps à générer le code nécessaire pour exécuter toute opération prise en charge par l"usine de workloads.' 
+summary: 'Codebox est un copilote d"infrastructure en tant que code (IaC) qui aide les développeurs et DevOps à générer le code nécessaire pour exécuter toute opération prise en charge par NetApp Workload Factory.' 
 ---
 = En savoir plus sur l'automatisation de la boîte de code
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 'Codebox est un co-pilote IAC (Infrastructure-as-Code) qui aide les dé
 
 
 [role="lead"]
-Codebox est un co-pilote IAC (Infrastructure-as-Code) qui aide les développeurs et le DevOps à générer le code nécessaire pour exécuter toute opération prise en charge par l'usine de workloads. Codebox est aligné sur les modes de fonctionnement de l'usine de charge de travail (_basic_, _read-only_ et _read/write_) et définit un chemin clair pour la préparation à l'exécution tout en fournissant un catalogue d'automatisation pour une réutilisation future rapide.
+Codebox est un copilote d'infrastructure en tant que code (IaC) qui aide les développeurs et DevOps à générer le code nécessaire pour exécuter toute opération prise en charge par NetApp Workload Factory.  Codebox est aligné sur les modes de fonctionnement de Workload Factory (_basic_, _read-only_ et _read/write_) et définit un chemin clair pour la préparation à l'exécution tout en fournissant un catalogue d'automatisation pour une réutilisation future rapide.
 
 
 
@@ -23,7 +23,7 @@ Codebox offre deux fonctionnalités IAC clés :
 * _Codebox Automation Catalog_ affiche tous les travaux IAC enregistrés, ce qui vous permet de les référencer facilement pour une utilisation ultérieure. Les travaux du catalogue d'automatisation sont enregistrés en tant que modèles et affichés dans le contexte des ressources qui s'y appliquent.
 
 
-En outre, lors de la configuration des informations d'identification d'usine des workloads, Codebox affiche de manière dynamique les autorisations AWS requises pour créer des règles IAM. Les autorisations sont fournies pour chaque fonctionnalité de fabrique de charges de travail que vous prévoyez d'utiliser (bases de données, IA, FSx pour ONTAP, etc.), et elles sont personnalisées selon que les utilisateurs de la stratégie obtiendront des autorisations en lecture seule ou des autorisations complètes en lecture/écriture. Il vous suffit de copier les autorisations de Codebox, puis de les coller dans la console AWS Management Console de sorte que cette fabrique de workloads dispose des autorisations appropriées pour gérer vos workloads.
+De plus, lors de la configuration des informations d’identification de Workload Factory, Codebox affiche dynamiquement les autorisations AWS nécessaires pour créer des stratégies IAM.  Les autorisations sont fournies pour chaque fonctionnalité Workload Factory que vous prévoyez d'utiliser (bases de données, IA, FSx pour ONTAP, etc.), et elles sont personnalisées selon que les utilisateurs de la politique obtiendront des autorisations en lecture seule ou des autorisations complètes en lecture/écriture.  Il vous suffit de copier les autorisations de Codebox, puis de les coller dans la console de gestion AWS afin que Workload Factory dispose des autorisations appropriées pour gérer vos charges de travail.
 
 
 
@@ -31,9 +31,15 @@ En outre, lors de la configuration des informations d'identification d'usine des
 
 Les formats de code pris en charge sont les suivants :
 
-* API REST d'usine de workloads
+* API REST de Workload Factory
 * CLI AWS
 * AWS CloudFormation
 
 
+
+
+== Informations connexes
+
 link:use-codebox.html["Découvrez comment utiliser Codebox"].
+
+link:https://console.workloads.netapp.com/api-doc["Documentation de l'API REST de Workload Factory"^] .

@@ -1,0 +1,11 @@
+= Nouvelle notification pour le stockage
+:allow-uri-read: 
+
+
+
+
+=== Nouvelle notification pour le stockage
+
+Le service de notification NetApp Workload Factory inclut la notification des problèmes bien architecturés pour le stockage.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.html["Notifications pour NetApp Workload Factory"]

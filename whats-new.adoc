@@ -2,16 +2,44 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
-summary: 'Découvrez les nouveautés des fonctionnalités d"administration des usines de workloads : informations d"identification du fournisseur cloud, améliorations de Codebox, et bien plus encore.' 
+summary: 'Découvrez les nouveautés des fonctionnalités d"administration de Workload Factory : informations d"identification du fournisseur cloud, améliorations de Codebox et bien plus encore.' 
 ---
-= Nouveautés des fonctionnalités d'administration d'usine de workloads BlueXP 
+= Nouveautés des fonctionnalités d'administration de NetApp Workload Factory
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-Découvrez les nouveautés des fonctionnalités d'administration des usines de workloads : informations d'identification du fournisseur cloud, améliorations de Codebox, et bien plus encore.
+Découvrez les nouveautés des fonctionnalités d'administration de Workload Factory : informations d'identification du fournisseur cloud, améliorations de Codebox et bien plus encore.
+
+
+
+== 06 octobre 2025
+
+
+
+=== BlueXP workload factory désormais NetApp Workload Factory
+
+BlueXP a été renommé et repensé pour mieux refléter le rôle qu'il joue dans la gestion de votre infrastructure de données. Par conséquent, BlueXP workload factory a été renommée NetApp Workload Factory.
+
+
+
+=== Intégration de Ask Me avec MCP
+
+Ask Me, l'assistant IA de Workload Factory, est intégré au protocole de contexte de modèle (MCP).  À l'aide de MCP, Ask Me s'interface en toute sécurité avec des environnements externes et interroge les outils API pour fournir des réponses adaptées à votre environnement de stockage spécifique.
+
+
+
+== 05 octobre 2025
+
+
+
+=== Nouvelle notification pour le stockage
+
+Le service de notification NetApp Workload Factory inclut la notification des problèmes bien architecturés pour le stockage.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.html["Notifications pour NetApp Workload Factory"]
 
 
 
