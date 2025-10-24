@@ -1315,206 +1315,208 @@ Déploiement
 | Lecture/écriture 
 
 
-.2+| Découvrez les détails de FSX pour ONTAP | fsx:Décrire les alias du système de fichiers  a| 
-Déploiement
-| Lecture/écriture 
+| Découvrez les détails de FSX pour ONTAP | fsx:Décrire les alias du système de fichiers | Déploiement | Lecture/écriture 
 
 
-| Redimensionnez le système de fichiers FSX pour ONTAP pour optimiser la marge du système de fichiers | fsx:système de fichiers de mise à jour | Optimisation 
+| Redimensionnez le système de fichiers FSX pour ONTAP pour optimiser la marge du système de fichiers | fsx:système de fichiers de mise à jour | Optimisation | Lecture/écriture 
 
 
-| Lecture/écriture | Redimensionnez les volumes pour corriger la taille des lecteurs du journal et de la base de données de temps | fsx:UpdateVolume | Optimisation 
+| Redimensionnez les volumes pour corriger la taille des lecteurs du journal et de la base de données de temps | fsx:UpdateVolume | Optimisation | Lecture/écriture 
 
 
-| Lecture/écriture .3+| Obtenez des détails de clé KMS et utilisez-les pour le chiffrement FSX for ONTAP | Kms:CreateGrant | Déploiement 
+.3+| Obtenez des détails de clé KMS et utilisez-les pour le chiffrement FSX for ONTAP | Kms:CreateGrant | Déploiement | Lecture/écriture 
 
 
-| Lecture/écriture | kms : Décrire les magasins de clés personnalisés | Déploiement 
+| kms : Décrire les magasins de clés personnalisés | Déploiement | Lecture/écriture 
 
 
-| Lecture/écriture | Km:GenerateDataKey | Déploiement 
+| Km:GenerateDataKey | Déploiement | Lecture/écriture 
 
 
-| Lecture/écriture .8+| Créez des journaux CloudWatch pour les scripts de validation et de provisionnement s'exécutant sur les instances EC2 | Journaux:CreateLogGroup | Déploiement 
+.8+| Créez des journaux CloudWatch pour les scripts de validation et de provisionnement s'exécutant sur les instances EC2 | Journaux:CreateLogGroup | Déploiement | Lecture/écriture 
 
 
-| Lecture/écriture | Journaux:CreateLogStream | Déploiement 
+| Journaux:CreateLogStream | Déploiement | Lecture/écriture 
 
 
-| Lecture/écriture | Journaux:DescribeLogStreams  a| 
+| Journaux:DescribeLogStreams  a| 
 * Déploiement
 * Évaluation
 
+| Lecture/écriture 
 
 
-
-| Lecture/écriture | journaux : GetLogGroupFields | Déploiement 
-
-
-| Lecture/écriture | journaux : GetLogRecord | Déploiement 
+| journaux : GetLogGroupFields | Déploiement | Lecture/écriture 
 
 
-| Lecture/écriture | Journaux:ListLogDeliveries | Déploiement 
+| journaux : GetLogRecord | Déploiement | Lecture/écriture 
 
 
-| Lecture/écriture | Journaux:PutLogEvents  a| 
+| Journaux:ListLogDeliveries | Déploiement | Lecture/écriture 
+
+
+| Journaux:PutLogEvents  a| 
 * Déploiement
 * Gérez les opérations
 
+| Lecture/écriture 
 
 
+| Journaux:TagResource | Déploiement | Lecture/écriture 
 
-| Lecture/écriture | Journaux:TagResource | Déploiement 
 
-
-| Lecture/écriture | Workload Factory bascule vers les journaux Amazon CloudWatch pour l'instance SQL en cas de troncature de sortie SSM | Journaux:GetLogEvents  a| 
+| Workload Factory bascule vers les journaux Amazon CloudWatch pour l'instance SQL en cas de troncature de sortie SSM | Journaux:GetLogEvents  a| 
 * Évaluation du stockage (optimisation)
 * Inventaire
-
-
-
 
  a| 
 * Lecture seule
 * Lecture/écriture
+
+
+
 
 | Autoriser Workload Factory à obtenir les groupes de journaux actuels et vérifier que la conservation est définie pour les groupes de journaux créés par Workload Factory | Journaux:DescribeLogGroups  a| 
 * Évaluation du stockage (optimisation)
 * Inventaire
 
+| Lecture seule 
 
 
-
-| Lecture seule | Autoriser Workload Factory à définir une politique de conservation d'un jour pour les groupes de journaux créés par Workload Factory afin d'éviter l'accumulation inutile de flux de journaux pour les sorties de commande SSM | Journaux:PutRetentionPolicy  a| 
+| Autoriser Workload Factory à définir une politique de conservation d'un jour pour les groupes de journaux créés par Workload Factory afin d'éviter l'accumulation inutile de flux de journaux pour les sorties de commande SSM | Journaux:PutRetentionPolicy  a| 
 * Évaluation du stockage (optimisation)
 * Inventaire
-
-
-
 
  a| 
 * Lecture seule
 * Lecture/écriture
 
-| Créez des secrets dans un compte utilisateur pour les informations d'identification fournies pour SQL, Domain et FSX pour ONTAP | Servicecotas:ListServiceQuotas | Déploiement 
 
 
-| Lecture/écriture .2+| Dressez la liste des sujets SNS des clients et publiez-les sur le service SNS backend WLMDB ainsi que sur le service SNS des clients si cette option est sélectionnée | sns:ListTopics | Déploiement 
+
+| Créez des secrets dans un compte utilisateur pour les informations d'identification fournies pour SQL, Domain et FSX pour ONTAP | Servicecotas:ListServiceQuotas | Déploiement | Lecture/écriture 
 
 
-| Lecture/écriture | sns:publier | Déploiement 
+.2+| Dressez la liste des sujets SNS des clients et publiez-les sur le service SNS backend WLMDB ainsi que sur le service SNS des clients si cette option est sélectionnée | sns:ListTopics | Déploiement | Lecture/écriture 
 
 
-| Lecture/écriture .11+| Autorisations SSM requises pour exécuter le script de découverte sur les instances SQL provisionnées et pour récupérer la dernière liste des régions AWS prises en charge par FSX pour ONTAP. | ssm:PutCompianceItems | Déploiement 
+| sns:publier | Déploiement | Lecture/écriture 
 
 
-| Lecture/écriture | ssm:PutConfigurePackageResult | Déploiement 
+.11+| Autorisations SSM requises pour exécuter le script de découverte sur les instances SQL provisionnées et pour récupérer la dernière liste des régions AWS prises en charge par FSX pour ONTAP. | ssm:PutCompianceItems | Déploiement | Lecture/écriture 
 
 
-| Lecture/écriture | ssm:PutInventory | Déploiement 
+| ssm:PutConfigurePackageResult | Déploiement | Lecture/écriture 
 
 
-| Lecture/écriture | ssm:SendCommand  a| 
+| ssm:PutInventory | Déploiement | Lecture/écriture 
+
+
+| ssm:SendCommand  a| 
 * Déploiement
 * Inventaire
 * Gérez les opérations
 
+| Lecture/écriture 
 
 
-
-| Lecture/écriture | ssm:UpdateAssociationStatus | Déploiement 
-
-
-| Lecture/écriture | ssm:UpdateInstanceAssociationStatus | Déploiement 
+| ssm:UpdateAssociationStatus | Déploiement | Lecture/écriture 
 
 
-| Lecture/écriture | ssm:UpdateInstanceinformation | Déploiement 
+| ssm:UpdateInstanceAssociationStatus | Déploiement | Lecture/écriture 
 
 
-| Lecture/écriture | ssmmessages:Créer un canal de contrôle | Déploiement 
+| ssm:UpdateInstanceinformation | Déploiement | Lecture/écriture 
 
 
-| Lecture/écriture | ssmmessages : Créer un canal de données | Déploiement 
+| ssmmessages:Créer un canal de contrôle | Déploiement | Lecture/écriture 
 
 
-| Lecture/écriture | ssmmessages : OpenControlChannel | Déploiement 
+| ssmmessages : Créer un canal de données | Déploiement | Lecture/écriture 
 
 
-| Lecture/écriture | ssmmessages : OpenDataChannel | Déploiement 
+| ssmmessages : OpenControlChannel | Déploiement | Lecture/écriture 
 
 
-| Lecture/écriture .4+| Enregistrer les informations d'identification pour FSX pour ONTAP, Active Directory et l'utilisateur SQL (uniquement pour l'authentification utilisateur SQL) | ssm:getParameter ^1^  a| 
+| ssmmessages : OpenDataChannel | Déploiement | Lecture/écriture 
+
+
+.4+| Enregistrer les informations d'identification pour FSX pour ONTAP, Active Directory et l'utilisateur SQL (uniquement pour l'authentification utilisateur SQL) | ssm:getParameter ^1^  a| 
 * Déploiement
 * Gérez les opérations
 * Inventaire
 
+| Lecture/écriture 
 
 
-
-| Lecture/écriture | ssm:GetParameters ^1^  a| 
+| ssm:GetParameters ^1^  a| 
 * Déploiement
 * Inventaire
 
+| Lecture/écriture 
 
 
-
-| Lecture/écriture | ssm:PutParameter ^1^  a| 
+| ssm:PutParameter ^1^  a| 
 * Déploiement
 * Gérez les opérations
 
+| Lecture/écriture 
 
 
-
-| Lecture/écriture | ssm:DeleteParameters ^1^  a| 
+| ssm:DeleteParameters ^1^  a| 
 * Déploiement
 * Gérez les opérations
 
+| Lecture/écriture 
 
 
-
-| Lecture/écriture | Pile de signal CloudFormation en cas de succès ou d'échec. | Formation du nuage:SignalResource ^1^ | Déploiement 
-
-
-| Lecture/écriture | Ajoutez le rôle EC2 créé par le modèle au profil d'instance d'EC2 pour permettre aux scripts sur EC2 d'accéder aux ressources requises pour le déploiement. | iam:AddRoleToInstanceProfile | Déploiement 
+| Pile de signal CloudFormation en cas de succès ou d'échec. | Formation du nuage:SignalResource ^1^ | Déploiement | Lecture/écriture 
 
 
-| Lecture/écriture | Créez un profil d'instance pour EC2 et associez le rôle EC2 créé. | iam:CreateInstanceProfile | Déploiement 
+| Ajoutez le rôle EC2 créé par le modèle au profil d'instance d'EC2 pour permettre aux scripts sur EC2 d'accéder aux ressources requises pour le déploiement. | iam:AddRoleToInstanceProfile | Déploiement | Lecture/écriture 
 
 
-| Lecture/écriture | Créez un rôle EC2 via un modèle avec les autorisations répertoriées ci-dessous | iam:CreateRole | Déploiement 
+| Créez un profil d'instance pour EC2 et associez le rôle EC2 créé. | iam:CreateInstanceProfile | Déploiement | Lecture/écriture 
 
 
-| Lecture/écriture | Créer un rôle lié au service EC2 | iam:CreateServiceLinkedRole ^2^ | Déploiement 
+| Créez un rôle EC2 via un modèle avec les autorisations répertoriées ci-dessous | iam:CreateRole | Déploiement | Lecture/écriture 
 
 
-| Lecture/écriture | Supprimez le profil d'instance créé lors du déploiement, spécifiquement pour les nœuds de validation | iam:DeleteInstanceProfile | Déploiement 
+| Créer un rôle lié au service EC2 | iam:CreateServiceLinkedRole ^2^ | Déploiement | Lecture/écriture 
 
 
-| Lecture/écriture .5+| Obtenez les détails du rôle et de la stratégie pour déterminer les écarts d'autorisation et les valider pour le déploiement | iam:GetPolicy | Déploiement 
+| Supprimez le profil d'instance créé lors du déploiement, spécifiquement pour les nœuds de validation | iam:DeleteInstanceProfile | Déploiement | Lecture/écriture 
 
 
-| Lecture/écriture | iam:GetPolicyVersion | Déploiement 
+.5+| Obtenez les détails du rôle et de la stratégie pour déterminer les écarts d'autorisation et les valider pour le déploiement | iam:GetPolicy | Déploiement | Lecture/écriture 
 
 
-| Lecture/écriture | iam:GetRole | Déploiement 
+| iam:GetPolicyVersion | Déploiement | Lecture/écriture 
 
 
-| Lecture/écriture | iam:GetRolePolicy | Déploiement 
+| iam:GetRole | Déploiement | Lecture/écriture 
 
 
-| Lecture/écriture | iam:GetUser | Déploiement 
+| iam:GetRolePolicy | Déploiement | Lecture/écriture 
 
 
-| Lecture/écriture | Transmettre le rôle créé à l'instance EC2 | iam:PassRole ^3^ | Déploiement 
+| iam:GetUser | Déploiement | Lecture/écriture 
 
 
-| Lecture/écriture | Ajoutez une règle avec les autorisations requises au rôle EC2 créé | iam:PutRolePolicy | Déploiement 
+| Transmettre le rôle créé à l'instance EC2 | iam:PassRole ^3^ | Déploiement | Lecture/écriture 
 
 
-| Lecture/écriture | Détacher le rôle du profil d'instance EC2 provisionné | iam:RemoveRoleFromInstanceProfile | Déploiement 
+| Ajoutez une règle avec les autorisations requises au rôle EC2 créé | iam:PutRolePolicy | Déploiement | Lecture/écriture 
 
 
-| Lecture/écriture | Simulez les opérations de workload pour valider les autorisations disponibles et les comparer avec les autorisations de compte AWS requises | iam:SimulatePrincipalPolicy | Déploiement 
+| Détacher le rôle du profil d'instance EC2 provisionné | iam:RemoveRoleFromInstanceProfile | Déploiement | Lecture/écriture 
+
+
+| Simulez les opérations de workload pour valider les autorisations disponibles et les comparer avec les autorisations de compte AWS requises | iam:SimulatePrincipalPolicy | Déploiement  a| 
+* Lecture seule
+* Lecture/écriture
+
+
 |===
 . L'autorisation est limitée aux ressources commençant par WLMDB.
 . "iam:CreateServiceLinkedRole" limité par "iam:AWSServiceName": "ec2.amazonaws.com"*
