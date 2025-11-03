@@ -1,0 +1,27 @@
+= Mise à jour des autorisations
+:allow-uri-read: 
+
+
+
+
+=== Mise à jour des autorisations
+
+Dans cette version, nous avons apporté des mises à jour importantes aux politiques d'autorisation pour le stockage, les bases de données et les charges de travail VMware afin d'améliorer la sécurité et le contrôle des utilisateurs.  Vous pouvez personnaliser vos paramètres d'autorisation de manière plus précise, en ajoutant ou en supprimant des autorisations selon vos besoins.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html["Référence des autorisations pour Workload Factory"]
+
+
+
+=== Nouvelle notification pour le stockage
+
+Le service de notification NetApp Workload Factory inclut la notification pour la gestion automatique des inodes pour le stockage.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.html["Notifications pour NetApp Workload Factory"]
+
+
+
+=== Avertissements de seuil pour la gestion automatique de la capacité et des inodes
+
+La gestion automatique de la capacité et des inodes pour le stockage peut être configurée avec un seuil d'alerte qui déclenche une notification du service de notification Workload Factory.  Pour utiliser cette fonctionnalité, vous devez d'abord activer le service de notification Workload Factory.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.html["Configurer les notifications pour NetApp Workload Factory"]

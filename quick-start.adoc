@@ -13,7 +13,7 @@ summary: 'Commencez à utiliser Workload Factory en préparant la mise en résea
 [role="lead"]
 Commencez à utiliser NetApp Workload Factory en vous inscrivant et en créant un compte, en ajoutant des informations d'identification afin que Workload Factory puisse gérer directement les ressources AWS, puis optimisez vos charges de travail en utilisant Amazon FSx for NetApp ONTAP.
 
-NetApp Workload Factory est accessible aux utilisateurs en tant que service cloud à partir de la console Web.  Avant de commencer, vous devez avoir une compréhension delink:workload-factory-overview.html["Usine de charge de travail"] etlink:operational-modes.html["modes de fonctionnement"] .
+NetApp Workload Factory est accessible aux utilisateurs en tant que service cloud depuis la console web.  Avant de commencer, vous devriez avoir une compréhension delink:workload-factory-overview.html["Usine de charge de travail"] .
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Une seule"] Inscrivez-vous et créez un compte
 [role="quick-margin-para"]
@@ -24,7 +24,7 @@ link:sign-up-saas.html["Découvrez comment vous inscrire et créer un compte"].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Deux"]Ajouter les informations d'identification AWS à Workload Factory
 [role="quick-margin-para"]
-Cette étape est facultative. Vous pouvez utiliser Workload Factory en mode _Basic_ sans ajouter d'informations d'identification pour accéder à votre compte AWS.  L'ajout d'informations d'identification AWS à Workload Factory en mode _lecture seule_ ou en mode _lecture/écriture_ donne à votre compte Workload Factory les autorisations nécessaires pour créer et gérer les systèmes de fichiers FSx for ONTAP et pour déployer et gérer des charges de travail spécifiques, telles que les bases de données et GenAI.
+Cette étape est facultative. Vous pouvez utiliser Workload Factory sans ajouter d'identifiants pour accéder à votre compte AWS.  L'ajout d'identifiants AWS à Workload Factory confère à votre compte Workload Factory les autorisations nécessaires pour créer et gérer des systèmes de fichiers FSx pour ONTAP et pour déployer et gérer des charges de travail spécifiques, telles que des bases de données et GenAI.
 
 [role="quick-margin-para"]
 link:add-credentials.html["Découvrez comment ajouter des informations d'identification à votre compte"].

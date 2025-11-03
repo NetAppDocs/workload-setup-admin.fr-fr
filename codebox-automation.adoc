@@ -11,7 +11,7 @@ summary: 'Codebox est un copilote d"infrastructure en tant que code (IaC) qui ai
 
 
 [role="lead"]
-Codebox est un copilote d'infrastructure en tant que code (IaC) qui aide les développeurs et DevOps à générer le code nécessaire pour exécuter toute opération prise en charge par NetApp Workload Factory.  Codebox est aligné sur les modes de fonctionnement de Workload Factory (_basic_, _read-only_ et _read/write_) et définit un chemin clair pour la préparation à l'exécution tout en fournissant un catalogue d'automatisation pour une réutilisation future rapide.
+Codebox est un copilote Infrastructure as Code (IaC) qui aide les développeurs et les équipes DevOps à générer le code nécessaire pour exécuter toute opération prise en charge par NetApp Workload Factory.  Codebox est conforme aux politiques d'autorisation de Workload Factory et définit une voie claire pour la préparation à l'exécution, tout en fournissant un catalogue d'automatisation pour une réutilisation future rapide.
 
 
 
@@ -23,7 +23,7 @@ Codebox offre deux fonctionnalités IAC clés :
 * _Codebox Automation Catalog_ affiche tous les travaux IAC enregistrés, ce qui vous permet de les référencer facilement pour une utilisation ultérieure. Les travaux du catalogue d'automatisation sont enregistrés en tant que modèles et affichés dans le contexte des ressources qui s'y appliquent.
 
 
-De plus, lors de la configuration des informations d’identification de Workload Factory, Codebox affiche dynamiquement les autorisations AWS nécessaires pour créer des stratégies IAM.  Les autorisations sont fournies pour chaque fonctionnalité Workload Factory que vous prévoyez d'utiliser (bases de données, IA, FSx pour ONTAP, etc.), et elles sont personnalisées selon que les utilisateurs de la politique obtiendront des autorisations en lecture seule ou des autorisations complètes en lecture/écriture.  Il vous suffit de copier les autorisations de Codebox, puis de les coller dans la console de gestion AWS afin que Workload Factory dispose des autorisations appropriées pour gérer vos charges de travail.
+De plus, lors de la configuration des identifiants Workload Factory, Codebox affiche dynamiquement les autorisations AWS nécessaires à la création de politiques IAM.  Les autorisations sont fournies pour chaque fonctionnalité de Workload Factory que vous prévoyez d'utiliser (bases de données, IA, FSx pour ONTAP, etc.) et elles sont personnalisables.  Il vous suffit de copier les autorisations depuis Codebox, puis de les coller dans la console de gestion AWS afin que Workload Factory dispose des autorisations nécessaires pour gérer vos charges de travail.
 
 
 

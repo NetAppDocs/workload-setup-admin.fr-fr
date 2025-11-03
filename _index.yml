@@ -24,14 +24,10 @@ indexpage:
       url: workload-factory-overview.html
     - title: S'inscrire
       url: sign-up-saas.html
-  - title: Modes opérationnels et informations d'identification
-    links:
-    - title: Découvrez les modes de fonctionnement
-      url: operational-modes.html
     - title: Ajoutez des identifiants AWS
       url: add-credentials.html
-    - title: Supprimer les informations d'identification
-      url: manage-credentials.html
+    - title: Autorisations pour Workload Factory
+      url: permissions-reference.html
   - title: Automatisation à l'aide de Codebox
     links:
     - title: En savoir plus sur Codebox

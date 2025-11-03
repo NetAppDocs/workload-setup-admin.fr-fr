@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blocks>
   <block id="3b878279a04dc47d60932cb294d96259" category="section-title">Présentation</block>
-  <block id="4dacf6e0adb6ed0f64acd514a486bf8a" category="inline-link-macro">En savoir plus sur les modes de fonctionnement</block>
   <block id="df21e6f22445f7e313093546a4762e64" category="paragraph">Vous pouvez ajouter des informations d'identification en utilisant deux méthodes :</block>
   <block id="1a04b786edc8b8251d22307b11cb2a8d" category="list-text">*Automatiquement* : vous saisissez une quantité minimale d'informations sur les autorisations, puis utilisez une pile CloudFormation pour créer les stratégies IAM et le rôle de vos informations d'identification.</block>
   <block id="3e704746794b6c6da13402ca9df54660" category="section-title">Ajoutez manuellement des informations d'identification à un compte</block>
@@ -157,40 +156,6 @@
   <block id="3b05fd0eeb02280c9e89c847477bc0fc" category="list-text">Si vous êtes membre d'un seul compte, sélectionnez *Continuer*.</block>
   <block id="9dd8932847709b0a76c3786f584e1272" category="list-text">Si vous êtes membre de plusieurs comptes, sélectionnez le compte et sélectionnez *Continuer*.</block>
   <block id="25f033e226552b2f5ae002edb8e5fd2f" category="doc">Supprimer les informations d'identification</block>
-  <block id="0261a8e2837bda78e3e9784459c8d346" category="doc">En savoir plus sur les modes opérationnels et les identifiants AWS</block>
-  <block id="3b39e22b0ceb822bf56d19eb7ec14f7f" category="section-title">Modes de fonctionnement</block>
-  <block id="dad76b021334eb3d63f98648f701f598" category="list-text">Mode de base</block>
-  <block id="ba15cdea72f76749ac3c4d115682e1d5" category="section-title">Fonctions du mode opérationnel</block>
-  <block id="98065f8fb54547b003b502647ed5da13" category="paragraph">Les fonctions disponibles à l'aide de chacun des modes augmentent avec chaque mode.</block>
-  <block id="650be61892bf690026089544abbd9d26" category="cell">Mode</block>
-  <block id="8b9f82548e6c7bc4008b903cade408bd" category="cell">L'automatisation dans AWS grâce à IAC</block>
-  <block id="cb96700fed42790aca4b326c2ddf0ee1" category="cell">Découverte et exécution automatique des ressources AWS</block>
-  <block id="822fdc9d51edd3ea21167e6afc3133bb" category="cell">Suivi de la progression</block>
-  <block id="972e73b7a882d0802a4e3a16946a2f94" category="cell">Basique</block>
-  <block id="bafd7322c6e97d25b6299b5d6fe8920b" category="cell">Non</block>
-  <block id="bc459ff156247ecdc2f450d6760864e0" category="cell">Modèle IAC au minimum complet</block>
-  <block id="7a1a5f3e79fdc91edf2f5ead9d66abb4" category="cell">Lecture</block>
-  <block id="dd5bf678cc7b441324b2d76ab8b6329d" category="cell">Modèle IAC modérément complet</block>
-  <block id="93cba07454f06a4a960172bbd6e2a435" category="cell">Oui</block>
-  <block id="3babc847b322c661049062334b9c76b2" category="cell">Automatisation totale</block>
-  <block id="78ac103234082be5f5a4ea67a4551981" category="cell">Modèle IAC complet avec automatisation complète</block>
-  <block id="c1ae257d71f3632f9398109243cbfd70" category="section-title">Conditions requises pour le mode opérationnel</block>
-  <block id="38a12b37ae4221c5fda46c9430a61d47" category="cell">Identifiants de compte AWS</block>
-  <block id="97e7c9a7d06eac006a28bf05467fcc8b" category="cell">Lien</block>
-  <block id="6fd5e95dc0bce8329da87e1152677b48" category="cell">Non requis</block>
-  <block id="d8bd6e60adcc01ce20f509ea6800de8f" category="cell">Lecture seule</block>
-  <block id="b651efdb98a5d6bd2b3935d0c3f4a5e2" category="cell">Obligatoire</block>
-  <block id="6015cd2e9e5bc5b037ad456163cc26cb" category="inline-link">En savoir plus sur les liens</block>
-  <block id="cea96a6659ee3b63722518018a5e6659" category="paragraph"><block ref="cea96a6659ee3b63722518018a5e6659" category="inline-link-rx"></block></block>
-  <block id="7cc58201fa83275d07886281be81a758" category="section-title">Exemples de mode opérationnel</block>
-  <block id="5504977cb47d642da3d1264eefb7edda" category="section-title">Exemple 1</block>
-  <block id="4cd751338620bbd6099bbf7dcff61879" category="inline-image-macro">Capture d'écran montrant un ensemble d'informations d'identification qui fournissent deux types d'autorisations de charge de travail.</block>
-  <block id="9d405f908b42d501e27391e88e96690c" category="paragraph"><block ref="9d405f908b42d501e27391e88e96690c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5f3a8aa007370d00f3fd3b293a6a1118" category="section-title">Exemple 2</block>
-  <block id="bad86c34eeb44e43315105ff00eb040b" category="paragraph">Dans ce cas, l'utilisateur a créé deux ensembles d'informations d'identification pour permettre différentes capacités opérationnelles en fonction de l'ensemble d'informations d'identification sélectionné. Généralement, chaque ensemble d'informations d'identification est associé à un compte AWS différent.</block>
-  <block id="13834b608e3eab1a58b1e60d8594b010" category="paragraph"><block ref="13834b608e3eab1a58b1e60d8594b010" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7b951488dcd4f24a1001cb4ce278841f" category="paragraph">Le second ensemble d'identifiants fournit uniquement des autorisations qui donnent aux utilisateurs un contrôle total pour la création des systèmes de fichiers FSX pour ONTAP et l'affichage des autres types de stockage AWS utilisés dans le compte.</block>
-  <block id="a1c7a646d9f617df5f4591d961591390" category="paragraph"><block ref="a1c7a646d9f617df5f4591d961591390" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2c4eed705dd3e0adf6e7194858d8dff7" category="section-title">Identifiants AWS</block>
   <block id="79c24ecd9f3b01018d8a2753b852b157" category="paragraph">Nous avons conçu un flux d'enregistrement des informations d'identification du rôle AWS supposé qui :</block>
   <block id="ea26385a0e9eb0b784d2878d8ad78cdc" category="list-text">Prend en charge des autorisations de compte AWS plus alignées : vous pouvez spécifier les fonctionnalités des workloads que vous souhaitez utiliser et définir les exigences de règles IAM en fonction de ces sélections.</block>
@@ -199,8 +164,6 @@
   <block id="ba3950fc801639789c6f2c3d00092cfb" category="list-text">Simplifie également le processus d'enregistrement des identifiants en offrant aux utilisateurs une option automatisée pour la création de règles IAM et de rôles requises à l'aide de piles AWS CloudFormation.</block>
   <block id="4a2be88868f600a45501fde04364bae7" category="list-text">Il est mieux adapté aux utilisateurs de FSX for ONTAP qui préfèrent stocker leurs identifiants dans les limites de l'écosystème cloud AWS en permettant le stockage des identifiants de services FSX pour ONTAP dans un système de gestion des secrets basé sur AWS.</block>
   <block id="f9e7dc895484b33db42d9ee0925e28e0" category="section-title">Une ou plusieurs identifiants AWS</block>
-  <block id="2805984a9d1d71e7e662e187f6160808" category="paragraph">Votre ensemble initial d'identifiants AWS peut inclure une règle IAM pour une fonctionnalité ou pour de nombreuses fonctionnalités. Cela dépend simplement des besoins de votre entreprise.</block>
-  <block id="ba8b072b83c1e6db56e40bf48ddb0871" category="inline-link-macro">modes de fonctionnement</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">Une seule</block>
   <block id="0876e0a47d86eee44886009e6fdae6e5" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> Inscrivez-vous et créez un compte</block>
   <block id="996a84421252d4a7c2db622831369066" category="inline-link-macro">Découvrez comment vous inscrire et créer un compte</block>
@@ -309,8 +272,6 @@
   <block id="0fe398a436a33849be29455ed17d4185" category="list-text">Les API sont basées sur la technologie REST et les bonnes pratiques actuelles. Les principales technologies incluent HTTP et JSON.</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">Commencez</block>
   <block id="d9776f0775997b2e698c6975420b5c5d" category="sidebar">S'inscrire</block>
-  <block id="1c71023bf289bc297d09be71221ff819" category="sidebar">Modes opérationnels et informations d'identification</block>
-  <block id="65179615095fe42a8a47efc1a529ea2f" category="sidebar">Découvrez les modes de fonctionnement</block>
   <block id="196a1b1d4d7eff75b0b7bc0f6fa282e7" category="sidebar">Ajoutez des identifiants AWS</block>
   <block id="b60830c9ff5a76f323a283c0cae1b47a" category="sidebar">Automatisation à l'aide de Codebox</block>
   <block id="6359b03a7ff6ac7a9c38c6edebcd1408" category="sidebar">En savoir plus sur Codebox</block>
@@ -402,7 +363,6 @@
   <block id="004bf6c9a40003140292e97330236c53" category="cell">Action</block>
   <block id="04b49ffb43a2b12a51b5f955d8c9ca8b" category="cell">Cas d'utilisation</block>
   <block id="2fdd0cbe402a8ae2149e0cdf4e1d9b9c" category="cell">Créez un système de fichiers FSX pour ONTAP</block>
-  <block id="e672bad3c1c11e2c400555291158bf67" category="cell">fsx:CreateFileSystem*</block>
   <block id="ea355214fd4bc7c57f471bd92918879b" category="cell">Déploiement</block>
   <block id="f6c2cf766221c709e41636c08b06f6c5" category="cell">Créez un groupe de sécurité pour un système de fichiers FSX pour ONTAP</block>
   <block id="dfe69f2eb83bcef99d0bb464b50fbf34" category="cell">ec2:CreateSecurityGroup</block>
@@ -416,23 +376,7 @@
   <block id="5cb2b3f39804f9782fb453390eb33d73" category="cell">Les opérations de gestion</block>
   <block id="5c1d3b82016ca9ba106bc6c28ab8c44a" category="cell">ec2:DeleteSecurityGroup</block>
   <block id="27937326fc1b3f52b27fa58318958e6f" category="cell">Créez, affichez et gérez les ressources du système de fichiers FSX pour ONTAP</block>
-  <block id="881a77b57b4f54fcd2a9195295bb42d5" category="cell">fsx:CreateVolume*</block>
-  <block id="c6dfd035cfaef7f761feb4e3ff88059f" category="cell">fsx:TagResource*</block>
-  <block id="303ed732501344f771eaa52c17b36e6a" category="cell">fsx:CreateStorageVirtualmachine*</block>
-  <block id="37187b644b74feecbd9d89072a07067c" category="cell">fsx:DeleteFileSystem*</block>
-  <block id="60db4cdd44bde68fdeca07c7efbb2e30" category="cell">fsx:DeleteStorageVirtualmachine*</block>
-  <block id="cebff248e50475eae32e0cc7bcea596d" category="cell">fsx:DescribeFileSystems*</block>
   <block id="4d604dd8f008145471dc845683399189" category="cell">Inventaire</block>
-  <block id="767187f66a86b52ca75d5f8aa6d8cb78" category="cell">fsx:DécribStockVirtualMachines*</block>
-  <block id="e50c6ebd91bc975b1c106009dfe0f444" category="cell">fsx:UpdateFileSystem*</block>
-  <block id="3e65eafa8da1abd23d0a1caacc3c82aa" category="cell">fsx:UpdateStorageVirtualmachine*</block>
-  <block id="e16d8d43ea7152638b8769d9d49f0337" category="cell">fsx:Describevolumes*</block>
-  <block id="a670f6b6fdbba1cc43de3fd848e253fc" category="cell">fsx:UpdateVolume*</block>
-  <block id="0e4653ac375b6373e5d2a945f3e42eb3" category="cell">fsx:DeleteVolume*</block>
-  <block id="04a63a746b0e53d01ca6dad833e60d84" category="cell">fsx:UntagResource*</block>
-  <block id="c780df6e64b345a10200e5ecd236b0b3" category="cell">fsx:DescribeBackups*</block>
-  <block id="5e85e3158b474a632f6131f78bdd50ab" category="cell">fsx:CreateBackup*</block>
-  <block id="4ad5a3c34fcd3e62f6804bf2121fd6d4" category="cell">fsx:CreateVolumeFromBackup*</block>
   <block id="e3ff3d5e5ebfec893c7c7a1225d78b44" category="cell">Répertoriez les balises des ressources FSX pour ONTAP</block>
   <block id="fefbafa74f5b8d278a3fe90b352b553b" category="cell">fsx:ListTagsForResource</block>
   <block id="02bc954bd55df1dce9bf4e4f244962d8" category="cell">Obtenez des détails pour remplir le formulaire de déploiement du système de fichiers FSX pour ONTAP</block>
@@ -453,15 +397,11 @@
   <block id="2101c43af42db107614da3d2faadb4dc" category="cell">Km:décrire*</block>
   <block id="b18a2220ba0da795c31cbb6cd990fd49" category="cell">Km:liste*</block>
   <block id="61a4afbabf94aa7f1ef765ee7e5cfd52" category="cell">Décrivez Elastic File System dans le calculateur d'économies</block>
-  <block id="4a6bd396d94cca62c7831241093bd301" category="cell">Élastickfilesystem:description*</block>
-  <block id="975fad57280d6c4bce9f0ebeb8c578e5" category="cell">Génération de rapports de metrics CloudWatch</block>
-  <block id="fab89b1a8f625024ca157821a4972648" category="cell">cloudwatch : PutMetricData</block>
   <block id="9fd6274c053251e7fdd752215a510290" category="cell">Obtenez des metrics de système de fichiers et de volume</block>
   <block id="f63e0d20057299c9c16bd0c2c9e92a5c" category="cell">cloudwatch:GetMetricData</block>
   <block id="3a902f1e8a6db9861a0a7608e2c5f711" category="cell">cloudwatch:GetMetricStatistics</block>
   <block id="685902496cc1b2431527838eb3dd51f8" category="paragraph">Le tableau suivant affiche les autorisations pour les charges de travail de la base de données.</block>
   <block id="0647b03c182e6a539e314bf5657eba2e" category="example-title">Tableau des autorisations pour les charges de travail de la base de données</block>
-  <block id="9d0f530f355f04b5462f43ae04528fde" category="cell">Répertoriez et définissez les déclencheurs des événements</block>
   <block id="124f2c65b8b708241b7552a865ae2f29" category="cell">sns:ListTopics</block>
   <block id="b561747f1044749aaeab8082f02c0c2f" category="cell">ec2:Décrivez des Keypaires</block>
   <block id="46e796ba1859cbbd532aeef823cd3dd3" category="cell">ec2:DescribeInstanceTypes</block>
@@ -489,14 +429,12 @@
   <block id="ed8ac7020751c46d1e6875d079c18a1e" category="cell">fsx:DescribeStockVirtualMachines</block>
   <block id="41b4e5d916e26c9e0d32ceff6fd589ed" category="list-text">Gérez les opérations</block>
   <block id="0054238c3be20aab765346f029c558a4" category="cell">fsx:DescribeFileSystems</block>
-  <block id="5a3667523a928adc1e72c2d52d3c46da" category="cell">Obtenez les limites de quota de service pour CloudFormation et VPC</block>
   <block id="5c2e89cc7d199bd993940299714f0d2a" category="cell">Servicecotas:ListServiceQuotas</block>
   <block id="033e3df65a67c88a8d0c83e2ae6f082e" category="cell">Utilisez la requête SSM pour obtenir la liste mise à jour des régions FSX pour ONTAP prises en charge</block>
   <block id="055e84613d0abc8db259dc0d1c353d05" category="cell">ssm:GetParametersByPath</block>
   <block id="7f42f2c05a807e6dc1d65c9a2dba48b7" category="cell">Interroger la réponse SSM après l'envoi de la commande pour gérer les opérations après le déploiement</block>
   <block id="6b443d4e29789a97b7bf9117ac2091df" category="cell">ssm:GetCommandInvocation</block>
   <block id="15970c4fdbca1fc48c5b412d94e798c0" category="list-text">Optimisation</block>
-  <block id="5d58169dcd5950da6e86fc3c12deb7c8" category="cell">Envoyer des commandes via SSM aux instances EC2</block>
   <block id="b187f8fa28bd381ca60b99c28941d5b5" category="cell">ssm:SendCommand</block>
   <block id="e194a3f487fc02c5fac0d10663dbac59" category="cell">Obtenir l'état de connectivité SSM sur les instances après le déploiement</block>
   <block id="3dbc1561f97a84c3dab7611b2a5964fb" category="cell">ssm:GetConnectionStatus</block>
@@ -561,14 +499,11 @@
   <block id="da044dbe1821a39f63f98e823344b062" category="cell">Cloudformation:DescribeStackEvents</block>
   <block id="f404fc6d0850472807e4fcd86203a313" category="cell">Cloudformation:DescribeSacks</block>
   <block id="6f25bb2faea408ecb06dc30a96791ac2" category="cell">Déformation:ValidéeTemplate</block>
-  <block id="6ecc76cab2e7449f332b847599e62d5f" category="cell">Extraire les répertoires disponibles dans la région</block>
-  <block id="f4e46229f95e1a17f96ebacbac65751b" category="cell">Ajoutez des règles pour le groupe de sécurité rattaché aux instances EC2 provisionnées</block>
   <block id="1f4dd9a69501cc464524fc5da8bcd1b7" category="cell">Créez des modèles de pile imbriqués pour réessayer et restaurer</block>
   <block id="8d9ddfab0a610d7966bf4e6cea787cd0" category="cell">ec2:CreateLaunchTemplate</block>
   <block id="2d90329adcb7267ed4f810f58b55ff72" category="cell">ec2:CreateLaunchTemplateVersion</block>
   <block id="e1e15e9a22b701bee4ca34f3b6e309c0" category="cell">Gérer les balises et la sécurité du réseau sur les instances créées</block>
   <block id="6d284e37c36390a37443cf46fd082a1b" category="cell">ec2:CreateNetworkinterface</block>
-  <block id="d94d61de08721d1da00b1d5006f35977" category="cell">Supprimez le groupe de sécurité créé temporairement pour les nœuds de validation</block>
   <block id="7f9122ce0935681e0e135088ba86059c" category="cell">Consultez les détails de l'instance pour le provisionnement</block>
   <block id="c1e2ff64a681f515f3bae376c9a2850d" category="cell">Démarrez les instances créées</block>
   <block id="392b3d4b5b32ec7fec96c348ecef2c2a" category="cell">ec2:RunInstances</block>
@@ -578,7 +513,6 @@
   <block id="0128e66e7260cacda28baf033acff6a2" category="cell">fsx:CreateVolume</block>
   <block id="31db2f17979c481c49517c603fc07a30" category="cell">Découvrez les détails de FSX pour ONTAP</block>
   <block id="096f855751ca8a251f3a90595e899592" category="cell">fsx:décrire*</block>
-  <block id="32e6bcbc3ba209ad50015d597c501851" category="cell">fsx:liste*</block>
   <block id="e01b866b9f0a245f6f37489680f0f641" category="cell">Redimensionnez le système de fichiers FSX pour ONTAP pour optimiser la marge du système de fichiers</block>
   <block id="c1a13ef5beb00f5acf9f569314c39eaf" category="cell">fsx:système de fichiers de mise à jour</block>
   <block id="1ff0f8e677172fe2cbd267c5ae490ab5" category="cell">Redimensionnez les volumes pour corriger la taille des lecteurs du journal et de la base de données de temps</block>
@@ -590,18 +524,15 @@
   <block id="e471f866d2e101796e014fff06474675" category="cell">Journaux:ListLogDeliveries</block>
   <block id="3ba3376e55a3bdd26ed9c2519b4b9e6a" category="cell">Journaux:PutLogEvents</block>
   <block id="dc344e1b51ae9e5aff7a5efaf286df5a" category="cell">Journaux:TagResource</block>
-  <block id="855ba8396836c2071e5e96753509966d" category="cell">Créez des secrets dans un compte utilisateur pour les informations d'identification fournies pour SQL, Domain et FSX pour ONTAP</block>
   <block id="ed9cb1f5c288bc89df419f89bcf3242b" category="cell">Dressez la liste des sujets SNS des clients et publiez-les sur le service SNS backend WLMDB ainsi que sur le service SNS des clients si cette option est sélectionnée</block>
   <block id="79b450f031f5478d5e79ee9957707c72" category="cell">sns:publier</block>
   <block id="8d9eb93100874b1ad35f7c114e99b237" category="cell">Autorisations SSM requises pour exécuter le script de découverte sur les instances SQL provisionnées et pour récupérer la dernière liste des régions AWS prises en charge par FSX pour ONTAP.</block>
-  <block id="13be5cbb4abfbddc54737b7623c133ff" category="cell">ssm:GET*</block>
   <block id="c7c7e420402662bb51829df1e0943c12" category="cell">ssm:PutCompianceItems</block>
   <block id="89fbad9b36c97bf54eb493988a0f0123" category="cell">ssm:PutConfigurePackageResult</block>
   <block id="9fd52b354e3e9f908281162e612f8481" category="cell">ssm:PutInventory</block>
   <block id="ee12464a75d4bfd31f45d23a41eb32f4" category="cell">ssm:UpdateAssociationStatus</block>
   <block id="3a0d45848bef93e542aab0d32de3c7fa" category="cell">ssm:UpdateInstanceAssociationStatus</block>
   <block id="12490ad4c4c5d81ea6938b26360309d6" category="cell">ssm:UpdateInstanceinformation</block>
-  <block id="56588fd23388c72518cf101c6fd03860" category="cell">Enregistrer les informations d'identification pour FSX pour ONTAP, Active Directory et l'utilisateur SQL (uniquement pour l'authentification utilisateur SQL)</block>
   <block id="a2fd11b449a7d2e5203810fdaa498c7a" category="cell">Pile de signal CloudFormation en cas de succès ou d'échec.</block>
   <block id="1416cbe9db91fd81dc63c1829887b539" category="cell">Formation du nuage:SignalResource ^1^</block>
   <block id="f7009d0c5cdab5611fde5f9414c37a0e" category="cell">Ajoutez le rôle EC2 créé par le modèle au profil d'instance d'EC2 pour permettre aux scripts sur EC2 d'accéder aux ressources requises pour le déploiement.</block>
@@ -691,15 +622,10 @@
   <block id="664a21c3d3b14b815d9e2f22f54ea96d" category="cell">Obtenez les alias de clés KMS à utiliser pour le cryptage Amazon FSX for NetApp ONTAP</block>
   <block id="3836c2d0cbf1328a19f9fd800197a908" category="cell">Obtenez des clés KMS à utiliser pour Amazon FSX for NetApp ONTAP Encryption</block>
   <block id="124cb22dd64f00d25ba53e9ce97e284c" category="cell">Obtenez les détails d'expiration des clés KMS à utiliser pour le chiffrement Amazon FSX for NetApp ONTAP</block>
-  <block id="97816c12e4ea86e2c8f19bd90f6b0eef" category="cell">La requête SSM permet d'obtenir la liste actualisée des régions Amazon FSX pour NetApp ONTAP prises en charge</block>
   <block id="fbb8286b1a1851ed2896cad2716702ce" category="cell">Créez des ressources Amazon FSX pour NetApp ONTAP requises pour le provisionnement</block>
   <block id="3e22fa65415dc7b385d6f07e6468153d" category="cell">Découvrez les détails sur Amazon FSX pour NetApp ONTAP</block>
   <block id="f40779c61ae21b6fbb5c6964620d50db" category="cell">Obtenez des détails de clés KMS et utilisez-les pour le chiffrement Amazon FSX for NetApp ONTAP</block>
   <block id="5df883e5adda577f2fbed8edd98a6052" category="cell">Répertoriez les sujets SNS des clients et publiez-les sur le service SNS back-end de WLMVMC ainsi que sur le service SNS des clients si cette option est sélectionnée</block>
-  <block id="51faf18a49599aa5875c9cc5ecd0c156" category="cell">Permet de récupérer la dernière liste de régions AWS prises en charge par Amazon FSX pour NetApp ONTAP</block>
-  <block id="22ebc59c28ff9c2a08d716ded9c8e998" category="cell">Le magasin de paramètres SSM est utilisé pour enregistrer les informations d'identification d'Amazon FSX pour NetApp ONTAP</block>
-  <block id="766060a05aed7395a628048f6e5d8152" category="cell">ssm:PutParameters</block>
-  <block id="f5ad3adfdd57e7f67f8a97e4699177e7" category="cell">ssm:DeleteParameters</block>
   <block id="64a39273573e4fc2b712d51106db7a4e" category="section-title">Journal des modifications</block>
   <block id="3133cc4fd29893a0163684e3e3f59633" category="paragraph">Lorsque des autorisations sont ajoutées et supprimées, nous les noterons dans les sections ci-dessous.</block>
   <block id="009d2060a609114df262eff04e83f241" category="section-title">22 janvier 2025</block>
@@ -854,10 +780,7 @@
   <block id="74d516ef8dfa098bb4cd92313c403475" category="doc">Prise en charge de CloudShell avec remplissage automatique</block>
   <block id="df96b6f4ceabb5c4dbc915475fd821fe" category="paragraph">Lorsque vous utilisez BlueXP  Workload Factory CloudShell, vous pouvez commencer à taper une commande et appuyer sur la touche Tab pour afficher les options disponibles. S'il existe plusieurs possibilités, l'interface de ligne de commande affiche une liste de suggestions. Cette fonction améliore la productivité en réduisant au minimum les erreurs et en accélérant l'exécution des commandes.</block>
   <block id="514f1fc0ac0ff6e4200d3637146367f1" category="section-title">Mise à jour de la terminologie des autorisations</block>
-  <block id="ac811c471ef716f9c8a3865d7f14caa3" category="list-text">Mode lecture seule</block>
-  <block id="817855bb538dbbb63c56d38fc57684f5" category="list-text">Mode lecture/écriture</block>
   <block id="db3317ceb65be02e43db6f277e0ad94e" category="cell">Lecture/écriture</block>
-  <block id="4d372922f30597b3e046274dbb3cecd2" category="list-text">Lecture seule</block>
   <block id="123ce9aa4e0770ecb435c005fa9b436c" category="cell">Répertoriez les applications Amazon Q Business</block>
   <block id="4f3c534c90392632c7d275f54d5b35a0" category="cell">Qbusiness:ListApplications</block>
   <block id="ff49b9449e169eb2a6d647cdd5416940" category="cell">Créez et mettez à jour l'instance d'IA et le groupe de sécurité de terminal privé lors de la création de la pile d'instance d'IA lors des opérations de déploiement et de reconstruction</block>
@@ -867,8 +790,6 @@
   <block id="dac96c84baa92faab0eb342df5283a1b" category="section-title">4 mai 2025</block>
   <block id="bf0dcc34b100cf0ff91c26bbd98029f7" category="list-text">Prise en charge de la saisie automatique : commencez à taper une commande et utilisez la touche *Tab* pour afficher les options disponibles</block>
   <block id="822748e99c70e9162ce5432b2e1eff5c" category="section-title">04 mai 2025</block>
-  <block id="7a0e532396f167d85a7b425f941d0613" category="list-text">*Le mode lecture seule* améliore l'expérience du mode de base en aidant l'utilisateur à détecter diverses ressources et outils et, par conséquent, en aidant à compléter les assistants pertinents.</block>
-  <block id="4951a0172d4fd2c8116296e71073f31c" category="list-text">*Le mode lecture/écriture* représente une relation de confiance totale et est conçu pour exécuter et automatiser au nom de l'utilisateur avec les informations d'identification attribuées qui ont les autorisations requises et validées pour l'exécution.</block>
   <block id="5d1d5ff6c3c427c682d491550e8f89b3" category="list-text">Évaluation du stockage (optimisation)</block>
   <block id="1636ccb01570c55081666deb02ddfb9c" category="list-text"><block ref="6d952035baa97bd601f4d280f10fcc53" prefix="" category="inline-code"></block></block>
   <block id="c4a094604e7db845f5356b4563efc223" category="list-text"><block ref="99a70cb6d5b807589a0a1aa9bbcfea7d" prefix="" category="inline-code"></block></block>
@@ -876,11 +797,6 @@
   <block id="e21c94a36c6dbf24001a64bddce9456f" category="cell">s3:ListAllMyseaux</block>
   <block id="c34c5eed5692ab9466e57060b06ae6ae" category="section-title">3 juin 2025</block>
   <block id="4ead5e435cb4f2c7cf627b1d1e84c333" category="paragraph">L'interface utilisateur et la documentation de l'usine de charge de travail utilisent désormais « lecture seule » pour faire référence aux autorisations de lecture et « lecture/écriture » pour faire référence aux autorisations d'automatisation.</block>
-  <block id="6af87751c26792b59acdfae604197d5b" category="list-text">Pour les fonctionnalités de charge de travail qui offrent un choix de niveaux d’autorisation (lecture seule ou lecture/écriture), sélectionnez le type d’autorisations qui seront disponibles avec ces informations d’identification.</block>
-  <block id="ce40030804ebf174cb97440fb6da4d13" category="cell">Informations d'identification en lecture/écriture</block>
-  <block id="f5744b5c42cd92a298e78407d6b63d99" category="paragraph">Les utilisateurs de compte qui utilisent les informations d'identification auxquelles ont été accordées les autorisations suivantes auront un contrôle total (mode lecture/écriture) pour créer des systèmes de fichiers FSx pour ONTAP, déployer des bases de données et afficher d'autres types de stockage AWS utilisés dans le compte.</block>
-  <block id="7e5ac274e4d71869c0e636c8c2f07dd0" category="paragraph">Le premier ensemble d'informations d'identification inclut des autorisations qui donnent aux utilisateurs un contrôle total pour la création de systèmes de fichiers FSx pour ONTAP (et la possibilité d'afficher d'autres types de stockage AWS utilisés dans le compte), mais uniquement des autorisations en lecture seule lors de l'utilisation de charges de travail VMware.</block>
-  <block id="4924cab5d4a9a9111b0738ddbae7a866" category="paragraph">Les politiques IAM GenAI ne sont disponibles qu'en mode _lecture/écriture_ :</block>
   <block id="3d040f48a98c22a0f4789c2496c06383" category="paragraph">L'autorisation suivante est désormais disponible en mode _lecture/écriture_ pour les bases de données : <block ref="9c72603737d6e2074ae7fab048b5d3d1" prefix=" " category="inline-code"></block> .</block>
   <block id="a7bc7760b493d79ff53da3b2c0991f0a" category="paragraph">L'autorisation suivante est désormais disponible en mode _lecture seule_ pour les bases de données : <block ref="3320749a6854264e1889d72d7f41a0bf" prefix=" " category="inline-code"></block> .</block>
   <block id="4a0d30bbc349e6300aaa6313a48ffd0a" category="paragraph">Les autorisations suivantes sont désormais disponibles en mode lecture/écriture pour GenAI :</block>
@@ -985,7 +901,6 @@
   <block id="0204047d2332c588e7eb7d928e84f94a" category="summary">Ajoutez les informations d’identification AWS afin que Workload Factory dispose des autorisations nécessaires pour déployer et gérer les ressources cloud dans vos comptes AWS.</block>
   <block id="287ae8bc216279a75c04344894e04b7f" category="doc">Ajouter les informations d'identification AWS à Workload Factory</block>
   <block id="5adad9ce28422d9fe7825511e24aa601" category="paragraph">Ajoutez et gérez les informations d’identification AWS afin que NetApp Workload Factory dispose des autorisations nécessaires pour déployer et gérer les ressources cloud dans vos comptes AWS.</block>
-  <block id="07c821fcc60a79f2d88585dbdf4c202a" category="paragraph">Workload Factory fonctionnera en mode _Basic_ sauf si vous ajoutez des informations d'identification de compte AWS.  Vous pouvez ajouter des informations d'identification pour activer d'autres modes de fonctionnement, tels que le mode _lecture seule_ et le mode _lecture/écriture_. <block ref="3ecbe38d325fe0025957d871a4619a77" category="inline-link-macro-rx"></block> .</block>
   <block id="7f76e91e5513affc227459b415e2e1cf" category="paragraph">Vous pouvez ajouter des informations d’identification AWS à un compte Workload Factory existant à partir de la page Informations d’identification.  Cela fournit à Workload Factory les autorisations nécessaires pour gérer les ressources et les processus au sein de votre environnement cloud AWS.</block>
   <block id="ebb29cdb5a9f5368e3f445c808c91552" category="list-text">*Manuellement* : vous créez la politique IAM et le rôle IAM dans votre compte AWS lors de l'ajout des informations d'identification dans Workload Factory.</block>
   <block id="c3ba6c13344137feef1d3795c8b29466" category="paragraph">Vous pouvez ajouter manuellement les informations d'identification AWS à Workload Factory pour donner à votre compte Workload Factory les autorisations nécessaires pour gérer les ressources AWS que vous utiliserez pour exécuter vos charges de travail uniques.  Chaque ensemble d’informations d’identification que vous ajoutez comprendra une ou plusieurs stratégies IAM basées sur les capacités de charge de travail que vous souhaitez utiliser et un rôle IAM attribué à votre compte.</block>
@@ -1005,8 +920,6 @@
   <block id="b0f8c37516e3eee761656df941264fa2" category="paragraph"><block ref="b0f8c37516e3eee761656df941264fa2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="67a2aece01328bf00637fcc5391ba3ec" category="list-text">Revenez à Workload Factory et surveillez la page Informations d'identification pour vérifier que les nouvelles informations d'identification sont en cours ou qu'elles ont été ajoutées.</block>
   <block id="32573b007d05a07e2a98478d5ce9f017" category="summary">Codebox est un copilote d'infrastructure en tant que code (IaC) qui aide les développeurs et DevOps à générer le code nécessaire pour exécuter toute opération prise en charge par NetApp Workload Factory.</block>
-  <block id="eef2f38ca3db1d82d50eebe72f4aaf3f" category="paragraph">Codebox est un copilote d'infrastructure en tant que code (IaC) qui aide les développeurs et DevOps à générer le code nécessaire pour exécuter toute opération prise en charge par NetApp Workload Factory.  Codebox est aligné sur les modes de fonctionnement de Workload Factory (_basic_, _read-only_ et _read/write_) et définit un chemin clair pour la préparation à l'exécution tout en fournissant un catalogue d'automatisation pour une réutilisation future rapide.</block>
-  <block id="814125fab2859fbd5a6d52cbd369b0fc" category="paragraph">De plus, lors de la configuration des informations d’identification de Workload Factory, Codebox affiche dynamiquement les autorisations AWS nécessaires pour créer des stratégies IAM.  Les autorisations sont fournies pour chaque fonctionnalité Workload Factory que vous prévoyez d'utiliser (bases de données, IA, FSx pour ONTAP, etc.), et elles sont personnalisées selon que les utilisateurs de la politique obtiendront des autorisations en lecture seule ou des autorisations complètes en lecture/écriture.  Il vous suffit de copier les autorisations de Codebox, puis de les coller dans la console de gestion AWS afin que Workload Factory dispose des autorisations appropriées pour gérer vos charges de travail.</block>
   <block id="2a877c6ff8f47bb17f9e4d12f8a693bc" category="list-text">API REST de Workload Factory</block>
   <block id="30f60d67f457bb040dffde52197a54da" category="section-title">Informations connexes</block>
   <block id="4386b64a64b0b63736692fad5b38e6e1" category="inline-link-macro">Documentation de l'API REST de Workload Factory</block>
@@ -1092,35 +1005,15 @@
   <block id="49f5ed0a90981c28c41567afa9022439" category="paragraph">Le secret client n'est visible qu'une seule fois et n'est stocké nulle part par Workload Factory.  Copiez ou téléchargez le secret et stockez-le en toute sécurité.</block>
   <block id="cde2339a39bfe4d657d43be10594e1d0" category="list-text">En option, vous pouvez obtenir un jeton d’accès pour l’API de gestion Auth0 en exécutant un échange d’informations d’identification client.  L'exemple curl montre comment vous pouvez prendre l'ID client et le secret et utiliser une API pour générer le jeton d'accès qui est limité dans le temps.  Le jeton fournit plusieurs heures d’accès aux API NetApp Workload Factory.</block>
   <block id="6088e1e1d002a4c07aec5cec2ca41900" category="list-text">Sur la page *Comptes de service*, sélectionnez le menu Actions, puis sélectionnez *Supprimer*.</block>
-  <block id="b94b05a8d3b2fffca3c57aea1db9ffdb" category="summary">NetApp Workload Factory propose trois modes opérationnels qui vous permettent de contrôler soigneusement l'accès entre Workload Factory et votre parc cloud en fonction de vos politiques informatiques.</block>
-  <block id="8ab364b3c7368520184de39baa7327e3" category="paragraph">NetApp Workload Factory propose trois modes opérationnels qui vous permettent de contrôler soigneusement l'accès entre Workload Factory et votre parc cloud en fonction de vos politiques informatiques.  Le mode opérationnel que vous utilisez est déterminé par le niveau d’autorisations AWS que vous fournissez à Workload Factory.</block>
-  <block id="bc63252869898532ad7c844d8447e358" category="paragraph">Les modes opérationnels fournissent une organisation logique des fonctionnalités et des capacités fournies par Workload Factory, en corrélation avec le niveau de confiance que vous attribuez.  L’objectif principal des modes opérationnels est de communiquer clairement quelles tâches Workload Factory peut ou ne peut pas effectuer au sein de votre compte AWS.</block>
-  <block id="4d34e6e6a767b4ce93680aa48cb370d0" category="list-text">Représente une relation de confiance zéro dans laquelle aucune autorisation AWS n'est attribuée à Workload Factory.  Il est conçu pour l'exploration précoce de Workload Factory et l'utilisation des différents assistants pour créer l'infrastructure en tant que code (IaC) nécessaire.  Vous pouvez copier le code et l'utiliser dans AWS en saisissant manuellement vos informations d'identification AWS.</block>
-  <block id="5198d3d3b16bbd8165878b42f177a30b" category="list-text">Améliore l'expérience du mode de base en ajoutant des autorisations en lecture seule afin que les modèles IaC soient remplis avec vos variables spécifiques (par exemple, VPC, groupes de sécurité, etc.).  Cela vous permet d'exécuter l'IaC directement depuis votre compte AWS sans fournir d'autorisations de modification à Workload Factory.</block>
-  <block id="90e0e635e22e69ee097729d5734a7d9d" category="list-text">Représente une relation de confiance totale afin que Workload Factory se voie attribuer toutes les autorisations.  Cela permet à Workload Factory d'exécuter et d'automatiser les opérations dans AWS en votre nom avec les informations d'identification attribuées qui disposent des autorisations nécessaires à l'exécution.</block>
-  <block id="546393155194873f3731142e84a340fd" category="inline-link-macro">autorisations pour NetApp Workload Factory</block>
-  <block id="81c2957350a12620540cd26890390b33" category="paragraph">En savoir plus sur <block ref="cabd746a8854284ee02379d38c8096f7" category="inline-link-macro-rx"></block> .</block>
-  <block id="b68bbc990631af9eef3fe553c0db51c2" category="cell">Automatisation de Workload Factory</block>
-  <block id="97ad164404d252aefcb10ad97a940250" category="paragraph">Il n’y a aucun sélecteur que vous devez définir dans Workload Factory pour identifier le mode que vous prévoyez d’utiliser.  Le mode est déterminé en fonction des informations d’identification et des autorisations AWS que vous attribuez à votre compte Workload Factory.</block>
-  <block id="c45e625ca22c6cf82bdbab201e8b7505" category="paragraph">Vous pouvez configurer vos informations d’identification pour fournir un mode pour un composant de charge de travail et un autre mode pour un autre composant.  Par exemple, vous pouvez configurer le mode lecture/écriture pour les opérations où vous déployez et gérez les systèmes de fichiers FSx for ONTAP , mais configurer uniquement le mode lecture seule pour la création et le déploiement de charges de travail de base de données à l'aide de Workload Factory.</block>
-  <block id="1e82623c909c729fd392237767a08bbd" category="paragraph">Vous pouvez fournir ces fonctionnalités dans un seul ensemble d'informations d'identification dans un compte Workload Factory, ou vous pouvez créer plusieurs ensembles d'informations d'identification lorsque chaque information d'identification fournit des fonctionnalités de déploiement de charge de travail uniques.</block>
-  <block id="b7539f1df600ed5d69ea48b7db1c268a" category="paragraph">Cependant, ils ne disposeront d’aucun contrôle d’automatisation pour la création et le déploiement de charges de travail VMware (mode de base) à partir de Workload Factory.  S'ils souhaitent créer des charges de travail VMware, ils devront copier le code de Codebox, se connecter manuellement à leur compte AWS et renseigner manuellement les entrées manquantes dans le code généré pour utiliser cette fonctionnalité.</block>
   <block id="9e4d021b600a18ca2bdc19e316e61a90" category="paragraph">Lorsque vous utilisez votre première fonctionnalité Workload Factory (ou vos premières fonctionnalités), vous devez créer les informations d'identification à l'aide des autorisations requises pour ces fonctionnalités de charge de travail.  Vous ajouterez les informations d’identification à Workload Factory, mais vous devrez accéder à la console de gestion AWS pour créer le rôle et la politique IAM.  Ces informations d’identification seront disponibles dans votre compte lorsque vous utiliserez n’importe quelle fonctionnalité de Workload Factory.</block>
   <block id="b6cd757220290782ab371e620582ddcd" category="paragraph">L'ajout de plusieurs ensembles d'informations d'identification AWS à Workload Factory fournit des autorisations supplémentaires nécessaires pour utiliser des fonctionnalités supplémentaires, telles que les systèmes de fichiers FSx pour ONTAP , déployer des bases de données sur FSx pour ONTAP, migrer des charges de travail VMware, etc.</block>
-  <block id="b6358992bb0152c2af9f3e2e315ef468" category="inline-link-macro">Découvrez comment ajouter des informations d'identification AWS à Workload Factory</block>
-  <block id="1350027224712371708c0a642ae2b919" category="paragraph"><block ref="bc58254869896d67e8e31b026259707a" category="inline-link-macro-rx"></block> .</block>
   <block id="afa8d8f6ad8b4dcb54715108a87420e8" category="summary">Pour utiliser les fonctionnalités et services de NetApp Workload Factory, vous devez fournir des autorisations afin que Workload Factory puisse effectuer des opérations dans votre environnement cloud.</block>
   <block id="32acdb91b398fe68c473d385b28af9c3" category="doc">Autorisations pour NetApp Workload Factory</block>
-  <block id="e75bcec41d02f72a4cc9d477ba804144" category="paragraph">Lorsque vous fournissez des autorisations en mode _lecture seule_ ou _lecture/écriture_, Workload Factory attache une politique à l'instance avec des autorisations pour gérer les ressources et les processus au sein de ce compte AWS.  Cela permet à Workload Factory d'exécuter diverses opérations allant de la découverte de vos environnements de stockage au déploiement de ressources AWS telles que des systèmes de fichiers dans la gestion du stockage ou des bases de connaissances pour les charges de travail GenAI.</block>
   <block id="d0ade4355c8ec6ed37983eb14916328c" category="paragraph">Pour les charges de travail de base de données, par exemple, lorsque Workload Factory reçoit les autorisations requises, il analyse toutes les instances EC2 dans un compte et une région donnés et filtre toutes les machines Windows.  Si l'agent AWS Systems Manager (SSM) est installé et en cours d'exécution sur l'hôte et que la mise en réseau de System Manager est correctement configurée, Workload Factory peut accéder à la machine Windows et vérifier si le logiciel SQL Server est installé ou non.</block>
-  <block id="bec1f669d4b71b3094f80260331993ac" category="paragraph">Chaque charge de travail utilise des autorisations pour effectuer certaines tâches dans Workload Factory.  Faites défiler jusqu'à la charge de travail que vous utilisez pour afficher la liste des autorisations, leur objectif, où elles sont utilisées et les modes qui les prennent en charge.</block>
-  <block id="b99e184e3a2f6b2370d5380b1371796b" category="paragraph">Les politiques IAM disponibles pour le stockage fournissent les autorisations dont Workload Factory a besoin pour gérer les ressources et les processus au sein de votre environnement de cloud public en fonction du mode opérationnel dans lequel vous opérez.</block>
-  <block id="90d438e965d4924a5cc9d21b0a11235d" category="paragraph">Les politiques IAM disponibles pour les charges de travail de base de données fournissent les autorisations dont Workload Factory a besoin pour gérer les ressources et les processus au sein de votre environnement de cloud public en fonction du mode opérationnel dans lequel vous opérez.</block>
   <block id="77b951d8af5d2903fd338a5594bc2984" category="cell">ec2:Décrire les adresses</block>
   <block id="3dacbeba47b9f6346efabbbcba3e8f99" category="cell">ec2 : Décrire les modèles de lancement</block>
   <block id="a7832ac7716e329cbfb8be2af7718d13" category="cell">fsx:Décrire les alias du système de fichiers</block>
   <block id="fc1339e69103622aaebd0a2344228761" category="cell">kms : Décrire les magasins de clés personnalisés</block>
-  <block id="29a99298952ddee2d199430a92076edd" category="list-text">Évaluation</block>
   <block id="6196a6b6fbc92f775ff062249cbb6356" category="cell">journaux : GetLogGroupFields</block>
   <block id="db54752ff2c01d44c157e10dfa9f6950" category="cell">journaux : GetLogRecord</block>
   <block id="2c052f83f4bc2f8c87925e18b83a9421" category="cell">Workload Factory bascule vers les journaux Amazon CloudWatch pour l'instance SQL en cas de troncature de sortie SSM</block>
@@ -1140,10 +1033,8 @@
   <block id="efaef01a8d4ed991197fd08168fbfd81" category="doc">Démarrage rapide de NetApp Workload Factory</block>
   <block id="43942595c7cf22990bdac7d19d61280a" category="paragraph">Commencez à utiliser NetApp Workload Factory en vous inscrivant et en créant un compte, en ajoutant des informations d'identification afin que Workload Factory puisse gérer directement les ressources AWS, puis optimisez vos charges de travail en utilisant Amazon FSx for NetApp ONTAP.</block>
   <block id="22e5a7336ebe77138f0282cedcb069ab" category="inline-link-macro">Usine de charge de travail</block>
-  <block id="8badb47ae4efde6548fd67d3204a1d4c" category="paragraph">NetApp Workload Factory est accessible aux utilisateurs en tant que service cloud à partir de la console Web.  Avant de commencer, vous devez avoir une compréhension de<block ref="fc500664a3cbaaa3aa46a84367805795" category="inline-link-macro-rx"></block> et<block ref="232f97f76b2e1af290ebde69715d8d8f" category="inline-link-macro-rx"></block> .</block>
   <block id="58902cbb0adcf45cfe72ced7fa9d043a" category="paragraph">Aller à la<block ref="d98336faa10e493cfae83d68fb7054ec" category="inline-link-rx"></block> , inscrivez-vous et créez un compte.</block>
   <block id="81fe43671919388bf418561882652f2a" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>Ajouter les informations d'identification AWS à Workload Factory</block>
-  <block id="22829868ca33c0e8792bcdc315b4a329" category="paragraph">Cette étape est facultative. Vous pouvez utiliser Workload Factory en mode _Basic_ sans ajouter d'informations d'identification pour accéder à votre compte AWS.  L'ajout d'informations d'identification AWS à Workload Factory en mode _lecture seule_ ou en mode _lecture/écriture_ donne à votre compte Workload Factory les autorisations nécessaires pour créer et gérer les systèmes de fichiers FSx for ONTAP et pour déployer et gérer des charges de travail spécifiques, telles que les bases de données et GenAI.</block>
   <block id="cfce110bce240e5d147991ff7290a456" category="paragraph">Après vous être inscrit, avoir créé un compte et éventuellement ajouté des informations d'identification AWS, vous pouvez commencer à utiliser Workload Factory pour optimiser vos charges de travail à l'aide de FSx for ONTAP.</block>
   <block id="023c464fc92ec044e83176c4e57027c4" category="summary">Workload Factory est accessible depuis une console Web.  Lorsque vous démarrez avec Workload Factory, votre première étape consiste à vous inscrire à l’aide de vos informations d’identification du site de support NetApp existantes ou en créant une connexion au cloud NetApp .</block>
   <block id="68502871f1dfe8846e132f5a8eb8bf26" category="doc">Inscrivez-vous à NetApp Workload Factory</block>
@@ -1191,7 +1082,6 @@
   <block id="44da402ec36da01d015159883a9bf0a7" category="summary">Vous pouvez utiliser Codebox pour générer le code nécessaire à l'exécution de toute opération prise en charge par NetApp Workload Factory.</block>
   <block id="1963e3c64fa43d78481e707973437ff9" category="doc">Utiliser Codebox pour l'automatisation dans NetApp Workload Factory</block>
   <block id="a1886a788bd9ff50317839f01fa99d12" category="paragraph">Vous pouvez utiliser Codebox pour générer le code nécessaire à l'exécution de toute opération prise en charge par NetApp Workload Factory.  Vous pouvez générer du code qui peut être consommé et exécuté à l'aide des API REST Workload Factory, de l'AWS CLI et d'AWS CloudFormation.</block>
-  <block id="cafb7ecf8a10df6df67b4c871c3b6eb0" category="paragraph">Codebox est aligné sur les modes de fonctionnement de Workload Factory (_basic_, _read-only_ et _read/write_) en remplissant les données appropriées dans le code en fonction des autorisations AWS fournies dans le compte Workload Factory pour chaque utilisateur.  Le code peut être utilisé comme un modèle dans lequel vous pouvez compléter les informations manquantes (par exemple, les informations d'identification) ou personnaliser certaines données avant d'exécuter le code.</block>
   <block id="62835b251ca7e00f685a007f7c8b4941" category="paragraph">Lorsque vous saisissez des valeurs dans les assistants de l'interface utilisateur de Workload Factory, vous pouvez voir la mise à jour des données dans Codebox à mesure que vous remplissez chaque champ.  Lorsque vous avez terminé l'assistant, mais avant de sélectionner le bouton *Créer* en bas de la page, sélectionnez<block ref="4b7dbf915ce902400e3f4172621123eb" category="inline-image-macro-rx" type="image"></block> à copier dans Codebox pour capturer le code nécessaire à la construction de votre configuration.  Par exemple, cette capture d’écran de la création d’un nouveau serveur Microsoft SQL Server affiche les entrées de l’assistant pour les zones VPC et de disponibilité et les entrées équivalentes dans Codebox pour une implémentation d’API REST.</block>
   <block id="e42247774bdce04c64e854945cc45288" category="paragraph">Avec certains formats de code, vous pouvez également sélectionner le bouton de téléchargement pour enregistrer le code dans un fichier que vous pouvez importer sur un autre système.  Si nécessaire, vous pouvez modifier le code après son téléchargement afin de pouvoir l'adapter à d'autres comptes AWS.</block>
   <block id="ea91e366c1caa6817dd5fd6381bdcf91" category="paragraph">Vous pouvez copier le code CloudFormation généré à partir de Codebox, puis lancer la pile Amazon Web Services CloudFormation dans votre compte AWS.  CloudFormation exécutera les actions que vous avez définies dans l'interface utilisateur de Workload Factory.</block>
@@ -1230,10 +1120,6 @@
   <block id="912befb3eaba2908b9f951f6483b77fd" category="paragraph"><block ref="912befb3eaba2908b9f951f6483b77fd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c5187db3b0ac1f92f3bcbfc83450784f" category="admonition">Si vous utilisez la console NetApp , vous appartiendrez déjà à un compte, car Workload Factory exploite les comptes NetApp .</block>
   <block id="12870a8b67ab987daca48b855ab4ceda" category="paragraph">Un compte de service agit comme un « utilisateur » qui peut effectuer des appels API autorisés vers NetApp Workload Factory à des fins d’automatisation.  Cela facilite la gestion de l'automatisation car vous n'avez pas besoin de créer des scripts d'automatisation basés sur le compte utilisateur d'une personne réelle qui peut quitter l'entreprise à tout moment.  Tous les titulaires de compte dans Workload Factory sont considérés comme des administrateurs de compte.  Les administrateurs de compte peuvent créer et supprimer plusieurs comptes de service.</block>
-  <block id="aa9b9cc18c16d4ea10f38b25b835c5aa" category="paragraph">Workload Factory fournit trois modes opérationnels qui vous permettent de contrôler soigneusement l'accès à votre parc cloud et d'attribuer une confiance incrémentielle à Workload Factory en fonction de vos politiques informatiques.</block>
-  <block id="d41adf884cb045d0ebe1b066d2b95a2b" category="list-text">Le *mode de base* représente une relation de confiance zéro et est conçu pour l'exploration précoce de Workload Factory et l'utilisation des différents assistants pour créer l'infrastructure en tant que code nécessaire.  Ce code peut être copié et utilisé manuellement par l'utilisateur avec ses informations d'identification AWS pertinentes.</block>
-  <block id="cc85ceb9ec5c575a9f6e41669887b58d" category="inline-link-macro">En savoir plus sur les modes de fonctionnement de Workload Factory</block>
-  <block id="bc8c94f9b7d24148c98db964dcfdf4f4" category="paragraph"><block ref="122264b4ce030632c8f10e1e484f4776" category="inline-link-macro-rx"></block> .</block>
   <block id="a74fb96e1eef90ea865f1878f02b4e15" category="paragraph">Un lien Workload Factory crée une relation de confiance et une connectivité entre Workload Factory et un ou plusieurs systèmes de fichiers FSx for ONTAP .  Cela vous permet de surveiller et de gérer certaines fonctionnalités du système de fichiers directement à partir des appels d'API REST ONTAP qui ne sont pas disponibles via l'API Amazon FSx for ONTAP .</block>
   <block id="1e2cf39904eebcbddae0fe72e0186b8b" category="paragraph">Vous n’avez pas besoin d’un lien pour démarrer avec Workload Factory, mais dans certains cas, vous devrez créer un lien pour déverrouiller toutes les fonctionnalités et capacités de charge de travail de Workload Factory.</block>
   <block id="528a4ef2f9c8bc3b67d3efa2374a45d4" category="paragraph">Codebox est un copilote d'infrastructure en tant que code (IaC) qui aide les développeurs et les ingénieurs DevOps à générer le code nécessaire pour exécuter toute opération prise en charge par Workload Factory.  Les formats de code incluent l'API REST Workload Factory, AWS CLI et AWS CloudFormation.</block>
@@ -1272,4 +1158,82 @@
   <block id="28a2c493e9a663d617e582302e1bcf28" category="inline-link-macro">Notifications pour BlueXP workload factory</block>
   <block id="a4bdb4b5125441fbfaec27ac4bb48be0" category="paragraph"><block ref="a4bdb4b5125441fbfaec27ac4bb48be0" category="inline-link-macro-rx"></block></block>
   <block id="303e96f80576360d0c7b07ae7528fa4b" category="list-text">Terraform</block>
+  <block id="a8652a10fdfc1f87b6bf65a1067a7fd9" category="doc">Mise à jour des autorisations</block>
+  <block id="27d373ed8bf1b1a511ec6680dde4e448" category="paragraph">Dans cette version, nous avons apporté des mises à jour importantes aux politiques d'autorisation pour le stockage, les bases de données et les charges de travail VMware afin d'améliorer la sécurité et le contrôle des utilisateurs.  Vous pouvez personnaliser vos paramètres d'autorisation de manière plus précise, en ajoutant ou en supprimant des autorisations selon vos besoins.</block>
+  <block id="6ab8e8b21fd457b68a33554bd8f64377" category="inline-link-macro">Référence des autorisations pour Workload Factory</block>
+  <block id="f5baf95dfead3e34e749c6d871873a72" category="paragraph"><block ref="f5baf95dfead3e34e749c6d871873a72" category="inline-link-macro-rx"></block></block>
+  <block id="7723c7d7d2f2eb53098d3c771a7b7854" category="paragraph">Le service de notification NetApp Workload Factory inclut la notification pour la gestion automatique des inodes pour le stockage.</block>
+  <block id="ef97320a660fe1bab5cd9dea0fdf90c3" category="section-title">Avertissements de seuil pour la gestion automatique de la capacité et des inodes</block>
+  <block id="84ecff705434b96ba77d72c40db81a43" category="paragraph">La gestion automatique de la capacité et des inodes pour le stockage peut être configurée avec un seuil d'alerte qui déclenche une notification du service de notification Workload Factory.  Pour utiliser cette fonctionnalité, vous devez d'abord activer le service de notification Workload Factory.</block>
+  <block id="c9222d8b9aefb8ef9111967299e54ea0" category="inline-link-macro">Configurer les notifications pour NetApp Workload Factory</block>
+  <block id="ab64aae70d26185cca8d6c5afc54d185" category="paragraph"><block ref="ab64aae70d26185cca8d6c5afc54d185" category="inline-link-macro-rx"></block></block>
+  <block id="ad388627e092e98ac90a0c8aa1d56c93" category="paragraph">Votre ensemble initial d'identifiants AWS peut inclure une stratégie d'autorisations IAM pour une ou plusieurs fonctionnalités.  Cela dépend simplement des besoins de votre entreprise.</block>
+  <block id="ab6377bc5402cd07b43fc38c03bebe62" category="list-text">Pour les fonctionnalités de charge de travail offrant un choix de politiques d'autorisation, sélectionnez le type d'autorisations qui seront disponibles avec ces informations d'identification.</block>
+  <block id="519d7390285bfffecc1ca7623e06f726" category="paragraph">Codebox est un copilote Infrastructure as Code (IaC) qui aide les développeurs et les équipes DevOps à générer le code nécessaire pour exécuter toute opération prise en charge par NetApp Workload Factory.  Codebox est conforme aux politiques d'autorisation de Workload Factory et définit une voie claire pour la préparation à l'exécution, tout en fournissant un catalogue d'automatisation pour une réutilisation future rapide.</block>
+  <block id="04b6c562fc13f3eba6e466afc1dadc35" category="paragraph">De plus, lors de la configuration des identifiants Workload Factory, Codebox affiche dynamiquement les autorisations AWS nécessaires à la création de politiques IAM.  Les autorisations sont fournies pour chaque fonctionnalité de Workload Factory que vous prévoyez d'utiliser (bases de données, IA, FSx pour ONTAP, etc.) et elles sont personnalisables.  Il vous suffit de copier les autorisations depuis Codebox, puis de les coller dans la console de gestion AWS afin que Workload Factory dispose des autorisations nécessaires pour gérer vos charges de travail.</block>
+  <block id="73b5a1614168f824b3fc43f82b51b3d2" category="cell">Événement de gestion automatique des capacités pour FSx pour ONTAP</block>
+  <block id="cda8141986edc4d59df6d7011f696299" category="cell">Le niveau de performance SSD pour le système de fichiers FSx pour ONTAP a atteint le seuil d'alerte de capacité/pourcentage total.</block>
+  <block id="0eaadb4fcb48a0a0ed7bc9868be9fbaa" category="cell">Avertissement</block>
+  <block id="cc1f56cb5cd6bdb7f1796048269b0097" category="cell">Événement de gestion automatique des inodes pour FSx pour ONTAP</block>
+  <block id="e4ddc61f041a4a950895b04a98fff07b" category="cell">Le nombre d'inodes du volume FSx pour ONTAP a atteint le seuil d'avertissement (nombre/pourcentage total).</block>
+  <block id="4614f0f919f6357dc680afd47d32ad2b" category="paragraph">Lorsque vous accordez des autorisations, Workload Factory associe à l'instance une stratégie lui permettant de gérer les ressources et les processus au sein de ce compte AWS.  Cela permet à Workload Factory d'exécuter diverses opérations, depuis la découverte de vos environnements de stockage jusqu'au déploiement de ressources AWS telles que des systèmes de fichiers dans la gestion du stockage ou des bases de connaissances pour les charges de travail GenAI.</block>
+  <block id="09fbd7ce5485b032855da27056744715" category="paragraph">Chaque charge de travail utilise des autorisations pour effectuer certaines tâches dans Workload Factory.  Les autorisations sont regroupées en politiques d'autorisation définies.  Faites défiler jusqu'à la charge de travail que vous utilisez pour en savoir plus sur les politiques d'autorisation, le JSON copiable pour les politiques d'autorisation et un tableau qui répertorie toutes les autorisations, leur objectif, où elles sont utilisées et quelles politiques d'autorisation les prennent en charge.</block>
+  <block id="3c0158ae150bbe2d52d55d8a4897e28a" category="paragraph">Les politiques IAM disponibles pour le stockage fournissent les autorisations dont Workload Factory a besoin pour gérer les ressources et les processus au sein de votre environnement de cloud public.</block>
+  <block id="d542facb88a1cb92fe741c179c25d51a" category="paragraph">Le stockage propose les politiques d'autorisation suivantes :</block>
+  <block id="fffdcb31f17f871dc9c0d8984c5b82f4" category="list-text">*Visualisation, planification et analyse* : visualisez les systèmes de fichiers FSx pour ONTAP , informez-vous sur l’état du système, obtenez une analyse détaillée de vos systèmes et explorez les économies possibles.</block>
+  <block id="3bd06618c0c67b113e296a848c4bbbd4" category="list-text">*Opérations et correction* : Effectuez des tâches opérationnelles telles que l’ajustement de la capacité du système de fichiers et la résolution des problèmes liés à la configuration de votre système de fichiers.</block>
+  <block id="3e3b7379cc4513875ee5e4215fdca1da" category="list-text">*Création et suppression de systèmes de fichiers* : Créez et supprimez des systèmes de fichiers FSx pour ONTAP et des machines virtuelles de stockage.</block>
+  <block id="6ccc894695eaf673649792343f0e575a" category="paragraph">Consultez les politiques IAM requises :</block>
+  <block id="a60fa84080eeff2169efe9e9ab706641" category="open-title">Vue, planification et analyse</block>
+  <block id="cc25205cdd6776f5368057fe36bb47f0" category="open-title">Opérations et assainissement</block>
+  <block id="5e089350e1f2af6ed6097e31f62344a1" category="open-title">Création et suppression de systèmes de fichiers</block>
+  <block id="ae0b858ed1f4faffec835c5b5de925d9" category="cell">Politique d'autorisation</block>
+  <block id="d70a5e23a79e1ff69febc52099df6ccd" category="cell">Elasticfilesystem:DescribeFileSystems</block>
+  <block id="6af94c9aec46920bce23cea8ed26bdeb" category="cell">fsx:Supprimer le système de fichiers</block>
+  <block id="b9092661992c3da87d04e3f895a8d2c2" category="cell">fsx:SupprimerStorageVirtualMachine</block>
+  <block id="767fcd5d5394eaa7281ded93cf8d8c91" category="cell">fsx:DescribeSharedVpcConfiguration</block>
+  <block id="3e40b45f1cb99550b37e4703a21f320f" category="cell">fsx:Mise à jour du système de fichiers</block>
+  <block id="ce09b230163a46ccb55f8e19ebd089bc" category="cell">fsx:UpdateStorageVirtualMachine</block>
+  <block id="2a9b2acb974fe13a772fc0500d379978" category="cell">fsx:SupprimerVolume</block>
+  <block id="ba09e132c7032dec2254a747e6816017" category="cell">fsx:Créer une sauvegarde</block>
+  <block id="33708f681e75e5ad1fe803f7359ef105" category="cell">fsx:Créer un volume à partir d'une sauvegarde</block>
+  <block id="b1c94ca2fbc3e78fc30069c8d0f01680" category="cell">Tous</block>
+  <block id="51a013adbef58901545868ef26f09d7a" category="paragraph">Les politiques IAM disponibles pour les charges de travail de base de données fournissent les autorisations dont Workload Factory a besoin pour gérer les ressources et les processus au sein de votre environnement de cloud public.</block>
+  <block id="2d91eea349dd2934a023a9c89a25a4ae" category="paragraph">Les bases de données proposent les politiques d'autorisation suivantes :</block>
+  <block id="abd0fc334cbbe6ce3b144ecdf917849b" category="list-text">*Visualisation, planification et analyse* : Consultez l’inventaire des ressources de la base de données, informez-vous sur l’état de vos ressources, examinez l’analyse de l’architecture de vos configurations de base de données et explorez les économies possibles, obtenez une analyse du journal des erreurs et explorez les économies.</block>
+  <block id="516f58485558bb7df0c42bfdf10a650f" category="list-text">*Opérations et correction* : Effectuez les tâches opérationnelles pour vos ressources de base de données et corrigez les problèmes liés aux configurations de base de données et au système de stockage de fichiers FSx sous-jacent pour ONTAP .</block>
+  <block id="6ba3b68b57fd6ae3c84b2202720ff1c9" category="list-text">*Création d'hôtes de base de données* : Déployez les hôtes de base de données et le système de stockage de fichiers FSx sous-jacent pour ONTAP conformément aux meilleures pratiques.</block>
+  <block id="2df5c87e4b8d61414a47560bc03e428a" category="open-title">Création d'un hôte de base de données</block>
+  <block id="041381a9f940255508c93bc6e7320eb0" category="cell">Obtenez les limites de quota de service pour CloudFormation et VPC / Créez des secrets dans un compte utilisateur pour les informations d'identification fournies pour SQL, le domaine et FSx pour ONTAP</block>
+  <block id="470d137fe3767a52688a11d64f90ebb7" category="cell">Envoyer des commandes via SSM aux instances EC2 pour la découverte et la gestion</block>
+  <block id="730f2659cd6ec0b8ce478608733e1043" category="cell">Associez des groupes de sécurité et modifiez les règles aux instances EC2 provisionnées.</block>
+  <block id="e6770209133e1a365baaabf29682707a" category="cell">Obtenez les modèles de base disponibles pour l'analyse des journaux d'erreurs.</block>
+  <block id="9b5a66520940453b03f844cb38d72d2f" category="cell">Analyse du journal des erreurs</block>
+  <block id="2b09ddddcb00f772b0397ca4fa2471b0" category="cell">Liste des profils d'interface disponibles dans Amazon Bedrock pour l'analyse des journaux d'erreurs</block>
+  <block id="120558563578966d6e3e3204fb944fe8" category="paragraph">Les politiques IAM de GenAI ne sont disponibles qu'avec les autorisations de lecture/écriture :</block>
+  <block id="cced0416108aa0eed2d9fc1a929f501e" category="list-text">*Lecture/Écriture* : exécute et automatise les opérations dans AWS en votre nom, avec les informations d’identification attribuées qui disposent des autorisations nécessaires et validées pour l’exécution.</block>
+  <block id="6d1d444e31ba2e1e32454781c718d8bd" category="paragraph">VMware Workloads propose les politiques d'autorisation suivantes :</block>
+  <block id="808b4a9b1106ed0f5257e607f992d39d" category="list-text">*Visualisation, planification et analyse* : Consultez l’inventaire des environnements de virtualisation EVS, obtenez une analyse détaillée de vos systèmes et explorez les économies possibles.</block>
+  <block id="db73d2d162f2b29ff8535b7ce22cf484" category="list-text">*Déploiement et connectivité des banques de données* : Déployez les configurations de machines virtuelles recommandées sur les clusters Amazon EVS, Amazon EC2 ou VMware Cloud on AWS vSphere et utilisez des systèmes de fichiers Amazon FSx for NetApp ONTAP comme banques de données externes.</block>
+  <block id="eb6ca2c4fcde955022dcf0fc1c5d6e15" category="paragraph">Sélectionnez la stratégie d'autorisation pour afficher les stratégies IAM requises :</block>
+  <block id="f025fc3a059ba5231f532114be1507a2" category="open-title">Déploiement et connectivité du datastore</block>
+  <block id="60be652dd42dc93bdde7fd714361f850" category="cell">Afficher les détails de configuration des ensembles d'options DHCP associés aux VPC</block>
+  <block id="10da10750f5abb2bffb583947f1ace05" category="cell">ec2 : Décrire les options DHCP</block>
+  <block id="b4fc225dfcae6bac5e41b8bfa8487acd" category="cell">Lister les secrets dans AWS Secrets Manager</block>
+  <block id="144b03b25408d0efd12f9963e51d2000" category="cell">gestionnaire de secrets : Lister les secrets</block>
+  <block id="40e8290937250ae72e54f945a684d9cc" category="cell">Obtenez une liste des environnements d'Amazon EVS</block>
+  <block id="f2e61dc1e1ac703c33e93d5f9ad7951e" category="cell">evs:ListEnvironments</block>
+  <block id="611e924fcb644d9bfb6615fc3743e7da" category="cell">Obtenez des informations détaillées sur un environnement Amazon EVS spécifique</block>
+  <block id="1126815f1afba5786fde2082d9d37ff6" category="cell">evs:GetEnvironment</block>
+  <block id="8c9e40a4519c8e2dff339afe58654b8f" category="cell">Lister les VLAN associés à un environnement Amazon EVS</block>
+  <block id="dbb9bb734f7ce753daf670385894fc6c" category="cell">evs:ListEnvironmentVlans</block>
+  <block id="78a1fd3770ad9cba75be7a432485a77e" category="section-title">2 novembre 2025</block>
+  <block id="8759d474306b7075634b38abde2a85cb" category="paragraph">Les politiques d'autorisation « lecture seule » et « lecture/écriture » ont été remplacées dans les charges de travail de stockage, de base de données et VMware afin d'offrir une plus grande granularité et une plus grande flexibilité dans l'attribution des autorisations.</block>
+  <block id="3adf0593d3d2d43754514ef0d597458d" category="paragraph">NetApp Workload Factory est accessible aux utilisateurs en tant que service cloud depuis la console web.  Avant de commencer, vous devriez avoir une compréhension de<block ref="fc500664a3cbaaa3aa46a84367805795" category="inline-link-macro-rx"></block> .</block>
+  <block id="de8efeea4e5e2680a5800f121d271ee6" category="paragraph">Cette étape est facultative. Vous pouvez utiliser Workload Factory sans ajouter d'identifiants pour accéder à votre compte AWS.  L'ajout d'identifiants AWS à Workload Factory confère à votre compte Workload Factory les autorisations nécessaires pour créer et gérer des systèmes de fichiers FSx pour ONTAP et pour déployer et gérer des charges de travail spécifiques, telles que des bases de données et GenAI.</block>
+  <block id="bf7bed6002efd423b3f090dfda4fb38c" category="paragraph">Codebox s'aligne sur les politiques d'autorisation de Workload Factory en renseignant les données appropriées dans le code en fonction des autorisations AWS fournies dans le compte Workload Factory pour chaque utilisateur. Le code peut être utilisé comme un modèle dans lequel vous pouvez compléter les informations manquantes (par exemple, les informations d'identification) ou personnaliser certaines données avant d'exécuter le code.</block>
+  <block id="fd7910c842c61985f2e90af78f1b304f" category="paragraph">Workload Factory propose des politiques d'autorisation flexibles qui vous permettent de contrôler précisément l'accès à votre environnement cloud et d'attribuer une confiance progressive à Workload Factory en fonction de vos politiques informatiques.</block>
+  <block id="1b512d78c8df2f0c24a19da35f804ca3" category="inline-link-macro">Découvrez-en plus sur les politiques d'autorisation de Workload Factory</block>
+  <block id="9de83ea21033a65a11f8b135f0dfca93" category="paragraph"><block ref="14d3fbf26a974628349cadb25ac5954d" category="inline-link-macro-rx"></block>.</block>
+  <block id="c51a57db8914c4d0002701f58f6f3d36" category="sidebar">Autorisations pour Workload Factory</block>
 </blocks>
