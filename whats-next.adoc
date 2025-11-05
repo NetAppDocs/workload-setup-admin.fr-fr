@@ -29,4 +29,8 @@ Déployez et gérez une infrastructure de génération augmentée par récupéra
 +
 Rationalisez les migrations et les opérations à l'aide de recommandations intelligentes et de la correction automatique. Déployez des sauvegardes efficaces et une reprise d'activité robuste. Surveillez et résolvez les problèmes de vos VM.
 
+* https://docs.netapp.com/us-en/workload-builders/index.html["charges de travail du constructeur"^]
++
+Simplifiez la consommation et l'accès aux versions logicielles en permettant une intégration instantanée des clones avec les systèmes de contrôle de version et les flux CI/CD, ce qui permet de gagner du temps et des ressources.
+
 
