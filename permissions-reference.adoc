@@ -111,6 +111,7 @@ Consultez les politiques IAM requises :
         "fsx:TagResource",
         "fsx:UntagResource",
         "bedrock:InvokeModelWithResponseStream",
+        "bedrock:InvokeModel",
         "bedrock:ListInferenceProfiles",
         "bedrock:GetInferenceProfile"
       ],
@@ -286,13 +287,16 @@ Le tableau suivant affiche les autorisations pour le stockage.
 | Répertoriez les balises des ressources FSX pour ONTAP | fsx:ListTagsForResource | Inventaire | Vue, planification et analyse 
 
 
-.2+| Gestion des entrées et sorties de groupes de sécurité pour un système de fichiers FSX pour ONTAP | ec2 : RevokeSecurityGroupIngress | Les opérations de gestion | Création et suppression de systèmes de fichiers 
+.3+| Gestion des entrées et sorties de groupes de sécurité pour un système de fichiers FSX pour ONTAP | ec2 : RevokeSecurityGroupIngress | Les opérations de gestion | Création et suppression de systèmes de fichiers 
+
+
+| ec2 : Révoquer la sortie du groupe de sécurité | Les opérations de gestion | Création et suppression de systèmes de fichiers 
 
 
 | ec2:DeleteSecurityGroup | Les opérations de gestion | Création et suppression de systèmes de fichiers 
 
 
-.17+| Créez, affichez et gérez les ressources du système de fichiers FSX pour ONTAP | fsx:CreateVolume | Les opérations de gestion | Opérations et assainissement 
+.18+| Créez, affichez et gérez les ressources du système de fichiers FSX pour ONTAP | fsx:CreateVolume | Les opérations de gestion | Opérations et assainissement 
 
 
 | fsx:TagResource | Les opérations de gestion | Opérations et assainissement 
@@ -343,6 +347,9 @@ Le tableau suivant affiche les autorisations pour le stockage.
 | fsx:Créer un volume à partir d'une sauvegarde | Les opérations de gestion | Opérations et assainissement 
 
 
+| fsx:Supprimer la sauvegarde | Les opérations de gestion | Opérations et assainissement 
+
+
 .2+| Obtenez des metrics de système de fichiers et de volume | cloudwatch:GetMetricData | Les opérations de gestion | Vue, planification et analyse 
 
 
@@ -350,6 +357,24 @@ Le tableau suivant affiche les autorisations pour le stockage.
 
 
 | Simulez les opérations de workload pour valider les autorisations disponibles et les comparer avec les autorisations de compte AWS requises | iam:SimulatePrincipalPolicy | Déploiement | Tous 
+
+
+.4+| Récupérer les événements FSx pour ONTAP EMS | Bedrock:ListeInferenceProfiles | FSx pour l'analyse ONTAP EMS | Opérations et assainissement 
+
+
+| bedrock:GetInferenceProfile | FSx pour l'analyse ONTAP EMS | Opérations et assainissement 
+
+
+| bedrock:InvokeModelWithResponseStream | FSx pour l'analyse ONTAP EMS | Opérations et assainissement 
+
+
+| Bedrock:modèle de facturation | FSx pour l'analyse ONTAP EMS | Opérations et assainissement 
+
+
+.2+| Obtenez des données sur les coûts et l'utilisation des systèmes de fichiers FSx pour ONTAP à partir d'AWS Cost Explorer. | ce:GetCostAndUsage | Analyse des coûts et de l'utilisation | Vue, planification et analyse 
+
+
+| ce:GetTags | Analyse des coûts et de l'utilisation | Vue, planification et analyse 
 |===
 ====
 
@@ -1984,6 +2009,18 @@ Le tableau suivant fournit des détails sur les autorisations pour les charges d
 == Journal des modifications
 
 Lorsque des autorisations sont ajoutées et supprimées, nous les noterons dans les sections ci-dessous.
+
+
+
+=== 27 novembre 2025
+
+Les autorisations suivantes ont été ajoutées à la charge de travail de stockage :
+
+* `bedrock:ListInferenceProfiles`
+* `bedrock:GetInferenceProfile`
+* `bedrock:InvokeModelWithResponseStream`
+* `bedrock:InvokeModel`
+
 
 
 
