@@ -1,0 +1,17 @@
+= Mise à jour des autorisations pour le stockage
+:allow-uri-read: 
+
+
+
+
+=== Mise à jour des autorisations pour le stockage
+
+L'analyseur d'événements FSx pour ONTAP EMS utilise les autorisations Amazon Bedrock suivantes dans la stratégie d'autorisation _opérations et correction_ pour récupérer les données d'événements de la charge de travail de stockage.
+
+* `bedrock:ListInferenceProfiles`
+* `bedrock:GetInferenceProfile`
+* `bedrock:InvokeModelWithResponseStream`
+* `bedrock:InvokeModel`
+
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html#change-log["Journal des modifications de référence des autorisations"]
