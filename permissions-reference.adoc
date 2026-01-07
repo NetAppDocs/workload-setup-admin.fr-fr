@@ -359,7 +359,7 @@ Le tableau suivant affiche les autorisations pour le stockage.
 | Simulez les opérations de workload pour valider les autorisations disponibles et les comparer avec les autorisations de compte AWS requises | iam:SimulatePrincipalPolicy | Déploiement | Tous 
 
 
-.4+| Récupérer les événements FSx pour ONTAP EMS | Bedrock:ListeInferenceProfiles | FSx pour l'analyse ONTAP EMS | Opérations et assainissement 
+.4+| Fournir des informations basées sur l'IA pour les événements FSx pour ONTAP EMS | Bedrock:ListeInferenceProfiles | FSx pour l'analyse ONTAP EMS | Opérations et assainissement 
 
 
 | bedrock:GetInferenceProfile | FSx pour l'analyse ONTAP EMS | Opérations et assainissement 
