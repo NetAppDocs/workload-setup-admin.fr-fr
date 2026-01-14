@@ -13,7 +13,7 @@ summary: 'NetApp Workload Factory est une puissante plate-forme de gestion du cy
 [role="lead"]
 NetApp Workload Factory est une puissante plate-forme de gestion du cycle de vie conçue pour vous aider à optimiser vos charges de travail à l'aide d' Amazon FSx for NetApp ONTAP .  Les charges de travail qui peuvent être rationalisées à l'aide de Workload Factory et de FSx pour ONTAP incluent les bases de données, les migrations VMware vers VMware Cloud sur AWS, les chatbots IA, etc.
 
-Une charge de travail englobe une combinaison de ressources, de code, de services ou d'applications conçus pour répondre à un objectif métier. Il peut s'agir d'une application orientée client ou d'un processus back-end. Les workloads peuvent impliquer un sous-ensemble de ressources au sein d'un même compte AWS ou s'étendre sur plusieurs comptes.
+Une _charge de travail_ englobe une combinaison de ressources, de code et de services ou d'applications, conçue pour servir un objectif commercial. Cela peut aller d'une application destinée aux clients à un processus back-end. Les charges de travail peuvent impliquer un sous-ensemble de ressources au sein d'un seul compte AWS ou s'étendre sur plusieurs comptes.
 
 Amazon FSx for NetApp ONTAP fournit des volumes de stockage NFS, SMB/CIFS et iSCSI entièrement gérés et natifs AWS pour les applications stratégiques, les bases de données, les conteneurs, les magasins de données VMware Cloud et les fichiers utilisateur.  Vous pouvez gérer FSx pour ONTAP via Workload Factory et en utilisant des outils de gestion AWS natifs.
 
@@ -42,7 +42,7 @@ Workload Factory vous permet de gérer le stockage cloud et d'utiliser les fonct
 
 == Sécurité
 
-La sécurité de NetApp Workload Factory est une priorité absolue pour NetApp.  Toutes les charges de travail de Workload Factory s'exécutent sur Amazon FSx for NetApp ONTAP.  En plus de toutlink:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/security.html["Fonctionnalités de sécurité AWS"^] , NetApp Workload Factory a reçulink:https://netapp-security.trustshare.com/certifications/soc2type_1?documentId=84d4110a-3fc7-4d0c-9c65-b9f0d034c058["Conformité SOC2 Type 1"^] .
+La sécurité de NetApp Workload Factory est une priorité absolue pour NetApp. Toutes les charges de travail de Workload Factory s'exécutent sur Amazon FSx for NetApp ONTAP. En plus de tout link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/security.html["Fonctionnalités de sécurité AWS"^]NetApp Workload Factory a reçu link:https://trust.netapp.com/["Conformité SOC2 de type 1, conformité SOC2 de type 2 et conformité HIPAA"^].
 
 Amazon FSx for NetApp ONTAP pour NetApp Workload Factory est unlink:https://aws.amazon.com/solutions/guidance/deploying-enterprise-apps-with-netapp-bluexp-workload-factory-for-aws-and-amazon-fsx-for-netapp-ontap/["Solution AWS pour le déploiement d'applications d'entreprise"^] qui a été créé avec les meilleures pratiques bien architecturées à l'esprit.
 
@@ -146,6 +146,14 @@ Vous pouvez utiliser NetApp Workload Factory avec les outils suivants :
 * *CloudFormation* : utilisez le code AWS CloudFormation pour effectuer les actions que vous avez définies dans la console Workload Factory afin de modéliser, provisionner et gérer les ressources AWS et tierces de la pile CloudFormation dans votre compte AWS.
 * *Fournisseur Terraform NetApp Workload Factory* : utilisez Terraform pour créer et gérer les workflows d'infrastructure générés dans la console Workload Factory.
 
+
+
+
+=== Charges de travail bien architecturées
+
+Workload Factory vous aide à maintenir et à exploiter des configurations de stockage et de bases de données fiables, sécurisées, efficaces et économiques, conformes au cadre AWS Well-Architected. Workload Factory analyse quotidiennement les déploiements FSx à la recherche de systèmes de fichiers ONTAP , de serveurs SQL Server et de bases de données Oracle afin de fournir des informations sur les erreurs de configuration potentielles et de recommander des actions manuelles ou automatisées pour résoudre les problèmes.
+
+link:well-architected-workloads.html["Apprenez-en davantage sur les charges de travail bien architecturées."]
 
 
 
