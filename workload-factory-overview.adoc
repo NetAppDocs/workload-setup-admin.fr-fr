@@ -134,6 +134,14 @@ Workload Factory propose des calculateurs d'économies vous permettant de compar
 
 
 
+=== Charges de travail bien architecturées
+
+Workload Factory vous aide à maintenir et à exploiter des configurations de stockage et de bases de données fiables, sécurisées, efficaces et économiques, conformes au cadre AWS Well-Architected. Workload Factory analyse quotidiennement les déploiements FSx à la recherche de systèmes de fichiers ONTAP , de serveurs SQL Server et de bases de données Oracle afin de fournir des informations sur les erreurs de configuration potentielles et de recommander des actions manuelles ou automatisées pour résoudre les problèmes.
+
+link:well-architected-workloads.html["Apprenez-en davantage sur les charges de travail bien architecturées."]
+
+
+
 == Outils pour utiliser NetApp Workload Factory
 
 Vous pouvez utiliser NetApp Workload Factory avec les outils suivants :
@@ -146,14 +154,6 @@ Vous pouvez utiliser NetApp Workload Factory avec les outils suivants :
 * *CloudFormation* : utilisez le code AWS CloudFormation pour effectuer les actions que vous avez définies dans la console Workload Factory afin de modéliser, provisionner et gérer les ressources AWS et tierces de la pile CloudFormation dans votre compte AWS.
 * *Fournisseur Terraform NetApp Workload Factory* : utilisez Terraform pour créer et gérer les workflows d'infrastructure générés dans la console Workload Factory.
 
-
-
-
-=== Charges de travail bien architecturées
-
-Workload Factory vous aide à maintenir et à exploiter des configurations de stockage et de bases de données fiables, sécurisées, efficaces et économiques, conformes au cadre AWS Well-Architected. Workload Factory analyse quotidiennement les déploiements FSx à la recherche de systèmes de fichiers ONTAP , de serveurs SQL Server et de bases de données Oracle afin de fournir des informations sur les erreurs de configuration potentielles et de recommander des actions manuelles ou automatisées pour résoudre les problèmes.
-
-link:well-architected-workloads.html["Apprenez-en davantage sur les charges de travail bien architecturées."]
 
 
 
