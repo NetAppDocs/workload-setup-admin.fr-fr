@@ -17,23 +17,23 @@ Workload Factory, la suite de gestion NetApp pour Amazon FSx for NetApp ONTAP, v
 
 == Comment ça marche
 
-Workload Factory analyse quotidiennement les déploiements de systèmes de fichiers Amazon FSx for NetApp ONTAP , Microsoft SQL Server et de bases de données Oracle. L'analyse quotidienne fournit un état optimal de l'architecture, ainsi que des informations et des recommandations avec des options pour corriger automatiquement les problèmes de configuration afin que vos déploiements respectent les meilleures pratiques et fonctionnent efficacement.
+Workload Factory analyse quotidiennement les systèmes de fichiers Amazon FSx for NetApp ONTAP, Microsoft SQL Server et les déploiements de bases de données Oracle. L'analyse fournit un état bien architecturé, des informations et des recommandations. Vous pouvez corriger automatiquement les problèmes de configuration pour respecter les bonnes pratiques et fonctionner efficacement.
 
 Une fois l'analyse quotidienne terminée, les configurations apparaissent comme « optimisées » ou « non optimisées » dans le tableau de bord Well-architected pour le déploiement. Vous trouverez le score d'optimisation total, les problèmes de configuration par catégorie, ainsi qu'une liste des problèmes de configuration et des recommandations. Vous pouvez consulter les recommandations relatives aux problèmes de configuration. Certains problèmes peuvent être résolus automatiquement par Workload Factory, tandis que d'autres nécessitent une intervention manuelle. Dans ce cas, Workload Factory fournit des instructions détaillées pour vous aider à mettre en œuvre les modifications recommandées.
 
-Les besoins en matière de stockage et de charges de travail des bases de données étant variables, vous pouvez ignorer l'analyse des configurations spécifiques qui ne s'appliquent pas à vos environnements. Cela vous permet d'éviter les alertes inutiles et les résultats d'optimisation inexacts. Lorsqu'une analyse de configuration spécifique est rejetée, cette configuration n'est pas prise en compte dans le score d'optimisation total.
+Vous pouvez ignorer l'analyse des configurations qui ne s'appliquent pas à vos environnements. Cela évite les alertes inutiles et des résultats d'optimisation inexacts. Lorsque vous ignorez une analyse de configuration spécifique, Workload Factory n'inclut pas la configuration dans le score d'optimisation total.
 
 
 
 == Pourquoi c'est important
 
-Workload Factory simplifie la tâche difficile d'appliquer manuellement les meilleures pratiques aux environnements de stockage ou de bases de données de grande taille ; il rationalise ce processus en combinant l'analyse et la correction des configurations sous-optimales depuis la console Workload Factory. Les correctifs appliqués dans la console Workload Factory éliminent le risque d'erreur humaine et garantissent l'uniformité de la gestion du stockage et des bases de données. En tirant parti de l'automatisation, vous pouvez garantir que les configurations sont appliquées correctement à chaque fois et préservées ainsi dans le temps, maintenant ainsi les normes élevées de performance et de fiabilité sur l'ensemble de votre infrastructure de stockage.
+Workload Factory applique les meilleures pratiques aux environnements de stockage ou de bases de données de grande envergure en combinant une évaluation continue avec des recommandations et des corrections. Les correctifs automatisés réduisent les erreurs humaines, garantissent une gestion uniforme et maintiennent les performances et la fiabilité. Les correctifs appliqués dans la console Workload Factory réduisent les erreurs humaines et garantissent une gestion uniforme. L'automatisation assure que les configurations sont appliquées correctement et maintenues, préservant les performances et la fiabilité à travers vos infrastructures de charges de travail.
 
 
 
 == Commencez à utiliser Workload Factory pour détecter et corriger les erreurs de configuration.
 
-Commencez à utiliser Workload Factory en vous inscrivant et en créant un compte, en ajoutant des informations d'identification et en établissant une connectivité afin que Workload Factory puisse gérer directement les ressources AWS, puis optimisez vos charges de travail en utilisant Amazon FSx for NetApp ONTAP.
+Pour commencer à utiliser Workload Factory, inscrivez-vous, ajoutez des identifiants et établissez une connectivité pour gérer les ressources AWS et optimiser les charges de travail à l'aide d'Amazon FSx for NetApp ONTAP.
 
 link:https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["Démarrage rapide"]
 
@@ -41,7 +41,7 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["Démar
 
 == Meilleures pratiques et recommandations pour les charges de travail de stockage
 
-Workload Factory offre une vue approfondie des meilleures pratiques de configuration ONTAP pour la gestion du stockage. Plus précisément, la charge de travail de stockage au sein de Workload Factory analyse les configurations de stockage pour vérifier leur conformité aux piliers du cadre AWS Well-Architected et fournit des recommandations et des solutions pour les configurations sous-optimales. Le tableau de bord d'état bien architecturé du stockage vous fournira des informations qui vous aideront à mettre en œuvre les meilleures pratiques d'architecture pour offrir des performances et une fiabilité optimales à vos systèmes de fichiers FSx pour ONTAP .
+Workload Factory évalue les configurations de stockage afin de fournir une vue détaillée des meilleures pratiques de configuration ONTAP et de la conformité au AWS Well-Architected Framework. L'évaluation recommande également des améliorations et des correctifs.
 
 L'analyse bien conçue catégorise les configurations selon les piliers suivants du cadre : _fiabilité_, _sécurité_, _excellence opérationnelle_, _optimisation des coûts_ et _efficacité des performances_.
 
@@ -53,7 +53,7 @@ La fiabilité garantit que les charges de travail exécutent leurs fonctions pr�
 
 * *Planifier FSx pour les sauvegardes ONTAP *
 +
-FSx pour ONTAP: La sauvegarde de vos volumes contribue à répondre aux exigences de conservation des données et de conformité. Utilisez FSx pour la sauvegarde ONTAP afin de mettre en œuvre une stratégie de sauvegarde et de conservation centralisée et automatisée pour vos données.
+FSx for ONTAP : La sauvegarde de vos volumes contribue à la conservation des données et au respect des exigences de conformité. Utilisez FSx for ONTAP backup pour configurer des sauvegardes automatisées et la conservation de vos données.
 
 * *Planifier des instantanés locaux*
 +
@@ -61,7 +61,7 @@ Planifiez des instantanés locaux pour une sauvegarde efficace et des restaurati
 
 * *Réplication interrégionale*
 +
-La réplication interrégionale garantit que vos données sont répliquées dans une autre région AWS, ce qui améliore la durabilité et la disponibilité des données. Workload Factory recommande de configurer la réplication interrégionale pour la reprise après sinistre et la conformité aux exigences.
+La réplication interrégionale garantit que vos données sont répliquées vers une autre région AWS, offrant une durabilité et une disponibilité des données accrues. Workload Factory recommande de configurer la réplication interrégionale pour aider à la reprise après sinistre et à la conformité.
 
 * *Configurer la réplication des données*
 +
@@ -89,7 +89,7 @@ La sécurité met l'accent sur la protection des données, des systèmes et des 
 
 * *Activer ARP/IA*
 +
-La protection autonome contre les ransomwares de NetApp avec IA (ARP/AI) renforce la cyber-résilience et assure une protection active des volumes contre l'évolution des menaces de ransomware. Workload Factory recommande d'activer ARP/AI pour tous les volumes.
+NetApp Autonomous Ransomware Protection avec intelligence artificielle (ARP/AI) aide à protéger vos volumes contre les menaces de ransomware. Workload Factory recommande d'activer ARP/AI pour tous les volumes.
 
 * *Accès non autorisé aux volumes*
 +
@@ -119,13 +119,21 @@ Lorsqu'un volume approche de sa pleine capacité, Workload Factory recommande de
 +
 Pour des performances optimales, Workload Factory recommande le mode d'écriture de la relation cache le mieux adapté à votre charge de travail. Le mode d'écriture différée offre de meilleures performances pour les charges de travail à forte intensité de lecture avec des fichiers de petite taille, tandis que le mode d'écriture différée offre de meilleures performances pour les charges de travail à forte intensité d'écriture avec des fichiers volumineux.
 
+* *Optimiser la taille du volume de cache*
++
+Workload Factory recommande d'activer le dimensionnement automatique des volumes et le scrubbing sur les volumes de cache afin de maintenir une taille optimale et de concentrer le cache sur les données chaudes pour une efficacité maximale.
+
+* *Rapport logique de Storage VM*
++
+Workload Factory recommande que le paramètre de rapport par défaut soit défini sur logique pour une machine virtuelle de stockage afin de fournir une meilleure visibilité sur l'utilisation du stockage au niveau du volume.
+
 
 
 
 
 === Optimisation des coûts
 
-L'optimisation des coûts vise à générer de la valeur commerciale tout en minimisant les coûts.
+L'optimisation des coûts vous aide à obtenir la plus grande valeur pour votre entreprise tout en maintenant les coûts bas.
 
 * *Optimisez le coût total de possession en hiérarchisant les données froides*
 +
@@ -138,6 +146,10 @@ Il convient d'activer les techniques de stockage efficaces (compactage, compress
 * *Suppression inutile de snapshots et de sauvegardes*
 +
 Les instantanés et les sauvegardes devenus inutiles doivent être supprimés afin de réduire les coûts.
+
+* *Périphériques de blocs orphelins*
++
+Après qu’un périphérique de stockage par blocs n’est pas utilisé pendant sept jours, Workload Factory recommande d’archiver les données du périphérique de stockage par blocs ou de supprimer le périphérique inutilisé afin de réduire les coûts.
 
 
 
@@ -153,11 +165,11 @@ Workload Factory fournit un ensemble de bonnes pratiques et de recommandations p
 
 * *Niveau de stockage*
 +
-Pour des performances de stockage optimales, provisionnez les volumes FSx pour ONTAP sur le niveau SSD principal. L'utilisation du niveau de pool de capacité peut entraîner des performances plus lentes et une latence plus élevée.
+Pour des performances de stockage optimales, créez des volumes FSx for ONTAP sur le niveau SSD principal. L'utilisation du niveau de pool de capacité peut réduire les performances et augmenter la latence.
 
 * *Marge de manœuvre du système de fichiers*
 +
-Pour optimiser les performances de stockage, allouez une capacité de système de fichiers égale à 1,35 fois la taille totale du volume provisionné.
+Pour optimiser les performances de stockage, définissez la capacité du système de fichiers à 1,35 fois la taille totale de vos volumes.
 
 +
 Les pourcentages de marge disponible pour le système de fichiers sont les suivants :
@@ -202,11 +214,11 @@ Les pourcentages de taille du disque TempDB sont les suivants :
 
 * *Emplacement des fichiers de données (.mdf)*
 +
-La séparation des fichiers de données et des fichiers journaux sur des disques différents améliore les performances en permettant une activité d'E/S simultanée, des planifications de sauvegarde indépendantes et une fonctionnalité de restauration améliorée. Pour les bases de données de petite taille, nous recommandons de séparer les chemins d'accès aux LUN de données et de journalisation dans des volumes différents. Cette séparation est nécessaire lorsqu'il existe plus d'une base de données volumineuse (> 500 Gio).
+Séparez les fichiers de données et de journalisation sur des disques distincts pour améliorer les performances, permettre des planifications de sauvegarde indépendantes et améliorer la fonctionnalité de restauration. Pour les petites bases de données, séparez les chemins LUN des données et des journaux dans des volumes différents. Cette séparation est requise pour plus d'une grande base de données (> 500 GiB).
 
 * *Emplacement des fichiers journaux (.ldf)*
 +
-La séparation des fichiers de données et des fichiers journaux sur des disques différents améliore les performances en permettant une activité d'E/S simultanée, des planifications de sauvegarde indépendantes et une fonctionnalité de restauration améliorée. Pour les bases de données de petite taille, nous recommandons de séparer les chemins d'accès aux LUN de données et de journalisation dans des volumes différents. Cette séparation est nécessaire lorsqu'il existe plus d'une base de données volumineuse (> 500 Gio).
+Séparez les fichiers de données et de journalisation sur des disques distincts pour améliorer les performances, permettre des planifications de sauvegarde indépendantes et améliorer la fonctionnalité de restauration. Pour les petites bases de données, séparez les chemins LUN des données et des journaux dans des volumes différents. Cette séparation est requise pour plus d'une grande base de données (> 500 GiB).
 
 * *Emplacement de TempDB*
 +
@@ -257,7 +269,7 @@ LUN
  a| 
 Type de système d'exploitation = Windows 2008
  a| 
-La valeur du type OS de ONTAP LUN doit correspondre au schéma de partitionnement du système d'exploitation pour assurer l'alignement des E/S. Une configuration incorrecte peut entraîner des performances sous-optimales.
+La valeur du type OS de la LUN ONTAP doit correspondre au schéma de partitionnement du système d'exploitation pour garantir l'alignement des E/S. Une configuration incorrecte peut entraîner des performances sous-optimales.
 
 
 
@@ -302,7 +314,7 @@ Taille de l'unité d'allocation
  a| 
 Taille de l'unité d'allocation NTFS = 64 Ko
  a| 
-Définissez la taille de l'unité d'allocation NTFS à 64 Ko pour mieux utiliser l'espace disque, réduire la fragmentation et améliorer les performances de lecture/écriture des fichiers. Une configuration incorrecte pourrait entraîner une utilisation inefficace du disque et une dégradation des performances.
+Définissez la taille de l’unité d’allocation NTFS sur 64 Ko pour mieux utiliser l’espace disque, réduire la fragmentation et améliorer les performances de lecture/écriture de fichiers. Un mauvais paramétrage peut entraîner une utilisation inefficace de l’espace disque et une dégradation des performances.
 
 |===
 
@@ -317,7 +329,7 @@ Pour garantir des performances optimales et une rentabilité maximale pour votre
 
 * *Correctif du système d'exploitation*
 +
-Dans la mesure du possible, appliquez les derniers correctifs pour garantir la sécurité et la stabilité. L'application du dernier correctif contribue à protéger vos bases de données SQL Server contre les vulnérabilités et améliore considérablement la fiabilité globale du système.
+Workload Factory recommande d'appliquer les derniers correctifs pour garantir la sécurité, protéger les bases de données SQL Server contre les vulnérabilités et améliorer la fiabilité du système.
 
 * *Paramètres de la carte réseau*
 +
@@ -351,7 +363,7 @@ Optimisée : Une licence est considérée comme « optimisée » lorsque la l
 
 * *Correctif pour Microsoft SQL Server*
 +
-Dans la mesure du possible, appliquez les derniers correctifs pour garantir la sécurité et la stabilité. L'application du dernier correctif contribue à protéger vos bases de données SQL Server contre les vulnérabilités et améliore considérablement la fiabilité globale du système.
+Workload Factory recommande d'appliquer les derniers correctifs pour garantir la sécurité, protéger les bases de données SQL Server contre les vulnérabilités et améliorer la fiabilité du système.
 
 * *MAXDOP*
 +
@@ -365,7 +377,7 @@ Définissez le degré maximal de parallélisme (MAXDOP) pour optimiser les perfo
 
 * *Planifier FSx pour les sauvegardes ONTAP *
 +
-La sauvegarde de vos volumes Microsoft SQL Server est essentielle pour répondre à vos exigences en matière de conservation des données et de conformité. Utilisez FSx pour la sauvegarde ONTAP afin de mettre en œuvre une stratégie de sauvegarde et de conservation centralisée et automatisée pour vos données SQL Server.
+La sauvegarde de vos volumes Microsoft SQL Server est essentielle pour garantir la conservation des données et respecter vos obligations de conformité. Utilisez FSx for ONTAP backup pour configurer des sauvegardes automatiques et la conservation de vos données SQL Server.
 
 * *Planifier des instantanés locaux*
 +
@@ -373,7 +385,39 @@ Planifiez des instantanés locaux pour une sauvegarde efficace et des restaurati
 
 * *Réplication interrégionale*
 +
-La réplication interrégionale garantit que vos données sont répliquées dans une autre région AWS, ce qui améliore la durabilité et la disponibilité des données. Workload Factory recommande de configurer la réplication interrégionale pour la reprise après sinistre et la conformité aux exigences.
+La réplication interrégionale garantit que vos données sont répliquées vers une autre région AWS, offrant une durabilité et une disponibilité des données accrues. Workload Factory recommande de configurer la réplication interrégionale pour aider à la reprise après sinistre et à la conformité.
+
+
+
+
+
+== Meilleures pratiques et recommandations pour les charges de travail EVS
+
+Workload Factory fournit des bonnes pratiques et des recommandations pour l'exploitation de charges de travail Amazon Elastic VMware Service (EVS) bien architecturées. L'analyse bien architecturée évalue les configurations EVS afin d'aider à garantir que vos environnements VMware sont optimisés pour la fiabilité, la sécurité, l'excellence opérationnelle, l'optimisation des coûts et l'efficacité des performances. Depuis l'onglet de statut bien architecturé dans VMware, vous trouverez des informations et des recommandations pour vous aider à mettre en œuvre les bonnes pratiques bien architecturées pour vos environnements EVS.
+
+L'analyse bien conçue catégorise les configurations dans les piliers suivants du cadre : _fiabilité_ et _sécurité_.
+
+
+
+=== Fiabilité
+
+La fiabilité garantit que les charges de travail exécutent leurs fonctions prévues correctement et de manière constante, même en cas de perturbations.
+
+* *Résilience de l'environnement EVS*
++
+Assurez-vous que les nœuds de votre cluster EVS sont correctement répartis entre les groupes de placement de partitions. Tous les nœuds doivent être membres d’un seul groupe de placement de partitions configuré avec quatre partitions ou plus. Un placement correct des partitions garantit que les nœuds de votre cluster EVS sont répartis sur plusieurs partitions matérielles isolées contre les pannes au sein d’une zone de disponibilité AWS. Un mauvais alignement peut entraîner une perte importante de puissance de traitement ou une interruption si une partition tombe en panne.
+
+
+
+
+
+=== Sécurité
+
+La sécurité met l'accent sur la protection des données, des systèmes et des actifs grâce à des évaluations des risques et des stratégies d'atténuation.
+
+* *Gestion des nœuds du cluster*
++
+Assurez-vous que les nœuds de votre cluster EVS disposent d'une protection adéquate contre l'arrêt et la suppression d'instances EC2. Les nœuds ESXi d'EVS doivent être gérés exclusivement à l'aide de vCenter ou d'autres outils de gestion de niveau VMware. Sans protections appropriées au niveau EC2, les nœuds pourraient être arrêtés ou supprimés accidentellement depuis la console EC2, ce qui peut entraîner l'indisponibilité des données des machines virtuelles ou une perte de données.
 
 
 
@@ -383,4 +427,5 @@ La réplication interrégionale garantit que vos données sont répliquées dans
 
 * link:https://docs.netapp.com/us-en/workload-fsx-ontap/improve-configurations.html["Mettre en œuvre une architecture FSx bien conçue pour les systèmes de fichiers ONTAP"^]
 * link:https://docs.netapp.com/us-en/workload-databases/optimize-configurations.html["Mettre en œuvre des charges de travail de base de données bien architecturées"^]
+* link:https://docs.netapp.com/us-en/workload-vmware/view-evs-well-architected.html["Mettre en œuvre des configurations EVS bien architecturées"^]
 

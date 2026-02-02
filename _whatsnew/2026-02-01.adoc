@@ -1,0 +1,44 @@
+= Mises à jour bien conçues
+:allow-uri-read: 
+
+
+
+
+=== Mises à jour bien conçues
+
+NetApp Workload Factory inclut l'évaluation bien architecturée pour les charges de travail Elastic VMware Service (EVS) et ajoute de nouvelles configurations pour les charges de travail de stockage et de base de données.
+
+* *Charges de travail VMware* NetApp Workload Factory fournit des bonnes pratiques et des recommandations pour l'exploitation de charges de travail Amazon Elastic VMware Service (EVS) bien architecturées.
++
+link:https://docs.netapp.com/us-en/workload-vmware/view-evs-well-architected.html["Mettre en œuvre des configurations EVS bien architecturées"^]
+
+* *Charges de travail de stockage* Plusieurs nouvelles configurations ont été ajoutées à la fonctionnalité bien conçue dans la charge de travail de stockage afin que vous ayez plus d'informations sur les performances et les coûts de stockage.
++
+** Rapports logiques des Storage VM
+** Optimiser la taille du volume de cache
+** Périphériques de bloc orphelins
++
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/improve-configurations.html["Mettre en œuvre des configurations de système de fichiers bien architecturées pour les charges de travail Storage"^]
+
+
+
+* *Charges de travail de base de données* Workload Factory for Databases inclut une nouvelle configuration de stockage pour Oracle permettant d'activer et de configurer Direct NFS (dNFS) afin d'améliorer les performances d'E/S et de réduire la charge sur l'hôte et le système de stockage.
++
+** Activation de dNFS
+** résolution IP cohérente dNFS
+** fichier de configuration dNFS
+** dNFS `nosharecache`
++
+link:https://docs.netapp.com/us-en/workload-databases/optimize-configurations.html["Mettre en œuvre des charges de travail de base de données bien architecturées"^]
+
+
+
+
+
+
+
+=== Nouvelles autorisations pour Storage
+
+De nouvelles autorisations ont été ajoutées à la charge de travail Storage pour des améliorations de la gestion des points d'accès S3.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html#change-log["Journal des modifications de référence des autorisations"]
