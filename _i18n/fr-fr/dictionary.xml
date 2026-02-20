@@ -1501,7 +1501,6 @@
   <block id="a49bf929860657a29ec7b321ff7a63ba" category="list-text">*Rapport logique de Storage VM*</block>
   <block id="7edda8ec9be79d47927f4aa7e27bd776" category="paragraph">Workload Factory recommande que le paramètre de rapport par défaut soit défini sur logique pour une machine virtuelle de stockage afin de fournir une meilleure visibilité sur l'utilisation du stockage au niveau du volume.</block>
   <block id="394c926099d3d2cf7e0d7477f17faf38" category="paragraph">L'optimisation des coûts vous aide à obtenir la plus grande valeur pour votre entreprise tout en maintenant les coûts bas.</block>
-  <block id="6d281baa5967f3e1be000f071dda6d92" category="list-text">*Périphériques de blocs orphelins*</block>
   <block id="934ae55c0ac8033312b0dd4fc00ad677" category="paragraph">Après qu’un périphérique de stockage par blocs n’est pas utilisé pendant sept jours, Workload Factory recommande d’archiver les données du périphérique de stockage par blocs ou de supprimer le périphérique inutilisé afin de réduire les coûts.</block>
   <block id="08e31d66d631ac235f15db15294a1bed" category="paragraph">Pour des performances de stockage optimales, créez des volumes FSx for ONTAP sur le niveau SSD principal. L'utilisation du niveau de pool de capacité peut réduire les performances et augmenter la latence.</block>
   <block id="c882de88255b448709010276c1779e90" category="paragraph">Pour optimiser les performances de stockage, définissez la capacité du système de fichiers à 1,35 fois la taille totale de vos volumes.</block>
@@ -1518,4 +1517,5 @@
   <block id="9bcd13fbdffcddd84a7b637f7ec4e9b8" category="list-text">*Gestion des nœuds du cluster*</block>
   <block id="240380a5970626d74754b96038898f5e" category="paragraph">Assurez-vous que les nœuds de votre cluster EVS disposent d'une protection adéquate contre l'arrêt et la suppression d'instances EC2. Les nœuds ESXi d'EVS doivent être gérés exclusivement à l'aide de vCenter ou d'autres outils de gestion de niveau VMware. Sans protections appropriées au niveau EC2, les nœuds pourraient être arrêtés ou supprimés accidentellement depuis la console EC2, ce qui peut entraîner l'indisponibilité des données des machines virtuelles ou une perte de données.</block>
   <block id="d1fabbd85b7cc34641739e525d26f652" category="section-title">01 février 2026</block>
+  <block id="c359614024935abd3712075452782fa3" category="list-text">*Périphériques de blocs inactifs*</block>
 </blocks>

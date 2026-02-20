@@ -147,7 +147,7 @@ Il convient d'activer les techniques de stockage efficaces (compactage, compress
 +
 Les instantanés et les sauvegardes devenus inutiles doivent être supprimés afin de réduire les coûts.
 
-* *Périphériques de blocs orphelins*
+* *Périphériques de blocs inactifs*
 +
 Après qu’un périphérique de stockage par blocs n’est pas utilisé pendant sept jours, Workload Factory recommande d’archiver les données du périphérique de stockage par blocs ou de supprimer le périphérique inutilisé afin de réduire les coûts.
 
