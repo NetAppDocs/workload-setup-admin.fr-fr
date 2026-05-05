@@ -19,3 +19,11 @@ Si vous configurez les notifications dans NetApp Console, NetApp Console prend e
 Le service de notification NetApp Workload Factory inclut la notification de latence EDA qui vous avertit lorsque la latence d'une opération EDA dépasse un certain seuil.
 
 link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.html["Configurer les notifications de Workload Factory"]
+
+
+
+=== Nouvelle notification pour les systèmes de fichiers FSx for ONTAP
+
+Le service de notification NetApp Workload Factory inclut une notification contenant un récapitulatif mensuel des coûts de votre compte, indiquant les tendances de dépenses, les variations inhabituelles et les meilleures opportunités d'économies pour les systèmes de fichiers FSx for ONTAP.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.html["Configurer les notifications de Workload Factory"]

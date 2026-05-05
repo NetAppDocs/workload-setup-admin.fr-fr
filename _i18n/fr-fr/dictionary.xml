@@ -1073,7 +1073,6 @@
   <block id="23f4fbebbe0125e9fa4a06e2e7e8b9fc" category="list-text">Après avoir utilisé la console Workload Factory pour définir l’opération que vous souhaitez effectuer, copiez le code API dans la Codebox.</block>
   <block id="8c308624c961296988a91695046fff26" category="list-text">Après avoir utilisé la console Workload Factory pour définir l’opération que vous souhaitez effectuer, copiez l’AWS CLI dans la Codebox.</block>
   <block id="6e9cd110581bdd8427e1caca1ab0a668" category="list-text">Après avoir utilisé la console Workload Factory pour définir l’opération que vous souhaitez effectuer, téléchargez le code Terraform depuis Codebox.</block>
-  <block id="3c9ee3abb878e5099cd76beeedcb2d04" category="summary">Découvrez les nouveautés des fonctionnalités d'administration de Workload Factory : informations d'identification du fournisseur cloud, améliorations de Codebox et bien plus encore.</block>
   <block id="8e11dbed1edcb7cf815a9454ba0f0315" category="doc">Nouveautés des fonctionnalités d'administration de NetApp Workload Factory</block>
   <block id="a41dd7aa7d921f9f0881a705d3679e6c" category="section-title">06 octobre 2025</block>
   <block id="7fe837fc0a93acdad81da1d440ee3fd2" category="section-title">05 octobre 2025</block>
@@ -1418,4 +1417,10 @@
   <block id="8749fce6a42b5cc208c97e090bbdf52e" category="section-title">Filtrer les notifications dans la NetApp Console</block>
   <block id="067205dc8475e129dc9d47a407ae631d" category="paragraph">Vous pouvez utiliser les paramètres de notification de la NetApp Console pour filtrer les notifications que vous recevez dans la Console par niveau de gravité, comme Critique, Info ou Avertissement.</block>
   <block id="3be044b694628f6e958377c22febfacd" category="section-title">3 mai 2026</block>
+  <block id="394b492bc5d751a9928357af63eeb4df" category="section-title">Nouvelle notification pour les systèmes de fichiers FSx for ONTAP</block>
+  <block id="6d358c966898e9dabc6d051e85958cd8" category="paragraph">Le service de notification NetApp Workload Factory inclut une notification contenant un récapitulatif mensuel des coûts de votre compte, indiquant les tendances de dépenses, les variations inhabituelles et les meilleures opportunités d'économies pour les systèmes de fichiers FSx for ONTAP.</block>
+  <block id="2c18ddd8b06b4ef1ba84f543d572dc20" category="cell">Rapport mensuel des coûts</block>
+  <block id="e3e28d348f2fd8f74a410b0565f54037" category="cell">Récapitulatif mensuel des coûts de votre compte, présentant les tendances de dépenses, les variations inhabituelles et les meilleures opportunités d'économies pour les systèmes de fichiers FSx for ONTAP.</block>
+  <block id="e298f728c751f07eb265d52e8b508cc2" category="cell">Rapport de coûts</block>
+  <block id="f983e68b5fe658be13decdbe22777f19" category="summary">Découvrez les nouveautés concernant les fonctionnalités d'administration de Workload Factory, telles que les identifiants du fournisseur de cloud, les améliorations de Codebox et bien plus encore.</block>
 </blocks>

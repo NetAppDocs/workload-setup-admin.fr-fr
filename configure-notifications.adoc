@@ -58,6 +58,9 @@ Workload Factory envoie des notifications pour les événements suivants :
 
 
 | Dépassement du seuil de latence détecté | Un ou plusieurs volumes dans le cluster FSx for ONTAP ont dépassé le seuil de latence. | Surveillance des performances | Avertissement | EDA | FSx pour les systèmes de fichiers ONTAP 
+
+
+| Rapport mensuel des coûts | Récapitulatif mensuel des coûts de votre compte, présentant les tendances de dépenses, les variations inhabituelles et les meilleures opportunités d'économies pour les systèmes de fichiers FSx for ONTAP. | Rapport de coûts | Recommandation | Stockage général | FSx pour les systèmes de fichiers ONTAP 
 |===
 
 
