@@ -1,0 +1,19 @@
+= Nouvelle notification pour les systèmes de fichiers FSx for ONTAP
+:allow-uri-read: 
+
+
+
+
+=== Nouvelle notification pour les systèmes de fichiers FSx for ONTAP
+
+Le service de notification NetApp Workload Factory inclut la notification en cas de retard de réplication.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.html["Configurer les notifications de Workload Factory"]
+
+
+
+=== Prise en charge des comptes AWS GovCloud (US)
+
+Vous pouvez désormais créer des comptes AWS GovCloud (US) dans Workload Factory. Ce type de compte utilise uniquement les points de terminaison et les régions AWS US GovCloud pour la configuration et les opérations. Les informations d'identification et les secrets restent dans GovCloud. Les régions GovCloud (US) sont prises en charge.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["Créez un compte AWS GovCloud (US) dans Workload Factory"]

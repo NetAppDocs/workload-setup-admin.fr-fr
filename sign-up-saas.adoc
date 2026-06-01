@@ -45,12 +45,15 @@ Notez que seuls les caractères anglais sont autorisés dans le formulaire d'ins
 Cette étape est nécessaire avant de vous connecter.
 
 . Lorsque vous y êtes invité, consultez le contrat de licence de l'utilisateur final et acceptez les termes, puis sélectionnez *Continuer*.
-. Sur la page *compte*, entrez un nom pour votre compte et sélectionnez éventuellement la description de votre poste.
+. Sur la page *Compte*, créez un compte. Un compte est l'élément principal de la plateforme d'identité de NetApp, et il vous permet d'ajouter et de gérer des autorisations et des identifiants.
 +
-Un compte est l'élément de premier niveau de la plateforme d'identités NetApp. Il vous permet d'ajouter et de gérer des autorisations et des identifiants.
+image:screenshot-account-selection-govcloud.png["Capture d'écran de la page compte qui s'affiche lorsque vous vous connectez avec un nouveau compte."]
 
 +
-image:screenshot-account-selection.png["Capture d'écran de la page compte qui s'affiche lorsque vous vous connectez avec un nouveau compte."]
+.. Saisissez un nom pour le compte.
+.. Vous pouvez également créer un compte AWS GovCloud (US). Ce type de compte utilise uniquement les points de terminaison et les régions AWS GovCloud (US) pour la configuration et l'exploitation. Les informations d'identification et les secrets restent dans GovCloud. Ce choix est définitif.
+.. Facultativement, fournissez une description de poste pour le compte.
+
 
 . Sélectionnez *Créer* et la page d’accueil de Workload Factory s’affiche.
 

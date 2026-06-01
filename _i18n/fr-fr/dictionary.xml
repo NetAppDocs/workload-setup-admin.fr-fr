@@ -5,8 +5,6 @@
   <block id="1a04b786edc8b8251d22307b11cb2a8d" category="list-text">*Automatiquement* : vous saisissez une quantité minimale d'informations sur les autorisations, puis utilisez une pile CloudFormation pour créer les stratégies IAM et le rôle de vos informations d'identification.</block>
   <block id="3e704746794b6c6da13402ca9df54660" category="section-title">Ajoutez manuellement des informations d'identification à un compte</block>
   <block id="ea106b6fa0504ddb53d4506dcd8e7755" category="paragraph">La création des informations d'identification se fait en trois parties :</block>
-  <block id="b4968210d824a9808cbfac903e6a2461" category="list-text">Sélectionnez le niveau de services et d'autorisations que vous souhaitez utiliser, puis créez des règles IAM à partir de la console de gestion AWS.</block>
-  <block id="3b022a10e2c2436d37f59e86b18713f7" category="list-text">Créez un rôle IAM à partir de la console de gestion AWS.</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">Avant de commencer</block>
   <block id="36a8744ea109fc8ef18fd018d5d97aa0" category="paragraph">Vous devez disposer de identifiants pour vous connecter à votre compte AWS.</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">Étapes</block>
@@ -193,10 +191,7 @@
   <block id="422588021a93cfdaa26ce8d7d46dfeda" category="list-text">Dans votre boîte de réception, vous recevrez un e-mail de NetApp contenant des instructions pour vérifier votre adresse e-mail.</block>
   <block id="94f38e991501c8594d502e52dd265abd" category="paragraph">Cette étape est nécessaire avant de vous connecter.</block>
   <block id="94d337ef5b62bd31ee54e5111cfec45f" category="list-text">Lorsque vous y êtes invité, consultez le contrat de licence de l'utilisateur final et acceptez les termes, puis sélectionnez *Continuer*.</block>
-  <block id="b789a2d1c7228d0b2d7174302e2c6996" category="list-text">Sur la page *compte*, entrez un nom pour votre compte et sélectionnez éventuellement la description de votre poste.</block>
-  <block id="f54bc40f2305bb493aa6597d8c67d892" category="paragraph">Un compte est l'élément de premier niveau de la plateforme d'identités NetApp. Il vous permet d'ajouter et de gérer des autorisations et des identifiants.</block>
   <block id="2b7293baeca5711138792716543c991a" category="inline-image-macro">Capture d'écran de la page compte qui s'affiche lorsque vous vous connectez avec un nouveau compte.</block>
-  <block id="28fc544db57c6f54a41eaa5c6ebc4a57" category="paragraph"><block ref="28fc544db57c6f54a41eaa5c6ebc4a57" category="inline-image-macro-rx" type="image"></block></block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">S'inscrire pour obtenir de l'aide</block>
   <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">Présentation de l'inscription au support</block>
   <block id="856edc4caec68fece6859c4be9360f3c" category="section-title">Enregistrez votre compte pour bénéficier du support NetApp</block>
@@ -893,10 +888,8 @@
   <block id="287ae8bc216279a75c04344894e04b7f" category="doc">Ajouter les informations d'identification AWS à Workload Factory</block>
   <block id="5adad9ce28422d9fe7825511e24aa601" category="paragraph">Ajoutez et gérez les informations d’identification AWS afin que NetApp Workload Factory dispose des autorisations nécessaires pour déployer et gérer les ressources cloud dans vos comptes AWS.</block>
   <block id="7f76e91e5513affc227459b415e2e1cf" category="paragraph">Vous pouvez ajouter des informations d’identification AWS à un compte Workload Factory existant à partir de la page Informations d’identification.  Cela fournit à Workload Factory les autorisations nécessaires pour gérer les ressources et les processus au sein de votre environnement cloud AWS.</block>
-  <block id="ebb29cdb5a9f5368e3f445c808c91552" category="list-text">*Manuellement* : vous créez la politique IAM et le rôle IAM dans votre compte AWS lors de l'ajout des informations d'identification dans Workload Factory.</block>
   <block id="c3ba6c13344137feef1d3795c8b29466" category="paragraph">Vous pouvez ajouter manuellement les informations d'identification AWS à Workload Factory pour donner à votre compte Workload Factory les autorisations nécessaires pour gérer les ressources AWS que vous utiliserez pour exécuter vos charges de travail uniques.  Chaque ensemble d’informations d’identification que vous ajoutez comprendra une ou plusieurs stratégies IAM basées sur les capacités de charge de travail que vous souhaitez utiliser et un rôle IAM attribué à votre compte.</block>
   <block id="9b311c0df60f3fcb1498372665b63e61" category="admonition">Vous pouvez ajouter des informations d'identification AWS à un compte à partir de la console Workload Factory ou de la console NetApp .</block>
-  <block id="875b761ddc794776aadfc56fc5a6fc34" category="list-text">Depuis Workload Factory, saisissez un nom et ajoutez les informations d’identification.</block>
   <block id="8fd935558171bd50056871ef9ee7bd05" category="inline-link">Console Workload Factory</block>
   <block id="6c8ca72a28d9651706405d888093910e" category="list-text">Connectez-vous à la<block ref="04c72ef1cb137ba02eafcfdeb6fc7765" category="inline-link-rx"></block> .</block>
   <block id="6191b3848b93c4178f95391680ab2108" category="list-text">Dans le menu, sélectionnez *Administration* puis *Informations d'identification*.</block>
@@ -1423,4 +1416,24 @@
   <block id="e3e28d348f2fd8f74a410b0565f54037" category="cell">Récapitulatif mensuel des coûts de votre compte, présentant les tendances de dépenses, les variations inhabituelles et les meilleures opportunités d'économies pour les systèmes de fichiers FSx for ONTAP.</block>
   <block id="e298f728c751f07eb265d52e8b508cc2" category="cell">Rapport de coûts</block>
   <block id="f983e68b5fe658be13decdbe22777f19" category="summary">Découvrez les nouveautés concernant les fonctionnalités d'administration de Workload Factory, telles que les identifiants du fournisseur de cloud, les améliorations de Codebox et bien plus encore.</block>
+  <block id="3bb5ae684d139ecc39b584ffe9e6033b" category="paragraph">Le service de notification NetApp Workload Factory inclut la notification en cas de retard de réplication.</block>
+  <block id="bdd14b3b036670ed34f9ec4d3b52c70c" category="section-title">Prise en charge des comptes AWS GovCloud (US)</block>
+  <block id="bc2438830b45cc61abad63e0b037a228" category="paragraph">Vous pouvez désormais créer des comptes AWS GovCloud (US) dans Workload Factory. Ce type de compte utilise uniquement les points de terminaison et les régions AWS US GovCloud pour la configuration et les opérations. Les informations d'identification et les secrets restent dans GovCloud. Les régions GovCloud (US) sont prises en charge.</block>
+  <block id="b6d9ef2d00d295b73db4c150b66667c7" category="inline-link-macro">Créez un compte AWS GovCloud (US) dans Workload Factory</block>
+  <block id="02235c7f58acbfe62b6b373b8f8ef557" category="paragraph"><block ref="02235c7f58acbfe62b6b373b8f8ef557" category="inline-link-macro-rx"></block></block>
+  <block id="79031a3594e961554e9c04f8abe20efa" category="list-text">*Manuellement* : Vous créez la stratégie IAM et le rôle IAM dans votre compte AWS lors de l’ajout des informations d’identification dans Workload Factory. Les informations d’identification AWS GovCloud (US) doivent être ajoutées manuellement.</block>
+  <block id="792c9140da9b146f94c73ec223b6fc51" category="paragraph">Workload Factory ne prend pas en charge l'automatisation dans les comptes GovCloud.</block>
+  <block id="60071fa639c31fcd4a70e99949388fc9" category="paragraph">Les identifiants AWS GovCloud(US) doivent être ajoutés manuellement.</block>
+  <block id="45bf4c80f61944fd3fcaad58870d0db3" category="list-text">Étape 1 : Sélectionnez les services et le niveau d’autorisation que vous souhaitez utiliser, puis créez des stratégies IAM à partir de la console de gestion AWS.</block>
+  <block id="5fe86d852cf356c78e39b05d0e9745e8" category="list-text">Étape 2 : Créez un rôle IAM à partir de la console de gestion AWS.</block>
+  <block id="e4d64fd268d05c9bc7e7e0c0300d69ba" category="list-text">Étape 3 : Dans Workload Factory, saisissez un nom et ajoutez les informations d’identification.</block>
+  <block id="64faf5c72ad7f70350cc60a29e7ec76e" category="admonition">L'ajout d'informations d'identification à un compte AWS GovCloud (US) à l'aide de CloudFormation n'est pas pris en charge.</block>
+  <block id="5038f398ec0b8521dc65bd49c565199c" category="cell">Délai de réplication</block>
+  <block id="7e3ba9b3dfe6a66c23b3a8d2e106e2dc" category="cell">La réplication prend plus de temps que prévu.</block>
+  <block id="6a34595811c59ce6c3f72924ac92f741" category="list-text">Sur la page *Compte*, créez un compte. Un compte est l'élément principal de la plateforme d'identité de NetApp, et il vous permet d'ajouter et de gérer des autorisations et des identifiants.</block>
+  <block id="91cf9192d8e3e7c1c5d93a04ee02a619" category="paragraph"><block ref="91cf9192d8e3e7c1c5d93a04ee02a619" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c983ef2dda673a36e8455e61f88625fc" category="list-text">Saisissez un nom pour le compte.</block>
+  <block id="d097d681103ac768d9ca87aa43096db9" category="list-text">Vous pouvez également créer un compte AWS GovCloud (US). Ce type de compte utilise uniquement les points de terminaison et les régions AWS GovCloud (US) pour la configuration et l'exploitation. Les informations d'identification et les secrets restent dans GovCloud. Ce choix est définitif.</block>
+  <block id="5aa69fed46341f59b5dc6e550c082135" category="list-text">Facultativement, fournissez une description de poste pour le compte.</block>
+  <block id="92ee6e4d72d15689a675017ce0db2fa1" category="section-title">31 mai 2026</block>
 </blocks>
