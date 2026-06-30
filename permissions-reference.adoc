@@ -39,6 +39,10 @@ Les politiques IAM disponibles pour le stockage fournissent les autorisations do
 Le stockage propose les politiques d'autorisation suivantes :
 
 * *Visualisation, planification et analyse* : visualisez les systèmes de fichiers FSx pour ONTAP , informez-vous sur l’état du système, obtenez une analyse détaillée de vos systèmes et explorez les économies possibles.
++
+
+NOTE: AWS GovCloud ne prend pas en charge AWS Cost Explorer, vous n'avez donc pas besoin de ces autorisations :  `ce:GetCostAndUsage` et  `ce:GetTags`. Si vous les incluez, la stratégie fonctionnera quand même.
+
 * *Opérations et correction* : Effectuez des tâches opérationnelles telles que l’ajustement de la capacité du système de fichiers et la résolution des problèmes liés à la configuration de votre système de fichiers.
 * *Création et suppression de systèmes de fichiers* : Créez et supprimez des systèmes de fichiers FSx pour ONTAP et des machines virtuelles de stockage.
 

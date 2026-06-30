@@ -169,3 +169,14 @@ L’utilisation des API REST de Workload Factory présente plusieurs avantages 
 
 
 https://console.workloads.netapp.com/api-doc["Consultez la documentation de l'API REST de Workload Factory"^]
+
+
+
+== Prise en charge des régions
+
+Les régions AWS suivantes ne sont pas prises en charge :
+
+* régions de Chine
+* Secret Cloud
+* Cloud Top Secret
+

@@ -1436,4 +1436,13 @@
   <block id="d097d681103ac768d9ca87aa43096db9" category="list-text">Vous pouvez également créer un compte AWS GovCloud (US). Ce type de compte utilise uniquement les points de terminaison et les régions AWS GovCloud (US) pour la configuration et l'exploitation. Les informations d'identification et les secrets restent dans GovCloud. Ce choix est définitif.</block>
   <block id="5aa69fed46341f59b5dc6e550c082135" category="list-text">Facultativement, fournissez une description de poste pour le compte.</block>
   <block id="92ee6e4d72d15689a675017ce0db2fa1" category="section-title">31 mai 2026</block>
+  <block id="b8646f09ea34b75c077cfea12f75617b" category="inline-link-macro">Référence des autorisations</block>
+  <block id="cd96cf7ebfb9b4a10268be38c383fa2e" category="paragraph">Apprenez-en davantage sur les autorisations requises pour chaque capacité de charge de travail dans le <block ref="a5f4ae61e232cd6bd835f3c22c2ae14c" category="inline-link-macro-rx"></block>.</block>
+  <block id="d19d35e43d16db0ea1d21d81cb1ac01d" category="admonition">Si vous possédez un compte GovCloud, vous n'avez pas besoin des autorisations Cost Explorer<block ref="bba6542a0e46014b21a818003b1e41d2" prefix=" " category="inline-code"></block> ou<block ref="f74e5982a82afd7d2755b24355dd08c6" prefix=" " category="inline-code"></block> dans la stratégie **Affichage, planification et analyse** pour le stockage. Après avoir copié le script depuis la zone de code, supprimez ces autorisations et la virgule finale de la ligne précédente.</block>
+  <block id="cd9aa9a92963bccf53a18059deb4f182" category="admonition">AWS GovCloud ne prend pas en charge AWS Cost Explorer, vous n'avez donc pas besoin de ces autorisations : <block ref="bba6542a0e46014b21a818003b1e41d2" prefix=" " category="inline-code"></block> et <block ref="f74e5982a82afd7d2755b24355dd08c6" prefix=" " category="inline-code"></block>. Si vous les incluez, la stratégie fonctionnera quand même.</block>
+  <block id="044dbc650d6316ed90f739b69dfff7ee" category="section-title">Prise en charge des régions</block>
+  <block id="468469fded9ecf5cf0e132a6daa62d32" category="paragraph">Les régions AWS suivantes ne sont pas prises en charge :</block>
+  <block id="cc6dcf46ebcb08f1caa420526cc0ab18" category="list-text">régions de Chine</block>
+  <block id="ecd96786b112acf6970d6aaf3be575ca" category="list-text">Secret Cloud</block>
+  <block id="151ef168e17772f7a361db78a0c86552" category="list-text">Cloud Top Secret</block>
 </blocks>
