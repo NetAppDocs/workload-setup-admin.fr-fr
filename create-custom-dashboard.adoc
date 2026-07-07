@@ -30,7 +30,7 @@ N'oubliez pas que les tableaux de bord personnalisés sont conçus pour être en
 == Créer un tableau de bord
 
 .Étapes
-. Connectez-vous à l'aide de l'un des link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^].
+. Connectez-vous en utilisant l'un des link:console-experiences.html["expériences de la console"^].
 . Sélectionnez le menu image:workloads-menu-icon.png["L'icône du menu hamburger permet de naviguer vers des charges de travail telles que le stockage, eda, ai, bases de données, vmware et l'administration."] puis *Aperçu des charges de travail* > *Tableaux de bord personnalisés*.
 +
 Si c'est votre premier tableau de bord, vous verrez un écran vierge avec des exemples d'invites pour vous aider à démarrer. Vous pouvez sélectionner *Copier l'invite* pour copier un exemple d'invite dans la zone de texte de la boîte de dialogue IA.

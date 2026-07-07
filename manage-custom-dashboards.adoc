@@ -26,7 +26,7 @@ Vous devez disposer d'au moins un tableau de bord personnalisé dans votre compt
 == Accédez au catalogue du tableau de bord
 
 .Étapes
-. Connectez-vous à l'aide de l'un des link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^].
+. Connectez-vous en utilisant l'un des link:console-experiences.html["expériences de la console"^].
 . Dans le menu, sélectionnez *Aperçu des charges de travail* puis *Tableaux de bord personnalisés*.
 +
 Le catalogue des tableaux de bord affiche tous les tableaux de bord personnalisés de votre compte Workload Factory.
