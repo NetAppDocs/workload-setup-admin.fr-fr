@@ -1,0 +1,104 @@
+---
+sidebar: sidebar 
+permalink: learn-custom-dashboards.html 
+keywords: custom dashboards, dashboards, personalized dashboards, AI dashboards, operational visibility, workload monitoring 
+summary: 'Créez des tableaux de bord basés sur l"IA et personnalisés en fonction de vos charges de travail et de vos priorités pour une visibilité opérationnelle améliorée, sans être limité par des vues prédéfinies.' 
+---
+= Découvrez les tableaux de bord personnalisés
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+En tant qu'administrateur cloud et de stockage, les tableaux de bord personnalisés vous offrent une vue claire des systèmes et des charges de travail que vous gérez. Ils vous permettent de créer et de personnaliser des vues adaptées à votre travail, à vos priorités et à vos objectifs commerciaux, au lieu d'être limité à des mises en page prédéfinies.
+
+Les tableaux de bord personnalisés utilisent l'IA pour créer des vues personnalisées de votre environnement Workload Factory. Il vous suffit de décrire en langage clair ce que vous souhaitez surveiller, et le système génère automatiquement des graphiques adaptés à vos besoins.
+
+Tous les utilisateurs de votre compte Workload Factory peuvent consulter tous les tableaux de bord personnalisés. Cette configuration partagée aide les équipes à collaborer et à voir les mêmes informations opérationnelles dans l'ensemble de votre organisation.
+
+
+
+== Pourquoi utiliser des tableaux de bord personnalisés
+
+Les utilisateurs de Workload Factory gèrent de nombreuses charges de travail, environnements et priorités, mais les tableaux de bord standard n'affichent que des vues prédéfinies. Les tableaux de bord personnalisés permettent de résoudre plusieurs problèmes opérationnels :
+
+* *Répondez rapidement aux questions clés* : concentrez-vous sur les questions les plus importantes ou les lacunes dans votre compréhension plutôt que sur les statistiques générales du système.
+* *Surveillez ce qui compte maintenant* : Suivez les indicateurs qui correspondent à vos priorités actuelles, pas un ensemble fixe d’indicateurs de santé.
+* *Lier les données techniques aux résultats commerciaux* : Montrez comment les performances du système affectent les opérations et les objectifs commerciaux.
+* *Évitez de passer d'un outil à l'autre* : consultez toutes les informations pertinentes au même endroit—inutile de passer d'un outil, d'une page ou d'une exportation à l'autre.
+
+
+
+
+== Ce que vous pouvez faire avec des tableaux de bord personnalisés
+
+Lors de la configuration, le dialogue guidé par l'IA vous aide à définir :
+
+* Charges de travail et ressources à surveiller
+* Indicateurs clés importants pour votre travail
+* Plages temporelles et périodes à comparer
+* Vues par région, charge de travail ou autres catégories
+* Règles ou exigences que vous devez suivre et afficher
+
+
+
+
+== Considérations et limitations
+
+
+
+=== Autorisations
+
+Pour créer ou afficher des tableaux de bord personnalisés, vous devez disposer des autorisations AWS IAM appropriées pour les ressources que vous souhaitez surveiller. Assurez-vous que le compte Workload Factory possède un accès en lecture aux sources de données utilisées par les tableaux de bord.
+
+link:add-credentials.html["Découvrez comment ajouter des informations d'identification AWS et configurer les autorisations IAM"^].
+
+
+
+=== Conception en lecture seule
+
+Les tableaux de bord personnalisés sont en lecture seule. Ils ne peuvent pas modifier vos paramètres de stockage ni de charge de travail. Cela vous permet de surveiller votre système sans risque de modification accidentelle.
+
+
+
+=== Limitations
+
+Les limitations suivantes s'appliquent actuellement aux tableaux de bord personnalisés :
+
+* Vous ne pouvez pas partager de tableaux de bord en dehors de votre compte Workload Factory
+* Un seul utilisateur peut modifier un tableau de bord à la fois
+* L'édition simultanée n'est pas prise en charge
+
+
+
+
+=== Environnement de démonstration
+
+Si vous utilisez un compte de démonstration Workload Factory, des tableaux de bord prédéfinis sont disponibles. Ils vous aident à voir ce que les tableaux de bord personnalisés peuvent faire. Chaque tableau de bord présente un besoin courant de surveillance : état de la reprise après sinistre, capacité et coûts dans les différentes régions, et respect des règles de protection du stockage.
+
+
+
+=== Exemples de consignes
+
+Les exemples suivants montrent comment décrire vos besoins en matière de surveillance en langage clair :
+
+* *Surveillance de la reprise après sinistre* : « Je configure une solution de reprise après sinistre dans AWS pour mes systèmes sur site. Je souhaite consulter la liste complète de mes ressources sur site et l’état de chacune d’elles sur le site de reprise après sinistre dans la région US East, notamment si elle est configurée, active et opérationnelle. »
+* *Capacité et coût multirégionaux* : « Je gère le stockage sur plusieurs régions cloud et applications. Je souhaite une visibilité claire sur la quantité de stockage allouée, la quantité utilisée et son coût, avec des détails pour chaque région et chaque application. »
+* *Conformité de la protection du stockage* : « Je mets en place une nouvelle stratégie de protection du stockage basée sur les normes de mon organisation. Montrez-moi tous les systèmes de fichiers et s’ils répondent à ces exigences :
++
+** Charges de travail de la base de données : 12 instantanés quotidiens par volume et 2 instantanés inviolables par semaine.
+** Partages NFS et SMB : 7 instantanés quotidiens par volume et 1 instantané inviolable par semaine.
+** Le protocole ARP doit être activé sur tous les volumes.
+
+
+
+
+
+
+== Prochaines étapes
+
+* link:create-custom-dashboard.html["Créer un tableau de bord personnalisé"]
+* link:manage-custom-dashboards.html["Gérer les tableaux de bord personnalisés"]
+* link:troubleshoot-custom-dashboards.html["Dépannage des tableaux de bord personnalisés"]
+

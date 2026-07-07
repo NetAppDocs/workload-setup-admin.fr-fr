@@ -1,0 +1,99 @@
+---
+sidebar: sidebar 
+permalink: troubleshoot-custom-dashboards.html 
+keywords: troubleshooting, dashboard errors, dashboard issues, failed creation, failed to load, dashboard not loading 
+summary: 'Résolvez les problèmes courants liés aux tableaux de bord personnalisés, notamment les échecs de création, les problèmes de chargement de données et les problèmes d"accès.' 
+---
+= Dépannage des tableaux de bord personnalisés
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Utilisez ces informations pour résoudre les problèmes courants que vous pourriez rencontrer lors de la création ou de l'utilisation de tableaux de bord personnalisés.
+
+
+
+== La création du tableau de bord a échoué
+
+**Problème :** Vous voyez le message d’erreur « Impossible de comprendre la requête et de générer le code » lors de la création d’un tableau de bord.
+
+**Cause :** Le système n’a pas pu comprendre votre demande ou n’a pas pu créer la visualisation à partir de votre invite.
+
+**Solution :** Essayez ce qui suit :
+
+* Reformulez votre demande en précisant davantage ce que vous souhaitez surveiller.
+* Commencez par l'une des invites d'exemple dans link:create-custom-dashboard.html["Créer un tableau de bord personnalisé"].
+* Décomposez les besoins complexes de surveillance en plusieurs tableaux de bord plus simples.
+* Spécifiez les charges de travail, les indicateurs, les plages temporelles ou les dimensions que vous souhaitez suivre.
+
+
+
+
+== Échec du chargement des données du tableau de bord
+
+**Problème :** Le tableau de bord a été créé, mais il affiche des erreurs lors du chargement des données.
+
+**Cause :** Cela se produit généralement en raison de problèmes d’autorisation ou de sources de données indisponibles.
+
+**Solution :**
+
+* **Vérifiez les autorisations :** Assurez-vous que votre compte Workload Factory dispose d’un accès en lecture aux charges de travail et aux ressources utilisées par le tableau de bord. Consultez les exigences d’autorisation dans link:learn-custom-dashboards.html#permissions["Autorisations"].
+* **Vérifiez vos identifiants :** Assurez-vous que vos identifiants AWS sont valides et n’ont pas expiré. Voir link:add-credentials.html["Ajoutez des identifiants AWS"] pour plus de détails.
+* **Confirmez la configuration de la charge de travail :** Assurez-vous que les charges de travail que vous souhaitez surveiller sont correctement configurées dans Workload Factory et qu’elles sont actuellement en cours d’exécution.
+
+
+
+
+== Le tableau de bord ne se charge pas ou se charge lentement
+
+**Problème :** Le tableau de bord se charge lentement ou certains widgets n’apparaissent pas.
+
+**Cause :** Un chargement lent peut être causé par des problèmes de réseau, une grande quantité de données ou des retards de service temporaires.
+
+**Solution :**
+
+* **Vérifiez votre connexion internet :** Assurez-vous que votre connexion internet est stable.
+* **Actualisez votre navigateur :** Essayez d’actualiser la page pour voir si le tableau de bord se charge correctement.
+* **Videz le cache et les cookies de votre navigateur :** Cela peut aider à résoudre les problèmes de chargement causés par des données obsolètes ou corrompues.
+* **Veuillez patienter et réessayer :** Si le problème persiste, patientez quelques minutes et réessayez.
+
+
+
+
+== Impossible de modifier le tableau de bord
+
+**Problème :** Lorsque vous essayez de modifier un tableau de bord, le message « En cours de modification par [user name]. » s'affiche.
+
+**Cause :** Un autre utilisateur de votre compte Workload Factory est en train de modifier le tableau de bord. Un seul utilisateur peut modifier un tableau de bord à la fois.
+
+**Solution :**
+
+* Attendez que l'autre utilisateur ait terminé et enregistré ses modifications.
+* Veuillez contacter la personne indiquée dans le message pour coordonner la modification.
+* Si l'utilisateur n'est plus en train de modifier mais que le verrou reste en place, demandez-lui de fermer la fenêtre d'édition pour libérer le verrou.
+
+
+
+
+== Tableaux de bord manquants
+
+**Problème :** Un tableau de bord que vous avez créé n’est plus répertorié dans le catalogue des tableaux de bord.
+
+**Cause :** Un autre utilisateur de votre compte Workload Factory l’a peut-être supprimé.
+
+**Solution :**
+
+* Assurez-vous d'être connecté au bon compte Workload Factory.
+* Demandez aux autres utilisateurs de votre compte si quelqu'un a supprimé le tableau de bord.
+* Si nécessaire, recréez le tableau de bord en respectant les exigences initiales.
+
+
+Tous les utilisateurs d'un compte Workload Factory peuvent consulter et supprimer les tableaux de bord personnalisés. Coordonnez-vous avec votre équipe lors de la gestion des tableaux de bord partagés.
+
+
+
+== Aide supplémentaire
+
+Si vous continuez à rencontrer des problèmes avec les tableaux de bord personnalisés, consultez link:get-help.html["Obtenez de l'aide"] pour obtenir des informations sur la manière de contacter l’assistance NetApp.

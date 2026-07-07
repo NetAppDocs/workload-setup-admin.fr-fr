@@ -1,0 +1,69 @@
+---
+sidebar: sidebar 
+permalink: create-custom-dashboard.html 
+keywords: create dashboard, custom dashboard, AI dashboard, dashboard creation, personalized dashboard 
+summary: 'Créez un tableau de bord personnalisé à l"aide d"invites guidées par l"IA pour surveiller ce qui compte le plus pour vos charges de travail et vos priorités opérationnelles.' 
+---
+= Créer un tableau de bord personnalisé
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Créez des tableaux de bord personnalisés en décrivant clairement ce que vous souhaitez surveiller. L’IA vous guide tout au long de la configuration afin que vos tableaux de bord correspondent à vos charges de travail et à vos priorités.
+
+.Description de la tâche
+Les tableaux de bord personnalisés utilisent un dialogue guidé par l'IA pour comprendre ce que vous souhaitez visualiser. Vous décrivez vos besoins de surveillance en langage naturel, et le système pose des questions de clarification afin de s'assurer que le tableau de bord réponde à vos exigences.
+
+Une fois créée, vous pouvez actualiser le tableau de bord pour voir les données mises à jour.
+
+N'oubliez pas que les tableaux de bord personnalisés sont conçus pour être en lecture seule et ne peuvent pas modifier vos configurations de stockage ou de charge de travail.
+
+.Avant de commencer
+* Vous devez obtenir l'autorisation d'accéder aux ressources que vous souhaitez surveiller sur votre tableau de bord.
+* Configurez vos charges de travail dans Workload Factory avant de créer des tableaux de bord pour les surveiller.
+
+
+
+
+== Créer un tableau de bord
+
+.Étapes
+. Connectez-vous à l'aide de l'un des link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^].
+. Sélectionnez le menu image:workloads-menu-icon.png["L'icône du menu hamburger permet de naviguer vers des charges de travail telles que le stockage, eda, ai, bases de données, vmware et l'administration."] puis *Aperçu des charges de travail* > *Tableaux de bord personnalisés*.
++
+Si c'est votre premier tableau de bord, vous verrez un écran vierge avec des exemples d'invites pour vous aider à démarrer. Vous pouvez sélectionner *Copier l'invite* pour copier un exemple d'invite dans la zone de texte de la boîte de dialogue IA.
+
+. Sélectionnez *Créer un nouveau tableau de bord*.
+. Dans la boîte de dialogue IA, décrivez ce que vous souhaitez surveiller.
++
+Décrivez-le en termes simples. L'IA vous posera quelques questions pour mieux comprendre vos besoins.
+
+. Sélectionnez image:arrow.png["L'icône de menu permet de lancer la génération de tableaux de bord., width=18"].
+. Répondez aux questions de clarification de l'IA.
++
+L'IA pourrait vous proposer plusieurs options pour mieux comprendre vos besoins. Répondez à chaque question et sélectionnez *Continuer*, ou sélectionnez *Passer* pour ignorer les questions facultatives.
+
+. Après avoir répondu à toutes les questions, sélectionnez *Continuer* pour créer votre tableau de bord.
+
+
+.Résultat
+Votre tableau de bord personnalisé est désormais disponible dans le catalogue des tableaux de bord. Tous les utilisateurs de votre compte Workload Factory peuvent y accéder et le consulter.
+
+.Et ensuite
+Après la création, vous pouvez :
+
+* Actualisez les données du tableau de bord pour afficher les informations les plus récentes
+* Modifiez les tableaux de bord pour changer ce qu'ils affichent
+* Supprimez les tableaux de bord dont vous n'avez plus besoin
+* Consultez les détails du tableau de bord, y compris qui l'a créé et quand il a été mis à jour pour la dernière fois
+
+
+
+
+== Informations connexes
+
+* link:manage-custom-dashboards.html["Gérez vos tableaux de bord personnalisés"]
+* link:troubleshoot-custom-dashboards.html["Dépannage des tableaux de bord personnalisés"]
+

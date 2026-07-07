@@ -1,0 +1,88 @@
+---
+sidebar: sidebar 
+permalink: manage-custom-dashboards.html 
+keywords: manage dashboards, edit dashboard, delete dashboard, refresh dashboard, dashboard catalog 
+summary: Accédez à votre catalogue de tableaux de bord pour afficher, modifier, actualiser et supprimer des tableaux de bord personnalisés dans Workload Factory. 
+---
+= Gérer les tableaux de bord personnalisés
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Gérez vos tableaux de bord personnalisés depuis le catalogue de tableaux de bord. À partir de là, vous pouvez consulter les détails, actualiser les données, modifier les paramètres du tableau de bord ou supprimer les tableaux de bord dont vous n'avez plus besoin.
+
+.Description de la tâche
+Tous les utilisateurs de votre compte Workload Factory peuvent accéder à tous les tableaux de bord personnalisés. Chaque tableau de bord affiche des informations essentielles telles que le nom du créateur, la date de création et si quelqu'un est en train de le modifier.
+
+Les tableaux de bord personnalisés sont en lecture seule. Ils ne permettent pas de modifier vos paramètres de stockage ni de charge de travail. Vous pouvez modifier le tableau de bord lui-même, mais pas les ressources qu'il surveille.
+
+.Avant de commencer
+Vous devez disposer d'au moins un tableau de bord personnalisé dans votre compte Workload Factory.
+
+
+
+== Accédez au catalogue du tableau de bord
+
+.Étapes
+. Connectez-vous à l'aide de l'un des link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^].
+. Dans le menu, sélectionnez *Aperçu des charges de travail* puis *Tableaux de bord personnalisés*.
++
+Le catalogue des tableaux de bord affiche tous les tableaux de bord personnalisés de votre compte Workload Factory.
+
+. Consultez la liste du tableau de bord.
+
+
+
+
+== Actualiser les données du tableau de bord
+
+Les données du tableau de bord se chargent à l'ouverture de celui-ci. Vous pouvez l'actualiser pour afficher les informations les plus récentes.
+
+Le tableau de bord recharge les données de vos charges de travail. L'heure de la dernière mise à jour change pour indiquer quand les données ont été actualisées.
+
+
+
+== Modifier un tableau de bord
+
+Vous pouvez modifier un tableau de bord pour en changer les informations affichées, notamment les indicateurs et les graphiques.
+
+.Étapes
+. Sur la page *Tableaux de bord personnalisés*, repérez le tableau de bord que vous souhaitez modifier.
+. Dans le menu *Actions* de ce tableau de bord, sélectionnez *Modifier le tableau de bord*.
++
+Si un autre utilisateur modifie le tableau de bord, vous verrez un message tel que « En cours de modification par [user name]. » Attendez qu'il ait terminé ou coordonnez-vous avec lui.
+
+. Dans la boîte de dialogue IA, décrivez les modifications que vous souhaitez apporter.
++
+Ce processus est similaire à la création d'un nouveau tableau de bord. Vous pouvez modifier les charges de travail, les indicateurs ou les plages horaires que le tableau de bord suit.
+
+. Vérifiez les modifications et sélectionnez **Enregistrer**.
+
+
+.Résultat
+Le tableau de bord se met à jour avec vos modifications. La date de dernière modification se met également à jour.
+
+
+
+== Supprimer un tableau de bord
+
+Supprimez les tableaux de bord dont vous n'avez plus besoin. Cette action est permanente et ne peut pas être annulée.
+
+.Étapes
+. Sur la page *Tableaux de bord personnalisés*, repérez le tableau de bord que vous souhaitez supprimer.
+. Dans le menu déroulant *Actions* de ce tableau de bord, sélectionnez *Supprimer*.
+. Confirmez la suppression.
+
+
+.Résultat
+Le tableau de bord est définitivement supprimé de votre compte Workload Factory et tous les utilisateurs perdent l'accès à celui-ci.
+
+
+
+== Informations connexes
+
+* link:create-custom-dashboard.html["Créer des tableaux de bord personnalisés supplémentaires"]
+* link:troubleshoot-custom-dashboards.html["Dépannage des tableaux de bord personnalisés"]
+

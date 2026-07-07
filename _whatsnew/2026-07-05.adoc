@@ -1,0 +1,15 @@
+= Tableaux de bord personnalisés
+:allow-uri-read: 
+
+
+
+
+=== Tableaux de bord personnalisés
+
+Créez des tableaux de bord basés sur l'IA, adaptés à vos charges de travail et à vos priorités, pour visualiser facilement les performances de vos opérations. Au lieu de vous fier à des vues fixes, les tableaux de bord personnalisés vous permettent de vous concentrer sur les informations les plus importantes.
+
+Il vous suffit de décrire en langage clair ce que vous souhaitez suivre, et l'IA créera un tableau de bord en fonction de votre demande. Par exemple, vous pouvez suivre l'état de la reprise après sinistre, la capacité et les coûts dans les différentes régions, la conformité de la protection du stockage et d'autres indicateurs opérationnels.
+
+Les tableaux de bord personnalisés sont en lecture seule, ils ne peuvent donc pas modifier vos paramètres de stockage ni de charge de travail. Toute personne disposant d’un compte Workload Factory peut consulter et gérer ces tableaux de bord, ce qui permet aux équipes de partager facilement des informations et de rester alignées.
+
+link:learn-custom-dashboards.html["En savoir plus sur les tableaux de bord personnalisés"]

@@ -1450,4 +1450,152 @@
   <block id="dec4de109ea4eb3e3c42771a86f5377a" category="cell">Opérations de journalisation du point d'accès S3</block>
   <block id="dc0903fb248bd39e420d250bdf42edee" category="cell">Configurez ou mettez à jour les sélecteurs d'événements AWS CloudTrail en activant ou en désactivant l'association entre le point d'accès S3 FSx for ONTAP et le journal CloudTrail</block>
   <block id="89aa68fffda7d587077f8069ae60e59f" category="cell">cloudtrail :PutEventSelectors</block>
+  <block id="992672ecff7fe59cf2782ddb79f58e1d" category="doc">Tableaux de bord personnalisés</block>
+  <block id="2865e3ecb86dc9391d13f92e53f2a2ac" category="paragraph">Créez des tableaux de bord basés sur l'IA, adaptés à vos charges de travail et à vos priorités, pour visualiser facilement les performances de vos opérations. Au lieu de vous fier à des vues fixes, les tableaux de bord personnalisés vous permettent de vous concentrer sur les informations les plus importantes.</block>
+  <block id="4ebed31793305164cd5e1b71336c2244" category="paragraph">Il vous suffit de décrire en langage clair ce que vous souhaitez suivre, et l'IA créera un tableau de bord en fonction de votre demande. Par exemple, vous pouvez suivre l'état de la reprise après sinistre, la capacité et les coûts dans les différentes régions, la conformité de la protection du stockage et d'autres indicateurs opérationnels.</block>
+  <block id="f2c8c03b6d33f0a06783ce6241b381a6" category="paragraph">Les tableaux de bord personnalisés sont en lecture seule, ils ne peuvent donc pas modifier vos paramètres de stockage ni de charge de travail. Toute personne disposant d’un compte Workload Factory peut consulter et gérer ces tableaux de bord, ce qui permet aux équipes de partager facilement des informations et de rester alignées.</block>
+  <block id="7f7fdf6329959f984b3ff303ae5ac37f" category="inline-link-macro">En savoir plus sur les tableaux de bord personnalisés</block>
+  <block id="b95d6b8ad9f73321f9cc2385811deedb" category="paragraph"><block ref="b95d6b8ad9f73321f9cc2385811deedb" category="inline-link-macro-rx"></block></block>
+  <block id="b8aad264abc6ada71a68a9b5a701a58b" category="summary">Créez un tableau de bord personnalisé à l'aide d'invites guidées par l'IA pour surveiller ce qui compte le plus pour vos charges de travail et vos priorités opérationnelles.</block>
+  <block id="dfc2a77d9b383cd28cba1a1e99f9a378" category="doc">Créer un tableau de bord personnalisé</block>
+  <block id="43d2bb31c641fd8b871b835572bc7441" category="paragraph">Créez des tableaux de bord personnalisés en décrivant clairement ce que vous souhaitez surveiller. L’IA vous guide tout au long de la configuration afin que vos tableaux de bord correspondent à vos charges de travail et à vos priorités.</block>
+  <block id="463a1f1058198f82800c115a2a913de5" category="paragraph">Les tableaux de bord personnalisés utilisent un dialogue guidé par l'IA pour comprendre ce que vous souhaitez visualiser. Vous décrivez vos besoins de surveillance en langage naturel, et le système pose des questions de clarification afin de s'assurer que le tableau de bord réponde à vos exigences.</block>
+  <block id="5af1607522ddad534f7fc3e5976684e5" category="paragraph">Une fois créée, vous pouvez actualiser le tableau de bord pour voir les données mises à jour.</block>
+  <block id="a8f8e9b8eb3f376a4b560c169094087e" category="paragraph">N'oubliez pas que les tableaux de bord personnalisés sont conçus pour être en lecture seule et ne peuvent pas modifier vos configurations de stockage ou de charge de travail.</block>
+  <block id="7f2caa1403d5a00e4abbc779c525c170" category="list-text">Vous devez obtenir l'autorisation d'accéder aux ressources que vous souhaitez surveiller sur votre tableau de bord.</block>
+  <block id="aae9aa18bcac1ee780a470bdbbc81875" category="list-text">Configurez vos charges de travail dans Workload Factory avant de créer des tableaux de bord pour les surveiller.</block>
+  <block id="1490f3908001d2cdf7587ba480973340" category="section-title">Créer un tableau de bord</block>
+  <block id="342a19841e494c61bf9c06a5879eaffa" category="inline-image-macro">L'icône du menu hamburger permet de naviguer vers des charges de travail telles que le stockage, eda, ai, bases de données, vmware et l'administration.</block>
+  <block id="2e73b76e7b232c5b1f77e0a5880d5ad5" category="list-text">Sélectionnez le menu <block ref="d1917ed039a7bd34b3d1373e5ffc5ece" category="inline-image-macro-rx" type="image"></block> puis *Aperçu des charges de travail* &gt; *Tableaux de bord personnalisés*.</block>
+  <block id="f1dcf9e30698fcfe356b412b3f1f523c" category="paragraph">Si c'est votre premier tableau de bord, vous verrez un écran vierge avec des exemples d'invites pour vous aider à démarrer. Vous pouvez sélectionner *Copier l'invite* pour copier un exemple d'invite dans la zone de texte de la boîte de dialogue IA.</block>
+  <block id="2e752336fdbff2abb5e9bf262bd0dbdd" category="list-text">Sélectionnez *Créer un nouveau tableau de bord*.</block>
+  <block id="28d14a36109f19e020789b18ad010e52" category="list-text">Dans la boîte de dialogue IA, décrivez ce que vous souhaitez surveiller.</block>
+  <block id="f81e522e43740650ace37b219a052164" category="paragraph">Décrivez-le en termes simples. L'IA vous posera quelques questions pour mieux comprendre vos besoins.</block>
+  <block id="61c97c990827d64adae42781eef7977a" category="inline-image-macro">L'icône de menu permet de lancer la génération de tableaux de bord., width=18</block>
+  <block id="9f955fab4eac0e2ec9405b5db65b1bbb" category="list-text">Sélectionnez <block ref="1b0d31425e9262bd5e8bd047f083a392" category="inline-image-macro-rx" type="image"></block>.</block>
+  <block id="32e95e9677f9ef2f50e204cf4b6401d7" category="list-text">Répondez aux questions de clarification de l'IA.</block>
+  <block id="7d84a0d9d14a5f050503a7b9b00b3435" category="paragraph">L'IA pourrait vous proposer plusieurs options pour mieux comprendre vos besoins. Répondez à chaque question et sélectionnez *Continuer*, ou sélectionnez *Passer* pour ignorer les questions facultatives.</block>
+  <block id="90173ffd48ab0b65df8cc1496c811a5d" category="list-text">Après avoir répondu à toutes les questions, sélectionnez *Continuer* pour créer votre tableau de bord.</block>
+  <block id="9d1ec15b76f21503c345737dd1e6038c" category="paragraph">Votre tableau de bord personnalisé est désormais disponible dans le catalogue des tableaux de bord. Tous les utilisateurs de votre compte Workload Factory peuvent y accéder et le consulter.</block>
+  <block id="01e12de62fa77fda2815719aed8ff892" category="paragraph-title">Et ensuite</block>
+  <block id="fb3b6f147b0a44a08f4c961dc053571e" category="paragraph">Après la création, vous pouvez :</block>
+  <block id="a5c04615d2baa4c3104d2afbb5b85c59" category="list-text">Actualisez les données du tableau de bord pour afficher les informations les plus récentes</block>
+  <block id="caace49efbd64662add845d2ed5e7042" category="list-text">Modifiez les tableaux de bord pour changer ce qu'ils affichent</block>
+  <block id="7bff2130a08698224667671d85a34ed4" category="list-text">Supprimez les tableaux de bord dont vous n'avez plus besoin</block>
+  <block id="ed5184af3d39b3e314759db5b95ba675" category="list-text">Consultez les détails du tableau de bord, y compris qui l'a créé et quand il a été mis à jour pour la dernière fois</block>
+  <block id="d10995cac5dfc264a5da7f4abec9025d" category="inline-link-macro">Gérez vos tableaux de bord personnalisés</block>
+  <block id="1c028f2c092927e5beff0c52bcc2456a" category="list-text"><block ref="1c028f2c092927e5beff0c52bcc2456a" category="inline-link-macro-rx"></block></block>
+  <block id="1703fc0755f2533bd9d727fa0298c500" category="inline-link-macro">Dépannage des tableaux de bord personnalisés</block>
+  <block id="1cd847d256198f4e37b4ae35e7859286" category="list-text"><block ref="1cd847d256198f4e37b4ae35e7859286" category="inline-link-macro-rx"></block></block>
+  <block id="b765164d0d63341925efe41eda98a9b0" category="summary">Créez des tableaux de bord basés sur l'IA et personnalisés en fonction de vos charges de travail et de vos priorités pour une visibilité opérationnelle améliorée, sans être limité par des vues prédéfinies.</block>
+  <block id="adf3d3abc197eec345a7ab721730806c" category="doc">Découvrez les tableaux de bord personnalisés</block>
+  <block id="7eb72e0c632d43245022c759c6dabf4f" category="paragraph">En tant qu'administrateur cloud et de stockage, les tableaux de bord personnalisés vous offrent une vue claire des systèmes et des charges de travail que vous gérez. Ils vous permettent de créer et de personnaliser des vues adaptées à votre travail, à vos priorités et à vos objectifs commerciaux, au lieu d'être limité à des mises en page prédéfinies.</block>
+  <block id="959c71c7e92856ead7b3a708f6c721c2" category="paragraph">Les tableaux de bord personnalisés utilisent l'IA pour créer des vues personnalisées de votre environnement Workload Factory. Il vous suffit de décrire en langage clair ce que vous souhaitez surveiller, et le système génère automatiquement des graphiques adaptés à vos besoins.</block>
+  <block id="f1e11e6b7c8b037c77a4a7c91acba439" category="paragraph">Tous les utilisateurs de votre compte Workload Factory peuvent consulter tous les tableaux de bord personnalisés. Cette configuration partagée aide les équipes à collaborer et à voir les mêmes informations opérationnelles dans l'ensemble de votre organisation.</block>
+  <block id="0cc3ed3838a7ccb5f5454f9a9e965833" category="section-title">Pourquoi utiliser des tableaux de bord personnalisés</block>
+  <block id="a8c7717916af9efd32ed1f2556005cce" category="paragraph">Les utilisateurs de Workload Factory gèrent de nombreuses charges de travail, environnements et priorités, mais les tableaux de bord standard n'affichent que des vues prédéfinies. Les tableaux de bord personnalisés permettent de résoudre plusieurs problèmes opérationnels :</block>
+  <block id="135a1cf67f3c35c0d0e10abc8470699e" category="list-text">*Répondez rapidement aux questions clés* : concentrez-vous sur les questions les plus importantes ou les lacunes dans votre compréhension plutôt que sur les statistiques générales du système.</block>
+  <block id="0d21e6f539758fefdbea39962fd5b026" category="list-text">*Surveillez ce qui compte maintenant* : Suivez les indicateurs qui correspondent à vos priorités actuelles, pas un ensemble fixe d’indicateurs de santé.</block>
+  <block id="3f731afb8a0dffc068abffe76f1a5ca1" category="list-text">*Lier les données techniques aux résultats commerciaux* : Montrez comment les performances du système affectent les opérations et les objectifs commerciaux.</block>
+  <block id="093ecfd7b1330a7a804792cf2ad47249" category="list-text">*Évitez de passer d'un outil à l'autre* : consultez toutes les informations pertinentes au même endroit—inutile de passer d'un outil, d'une page ou d'une exportation à l'autre.</block>
+  <block id="5473f92e1e9974588f523da6ec42d779" category="section-title">Ce que vous pouvez faire avec des tableaux de bord personnalisés</block>
+  <block id="348467ce5b84d7d219767eb177529dcb" category="paragraph">Lors de la configuration, le dialogue guidé par l'IA vous aide à définir :</block>
+  <block id="2c55ae63711161cbdec9fc0567dfa81d" category="list-text">Charges de travail et ressources à surveiller</block>
+  <block id="a37eb4863cbc8ee3ac75cb1498fc8895" category="list-text">Indicateurs clés importants pour votre travail</block>
+  <block id="cdfa093abec6d3b3ed91c073ffda143a" category="list-text">Plages temporelles et périodes à comparer</block>
+  <block id="efdf5eaa29e3c2930edbf6dc622b3b95" category="list-text">Vues par région, charge de travail ou autres catégories</block>
+  <block id="0382db2b201586b16e5ed4d61af700ac" category="list-text">Règles ou exigences que vous devez suivre et afficher</block>
+  <block id="18b34a0dd090bb7f1f01f6f3d0d42c52" category="section-title">Considérations et limitations</block>
+  <block id="6344c74fd8e5c3678a14327105887b61" category="paragraph">Pour créer ou afficher des tableaux de bord personnalisés, vous devez disposer des autorisations AWS IAM appropriées pour les ressources que vous souhaitez surveiller. Assurez-vous que le compte Workload Factory possède un accès en lecture aux sources de données utilisées par les tableaux de bord.</block>
+  <block id="b895786e376487f78816aa96581917ec" category="inline-link-macro">Découvrez comment ajouter des informations d'identification AWS et configurer les autorisations IAM</block>
+  <block id="c61bed5a551c50bee3f870cc793e144b" category="paragraph"><block ref="10ed2be00615eb2c2386c703d91716ef" category="inline-link-macro-rx"></block>.</block>
+  <block id="edc83c82b6a6439e121df7b8dfc618e7" category="section-title">Conception en lecture seule</block>
+  <block id="9596530d51115869eabe2f1148109fcb" category="paragraph">Les tableaux de bord personnalisés sont en lecture seule. Ils ne peuvent pas modifier vos paramètres de stockage ni de charge de travail. Cela vous permet de surveiller votre système sans risque de modification accidentelle.</block>
+  <block id="e646e16bee8b32e6ea29e30d01970a6c" category="section-title">Limitations</block>
+  <block id="9b7e15be2b250373f1f4204c0d8a313a" category="paragraph">Les limitations suivantes s'appliquent actuellement aux tableaux de bord personnalisés :</block>
+  <block id="af58cbb6f48e75ca1858deb5b23d424e" category="list-text">Vous ne pouvez pas partager de tableaux de bord en dehors de votre compte Workload Factory</block>
+  <block id="8842d5599593f1c220f6f9c200222fdc" category="list-text">Un seul utilisateur peut modifier un tableau de bord à la fois</block>
+  <block id="8031af406fb376c22555c37f323588ea" category="list-text">L'édition simultanée n'est pas prise en charge</block>
+  <block id="8fbadf27f5b9fe2779015430fdb5baac" category="section-title">Environnement de démonstration</block>
+  <block id="372d2f979722e867e21cf5dc86365106" category="paragraph">Si vous utilisez un compte de démonstration Workload Factory, des tableaux de bord prédéfinis sont disponibles. Ils vous aident à voir ce que les tableaux de bord personnalisés peuvent faire. Chaque tableau de bord présente un besoin courant de surveillance : état de la reprise après sinistre, capacité et coûts dans les différentes régions, et respect des règles de protection du stockage.</block>
+  <block id="79092ffcd78270a38b45ed11da4ef893" category="section-title">Exemples de consignes</block>
+  <block id="95ef60d56b458eae2c194d7ac8234f5c" category="paragraph">Les exemples suivants montrent comment décrire vos besoins en matière de surveillance en langage clair :</block>
+  <block id="bb4298b33c9efb59f5b7c959ca88fe4b" category="list-text">*Surveillance de la reprise après sinistre* : « Je configure une solution de reprise après sinistre dans AWS pour mes systèmes sur site. Je souhaite consulter la liste complète de mes ressources sur site et l’état de chacune d’elles sur le site de reprise après sinistre dans la région US East, notamment si elle est configurée, active et opérationnelle. »</block>
+  <block id="f3f66b82398c698a8891bc39cc80d3ec" category="list-text">*Capacité et coût multirégionaux* : « Je gère le stockage sur plusieurs régions cloud et applications. Je souhaite une visibilité claire sur la quantité de stockage allouée, la quantité utilisée et son coût, avec des détails pour chaque région et chaque application. »</block>
+  <block id="86660547d3b01955cbe8ca32c03764d0" category="list-text">*Conformité de la protection du stockage* : « Je mets en place une nouvelle stratégie de protection du stockage basée sur les normes de mon organisation. Montrez-moi tous les systèmes de fichiers et s’ils répondent à ces exigences :</block>
+  <block id="da8c35a377d4789965b326d520c28223" category="list-text">Charges de travail de la base de données : 12 instantanés quotidiens par volume et 2 instantanés inviolables par semaine.</block>
+  <block id="c01a6403a6cfebc4ade27b2461b77ea8" category="list-text">Partages NFS et SMB : 7 instantanés quotidiens par volume et 1 instantané inviolable par semaine.</block>
+  <block id="489342efbcb2cab8832e0e763b340653" category="list-text">Le protocole ARP doit être activé sur tous les volumes.</block>
+  <block id="cce78dc6ebbec7385a01f2146d6d01c8" category="section-title">Prochaines étapes</block>
+  <block id="817e038e8ee419f03c8a12275438f8d7" category="list-text"><block ref="817e038e8ee419f03c8a12275438f8d7" category="inline-link-macro-rx"></block></block>
+  <block id="62403e3fa28afe128e2c0e15bf0333f7" category="inline-link-macro">Gérer les tableaux de bord personnalisés</block>
+  <block id="09327b0cff12718fff46be13c240b39f" category="list-text"><block ref="09327b0cff12718fff46be13c240b39f" category="inline-link-macro-rx"></block></block>
+  <block id="c9d9548c92d24e0dc83c6a1818848b58" category="summary">Accédez à votre catalogue de tableaux de bord pour afficher, modifier, actualiser et supprimer des tableaux de bord personnalisés dans Workload Factory.</block>
+  <block id="48f5d174a835c1fb6c38af1c4800bcdb" category="paragraph">Gérez vos tableaux de bord personnalisés depuis le catalogue de tableaux de bord. À partir de là, vous pouvez consulter les détails, actualiser les données, modifier les paramètres du tableau de bord ou supprimer les tableaux de bord dont vous n'avez plus besoin.</block>
+  <block id="426dd2be6d0917b0febd591b1f25bc0a" category="paragraph">Tous les utilisateurs de votre compte Workload Factory peuvent accéder à tous les tableaux de bord personnalisés. Chaque tableau de bord affiche des informations essentielles telles que le nom du créateur, la date de création et si quelqu'un est en train de le modifier.</block>
+  <block id="8a57aae4a94bc002578416ca2a1f301a" category="paragraph">Les tableaux de bord personnalisés sont en lecture seule. Ils ne permettent pas de modifier vos paramètres de stockage ni de charge de travail. Vous pouvez modifier le tableau de bord lui-même, mais pas les ressources qu'il surveille.</block>
+  <block id="76fc0fde7a5041f5e2df3b114841202c" category="paragraph">Vous devez disposer d'au moins un tableau de bord personnalisé dans votre compte Workload Factory.</block>
+  <block id="19f40b5f5943ee4953075403d9783061" category="section-title">Accédez au catalogue du tableau de bord</block>
+  <block id="94ab7238c8d6eb39314e6dc172cba073" category="list-text">Dans le menu, sélectionnez *Aperçu des charges de travail* puis *Tableaux de bord personnalisés*.</block>
+  <block id="04b69ec1d9e5301be209cb2b652a1602" category="paragraph">Le catalogue des tableaux de bord affiche tous les tableaux de bord personnalisés de votre compte Workload Factory.</block>
+  <block id="dffad8b6380340c5079727deb13bb3f2" category="list-text">Consultez la liste du tableau de bord.</block>
+  <block id="9e3f16aef1d22400bdae48c5cb77b00f" category="section-title">Actualiser les données du tableau de bord</block>
+  <block id="4e424a1ad37782627141d4d50f79b586" category="paragraph">Les données du tableau de bord se chargent à l'ouverture de celui-ci. Vous pouvez l'actualiser pour afficher les informations les plus récentes.</block>
+  <block id="6835e72df37e141c78401ea8d4bfcf90" category="paragraph">Le tableau de bord recharge les données de vos charges de travail. L'heure de la dernière mise à jour change pour indiquer quand les données ont été actualisées.</block>
+  <block id="ad322a64b7af5e88132bf6cb538fccd0" category="section-title">Modifier un tableau de bord</block>
+  <block id="ce7194dc740d6f8db1edf5435d1a57b4" category="paragraph">Vous pouvez modifier un tableau de bord pour en changer les informations affichées, notamment les indicateurs et les graphiques.</block>
+  <block id="b13bad0dcb6df4e403e8e2af9058dfe5" category="list-text">Sur la page *Tableaux de bord personnalisés*, repérez le tableau de bord que vous souhaitez modifier.</block>
+  <block id="d431f68c965a7131bbc2f48128983c25" category="list-text">Dans le menu *Actions* de ce tableau de bord, sélectionnez *Modifier le tableau de bord*.</block>
+  <block id="212f24e309c20769800e812e5d15c2e3" category="paragraph">Si un autre utilisateur modifie le tableau de bord, vous verrez un message tel que « En cours de modification par [user name]. » Attendez qu'il ait terminé ou coordonnez-vous avec lui.</block>
+  <block id="63f40ecf20824ff6d561a306d3a25fd1" category="list-text">Dans la boîte de dialogue IA, décrivez les modifications que vous souhaitez apporter.</block>
+  <block id="3184c7e78934ef4b37ea845f1d56789a" category="paragraph">Ce processus est similaire à la création d'un nouveau tableau de bord. Vous pouvez modifier les charges de travail, les indicateurs ou les plages horaires que le tableau de bord suit.</block>
+  <block id="f66306510aaf399aef8bdf649739a15e" category="list-text">Vérifiez les modifications et sélectionnez **Enregistrer**.</block>
+  <block id="89806ea6a9ed9b0bb6cb322f912aff65" category="paragraph">Le tableau de bord se met à jour avec vos modifications. La date de dernière modification se met également à jour.</block>
+  <block id="74ee9feffcb1603b7eeb47c099c0e5a5" category="section-title">Supprimer un tableau de bord</block>
+  <block id="e54360b7371199d6607f76cd1ae6ad17" category="paragraph">Supprimez les tableaux de bord dont vous n'avez plus besoin. Cette action est permanente et ne peut pas être annulée.</block>
+  <block id="3325f3a5c13a73bb87ed2dabebb0b6a3" category="list-text">Sur la page *Tableaux de bord personnalisés*, repérez le tableau de bord que vous souhaitez supprimer.</block>
+  <block id="0ce6306187e44bdf505a14f5d0676bb6" category="list-text">Dans le menu déroulant *Actions* de ce tableau de bord, sélectionnez *Supprimer*.</block>
+  <block id="b26a5fa549c938ffb56d20623c3f69c0" category="list-text">Confirmez la suppression.</block>
+  <block id="22e8351c82677bcc78bd23d6fb170bc8" category="paragraph">Le tableau de bord est définitivement supprimé de votre compte Workload Factory et tous les utilisateurs perdent l'accès à celui-ci.</block>
+  <block id="9537d9160ef701530bdd875698475957" category="inline-link-macro">Créer des tableaux de bord personnalisés supplémentaires</block>
+  <block id="1258b44f1520a3cf10d648fb08dbf72e" category="list-text"><block ref="1258b44f1520a3cf10d648fb08dbf72e" category="inline-link-macro-rx"></block></block>
+  <block id="87377124bfbafaf3a36cd9e53255e829" category="summary">Résolvez les problèmes courants liés aux tableaux de bord personnalisés, notamment les échecs de création, les problèmes de chargement de données et les problèmes d'accès.</block>
+  <block id="0c5896a9e6c8d2cff1b4d007852b1732" category="paragraph">Utilisez ces informations pour résoudre les problèmes courants que vous pourriez rencontrer lors de la création ou de l'utilisation de tableaux de bord personnalisés.</block>
+  <block id="2e00365fe32c89b1fd1ad214f291ca85" category="section-title">La création du tableau de bord a échoué</block>
+  <block id="09a8c59ab236b488dde6ce993a012c63" category="paragraph">**Problème :** Vous voyez le message d’erreur « Impossible de comprendre la requête et de générer le code » lors de la création d’un tableau de bord.</block>
+  <block id="0687519296941b7aa068cbc5e70a1c22" category="paragraph">**Cause :** Le système n’a pas pu comprendre votre demande ou n’a pas pu créer la visualisation à partir de votre invite.</block>
+  <block id="83b9aaf1b6b5ef7884e24699dc7f7511" category="paragraph">**Solution :** Essayez ce qui suit :</block>
+  <block id="894b21673f7a949e53a381985a55de87" category="list-text">Reformulez votre demande en précisant davantage ce que vous souhaitez surveiller.</block>
+  <block id="7bb45728b45872d1735d2db6f80d1aa8" category="list-text">Commencez par l'une des invites d'exemple dans <block ref="817e038e8ee419f03c8a12275438f8d7" category="inline-link-macro-rx"></block>.</block>
+  <block id="6e8565abed03ed302a07467257865757" category="list-text">Décomposez les besoins complexes de surveillance en plusieurs tableaux de bord plus simples.</block>
+  <block id="28ceb1134c8420a708d78605ab459972" category="list-text">Spécifiez les charges de travail, les indicateurs, les plages temporelles ou les dimensions que vous souhaitez suivre.</block>
+  <block id="7b0923a8ddaa6864688d6afeed5bde9f" category="section-title">Échec du chargement des données du tableau de bord</block>
+  <block id="6cf9da3bc18ab877793e971ea5fdf80d" category="paragraph">**Problème :** Le tableau de bord a été créé, mais il affiche des erreurs lors du chargement des données.</block>
+  <block id="423c766e8a7076c3dd890fe7460b5785" category="paragraph">**Cause :** Cela se produit généralement en raison de problèmes d’autorisation ou de sources de données indisponibles.</block>
+  <block id="6342c16a39a9eb2f31fa733eb76963b7" category="paragraph">**Solution :**</block>
+  <block id="fb7bac53b48882cef2221ea2bff55443" category="list-text">**Vérifiez les autorisations :** Assurez-vous que votre compte Workload Factory dispose d’un accès en lecture aux charges de travail et aux ressources utilisées par le tableau de bord. Consultez les exigences d’autorisation dans <block ref="79e11e6e61bebfcf73bb53d91696114e" category="inline-link-macro-rx"></block>.</block>
+  <block id="a92d27a2e307df461574cc29f2358257" category="list-text">**Vérifiez vos identifiants :** Assurez-vous que vos identifiants AWS sont valides et n’ont pas expiré. Voir <block ref="b2fa8f8bcb70f53fbee747df0674d6ae" category="inline-link-macro-rx"></block> pour plus de détails.</block>
+  <block id="fee56bf45b6270228ee20fa9d1d5d88a" category="list-text">**Confirmez la configuration de la charge de travail :** Assurez-vous que les charges de travail que vous souhaitez surveiller sont correctement configurées dans Workload Factory et qu’elles sont actuellement en cours d’exécution.</block>
+  <block id="a82708a710bdc7f66cc4d1b5721a359c" category="section-title">Le tableau de bord ne se charge pas ou se charge lentement</block>
+  <block id="7b8a6ade8ac0e93d1993c6d3ee222a27" category="paragraph">**Problème :** Le tableau de bord se charge lentement ou certains widgets n’apparaissent pas.</block>
+  <block id="c66f626cb62bfd00b1514c2f1a4ec699" category="paragraph">**Cause :** Un chargement lent peut être causé par des problèmes de réseau, une grande quantité de données ou des retards de service temporaires.</block>
+  <block id="d418125e12395b77bec7ee8f19845a54" category="list-text">**Vérifiez votre connexion internet :** Assurez-vous que votre connexion internet est stable.</block>
+  <block id="e39625dee78ba95654668e1fce54e45f" category="list-text">**Actualisez votre navigateur :** Essayez d’actualiser la page pour voir si le tableau de bord se charge correctement.</block>
+  <block id="f86d0248af765f101ea3563fcc677a18" category="list-text">**Videz le cache et les cookies de votre navigateur :** Cela peut aider à résoudre les problèmes de chargement causés par des données obsolètes ou corrompues.</block>
+  <block id="e7347594ee6cffce40f1598054f4f163" category="list-text">**Veuillez patienter et réessayer :** Si le problème persiste, patientez quelques minutes et réessayez.</block>
+  <block id="7a2ffa8b9064d2842f2e8203776a80e0" category="section-title">Impossible de modifier le tableau de bord</block>
+  <block id="83e74e6ee1cf72780d556b5b56524b07" category="paragraph">**Problème :** Lorsque vous essayez de modifier un tableau de bord, le message « En cours de modification par [user name]. » s'affiche.</block>
+  <block id="89bb98bf1c9d56355ec74ce488a3f9f8" category="paragraph">**Cause :** Un autre utilisateur de votre compte Workload Factory est en train de modifier le tableau de bord. Un seul utilisateur peut modifier un tableau de bord à la fois.</block>
+  <block id="21aa7960bf24b27392547adc57724345" category="list-text">Attendez que l'autre utilisateur ait terminé et enregistré ses modifications.</block>
+  <block id="3e99de69e606821e37746a29904f9fc6" category="list-text">Veuillez contacter la personne indiquée dans le message pour coordonner la modification.</block>
+  <block id="0fced5615d0fc04d9397c731329e549e" category="list-text">Si l'utilisateur n'est plus en train de modifier mais que le verrou reste en place, demandez-lui de fermer la fenêtre d'édition pour libérer le verrou.</block>
+  <block id="318369ae5a2f25e9c7cb0b7b846d1775" category="section-title">Tableaux de bord manquants</block>
+  <block id="732976f9f9cc4b9938c0a1a9c2569828" category="paragraph">**Problème :** Un tableau de bord que vous avez créé n’est plus répertorié dans le catalogue des tableaux de bord.</block>
+  <block id="d0a35413e8843c3f263cb1fad4f4cb3e" category="paragraph">**Cause :** Un autre utilisateur de votre compte Workload Factory l’a peut-être supprimé.</block>
+  <block id="4d6f4bd604a33b7ae11eceb4c29146f9" category="list-text">Assurez-vous d'être connecté au bon compte Workload Factory.</block>
+  <block id="86d37fb397f8d1a33dc0e6cb1de913ae" category="list-text">Demandez aux autres utilisateurs de votre compte si quelqu'un a supprimé le tableau de bord.</block>
+  <block id="62ad02c42e5e548dcaf80a64c2d0eefd" category="list-text">Si nécessaire, recréez le tableau de bord en respectant les exigences initiales.</block>
+  <block id="1e2b52bc0d9b39d605af8ef1990be5ab" category="paragraph">Tous les utilisateurs d'un compte Workload Factory peuvent consulter et supprimer les tableaux de bord personnalisés. Coordonnez-vous avec votre équipe lors de la gestion des tableaux de bord partagés.</block>
+  <block id="e2a43aebbf3f114c3e1dfc54b469c13e" category="section-title">Aide supplémentaire</block>
+  <block id="a56bacdffec3c1404856b40a1b27f955" category="paragraph">Si vous continuez à rencontrer des problèmes avec les tableaux de bord personnalisés, consultez <block ref="c470f3409940cee13ddda9c09bf54b60" category="inline-link-macro-rx"></block> pour obtenir des informations sur la manière de contacter l’assistance NetApp.</block>
 </blocks>
