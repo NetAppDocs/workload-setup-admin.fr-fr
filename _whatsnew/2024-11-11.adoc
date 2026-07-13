@@ -4,6 +4,7 @@
 
 
 
+[[workload-factory-integration-in-the-bluexp-console]]
 === Intégration en usine des charges de travail dans la console BlueXP 
 
 Vous pouvez désormais utiliser l'usine de charge de travail à partir de link:https://console.bluexp.netapp.com["Console BlueXP"]. L'expérience de la console BlueXP  offre les mêmes fonctionnalités que la console d'usine de la charge de travail.

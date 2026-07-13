@@ -4,6 +4,7 @@
 
 
 
+[[rss-subscription]]
 === Abonnement RSS
 
 L'abonnement RSS est disponible sur le link:https://console.workloads.netapp.com/["console d'usine de charge de travail"]. L'utilisation d'un flux RSS est un moyen facile de consommer et d'être conscient des changements dans l'usine de la charge de travail BlueXP .
@@ -12,6 +13,7 @@ image:screenshot-rss-subscribe-button.png["Capture d'écran du menu déroulant d
 
 
 
+[[support-for-a-single-permission-policy-per-workload]]
 === Prise en charge d'une seule stratégie d'autorisation par charge de travail
 
 Lors de l'ajout d'identifiants AWS en usine de workloads, vous pouvez désormais sélectionner une règle d'autorisation unique, en mode lecture ou automatisation, pour chaque charge de travail et pour la gestion du stockage.

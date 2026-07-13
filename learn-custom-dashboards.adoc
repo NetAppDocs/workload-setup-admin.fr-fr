@@ -19,6 +19,7 @@ Tous les utilisateurs de votre compte Workload Factory peuvent consulter tous le
 
 
 
+[[why-use-custom-dashboards]]
 == Pourquoi utiliser des tableaux de bord personnalisés
 
 Les utilisateurs de Workload Factory gèrent de nombreuses charges de travail, environnements et priorités, mais les tableaux de bord standard n'affichent que des vues prédéfinies. Les tableaux de bord personnalisés permettent de résoudre plusieurs problèmes opérationnels :
@@ -31,6 +32,7 @@ Les utilisateurs de Workload Factory gèrent de nombreuses charges de travail, e
 
 
 
+[[what-you-can-do-with-custom-dashboards]]
 == Ce que vous pouvez faire avec des tableaux de bord personnalisés
 
 Lors de la configuration, le dialogue guidé par l'IA vous aide à définir :
@@ -44,11 +46,13 @@ Lors de la configuration, le dialogue guidé par l'IA vous aide à définir :
 
 
 
+[[considerations-and-limitations]]
 == Considérations et limitations
 
 
 
-=== Autorisations
+[[aws-credentials-and-permissions]]
+=== Identifiants et autorisations AWS
 
 Pour créer ou afficher des tableaux de bord personnalisés, vous devez disposer des autorisations AWS IAM appropriées pour les ressources que vous souhaitez surveiller. Assurez-vous que le compte Workload Factory possède un accès en lecture aux sources de données utilisées par les tableaux de bord.
 
@@ -56,29 +60,40 @@ link:add-credentials.html["Découvrez comment ajouter des informations d'identif
 
 
 
+[[link-to-fsx-for-ontap]]
+=== Lien vers FSx pour ONTAP
+
+Workload Factory nécessite un Link pour se connecter aux systèmes de fichiers Amazon FSx for ONTAP. Un Link crée une relation de confiance et une connectivité entre Workload Factory et un ou plusieurs systèmes de fichiers Amazon FSx for ONTAP. Cela vous permet de surveiller et de gérer certaines fonctionnalités du système de fichiers directement à partir des appels d’API REST ONTAP qui ne sont pas disponibles via l’API Amazon FSx for ONTAP.
+
+https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["Découvrez comment créer un lien"^].
+
+
+
+[[read-only-design]]
 === Conception en lecture seule
 
 Les tableaux de bord personnalisés sont en lecture seule. Ils ne peuvent pas modifier vos paramètres de stockage ni de charge de travail. Cela vous permet de surveiller votre système sans risque de modification accidentelle.
 
 
 
+[[limitations]]
 === Limitations
 
 Les limitations suivantes s'appliquent actuellement aux tableaux de bord personnalisés :
 
 * Vous ne pouvez pas partager de tableaux de bord en dehors de votre compte Workload Factory
-* Un seul utilisateur peut modifier un tableau de bord à la fois
-* L'édition simultanée n'est pas prise en charge
 
 
 
 
+[[demo-environment]]
 === Environnement de démonstration
 
 Si vous utilisez un compte de démonstration Workload Factory, des tableaux de bord prédéfinis sont disponibles. Ils vous aident à voir ce que les tableaux de bord personnalisés peuvent faire. Chaque tableau de bord présente un besoin courant de surveillance : état de la reprise après sinistre, capacité et coûts dans les différentes régions, et respect des règles de protection du stockage.
 
 
 
+[[sample-prompts]]
 === Exemples de consignes
 
 Les exemples suivants montrent comment décrire vos besoins en matière de surveillance en langage clair :
@@ -96,6 +111,7 @@ Les exemples suivants montrent comment décrire vos besoins en matière de surve
 
 
 
+[[next-steps]]
 == Prochaines étapes
 
 * link:create-custom-dashboard.html["Créer un tableau de bord personnalisé"]

@@ -20,13 +20,9 @@ Une fois créée, vous pouvez actualiser le tableau de bord pour voir les donné
 
 N'oubliez pas que les tableaux de bord personnalisés sont conçus pour être en lecture seule et ne peuvent pas modifier vos configurations de stockage ou de charge de travail.
 
-.Avant de commencer
-* Vous devez obtenir l'autorisation d'accéder aux ressources que vous souhaitez surveiller sur votre tableau de bord.
-* Configurez vos charges de travail dans Workload Factory avant de créer des tableaux de bord pour les surveiller.
 
 
-
-
+[[create-a-dashboard]]
 == Créer un tableau de bord
 
 .Étapes
@@ -55,13 +51,13 @@ Votre tableau de bord personnalisé est désormais disponible dans le catalogue 
 Après la création, vous pouvez :
 
 * Actualisez les données du tableau de bord pour afficher les informations les plus récentes
-* Modifiez les tableaux de bord pour changer ce qu'ils affichent
 * Supprimez les tableaux de bord dont vous n'avez plus besoin
 * Consultez les détails du tableau de bord, y compris qui l'a créé et quand il a été mis à jour pour la dernière fois
 
 
 
 
+[[related-information]]
 == Informations connexes
 
 * link:manage-custom-dashboards.html["Gérez vos tableaux de bord personnalisés"]

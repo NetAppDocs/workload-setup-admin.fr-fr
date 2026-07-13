@@ -4,6 +4,7 @@
 
 
 
+[[custom-dashboards]]
 === Tableaux de bord personnalisés
 
 Créez des tableaux de bord basés sur l'IA, adaptés à vos charges de travail et à vos priorités, pour visualiser facilement les performances de vos opérations. Au lieu de vous fier à des vues fixes, les tableaux de bord personnalisés vous permettent de vous concentrer sur les informations les plus importantes.

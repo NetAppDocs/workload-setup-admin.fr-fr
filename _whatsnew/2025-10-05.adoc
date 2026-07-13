@@ -4,6 +4,7 @@
 
 
 
+[[new-notification-for-storage]]
 === Nouvelle notification pour le stockage
 
 Le service de notification NetApp Workload Factory inclut la notification des problèmes bien architecturés pour le stockage.

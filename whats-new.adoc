@@ -15,10 +15,12 @@ Découvrez les nouveautés concernant les fonctionnalités d'administration de W
 
 
 
+[[31-may-2026]]
 == 31 mai 2026
 
 
 
+[[new-notification-for-fsx-for-ontap-file-systems]]
 === Nouvelle notification pour les systèmes de fichiers FSx for ONTAP
 
 Le service de notification NetApp Workload Factory inclut la notification en cas de retard de réplication.
@@ -27,6 +29,7 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.
 
 
 
+[[support-for-aws-govcloud-us-accounts]]
 === Prise en charge des comptes AWS GovCloud (US)
 
 Vous pouvez désormais créer des comptes AWS GovCloud (US) dans Workload Factory. Ce type de compte utilise uniquement les points de terminaison et les régions AWS US GovCloud pour la configuration et les opérations. Les informations d'identification et les secrets restent dans GovCloud. Les régions GovCloud (US) sont prises en charge.
@@ -35,10 +38,12 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["Crée
 
 
 
+[[03-may-2026]]
 == 3 mai 2026
 
 
 
+[[email-notifications-for-workload-factory]]
 === Notifications par e-mail pour Workload Factory
 
 Vous pouvez désormais recevoir les notifications de Workload Factory par e-mail sans configurer de rubrique Amazon SNS. Activez les notifications par e-mail pour envoyer des notifications à toutes les adresses e-mail associées au compte.
@@ -49,6 +54,7 @@ Si vous configurez les notifications dans NetApp Console, NetApp Console prend e
 
 
 
+[[new-notification-for-eda-latency]]
 === Nouvelle notification concernant la latence EDA
 
 Le service de notification NetApp Workload Factory inclut la notification de latence EDA qui vous avertit lorsque la latence d'une opération EDA dépasse un certain seuil.
@@ -57,6 +63,7 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.
 
 
 
+[[new-notification-for-fsx-for-ontap-file-systems]]
 === Nouvelle notification pour les systèmes de fichiers FSx for ONTAP
 
 Le service de notification NetApp Workload Factory inclut une notification contenant un récapitulatif mensuel des coûts de votre compte, indiquant les tendances de dépenses, les variations inhabituelles et les meilleures opportunités d'économies pour les systèmes de fichiers FSx for ONTAP.
@@ -65,10 +72,12 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.
 
 
 
+[[06-april-2026]]
 == 06 avril 2026
 
 
 
+[[new-notification-for-storage]]
 === Nouvelle notification pour le stockage
 
 Le service de notification NetApp Workload Factory inclut la notification pour NetApp Autonomous Ransomware Protection with AI (ARP/AI) pour le stockage.
@@ -77,10 +86,12 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.
 
 
 
+[[01-march-2026]]
 == 01 mars 2026
 
 
 
+[[new-ask-me-bookmark-available-in-workload-factory]]
 === Nouveau signet Ask Me disponible dans Workload Factory
 
 Nous avons ajouté un nouveau raccourci Ask Me sur chaque écran de la console Workload Factory. Cette amélioration vous permet d'accéder plus facilement et plus rapidement à Ask Me chaque fois que vous avez besoin d'aide. Ask Me est notre assistant IA, qui vous permet de poser des questions sur vos propres environnements de charge de travail, d'obtenir des informations personnalisées directement à partir de votre environnement et de consulter les conversations précédentes.
@@ -91,10 +102,12 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overvie
 
 
 
+[[01-february-2026]]
 == 01 février 2026
 
 
 
+[[well-architected-updates]]
 === Mises à jour bien conçues
 
 NetApp Workload Factory inclut l'évaluation bien architecturée pour les charges de travail Elastic VMware Service (EVS) et ajoute de nouvelles configurations pour les charges de travail de stockage et de base de données.
@@ -128,6 +141,7 @@ link:https://docs.netapp.com/us-en/workload-databases/optimize-configurations.ht
 
 
 
+[[new-permissions-for-storage]]
 === Nouvelles autorisations pour Storage
 
 De nouvelles autorisations ont été ajoutées à la charge de travail Storage pour des améliorations de la gestion des points d'accès S3.
@@ -136,20 +150,24 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.ht
 
 
 
+[[04-january-2026]]
 == 04 janvier 2026
 
 
 
+[[ask-me-ai-assistant-home-page-integration]]
 === Intégration de l'assistant IA à la page d'accueil de Ask me
 
 La page d'accueil de la console Workload Factory intègre l'assistant IA Ask me, vous permettant de poser des questions sur votre propre infrastructure de stockage, d'obtenir des informations personnalisées directement à partir de votre environnement et de consulter les conversations précédentes. Vous pouvez interagir avec « Demandez-moi » pour comprendre vos charges de travail, résoudre les problèmes et en savoir plus sur Workload Factory, le tout sans quitter la console.
 
 
 
+[[27-november-2025]]
 == 27 novembre 2025
 
 
 
+[[permissions-update-for-storage]]
 === Mise à jour des autorisations pour le stockage
 
 L'analyseur d'événements FSx pour ONTAP EMS utilise les autorisations Amazon Bedrock suivantes dans la stratégie d'autorisation _opérations et correction_ pour récupérer les données d'événements de la charge de travail de stockage.
@@ -164,26 +182,31 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.ht
 
 
 
+[[06-october-2025]]
 == 06 octobre 2025
 
 
 
+[[bluexp-workload-factory-now-netapp-workload-factory]]
 === BlueXP workload factory désormais NetApp Workload Factory
 
 BlueXP a été renommé et repensé pour mieux refléter le rôle qu'il joue dans la gestion de votre infrastructure de données. Par conséquent, BlueXP workload factory a été renommée NetApp Workload Factory.
 
 
 
+[[ask-me-integration-with-mcp]]
 === Intégration de Ask Me avec MCP
 
 Ask Me, l'assistant IA de Workload Factory, est intégré au protocole de contexte de modèle (MCP).  À l'aide de MCP, Ask Me s'interface en toute sécurité avec des environnements externes et interroge les outils API pour fournir des réponses adaptées à votre environnement de stockage spécifique.
 
 
 
+[[05-october-2025]]
 == 05 octobre 2025
 
 
 
+[[new-notification-for-storage]]
 === Nouvelle notification pour le stockage
 
 Le service de notification NetApp Workload Factory inclut la notification des problèmes bien architecturés pour le stockage.
@@ -192,10 +215,12 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.
 
 
 
+[[09-september-2025]]
 == 09 septembre 2025
 
 
 
+[[new-notification-for-storage]]
 === Nouvelle notification pour le stockage
 
 Le service de notification BlueXP workload factory inclut la notification pour la gestion automatique de la capacité de stockage.
@@ -204,10 +229,12 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.
 
 
 
+[[29-june-2025]]
 == 29 juin 2025
 
 
 
+[[permissions-update-for-databases]]
 === Mise à jour des autorisations pour les bases de données
 
 L'autorisation suivante est désormais disponible en mode _lecture seule_ pour les bases de données :  `cloudwatch:GetMetricData` .
@@ -216,6 +243,7 @@ https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html#ch
 
 
 
+[[bluexp-workload-factory-notification-service-support]]
 === Prise en charge du service de notification de l'usine de charge de travail BlueXP
 
 Le service de notification de l'usine de charge de travail BlueXP permet à l'usine de charge de travail d'envoyer des notifications au service d'alertes BlueXP ou à une rubrique Amazon SNS. Les notifications envoyées aux alertes BlueXP apparaissent dans le panneau des alertes BlueXP. Lorsque l'usine de charge de travail publie des notifications sur une rubrique Amazon SNS, les abonnés à cette rubrique (tels que les personnes ou d'autres applications) reçoivent les notifications aux points de terminaison configurés pour cette rubrique (tels que les e-mails ou les SMS).
@@ -224,26 +252,31 @@ https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.html[
 
 
 
+[[04-may-2025]]
 == 04 mai 2025
 
 
 
+[[cloudshell-autocomplete-support]]
 === Prise en charge de CloudShell avec remplissage automatique
 
 Lorsque vous utilisez BlueXP  Workload Factory CloudShell, vous pouvez commencer à taper une commande et appuyer sur la touche Tab pour afficher les options disponibles. S'il existe plusieurs possibilités, l'interface de ligne de commande affiche une liste de suggestions. Cette fonction améliore la productivité en réduisant au minimum les erreurs et en accélérant l'exécution des commandes.
 
 
 
+[[updated-permissions-terminology]]
 === Mise à jour de la terminologie des autorisations
 
 L'interface utilisateur et la documentation de l'usine de charge de travail utilisent désormais « lecture seule » pour faire référence aux autorisations de lecture et « lecture/écriture » pour faire référence aux autorisations d'automatisation.
 
 
 
+[[30-march-2025]]
 == 30 mars 2025
 
 
 
+[[cloudshell-reports-ai-generated-error-responses-for-ontap-cli-commands]]
 === CloudShell signale les réponses d'erreur générées par l'IA pour les commandes de l'interface de ligne de commande ONTAP
 
 Lorsque vous utilisez CloudShell, chaque fois que vous exécutez une commande de l'interface de ligne de commande ONTAP et qu'une erreur se produit, vous pouvez obtenir des réponses d'erreur générées par l'IA incluant une description de l'échec, la cause de l'échec et une résolution détaillée.
@@ -252,6 +285,7 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/use-cloudshell.html["Uti
 
 
 
+[[iamsimulatepermissionpolicy-permission-update]]
 === iam:mise à jour des autorisations SimulatePermissionPolicy
 
 Vous pouvez désormais gérer les `iam:SimulatePrincipalPolicy` autorisations à partir de la console d'usine des charges de travail lorsque vous ajoutez des informations d'identification de compte AWS supplémentaires ou que vous ajoutez une nouvelle fonctionnalité de charge de travail telle que la charge de travail GenAI.
@@ -260,10 +294,12 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.ht
 
 
 
+[[02-february-2025]]
 == 02 février 2025
 
 
 
+[[cloudshell-available-in-bluexp-workload-factory-console]]
 === CloudShell est disponible dans la console d'usine des charges de travail BlueXP 
 
 CloudShell est disponible à partir de n'importe quel emplacement de la console d'usine de la charge de travail BlueXP . CloudShell vous permet d'utiliser les informations d'identification AWS et ONTAP que vous avez fournies dans votre compte BlueXP  et d'exécuter les commandes de la CLI AWS ou les commandes de la CLI ONTAP dans un environnement de type shell.
@@ -272,6 +308,7 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/use-cloudshell.html["Uti
 
 
 
+[[permissions-update-for-databases]]
 === Mise à jour des autorisations pour les bases de données
 
 L'autorisation suivante est maintenant disponible en _read_ mode pour les bases de données : `iam:SimulatePrincipalPolicy`.
@@ -280,10 +317,12 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.ht
 
 
 
+[[22-january-2025]]
 == 22 janvier 2025
 
 
 
+[[bluexp-workload-factory-permissions]]
 === Autorisations d'usine des workloads BlueXP 
 
 Vous pouvez désormais afficher les autorisations utilisées par l'usine de workloads BlueXP  pour exécuter diverses opérations, depuis la découverte de vos environnements de stockage jusqu'au déploiement des ressources AWS, telles que les systèmes de fichiers dans le stockage ou les bases de connaissances pour les charges de travail GenAI. Vous pouvez afficher les règles et autorisations IAM pour les workloads Storage, Databases, VMware et GenAI.
@@ -292,10 +331,12 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.ht
 
 
 
+[[5-january-2025]]
 == 5 janvier 2025
 
 
 
+[[support-for-service-accounts-in-bluexp-workload-factory]]
 === Prise en charge des comptes de service en usine de charges de travail BlueXP 
 
 Les comptes de service sont désormais pris en charge par l'usine de workloads BlueXP . Vous pouvez créer des comptes de service qui agissent en tant qu'utilisateurs de machines pour automatiser les opérations d'infrastructure.
@@ -304,10 +345,12 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/manage-service-accounts.
 
 
 
+[[11-november-2024]]
 == 11 novembre 2024
 
 
 
+[[workload-factory-integration-in-the-bluexp-console]]
 === Intégration en usine des charges de travail dans la console BlueXP 
 
 Vous pouvez désormais utiliser l'usine de charge de travail à partir de link:https://console.bluexp.netapp.com["Console BlueXP"]. L'expérience de la console BlueXP  offre les mêmes fonctionnalités que la console d'usine de la charge de travail.
@@ -316,10 +359,12 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html
 
 
 
+[[1-september-2024]]
 == 1er septembre 2024
 
 
 
+[[rss-subscription]]
 === Abonnement RSS
 
 L'abonnement RSS est disponible sur le link:https://console.workloads.netapp.com/["console d'usine de charge de travail"]. L'utilisation d'un flux RSS est un moyen facile de consommer et d'être conscient des changements dans l'usine de la charge de travail BlueXP .
@@ -328,6 +373,7 @@ image:screenshot-rss-subscribe-button.png["Capture d'écran du menu déroulant d
 
 
 
+[[support-for-a-single-permission-policy-per-workload]]
 === Prise en charge d'une seule stratégie d'autorisation par charge de travail
 
 Lors de l'ajout d'identifiants AWS en usine de workloads, vous pouvez désormais sélectionner une règle d'autorisation unique, en mode lecture ou automatisation, pour chaque charge de travail et pour la gestion du stockage.
@@ -338,10 +384,12 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["Aj
 
 
 
+[[4-august-2024]]
 == 4 août 2024
 
 
 
+[[terraform-support]]
 === Prise en charge de Terraform
 
 Terraform est pris en charge pour le déploiement du système de fichiers Amazon FSX pour NetApp ONTAP et la création de machines virtuelles de stockage. Le guide d'installation et d'administration contient maintenant des instructions sur l'utilisation de Terraform à partir de la Codebox.
@@ -350,10 +398,12 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html["Utilis
 
 
 
+[[7-july-2024]]
 == 7 juillet 2024
 
 
 
+[[initial-release-of-bluexp-workload-factory]]
 === Version initiale de l'usine de workloads BlueXP 
 
 La fabrique de workloads BlueXP  est une plateforme puissante de gestion du cycle de vie conçue pour vous aider à optimiser vos workloads à l'aide des systèmes de fichiers Amazon FSX pour NetApp ONTAP. Parmi les charges de travail pouvant être rationalisées grâce à l'usine de workloads, FSX pour ONTAP figurent les bases de données, les migrations VMware vers VMware Cloud sur AWS, les chatbots d'IA, etc.

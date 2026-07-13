@@ -4,6 +4,7 @@
 
 
 
+[[email-notifications-for-workload-factory]]
 === Notifications par e-mail pour Workload Factory
 
 Vous pouvez désormais recevoir les notifications de Workload Factory par e-mail sans configurer de rubrique Amazon SNS. Activez les notifications par e-mail pour envoyer des notifications à toutes les adresses e-mail associées au compte.
@@ -14,6 +15,7 @@ Si vous configurez les notifications dans NetApp Console, NetApp Console prend e
 
 
 
+[[new-notification-for-eda-latency]]
 === Nouvelle notification concernant la latence EDA
 
 Le service de notification NetApp Workload Factory inclut la notification de latence EDA qui vous avertit lorsque la latence d'une opération EDA dépasse un certain seuil.
@@ -22,6 +24,7 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.
 
 
 
+[[new-notification-for-fsx-for-ontap-file-systems]]
 === Nouvelle notification pour les systèmes de fichiers FSx for ONTAP
 
 Le service de notification NetApp Workload Factory inclut une notification contenant un récapitulatif mensuel des coûts de votre compte, indiquant les tendances de dépenses, les variations inhabituelles et les meilleures opportunités d'économies pour les systèmes de fichiers FSx for ONTAP.

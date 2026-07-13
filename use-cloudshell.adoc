@@ -15,6 +15,7 @@ Ouvrez CloudShell pour exécuter des commandes AWS ou ONTAP CLI depuis n’impor
 
 
 
+[[about-this-task]]
 == Description de la tâche
 
 CloudShell vous permet d'exécuter des commandes AWS CLI ou des commandes ONTAP CLI dans un environnement de type shell à partir de la console Workload Factory.  Il simule des sessions de terminal dans le navigateur, fournissant des fonctionnalités de terminal et des messages proxy via le backend de Workload Factory.  Il vous permet d'utiliser les informations d'identification AWS et ONTAP que vous avez fournies dans votre compte NetApp .
@@ -32,6 +33,7 @@ Les fonctionnalités de CloudShell sont les suivantes :
 
 
 
+[[cloudshell-commands]]
 == Commandes CloudShell
 
 Dans l'interface graphique de CloudShell, vous pouvez entrer `help` pour afficher les commandes CloudShell disponibles. Après avoir émis la `help` commande, la référence suivante s'affiche.
@@ -71,6 +73,7 @@ Les opérateurs de shell tels que pipe `|`, l'exécution en arrière-plan `&` et
 
 
 
+[[before-you-begin]]
 == Avant de commencer
 
 CloudShell fonctionne dans le contexte de vos identifiants AWS. Pour utiliser CloudShell, vous devez fournir au moins une information d'identification AWS.
@@ -80,6 +83,7 @@ NOTE: CloudShell vous permet d'exécuter n'importe quelle commande d'interface d
 
 
 
+[[deploy-cloudshell]]
 == Déployez CloudShell
 
 Vous pouvez déployer CloudShell depuis n’importe où dans la console NetApp Workload Factory.  Vous pouvez également déployer CloudShell à partir de la console NetApp .
@@ -138,6 +142,7 @@ image:screenshot-cloudshell-tab-menu.png["Capture d'écran qui montre le menu de
 
 
 
+[[rename-a-cloudshell-session-tab]]
 == Renommer un onglet de session CloudShell
 
 Vous pouvez renommer un onglet de session CloudShell pour vous aider à identifier la session.
@@ -153,6 +158,7 @@ Le nouveau nom apparaît dans l'onglet de session CloudShell.
 
 
 
+[[duplicate-cloudshell-session-tab]]
 == Dupliquer l'onglet de session CloudShell
 
 Vous pouvez dupliquer un onglet de session CloudShell pour créer une nouvelle session avec le même nom, les mêmes informations d'identification et la même région. Le code de l'onglet d'origine n'est pas dupliqué dans l'onglet dupliqué.
@@ -167,6 +173,7 @@ Le nouvel onglet s'affiche avec le même nom que l'onglet d'origine.
 
 
 
+[[close-cloudshell-session-tabs]]
 == Fermez les onglets de session CloudShell
 
 Vous pouvez fermer les onglets CloudShell un par un, fermer les autres onglets sur lequel vous ne travaillez pas ou fermer tous les onglets en même temps.
@@ -187,6 +194,7 @@ Les onglets de session CloudShell sélectionnés se ferment.
 
 
 
+[[split-cloudshell-session-tabs]]
 == Fractionner les onglets de session CloudShell
 
 Vous pouvez fractionner les onglets de session CloudShell pour afficher deux onglets ou plus en même temps.
@@ -198,6 +206,7 @@ image:screenshot-cloudshell-split-view.png["Capture d'écran affichant deux ongl
 
 
 
+[[update-settings-for-a-cloudshell-session]]
 == Mettre à jour les paramètres d'une session CloudShell
 
 Vous pouvez mettre à jour les paramètres de police et de type de sortie pour les sessions CloudShell.
