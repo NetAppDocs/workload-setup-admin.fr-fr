@@ -21,10 +21,6 @@ Une fois connecté et configuré NetApp Workload Factory, vous pouvez commencer 
 +
 Détectez votre environnement de base de données sur AWS, évaluez les économies potentielles en passant à FSX pour ONTAP, déployez des bases de données de bout en bout grâce aux bonnes pratiques intégrées pour l'optimisation et automatisez le clonage fin pour les pipelines ci/CD.
 
-* https://docs.netapp.com/us-en/workload-genai/index.html["GenAI"^]
-+
-Déployez et gérez une infrastructure de génération augmentée par récupération (RAG) pour améliorer la précision et l'unicité de vos applications d'IA. Créez une base de connaissances RAG sur FSX pour ONTAP avec sécurité et conformité intégrées des données.
-
 * https://docs.netapp.com/us-en/workload-vmware/index.html["Workloads VMware"^]
 +
 Rationalisez les migrations et les opérations à l'aide de recommandations intelligentes et de la correction automatique. Déployez des sauvegardes efficaces et une reprise d'activité robuste. Surveillez et résolvez les problèmes de vos VM.

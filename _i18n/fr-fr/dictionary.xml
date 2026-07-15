@@ -174,9 +174,6 @@
   <block id="4d82a1ec1af02725042c8c785564ee7a" category="inline-link">Amazon FSX pour NetApp ONTAP</block>
   <block id="4d8d6f286ec4089532b442b9e29bdd84" category="list-text"><block ref="4d8d6f286ec4089532b442b9e29bdd84" category="inline-link-rx"></block></block>
   <block id="ad5615f8474eab297b35d0cbf8020dfc" category="paragraph">Évaluez et analysez les environnements de données actuels pour réduire les coûts en utilisant FSX pour ONTAP en tant qu'infrastructure de stockage, provisionnez et modélisez les déploiements FSX pour ONTAP en fonction des bonnes pratiques et accédez à des fonctionnalités de gestion avancées.</block>
-  <block id="cccae24691c5ff7191f1ffebe4352285" category="inline-link">GenAI</block>
-  <block id="88575fa076e31705fdc0a050f3c46540" category="list-text"><block ref="88575fa076e31705fdc0a050f3c46540" category="inline-link-rx"></block></block>
-  <block id="1ab964190acf4217fadb080cfcbe361f" category="paragraph">Déployez et gérez une infrastructure de génération augmentée par récupération (RAG) pour améliorer la précision et l'unicité de vos applications d'IA. Créez une base de connaissances RAG sur FSX pour ONTAP avec sécurité et conformité intégrées des données.</block>
   <block id="38bd169945a371832b0b65c9086b1792" category="inline-link">Charges de travail des bases de données</block>
   <block id="7c05124c7bff1277e0dd98967825f03a" category="list-text"><block ref="7c05124c7bff1277e0dd98967825f03a" category="inline-link-rx"></block></block>
   <block id="a76e64a0fbf98a083080351e4cb67566" category="inline-link">Workloads VMware</block>
@@ -549,53 +546,13 @@
   <block id="291798398943ff81aecb072ccb31136f" category="list-text">L'autorisation est limitée aux ressources commençant par WLMDB.</block>
   <block id="8871e7455cbf17c8190fb2c27de4cb92" category="list-text">"iam:CreateServiceLinkedRole" limité par "iam:AWSServiceName": "ec2.amazonaws.com"*</block>
   <block id="a7170e00216d426ffa1b5c8b1ad8faf2" category="list-text">"iam:PassRole" limité par "iam:PassedToService": "ec2.amazonaws.com"*</block>
-  <block id="be5d4fafcc5fc8ef08ec4bd4f076e815" category="section-title">Autorisations pour les workloads GenAI</block>
-  <block id="fc52d9d99561c2b721d43bdd4d36b615" category="example-title">Règles IAM pour les workloads GenAI</block>
-  <block id="2d8cf1aba2af04b1b4fd9bd3d7d6905f" category="paragraph">Le tableau suivant fournit des détails sur les autorisations pour les charges de travail GenAI.</block>
-  <block id="64f5bb9f44fff01f3adc6fad9e6240f7" category="example-title">Tableau des autorisations pour les charges de travail GenAI</block>
-  <block id="2da64493d99b5866c2a1571539ca109c" category="cell">Créez une pile de formation cloud pour les moteurs d'IA pendant les opérations de déploiement et de reconstruction</block>
-  <block id="97abe2026f8952be2f4f064f2d5ed867" category="cell">Créez la pile de formation cloud du moteur d'IA</block>
-  <block id="d8ebc3cad3265793548294b79abf1ac6" category="cell">Répertoriez les régions de l'assistant de déploiement de moteur ai</block>
-  <block id="6f82cd163096069b261bdc23e2bfec17" category="cell">Afficher les balises du moteur ai</block>
-  <block id="684a1bfe5fbc91f18d96de978a7df58a" category="cell">ec2:Etiquettes descriptives</block>
-  <block id="35fed029b904597b41d06fba8d15299d" category="cell">Répertoriez les terminaux VPC avant la création de la pile du moteur d'IA</block>
   <block id="d26a873905a02242e94cfda68db0c843" category="cell">ec2:CreateVpcEndpoint</block>
-  <block id="4f6009e4cc9f9d0249a22b9e3c5ab9f0" category="cell">Créez un groupe de sécurité de moteur d'IA lors des opérations de déploiement et de reconstruction lors de la création de la pile du moteur d'IA</block>
-  <block id="c44890ed155f5fc1b7589d1d6c12785a" category="cell">Balisez les ressources créées par la création d'une pile de moteur d'IA pendant les opérations de déploiement et de reconstruction</block>
-  <block id="071c42384a4bff95d3acc47d90766c9b" category="cell">Répertorier les VPC pendant l'assistant de déploiement du moteur d'IA</block>
-  <block id="7ba2aa86177ae5f0d7e3b4e5766bad67" category="cell">Obtenez des tables de routage lors du déploiement et de la reconstruction d'un moteur d'IA</block>
-  <block id="7245f0c5139bb046010a68b69a264eca" category="cell">Répertoriez les paires de clés pendant l'assistant de déploiement de moteur d'IA</block>
-  <block id="b28eb58d1a1db0c0afa78fe12cf5fb01" category="cell">Liste des groupes de sécurité lors de la création de la pile du moteur d'IA (pour rechercher les groupes de sécurité sur les terminaux privés)</block>
-  <block id="cadead4b7ef1e118402cbe1b8d9567ab" category="cell">Procurez-vous des terminaux VPC pour déterminer si un doit être créé pendant le déploiement du moteur d'IA</block>
-  <block id="f8022dadecc2f9ce9937bc1108cb6290" category="cell">Répertoriez les instances pour connaître l'état du moteur ai</block>
-  <block id="231cf4c70d866b616c21baddaeed0696" category="cell">Dépannage</block>
-  <block id="66225a6c05fbef258e73728898744db8" category="cell">Répertoriez les images lors de la création de la pile du moteur d'IA pendant les opérations de déploiement et de reconstruction</block>
-  <block id="effc62a026ed8a4a114329bdc528d625" category="cell">Exécutez le moteur d'IA lors de la création de la pile dans le cloud pendant les opérations de déploiement et de reconstruction</block>
-  <block id="8db0f3adf91a39cebe582faf96db2426" category="cell">Associez un groupe de sécurité et modifiez les règles du moteur d'IA lors de la création de la pile lors des opérations de déploiement et de reconstruction</block>
-  <block id="00fe52afa6e3b9a0d389f529a2b88242" category="cell">Bedrock:InvoieModelWithResponseStream</block>
-  <block id="d3514773d1692fd740afde54cdaaa7b0" category="cell">Commencez la discussion/l'intégration de la demande pour les modèles de base</block>
   <block id="93804e96d3f417a0088c564647dd28e9" category="cell">Bedrock:modèle de facturation</block>
-  <block id="65294ced72c6aa8f05b632194559e081" category="cell">Affiche les modèles de base disponibles dans une région</block>
-  <block id="66613086b6208ec265a60220a21ff40a" category="cell">Bedrock:ListFoundationModels</block>
-  <block id="302112cb321a929a6d9830e917817acb" category="cell">ssm:GetParameters</block>
-  <block id="37cc48b6baed18a8130ec18d97544390" category="cell">Obtenir la réponse SSM de la commande envoyée au moteur ai</block>
-  <block id="97128676550f404369a4900a6b92a6a7" category="cell">Vérifier la connexion SSM au moteur ai</block>
-  <block id="98c5cc885360f80a84c57ec1044622dc" category="cell">Créez un profil d'instance de moteur d'IA lors de la création de la pile lors des opérations de déploiement et de reconstruction</block>
-  <block id="7f862a4b8fc22b0af5dda5c9ababa346" category="cell">iam:TagRole</block>
-  <block id="f6ae0a8a1321975a6474722dcafe1322" category="cell">iam:PassRole</block>
-  <block id="11d11aa8dbaf1d4106e7ae01b6868bba" category="cell">Création d'une base de connaissances</block>
-  <block id="50ed17d5232c875f8ad42bc76592a63c" category="cell">Déplacez la base de connaissances vers une nouvelle instance</block>
   <block id="a25a265c7f4f2cde7c7a15838d3f1021" category="cell">fsx:UntagResource</block>
-  <block id="9f4a3990e86e58c629dd4042743dc489" category="cell">Gérez la base de connaissances sur le moteur d'IA pendant la reconstruction</block>
   <block id="2df687d3aa85502af55f4a9cf17b5b8d" category="cell">fsx:TagResource</block>
-  <block id="58cce26ec46dea767f28067a2aadecbf" category="cell">Enregistrez les secrets SSM (jeton ECR, informations d'identification CIFS, clés de compte de service de location) de manière sécurisée</block>
-  <block id="6cdfe2c5f0e0f28290eadae29ccbb913" category="cell">ssm:getParameter</block>
-  <block id="5df0bb9577b967295f5ff5c94274a01c" category="cell">ssm:PutParameter</block>
   <block id="99a70cb6d5b807589a0a1aa9bbcfea7d" category="cell">Journaux:DescribeLogGroups</block>
   <block id="9c72603737d6e2074ae7fab048b5d3d1" category="cell">Journaux:PutRetentionPolicy</block>
-  <block id="b9f69a856f0b78c0908e042e6d0fda54" category="cell">Journaux:DescribeLogStreams</block>
   <block id="6d952035baa97bd601f4d280f10fcc53" category="cell">Journaux:GetLogEvents</block>
-  <block id="8a71d22cd00a39460a071b070099b8d6" category="cell">Vérifiez l'accès au modèle de base</block>
   <block id="c812f1cb829c6d16da192b12e04d78ff" category="cell">Bedrock:GetFoundationModelAvailability</block>
   <block id="3332885fc7b64062d9405bcdf57a9334" category="section-title">Autorisations pour les workloads VMware</block>
   <block id="1d33843eea5e12818124076de04b4a65" category="example-title">Règles IAM pour workloads VMware</block>
@@ -706,7 +663,6 @@
   <block id="bf2cca138f5e3f74f2e6b73d8e8b2452" category="paragraph">L'abonnement RSS est disponible sur le <block ref="a65cf6b405017af965199f55f7b4fce1" category="inline-link-macro-rx"></block>. L'utilisation d'un flux RSS est un moyen facile de consommer et d'être conscient des changements dans l'usine de la charge de travail BlueXP .</block>
   <block id="1a88151efda7b7ae7945b1161fe70fdc" category="paragraph"><block ref="1a88151efda7b7ae7945b1161fe70fdc" category="inline-link-macro-rx"></block></block>
   <block id="cf1f4a083afa7ccb1141e827deb4cdc2" category="paragraph">Vous pouvez désormais utiliser l'usine de charge de travail à partir de <block ref="4623dd80d89c29fbf0d2b04387a56c33" category="inline-link-macro-rx"></block>. L'expérience de la console BlueXP  offre les mêmes fonctionnalités que la console d'usine de la charge de travail.</block>
-  <block id="dec23cffbd0de1b8096bc26072eb0b7d" category="cell">Obtenez la dernière image Amazon Linux pour le déploiement du moteur d'IA lors des opérations de déploiement et de reconstruction</block>
   <block id="6928ceecf566ab44f308d64b3806a0bc" category="section-title">2 mars 2025</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">Blogs et communauté</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">Communauté NetApp</block>
@@ -716,21 +672,6 @@
   <block id="04c38dfa84592feebab3e30dfe4a019a" category="list-text">Facultatif : sélectionnez *Activer la vérification automatique des autorisations* pour vérifier si vous disposez des autorisations de compte AWS requises pour effectuer les opérations de charge de travail. L'activation de la vérification ajoute le<block ref="23bd3e826a13b6d94db9e07f105dfed2" prefix=" " category="inline-code"></block> à vos stratégies d'autorisation. L'objectif de cette autorisation est de confirmer les autorisations uniquement. Vous pouvez supprimer l'autorisation après avoir ajouté des informations d'identification, mais nous vous recommandons de la conserver pour empêcher la création de ressources pour des opérations partiellement réussies et pour vous enregistrer de tout nettoyage manuel des ressources requis.</block>
   <block id="c3c7c9c146408a0ee564eedba4821f52" category="list-text">Facultatif : sélectionnez *Activer la vérification automatique des autorisations* pour vérifier si vous disposez des autorisations de compte AWS requises pour effectuer les opérations de charge de travail. L'activation de la vérification ajoute l'<block ref="19f5de89e4c667692a153296018e225f" prefix=" " category="inline-code"></block>autorisation à vos stratégies d'autorisation. L'objectif de cette autorisation est de confirmer les autorisations uniquement. Vous pouvez supprimer l'autorisation après avoir ajouté des informations d'identification, mais nous vous recommandons de la conserver pour empêcher la création de ressources pour des opérations partiellement réussies et pour vous enregistrer de tout nettoyage manuel des ressources requis.</block>
   <block id="2a358d687197b0311c68b4c8a7e35e1c" category="cell">Simulez les opérations de workload pour valider les autorisations disponibles et les comparer avec les autorisations de compte AWS requises</block>
-  <block id="8c5e268f15aeebda6b5b234b3f7c7174" category="cell">Publier des événements cryptés sur le back-end WLMAI à partir de la pile de moteur ai</block>
-  <block id="9b1384398d4de5545bd0dad2106d6b0d" category="cell">Publier des événements et des ressources personnalisées sur le backend WLMAI à partir de la pile ai-Engine</block>
-  <block id="359cacd98d9742aded751741e70dce82" category="cell">Répertoriez les sous-réseaux dans l'assistant de déploiement du moteur ai</block>
-  <block id="f0f0a4abc20f5a5e438ac1da53b231af" category="cell">Lancez une demande de discussion sur l'un des modèles de base</block>
-  <block id="ffd1e194cd59f12c42768a9effd5aa2f" category="cell">Vérifiez qu'il est nécessaire de créer un groupe de journaux Amazon CloudWatch pendant les opérations de déploiement et de reconstruction</block>
-  <block id="2887c4c92d65effaf012b7ca2f914958" category="cell">Obtenez des régions qui prennent en charge FSX et Amazon Bedrock pendant l'assistant du moteur d'IA</block>
-  <block id="aaaceeee6185dfed5c284df5970707f3" category="cell">Répertoriez les systèmes de fichiers FSX pour ONTAP au cours de l'assistant de création de la base de connaissances</block>
-  <block id="a2e54834745704983c3bbc9eb41ed0a1" category="cell">Répertoriez les volumes du système de fichiers FSX pour ONTAP au cours de l'assistant « Créer une base de connaissances »</block>
-  <block id="2fac110cec869b1380662052556e21b4" category="cell">Gérer les bases de connaissances sur le moteur d'IA pendant les opérations de reconstruction</block>
-  <block id="22262aaf9e90060dfd5872961f2d20b9" category="cell">Répertoriez les machines virtuelles de stockage du système de fichiers FSX pour ONTAP au cours de l'assistant « Créer une base de connaissances »</block>
-  <block id="e4276513c887d1d78315c446314f306e" category="cell">Envoyez les journaux du moteur d'IA au groupe de journaux Amazon CloudWatch pendant les opérations de déploiement et de reconstruction</block>
-  <block id="a89bcda1bd913f5d2c92bb3afd10848c" category="cell">Envoyez les journaux du moteur d'IA au groupe de journaux Amazon CloudWatch</block>
-  <block id="1ae2d90929ed009fb7cb0c3215e704ed" category="cell">Obtenir la réponse SSM d'Amazon CloudWatch (lorsque la réponse est trop longue)</block>
-  <block id="58401e538d76248fba41eb3d4b00ff5b" category="cell">Obtenez la réponse SSM d'Amazon CloudWatch</block>
-  <block id="9f48be20e687484bbb74c66926ff62af" category="cell">Liste des profils d'inférence pour le modèle</block>
   <block id="9aa5a97dfe3f7608d8ee28e7db3c4e2c" category="cell">Bedrock:ListeInferenceProfiles</block>
   <block id="db54384248c75c5896f34bcb0879b66c" category="section-title">30 mars 2025</block>
   <block id="68ef824f4316a8546891ab93ee11d77f" category="section-title">Mise à jour des autorisations de charge de travail GenAI</block>
@@ -768,21 +709,12 @@
   <block id="74d516ef8dfa098bb4cd92313c403475" category="doc">Prise en charge de CloudShell avec remplissage automatique</block>
   <block id="df96b6f4ceabb5c4dbc915475fd821fe" category="paragraph">Lorsque vous utilisez BlueXP  Workload Factory CloudShell, vous pouvez commencer à taper une commande et appuyer sur la touche Tab pour afficher les options disponibles. S'il existe plusieurs possibilités, l'interface de ligne de commande affiche une liste de suggestions. Cette fonction améliore la productivité en réduisant au minimum les erreurs et en accélérant l'exécution des commandes.</block>
   <block id="514f1fc0ac0ff6e4200d3637146367f1" category="section-title">Mise à jour de la terminologie des autorisations</block>
-  <block id="db3317ceb65be02e43db6f277e0ad94e" category="cell">Lecture/écriture</block>
-  <block id="123ce9aa4e0770ecb435c005fa9b436c" category="cell">Répertoriez les applications Amazon Q Business</block>
-  <block id="4f3c534c90392632c7d275f54d5b35a0" category="cell">Qbusiness:ListApplications</block>
-  <block id="ff49b9449e169eb2a6d647cdd5416940" category="cell">Créez et mettez à jour l'instance d'IA et le groupe de sécurité de terminal privé lors de la création de la pile d'instance d'IA lors des opérations de déploiement et de reconstruction</block>
-  <block id="fb2b74ed81679192134e9c2c07019b42" category="cell">Obtenez des informations sur un modèle de base</block>
-  <block id="1311c4cbbe5b925c15d25fe5ff7b022b" category="cell">Bedrock:GetFoundationModel</block>
-  <block id="9dd35b54afccc27a1cc96eab777dbc8e" category="cell">Créez un groupe de journaux Amazon CloudWatch pour les journaux Amazon Bedrock lors de la création de la pile lors des opérations de déploiement et de reconstruction</block>
   <block id="dac96c84baa92faab0eb342df5283a1b" category="section-title">4 mai 2025</block>
   <block id="bf0dcc34b100cf0ff91c26bbd98029f7" category="list-text">Prise en charge de la saisie automatique : commencez à taper une commande et utilisez la touche *Tab* pour afficher les options disponibles</block>
   <block id="822748e99c70e9162ce5432b2e1eff5c" category="section-title">04 mai 2025</block>
   <block id="5d1d5ff6c3c427c682d491550e8f89b3" category="list-text">Évaluation du stockage (optimisation)</block>
   <block id="1636ccb01570c55081666deb02ddfb9c" category="list-text"><block ref="6d952035baa97bd601f4d280f10fcc53" prefix="" category="inline-code"></block></block>
   <block id="c4a094604e7db845f5356b4563efc223" category="list-text"><block ref="99a70cb6d5b807589a0a1aa9bbcfea7d" prefix="" category="inline-code"></block></block>
-  <block id="beec07f99f03a1aa1948ba788ce7e6c1" category="cell">Lister les buckets S3</block>
-  <block id="e21c94a36c6dbf24001a64bddce9456f" category="cell">s3:ListAllMyseaux</block>
   <block id="c34c5eed5692ab9466e57060b06ae6ae" category="section-title">3 juin 2025</block>
   <block id="4ead5e435cb4f2c7cf627b1d1e84c333" category="paragraph">L'interface utilisateur et la documentation de l'usine de charge de travail utilisent désormais « lecture seule » pour faire référence aux autorisations de lecture et « lecture/écriture » pour faire référence aux autorisations d'automatisation.</block>
   <block id="3d040f48a98c22a0f4789c2496c06383" category="paragraph">L'autorisation suivante est désormais disponible en mode _lecture/écriture_ pour les bases de données : <block ref="9c72603737d6e2074ae7fab048b5d3d1" prefix=" " category="inline-code"></block> .</block>
@@ -996,7 +928,6 @@
   <block id="17815da2601655e53a5a946ca4e0eedd" category="cell">ssmmessages : Créer un canal de données</block>
   <block id="2c9dbd0f531b26987ee04e63abe52bea" category="cell">ssmmessages : OpenControlChannel</block>
   <block id="2e2fcc3da644ea24aae8e587a62c0490" category="cell">ssmmessages : OpenDataChannel</block>
-  <block id="f2a75afa5110fc06c2a6ef3f1e0c324c" category="paragraph">Les stratégies IAM pour les charges de travail VMware fournissent les autorisations dont Workload Factory for VMware a besoin pour gérer les ressources et les processus au sein de votre environnement de cloud public en fonction du mode opérationnel dans lequel vous opérez.</block>
   <block id="992efefab3dd15099f5eff3f904d8df4" category="section-title">5 octobre 2025</block>
   <block id="655af276f5fd16503f094c10143b02d9" category="paragraph">Les autorisations suivantes ont été supprimées de GenAI et sont désormais gérées par le moteur GenAI :</block>
   <block id="1084543e1d03924aed54511730a18768" category="list-text"><block ref="e8a46aee8aa47b78b90b155b227afbc9" prefix="" category="inline-code"></block></block>
@@ -1146,7 +1077,6 @@
   <block id="0eaadb4fcb48a0a0ed7bc9868be9fbaa" category="cell">Avertissement</block>
   <block id="cc1f56cb5cd6bdb7f1796048269b0097" category="cell">Événement de gestion automatique des inodes pour FSx pour ONTAP</block>
   <block id="e4ddc61f041a4a950895b04a98fff07b" category="cell">Le nombre d'inodes du volume FSx pour ONTAP a atteint le seuil d'avertissement (nombre/pourcentage total).</block>
-  <block id="4614f0f919f6357dc680afd47d32ad2b" category="paragraph">Lorsque vous accordez des autorisations, Workload Factory associe à l'instance une stratégie lui permettant de gérer les ressources et les processus au sein de ce compte AWS.  Cela permet à Workload Factory d'exécuter diverses opérations, depuis la découverte de vos environnements de stockage jusqu'au déploiement de ressources AWS telles que des systèmes de fichiers dans la gestion du stockage ou des bases de connaissances pour les charges de travail GenAI.</block>
   <block id="09fbd7ce5485b032855da27056744715" category="paragraph">Chaque charge de travail utilise des autorisations pour effectuer certaines tâches dans Workload Factory.  Les autorisations sont regroupées en politiques d'autorisation définies.  Faites défiler jusqu'à la charge de travail que vous utilisez pour en savoir plus sur les politiques d'autorisation, le JSON copiable pour les politiques d'autorisation et un tableau qui répertorie toutes les autorisations, leur objectif, où elles sont utilisées et quelles politiques d'autorisation les prennent en charge.</block>
   <block id="3c0158ae150bbe2d52d55d8a4897e28a" category="paragraph">Les politiques IAM disponibles pour le stockage fournissent les autorisations dont Workload Factory a besoin pour gérer les ressources et les processus au sein de votre environnement de cloud public.</block>
   <block id="d542facb88a1cb92fe741c179c25d51a" category="paragraph">Le stockage propose les politiques d'autorisation suivantes :</block>
@@ -1180,8 +1110,6 @@
   <block id="e6770209133e1a365baaabf29682707a" category="cell">Obtenez les modèles de base disponibles pour l'analyse des journaux d'erreurs.</block>
   <block id="9b5a66520940453b03f844cb38d72d2f" category="cell">Analyse du journal des erreurs</block>
   <block id="2b09ddddcb00f772b0397ca4fa2471b0" category="cell">Liste des profils d'interface disponibles dans Amazon Bedrock pour l'analyse des journaux d'erreurs</block>
-  <block id="120558563578966d6e3e3204fb944fe8" category="paragraph">Les politiques IAM de GenAI ne sont disponibles qu'avec les autorisations de lecture/écriture :</block>
-  <block id="cced0416108aa0eed2d9fc1a929f501e" category="list-text">*Lecture/Écriture* : exécute et automatise les opérations dans AWS en votre nom, avec les informations d’identification attribuées qui disposent des autorisations nécessaires et validées pour l’exécution.</block>
   <block id="6d1d444e31ba2e1e32454781c718d8bd" category="paragraph">VMware Workloads propose les politiques d'autorisation suivantes :</block>
   <block id="808b4a9b1106ed0f5257e607f992d39d" category="list-text">*Visualisation, planification et analyse* : Consultez l’inventaire des environnements de virtualisation EVS, obtenez une analyse détaillée de vos systèmes et explorez les économies possibles.</block>
   <block id="db73d2d162f2b29ff8535b7ce22cf484" category="list-text">*Déploiement et connectivité des banques de données* : Déployez les configurations de machines virtuelles recommandées sur les clusters Amazon EVS, Amazon EC2 ou VMware Cloud on AWS vSphere et utilisez des systèmes de fichiers Amazon FSx for NetApp ONTAP comme banques de données externes.</block>
@@ -1200,7 +1128,6 @@
   <block id="78a1fd3770ad9cba75be7a432485a77e" category="section-title">2 novembre 2025</block>
   <block id="8759d474306b7075634b38abde2a85cb" category="paragraph">Les politiques d'autorisation « lecture seule » et « lecture/écriture » ont été remplacées dans les charges de travail de stockage, de base de données et VMware afin d'offrir une plus grande granularité et une plus grande flexibilité dans l'attribution des autorisations.</block>
   <block id="3adf0593d3d2d43754514ef0d597458d" category="paragraph">NetApp Workload Factory est accessible aux utilisateurs en tant que service cloud depuis la console web.  Avant de commencer, vous devriez avoir une compréhension de<block ref="fc500664a3cbaaa3aa46a84367805795" category="inline-link-macro-rx"></block> .</block>
-  <block id="de8efeea4e5e2680a5800f121d271ee6" category="paragraph">Cette étape est facultative. Vous pouvez utiliser Workload Factory sans ajouter d'identifiants pour accéder à votre compte AWS.  L'ajout d'identifiants AWS à Workload Factory confère à votre compte Workload Factory les autorisations nécessaires pour créer et gérer des systèmes de fichiers FSx pour ONTAP et pour déployer et gérer des charges de travail spécifiques, telles que des bases de données et GenAI.</block>
   <block id="bf7bed6002efd423b3f090dfda4fb38c" category="paragraph">Codebox s'aligne sur les politiques d'autorisation de Workload Factory en renseignant les données appropriées dans le code en fonction des autorisations AWS fournies dans le compte Workload Factory pour chaque utilisateur. Le code peut être utilisé comme un modèle dans lequel vous pouvez compléter les informations manquantes (par exemple, les informations d'identification) ou personnaliser certaines données avant d'exécuter le code.</block>
   <block id="fd7910c842c61985f2e90af78f1b304f" category="paragraph">Workload Factory propose des politiques d'autorisation flexibles qui vous permettent de contrôler précisément l'accès à votre environnement cloud et d'attribuer une confiance progressive à Workload Factory en fonction de vos politiques informatiques.</block>
   <block id="1b512d78c8df2f0c24a19da35f804ca3" category="inline-link-macro">Découvrez-en plus sur les politiques d'autorisation de Workload Factory</block>
@@ -1584,4 +1511,6 @@
   <block id="dc3bd384dcb2bc2324eb0b2de08dda55" category="list-text">**Vérifiez les autorisations :** Assurez-vous que votre compte Workload Factory dispose d’un accès en lecture aux charges de travail et aux ressources utilisées par le tableau de bord. Consultez les exigences d’autorisation dans <block ref="7630a8b182c80d5ddb5d9ce1be672fef" category="inline-link-macro-rx"></block>.</block>
   <block id="cc661418365d138458bf55f936b73a47" category="section-title">Suppression de la charge de travail GenAI de Workload Factory</block>
   <block id="ef18329e66f7a0f5b022b9a400dd74ed" category="paragraph">La charge de travail GenAI a été supprimée de la console Workload Factory.</block>
+  <block id="7548d07d123f53ef8a847c6be983f3e5" category="paragraph">Lorsque vous accordez des autorisations, Workload Factory associe une stratégie à l'instance avec des autorisations pour gérer les ressources et les processus au sein de ce compte AWS. Cela permet à Workload Factory d'exécuter diverses opérations, depuis la découverte de vos environnements de stockage jusqu'au déploiement de ressources AWS telles que des systèmes de fichiers dans la gestion du stockage.</block>
+  <block id="b0e0fd1b2977dcfd6e5719ca7a3a6e37" category="paragraph">Cette étape est facultative. Vous pouvez utiliser Workload Factory sans ajouter d'identifiants pour accéder à votre compte AWS. L'ajout d'identifiants AWS à Workload Factory confère à votre compte Workload Factory les autorisations nécessaires pour créer et gérer des systèmes de fichiers FSx for ONTAP, ainsi que pour déployer et gérer des charges de travail spécifiques telles que des bases de données.</block>
 </blocks>
