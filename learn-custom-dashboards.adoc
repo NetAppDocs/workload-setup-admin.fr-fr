@@ -56,6 +56,8 @@ Lors de la configuration, le dialogue guidé par l'IA vous aide à définir :
 
 Pour créer ou afficher des tableaux de bord personnalisés, vous devez disposer des autorisations AWS IAM appropriées pour les ressources que vous souhaitez surveiller. Assurez-vous que le compte Workload Factory possède un accès en lecture aux sources de données utilisées par les tableaux de bord.
 
+Pour créer des tableaux de bord, Workload Factory utilise des identifiants AWS en lecture seule. Ces identifiants autorisent uniquement les actions de lecture, telles que  `fsx:DescribeVolumes` et  `fsx:DescribeFileSystems`, pour les services suivants : EC2, FSx, CloudWatch, API de balisage des groupes de ressources, Backup, CloudWatch Logs, KMS et EFS.
+
 link:add-credentials.html["Découvrez comment ajouter des informations d'identification AWS et configurer les autorisations IAM"^].
 
 

@@ -1467,7 +1467,6 @@
   <block id="22e8351c82677bcc78bd23d6fb170bc8" category="paragraph">Le tableau de bord est définitivement supprimé de votre compte Workload Factory et tous les utilisateurs perdent l'accès à celui-ci.</block>
   <block id="9537d9160ef701530bdd875698475957" category="inline-link-macro">Créer des tableaux de bord personnalisés supplémentaires</block>
   <block id="1258b44f1520a3cf10d648fb08dbf72e" category="list-text"><block ref="1258b44f1520a3cf10d648fb08dbf72e" category="inline-link-macro-rx"></block></block>
-  <block id="87377124bfbafaf3a36cd9e53255e829" category="summary">Résolvez les problèmes courants liés aux tableaux de bord personnalisés, notamment les échecs de création, les problèmes de chargement de données et les problèmes d'accès.</block>
   <block id="0c5896a9e6c8d2cff1b4d007852b1732" category="paragraph">Utilisez ces informations pour résoudre les problèmes courants que vous pourriez rencontrer lors de la création ou de l'utilisation de tableaux de bord personnalisés.</block>
   <block id="2e00365fe32c89b1fd1ad214f291ca85" category="section-title">La création du tableau de bord a échoué</block>
   <block id="09a8c59ab236b488dde6ce993a012c63" category="paragraph">**Problème :** Vous voyez le message d’erreur « Impossible de comprendre la requête et de générer le code » lors de la création d’un tableau de bord.</block>
@@ -1491,7 +1490,6 @@
   <block id="e7347594ee6cffce40f1598054f4f163" category="list-text">**Veuillez patienter et réessayer :** Si le problème persiste, patientez quelques minutes et réessayez.</block>
   <block id="318369ae5a2f25e9c7cb0b7b846d1775" category="section-title">Tableaux de bord manquants</block>
   <block id="732976f9f9cc4b9938c0a1a9c2569828" category="paragraph">**Problème :** Un tableau de bord que vous avez créé n’est plus répertorié dans le catalogue des tableaux de bord.</block>
-  <block id="d0a35413e8843c3f263cb1fad4f4cb3e" category="paragraph">**Cause :** Un autre utilisateur de votre compte Workload Factory l’a peut-être supprimé.</block>
   <block id="4d6f4bd604a33b7ae11eceb4c29146f9" category="list-text">Assurez-vous d'être connecté au bon compte Workload Factory.</block>
   <block id="86d37fb397f8d1a33dc0e6cb1de913ae" category="list-text">Demandez aux autres utilisateurs de votre compte si quelqu'un a supprimé le tableau de bord.</block>
   <block id="62ad02c42e5e548dcaf80a64c2d0eefd" category="list-text">Si nécessaire, recréez le tableau de bord en respectant les exigences initiales.</block>
@@ -1513,4 +1511,7 @@
   <block id="ef18329e66f7a0f5b022b9a400dd74ed" category="paragraph">La charge de travail GenAI a été supprimée de la console Workload Factory.</block>
   <block id="7548d07d123f53ef8a847c6be983f3e5" category="paragraph">Lorsque vous accordez des autorisations, Workload Factory associe une stratégie à l'instance avec des autorisations pour gérer les ressources et les processus au sein de ce compte AWS. Cela permet à Workload Factory d'exécuter diverses opérations, depuis la découverte de vos environnements de stockage jusqu'au déploiement de ressources AWS telles que des systèmes de fichiers dans la gestion du stockage.</block>
   <block id="b0e0fd1b2977dcfd6e5719ca7a3a6e37" category="paragraph">Cette étape est facultative. Vous pouvez utiliser Workload Factory sans ajouter d'identifiants pour accéder à votre compte AWS. L'ajout d'identifiants AWS à Workload Factory confère à votre compte Workload Factory les autorisations nécessaires pour créer et gérer des systèmes de fichiers FSx for ONTAP, ainsi que pour déployer et gérer des charges de travail spécifiques telles que des bases de données.</block>
+  <block id="00436cf3153058a6cc1bda7834e2df46" category="paragraph">Pour créer des tableaux de bord, Workload Factory utilise des identifiants AWS en lecture seule. Ces identifiants autorisent uniquement les actions de lecture, telles que <block ref="24ca8966cf3ca7c9dc7c9de631b31ff0" prefix=" " category="inline-code"></block> et <block ref="0054238c3be20aab765346f029c558a4" prefix=" " category="inline-code"></block>, pour les services suivants : EC2, FSx, CloudWatch, API de balisage des groupes de ressources, Backup, CloudWatch Logs, KMS et EFS.</block>
+  <block id="660503a3fa3804fff2a7f84301e40d4a" category="summary">Résolvez les problèmes courants liés aux tableaux de bord personnalisés, notamment les échecs de configuration, les problèmes de chargement des données et les problèmes d'accès.</block>
+  <block id="e3c8b96b5757e581b1d0e7900d690797" category="paragraph">**Cause :** Un autre utilisateur de votre compte Workload Factory l’a peut-être supprimé.</block>
 </blocks>
