@@ -254,8 +254,6 @@
   <block id="41d28e7b29f45d4f63653993af041bc7" category="paragraph">Si votre entreprise a besoin d'une gestion de compte ou d'utilisateurs supplémentaire, contactez-nous via le chat interne au produit.</block>
   <block id="e73298b79ea9408111cb3612bf336a0e" category="section-title">Liens de connectivité</block>
   <block id="e20e09752eeb59f7fee2ca964db1c848" category="paragraph">Les liens exploitent actuellement AWS Lambda.</block>
-  <block id="e3bdd5798efebca8061760f610d98bcc" category="inline-link">En savoir plus sur les liens</block>
-  <block id="cee76762b1db025f50dc7b50c80548de" category="paragraph"><block ref="cee76762b1db025f50dc7b50c80548de" category="inline-link-rx"></block></block>
   <block id="bd282943a337f4287ca0d70f9a836261" category="section-title">Automatisation de la Codebox</block>
   <block id="7c408fda146892c9e1c039f91fee3cd3" category="paragraph">Le volet Codebox affiche le processus IAC généré par une opération de flux de tâches spécifique et associé à un assistant graphique ou à une interface de conversation. Même si Codebox prend en charge le codage couleur et la recherche pour faciliter la navigation et l'analyse, il ne permet pas de modifier. Vous ne pouvez copier ou enregistrer que dans le catalogue d'automatisation.</block>
   <block id="ec6b8f7cd0c5cd9853d947bc13f72f4b" category="inline-link-macro">En savoir plus sur Codebox</block>
@@ -1499,7 +1497,6 @@
   <block id="708d52dc7d2f1cb4787bfd74e41bfab5" category="list-text">Connectez-vous en utilisant l'un des <block ref="730226d90433792895dc2ec640283d2d" category="inline-link-macro-rx"></block>.</block>
   <block id="97911b3c54a4e826b34c1f79026316c5" category="section-title">Identifiants et autorisations AWS</block>
   <block id="d65de0ffa05b31f0beebf22d3e28dbde" category="section-title">Lien vers FSx pour ONTAP</block>
-  <block id="575660b25d9cb74a47a89172d359da91" category="paragraph">Workload Factory nécessite un Link pour se connecter aux systèmes de fichiers Amazon FSx for ONTAP. Un Link crée une relation de confiance et une connectivité entre Workload Factory et un ou plusieurs systèmes de fichiers Amazon FSx for ONTAP. Cela vous permet de surveiller et de gérer certaines fonctionnalités du système de fichiers directement à partir des appels d’API REST ONTAP qui ne sont pas disponibles via l’API Amazon FSx for ONTAP.</block>
   <block id="68cd2ca9724f378c0a2815415eeecfbd" category="inline-link">Découvrez comment créer un lien</block>
   <block id="11a7b8f6e5b40124f50c5d30e3fedda3" category="paragraph"><block ref="35d312ad6c576252ccfa87842dc6e767" category="inline-link-rx"></block>.</block>
   <block id="90b29202abc7a1c38c887ae166296c46" category="summary">Accédez à votre catalogue de tableaux de bord pour afficher, actualiser et supprimer des tableaux de bord personnalisés dans Workload Factory.</block>
@@ -1514,4 +1511,7 @@
   <block id="00436cf3153058a6cc1bda7834e2df46" category="paragraph">Pour créer des tableaux de bord, Workload Factory utilise des identifiants AWS en lecture seule. Ces identifiants autorisent uniquement les actions de lecture, telles que <block ref="24ca8966cf3ca7c9dc7c9de631b31ff0" prefix=" " category="inline-code"></block> et <block ref="0054238c3be20aab765346f029c558a4" prefix=" " category="inline-code"></block>, pour les services suivants : EC2, FSx, CloudWatch, API de balisage des groupes de ressources, Backup, CloudWatch Logs, KMS et EFS.</block>
   <block id="660503a3fa3804fff2a7f84301e40d4a" category="summary">Résolvez les problèmes courants liés aux tableaux de bord personnalisés, notamment les échecs de configuration, les problèmes de chargement des données et les problèmes d'accès.</block>
   <block id="e3c8b96b5757e581b1d0e7900d690797" category="paragraph">**Cause :** Un autre utilisateur de votre compte Workload Factory l’a peut-être supprimé.</block>
+  <block id="ee01e7a77a5b8f6475723b4e66eca889" category="paragraph">Workload Factory nécessite un lien pour se connecter aux systèmes de fichiers Amazon FSx for ONTAP. Un lien crée une relation de confiance et une connectivité entre Workload Factory et un ou plusieurs systèmes de fichiers Amazon FSx for ONTAP. Cela vous permet de surveiller et de gérer certaines fonctionnalités du système de fichiers directement à partir des appels d’API REST ONTAP qui ne sont pas disponibles via l’API Amazon FSx for ONTAP.</block>
+  <block id="6015cd2e9e5bc5b037ad456163cc26cb" category="inline-link">En savoir plus sur les liens</block>
+  <block id="cea96a6659ee3b63722518018a5e6659" category="paragraph"><block ref="cea96a6659ee3b63722518018a5e6659" category="inline-link-rx"></block></block>
 </blocks>
