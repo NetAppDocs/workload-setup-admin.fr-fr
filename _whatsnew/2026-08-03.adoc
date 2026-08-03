@@ -13,7 +13,12 @@ Les autorisations de consultation, de planification et d'analyse sont limitées 
 
 Les autorisations d'opérations et de correction vous permettent d'apporter des modifications à vos ressources, d'analyser les journaux d'erreurs, d'obtenir une analyse complète et bien architecturée de vos ressources et de résoudre les problèmes de configuration.
 
-link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html["Référence des autorisations"] === Tableaux de bord personnalisés
+link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html["Référence des autorisations"]
+
+
+
+[[custom-dashboards]]
+=== Tableaux de bord personnalisés
 
 
 

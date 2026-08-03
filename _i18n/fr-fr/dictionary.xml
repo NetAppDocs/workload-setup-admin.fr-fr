@@ -1515,7 +1515,6 @@
   <block id="e9e3af45119a834b75ee5ce8ad5fc96d" category="paragraph">Les autorisations pour les bases de données ont été mises à jour afin d'améliorer l'accès aux fonctionnalités et de limiter l'accès SSM lorsque cela n'est pas nécessaire.</block>
   <block id="6f70bfe68d48e1ab770cfb69bea59dfd" category="paragraph">Les autorisations de consultation, de planification et d'analyse sont limitées aux documents AWS SSM. Avec ces autorisations, vous pouvez consulter les hôtes, les instances et les bases de données. Vous pouvez également exécuter une analyse bien architecturée de base à la demande de vos ressources.</block>
   <block id="e9ad7ba5991717b52c215bd25e788b28" category="paragraph">Les autorisations d'opérations et de correction vous permettent d'apporter des modifications à vos ressources, d'analyser les journaux d'erreurs, d'obtenir une analyse complète et bien architecturée de vos ressources et de résoudre les problèmes de configuration.</block>
-  <block id="0c92fa03ad5e533f4ef42de9a2ae598f" category="paragraph"><block ref="167e20b67f84068555b3081057c696b8" category="inline-link-macro-rx"></block> === Tableaux de bord personnalisés</block>
   <block id="d5eb0f9120b28b557f3e367589adf4bb" category="section-title">Notifications pour les tableaux de bord personnalisés</block>
   <block id="fb5e135dfdab99cdebbb946a22093655" category="paragraph">Workload Factory vous avertit désormais lorsque votre tableau de bord personnalisé est prêt ou si la création échoue.</block>
   <block id="7a99102fbba6a5729480bc61967c8423" category="paragraph">Une fois votre tableau de bord personnalisé créé, vous recevrez une notification contenant un lien direct pour le consulter. En cas d'échec de la création, vous recevrez une notification avec un lien vers l’inventaire des tableaux de bord personnalisés pour réessayer.</block>
@@ -1641,4 +1640,5 @@
   <block id="1cdbc8bcb26cc8d5e894a97b9e7f269f" category="section-title">05 juillet 2026</block>
   <block id="8fb2a31345fc5c5e72c947d436b5077b" category="admonition">Les administrateurs de compte peuvent activer ou désactiver les fonctionnalités d'IA. Si un administrateur les désactive, l'assistant IA Ask Me ne sera pas disponible. <block ref="56d2e09cbb0a828478db20ff2d11774d" category="inline-link-macro-rx"></block>.</block>
   <block id="959c1faca1dbb57f8dac1b5058bf9c58" category="paragraph"><block ref="959c1faca1dbb57f8dac1b5058bf9c58" category="inline-link-macro-rx"></block></block>
+  <block id="167e20b67f84068555b3081057c696b8" category="paragraph"><block ref="167e20b67f84068555b3081057c696b8" category="inline-link-macro-rx"></block></block>
 </blocks>
