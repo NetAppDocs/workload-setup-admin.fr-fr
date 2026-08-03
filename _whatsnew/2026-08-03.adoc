@@ -30,9 +30,9 @@ Une fois votre tableau de bord personnalisé créé, vous recevrez une notificat
 
 Cela vous aide à savoir quand votre tableau de bord est prêt et facilite sa consultation ou sa recréation.
 
-link:create-custom-dashboard.html["Apprenez à créer des tableaux de bord personnalisés"]
+link:https://docs.netapp.com/us-en/workload-setup-admin/create-custom-dashboard.html["Apprenez à créer des tableaux de bord personnalisés"]
 
-link:configure-notifications.html["Découvrez comment configurer les notifications"]
+link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.html["Découvrez comment configurer les notifications"]
 
 
 
@@ -44,9 +44,9 @@ Par défaut, les nouveaux tableaux de bord sont privés et visibles uniquement p
 
 Chaque carte du tableau de bord affiche une étiquette « Privé » ou « Public » afin que vous puissiez rapidement voir quels tableaux de bord sont partagés.
 
-link:learn-custom-dashboards.html#dashboard-visibility-and-sharing["Découvrez la visibilité et le partage des tableaux de bord"]
+link:https://docs.netapp.com/us-en/workload-setup-admin/learn-custom-dashboards.html#view-and-share-dashboards["Découvrez la visibilité et le partage des tableaux de bord"]
 
-link:manage-custom-dashboards.html#change-dashboard-visibility["Apprenez à partager des tableaux de bord"]
+link:https://docs.netapp.com/us-en/workload-setup-admin/manage-custom-dashboards.html#change-dashboard-visibility["Apprenez à partager des tableaux de bord"]
 
 
 
@@ -65,4 +65,4 @@ Les fonctionnalités d'IA incluent Ask Me, des tableaux de bord personnalisés, 
 
 Si les fonctionnalités d'IA sont désactivées, les utilisateurs verront un message indiquant que l'IA est indisponible.
 
-link:manage-genai-features.html["Découvrez comment gérer les fonctionnalités d'IA"]
+link:https://docs.netapp.com/us-en/workload-setup-admin/manage-genai-features.html["Découvrez comment gérer les fonctionnalités d'IA"]
