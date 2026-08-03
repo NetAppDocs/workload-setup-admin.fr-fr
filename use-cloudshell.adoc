@@ -32,6 +32,9 @@ Les fonctionnalités de CloudShell sont les suivantes :
 
 
 
+NOTE: Si votre administrateur de compte a désactivé les fonctionnalités d'IA, les réponses d'erreur générées par l'IA ne seront pas disponibles. link:manage-genai-features.html["Découvrez comment gérer les fonctionnalités d'IA"].
+
+
 
 [[cloudshell-commands]]
 == Commandes CloudShell

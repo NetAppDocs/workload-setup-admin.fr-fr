@@ -11,10 +11,10 @@ summary: Accédez à votre catalogue de tableaux de bord pour afficher, actualis
 
 
 [role="lead"]
-Gérez vos tableaux de bord personnalisés depuis le catalogue de tableaux de bord. À partir de là, vous pouvez consulter les détails, actualiser les données ou supprimer les tableaux de bord dont vous n'avez plus besoin.
+Gérez vos tableaux de bord personnalisés depuis le catalogue de tableaux de bord. À partir de là, vous pouvez consulter les détails, partager des tableaux de bord, actualiser les données ou supprimer les tableaux de bord dont vous n'avez plus besoin.
 
 .Description de la tâche
-Tous les utilisateurs de votre compte Workload Factory peuvent accéder à tous les tableaux de bord personnalisés. Chaque tableau de bord affiche des informations de base telles que le nom du créateur et la date de création.
+Vous pouvez consulter et gérer les tableaux de bord personnalisés depuis le catalogue de tableaux de bord. Les tableaux de bord privés ne sont visibles que par vous, tandis que les tableaux de bord publics sont visibles par tous les utilisateurs de votre compte Workload Factory. Chaque tableau de bord affiche des informations de base telles que le nom du créateur, la date de création et un libellé de visibilité (Privé ou Public).
 
 Les tableaux de bord personnalisés sont en lecture seule. Ils ne permettent pas de modifier vos paramètres de stockage ni de charge de travail.
 
@@ -34,6 +34,26 @@ Le catalogue des tableaux de bord affiche tous les tableaux de bord personnalis�
 
 . Consultez la liste du tableau de bord.
 
+
+
+
+[[change-dashboard-visibility]]
+== Modifier la visibilité du tableau de bord
+
+Rendez votre tableau de bord public pour le partager avec votre équipe. Rendez-le privé pour ne plus le partager.
+
+.Étapes
+. Sur la page *Tableaux de bord personnalisés*, repérez le tableau de bord que vous souhaitez mettre à jour.
+. Dans le menu déroulant *Actions* image:icon-action.png["L'icône à trois points qui ouvre le menu des actions"] pour ce tableau de bord, sélectionnez l’une des options suivantes :
++
+** *Partager le tableau de bord* - Rend le tableau de bord visible à tous les utilisateurs de votre compte Workload Factory
+** *Passer au tableau de bord privé* - Rend le tableau de bord visible uniquement pour vous
+
+
+
+
+.Résultat
+Le tableau de bord se met à jour instantanément. L'étiquette de visibilité sur la carte du tableau de bord indique l'état actuel.
 
 
 

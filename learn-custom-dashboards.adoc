@@ -18,6 +18,9 @@ Les tableaux de bord personnalisés utilisent l'IA pour créer des vues personna
 Tous les utilisateurs de votre compte Workload Factory peuvent consulter tous les tableaux de bord personnalisés. Cette configuration partagée aide les équipes à collaborer et à voir les mêmes informations opérationnelles dans l'ensemble de votre organisation.
 
 
+NOTE: Si l'administrateur de votre compte a désactivé les fonctionnalités d'IA, un message s'affichera et vous ne pourrez pas créer de tableaux de bord. Contactez votre administrateur ou link:manage-genai-features.html["Découvrez l'administration de l'IA"].
+
+
 
 [[why-use-custom-dashboards]]
 == Pourquoi utiliser des tableaux de bord personnalisés
@@ -43,6 +46,21 @@ Lors de la configuration, le dialogue guidé par l'IA vous aide à définir :
 * Vues par région, charge de travail ou autres catégories
 * Règles ou exigences que vous devez suivre et afficher
 
+
+
+
+[[view-and-share-dashboards]]
+== Afficher et partager des tableaux de bord
+
+Les nouveaux tableaux de bord sont privés par défaut, donc vous seul pouvez les voir. Vous pouvez rendre un tableau de bord public à tout moment pour le partager avec votre équipe.
+
+* *Tableaux de bord privés* : vous seul pouvez consulter ces tableaux de bord. Utilisez-les pour votre suivi personnel, vos tests ou vos travaux en cours.
+* Tableaux de bord publics : Tous les utilisateurs de votre compte Workload Factory peuvent consulter ces tableaux de bord. Utilisez-les pour partager les vues de surveillance et assurer la cohérence de votre équipe sur les charges de travail, les priorités et les objectifs commerciaux.
+
+
+Chaque fiche de tableau de bord indique si le tableau de bord est privé ou public, ce qui vous permet de voir rapidement quels tableaux de bord sont partagés.
+
+link:manage-custom-dashboards.html#change-dashboard-visibility["Découvrez comment modifier la visibilité du tableau de bord"].
 
 
 
@@ -83,7 +101,7 @@ Les tableaux de bord personnalisés sont en lecture seule. Ils ne peuvent pas mo
 
 Les limitations suivantes s'appliquent actuellement aux tableaux de bord personnalisés :
 
-* Vous ne pouvez pas partager de tableaux de bord en dehors de votre compte Workload Factory
+* Vous ne pouvez pas partager de tableaux de bord en dehors de votre compte Workload Factory. Le partage de tableaux de bord est limité aux utilisateurs du même compte Workload Factory.
 
 
 

@@ -53,6 +53,10 @@ image:screenshot-account-selection-govcloud.png["Capture d'écran de la page com
 +
 .. Saisissez un nom pour le compte.
 .. Vous pouvez également créer un compte AWS GovCloud (US). Ce type de compte utilise uniquement les points de terminaison et les régions AWS GovCloud (US) pour la configuration et l'exploitation. Les informations d'identification et les secrets restent dans GovCloud. Ce choix est définitif.
++
+
+NOTE: Les fonctionnalités d'IA de Workload Factory utilisent les services AWS Bedrock hébergés dans des régions AWS publiques. Si vos politiques de sécurité n'autorisent pas les connexions aux services des régions publiques, vous pouvez désactiver les fonctionnalités d'IA dans les paramètres d'administration. link:manage-genai-features.html["Découvrez comment gérer les fonctionnalités d'IA"].
+
 .. Facultativement, fournissez une description de poste pour le compte.
 
 

@@ -15,6 +15,96 @@ Découvrez les nouveautés concernant les fonctionnalités d'administration de W
 
 
 
+[[03-august-2026]]
+== 03 août 2026
+
+
+
+[[updated-iam-permission-policies-for-databases]]
+=== Politiques d'autorisation IAM mises à jour pour les bases de données
+
+Les autorisations pour les bases de données ont été mises à jour afin d'améliorer l'accès aux fonctionnalités et de limiter l'accès SSM lorsque cela n'est pas nécessaire.
+
+Les autorisations de consultation, de planification et d'analyse sont limitées aux documents AWS SSM. Avec ces autorisations, vous pouvez consulter les hôtes, les instances et les bases de données. Vous pouvez également exécuter une analyse bien architecturée de base à la demande de vos ressources.
+
+Les autorisations d'opérations et de correction vous permettent d'apporter des modifications à vos ressources, d'analyser les journaux d'erreurs, d'obtenir une analyse complète et bien architecturée de vos ressources et de résoudre les problèmes de configuration.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html["Référence des autorisations"] === Tableaux de bord personnalisés
+
+
+
+==== Notifications pour les tableaux de bord personnalisés
+
+Workload Factory vous avertit désormais lorsque votre tableau de bord personnalisé est prêt ou si la création échoue.
+
+Une fois votre tableau de bord personnalisé créé, vous recevrez une notification contenant un lien direct pour le consulter. En cas d'échec de la création, vous recevrez une notification avec un lien vers l’inventaire des tableaux de bord personnalisés pour réessayer.
+
+Cela vous aide à savoir quand votre tableau de bord est prêt et facilite sa consultation ou sa recréation.
+
+link:create-custom-dashboard.html["Apprenez à créer des tableaux de bord personnalisés"]
+
+link:configure-notifications.html["Découvrez comment configurer les notifications"]
+
+
+
+==== Tableaux de bord personnalisés privés et publics
+
+Les tableaux de bord personnalisés incluent désormais des paramètres de partage. Vous pouvez garder un tableau de bord privé ou le partager avec votre équipe.
+
+Par défaut, les nouveaux tableaux de bord sont privés et visibles uniquement par vous. Vous pouvez rendre un tableau de bord public à tout moment pour le partager avec tous les utilisateurs de votre compte Workload Factory.
+
+Chaque carte du tableau de bord affiche une étiquette « Privé » ou « Public » afin que vous puissiez rapidement voir quels tableaux de bord sont partagés.
+
+link:learn-custom-dashboards.html#dashboard-visibility-and-sharing["Découvrez la visibilité et le partage des tableaux de bord"]
+
+link:manage-custom-dashboards.html#change-dashboard-visibility["Apprenez à partager des tableaux de bord"]
+
+
+
+[[ai-features-administration]]
+=== Administration des fonctionnalités d'IA
+
+Vous pouvez contrôler l'accès aux fonctionnalités d'IA au sein de votre organisation grâce aux paramètres suivants dans l'administration de Workload Factory.
+
+* Utilisez NetApp-managed Bedrock (recommandé et activé par défaut, avec des limites de crédit mensuelles)
+* Désactivez toutes les fonctionnalités d'IA
+
+
+La nouvelle page d'administration vous permet de gérer ces paramètres en un seul endroit.
+
+Les fonctionnalités d'IA incluent Ask Me, des tableaux de bord personnalisés, un générateur de règles et des analyseurs pour EMS, les journaux de base de données et la latence des volumes.
+
+Si les fonctionnalités d'IA sont désactivées, les utilisateurs verront un message indiquant que l'IA est indisponible.
+
+link:manage-genai-features.html["Découvrez comment gérer les fonctionnalités d'IA"]
+
+
+
+[[05-july-2026]]
+== 05 juillet 2026
+
+
+
+[[custom-dashboards]]
+=== Tableaux de bord personnalisés
+
+Créez des tableaux de bord basés sur l'IA, adaptés à vos charges de travail et à vos priorités, pour visualiser facilement les performances de vos opérations. Au lieu de vous fier à des vues fixes, les tableaux de bord personnalisés vous permettent de vous concentrer sur les informations les plus importantes.
+
+Il vous suffit de décrire en langage clair ce que vous souhaitez suivre, et l'IA créera un tableau de bord en fonction de votre demande. Par exemple, vous pouvez suivre l'état de la reprise après sinistre, la capacité et les coûts dans les différentes régions, la conformité de la protection du stockage et d'autres indicateurs opérationnels.
+
+Les tableaux de bord personnalisés sont en lecture seule, ils ne peuvent donc pas modifier vos paramètres de stockage ni de charge de travail. Toute personne disposant d’un compte Workload Factory peut consulter et gérer ces tableaux de bord, ce qui permet aux équipes de partager facilement des informations et de rester alignées.
+
+link:learn-custom-dashboards.html["En savoir plus sur les tableaux de bord personnalisés"]
+
+
+
+[[genai-workload-removal-from-workload-factory]]
+=== Suppression de la charge de travail GenAI de Workload Factory
+
+La charge de travail GenAI a été supprimée de la console Workload Factory.
+
+
+
 [[31-may-2026]]
 == 31 mai 2026
 

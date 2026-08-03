@@ -21,6 +21,9 @@ Une fois créée, vous pouvez actualiser le tableau de bord pour voir les donné
 N'oubliez pas que les tableaux de bord personnalisés sont conçus pour être en lecture seule et ne peuvent pas modifier vos configurations de stockage ou de charge de travail.
 
 
+NOTE: Si l'administrateur de votre compte a désactivé les fonctionnalités d'IA, un message s'affichera et vous ne pourrez pas créer de tableaux de bord. Contactez votre administrateur ou link:manage-genai-features.html["Découvrez l'administration de l'IA"].
+
+
 
 [[create-a-dashboard]]
 == Créer un tableau de bord
@@ -44,12 +47,17 @@ L'IA pourrait vous proposer plusieurs options pour mieux comprendre vos besoins.
 . Après avoir répondu à toutes les questions, sélectionnez *Continuer* pour créer votre tableau de bord.
 
 
+Votre tableau de bord est en cours de création. Cela peut prendre un moment.
+
 .Résultat
-Votre tableau de bord personnalisé est désormais disponible dans le catalogue des tableaux de bord. Tous les utilisateurs de votre compte Workload Factory peuvent y accéder et le consulter.
+Votre tableau de bord personnalisé a été créé et ajouté au catalogue de tableaux de bord. Par défaut, le tableau de bord est privé et visible uniquement par vous. Vous pouvez modifier la visibilité pour le rendre public si vous souhaitez le partager avec d'autres utilisateurs de votre compte Workload Factory. link:manage-custom-dashboards.html#change-dashboard-visibility["Découvrez comment modifier la visibilité du tableau de bord"].
+
+Vous recevrez une notification lorsque votre tableau de bord sera prêt. S'il ne peut pas être créé, vous recevrez une notification contenant un lien pour réessayer. link:configure-notifications.html["Découvrez comment configurer les notifications"].
 
 .Et ensuite
 Après la création, vous pouvez :
 
+* Modifiez la visibilité du tableau de bord pour la partager avec votre équipe
 * Actualisez les données du tableau de bord pour afficher les informations les plus récentes
 * Supprimez les tableaux de bord dont vous n'avez plus besoin
 * Consultez les détails du tableau de bord, y compris qui l'a créé et quand il a été mis à jour pour la dernière fois

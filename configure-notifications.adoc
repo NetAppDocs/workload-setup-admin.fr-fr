@@ -65,6 +65,12 @@ Workload Factory envoie des notifications pour les événements suivants :
 
 
 | Délai de réplication | La réplication prend plus de temps que prévu. | Réplication | Primordial | Stockage général | FSx pour les systèmes de fichiers ONTAP 
+
+
+| Création réussie du tableau de bord personnalisé | Votre tableau de bord personnalisé a été créé avec succès et est prêt à être consulté. | Tableaux de bord personnalisés | Réussite | Stockage général | Compte Workload Factory 
+
+
+| La création du tableau de bord personnalisé a échoué | Workload Factory n'a pas pu créer votre tableau de bord personnalisé. Essayez de créer à nouveau le tableau de bord. | Tableaux de bord personnalisés | Erreur | Stockage général | Compte Workload Factory 
 |===
 
 
