@@ -15,10 +15,6 @@ Vous pouvez ignorer l'analyse des configurations qui ne s'appliquent pas à vos 
 
 Vous pouvez également créer des règles personnalisées en langage clair pour valider vos environnements par rapport aux normes de votre organisation et aux meilleures pratiques NetApp. Testez les règles à blanc, puis planifiez leur exécution dans vos environnements. link:https://docs.netapp.com/us-en/console-well-architected/learn-custom-rules.html["En savoir plus sur les règles personnalisées"^].
 
-Vous pouvez également créer des règles personnalisées en langage clair pour valider vos environnements par rapport aux normes de votre organisation et aux bonnes pratiques NetApp. Testez les règles à blanc, puis planifiez leur exécution dans vos environnements.
-
-link:https://docs.netapp.com/us-en/console-well-architected/learn-custom-rules.html["En savoir plus sur les règles personnalisées"^].
-
 
 
 [[why-it-matters]]

@@ -24,7 +24,6 @@
   <block id="05e2d97b3b23a80afeb67390bad5f97c" category="inline-image-macro">Une capture d'écran montrant quelles autorisations feront partie du nouveau rôle.</block>
   <block id="bfc77a43a5b610654d7d0e7bbb9162a7" category="paragraph"><block ref="bfc77a43a5b610654d7d0e7bbb9162a7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c0a8070d8176ef21fdf6bc0d6b6833c9" category="list-text">Dans la console de gestion AWS, sélectionnez *rôles &gt; Créer un rôle*.</block>
-  <block id="e506de832b98c2693eb3f400ef0722c0" category="list-text">Sous *Type d'entité approuvée*, sélectionnez *compte AWS*.</block>
   <block id="e6cd86d61f4639c8a27006c6c29b3e9f" category="list-text">Sélectionnez *Suivant*.</block>
   <block id="552a0f683211339f8f7517a1d4fc804d" category="list-text">Dans la section Stratégie d'autorisations, choisissez toutes les stratégies que vous avez définies précédemment et sélectionnez *Suivant*.</block>
   <block id="eb940e2ee0ec63786b166a518db881df" category="list-text">Entrez un nom pour le rôle et sélectionnez *Créer un rôle*.</block>
@@ -633,7 +632,6 @@
   <block id="986aee2caba870111e5ce3c5571c82de" category="section-title">02 février 2025</block>
   <block id="bd901b05034bb9be1d918012998e8f7b" category="section-title">5 janvier 2025</block>
   <block id="5ff4c3f483396c894c51f91d47106ecf" category="list-text">Sur la page informations d'identification, sélectionnez *Ajouter des informations d'identification*.</block>
-  <block id="558847a01e0a9378a8c7b99a0e6af643" category="list-text">Sur la page Ajouter des informations d'identification, sélectionnez *Ajouter manuellement*, puis procédez comme suit pour remplir chaque section sous _Configuration des autorisations_.</block>
   <block id="4b44bad00f91b8450a836bfa54b0306e" category="list-text">Dans la fenêtre CloudShell, sélectionnez les informations d'identification et la région pour la session CloudShell, puis sélectionnez la flèche pour continuer.</block>
   <block id="a5fab0062142f5ef0615c361259b0b89" category="cell">Le rôle attribué permet la communication entre FSX pour ONTAP et d'autres services AWS</block>
   <block id="8832fb7d0699d4878c8449616cd47613" category="cell">iam:CreateServiceLinkedRole</block>
@@ -823,9 +821,6 @@
   <block id="6c8ca72a28d9651706405d888093910e" category="list-text">Connectez-vous à la<block ref="04c72ef1cb137ba02eafcfdeb6fc7765" category="inline-link-rx"></block> .</block>
   <block id="6191b3848b93c4178f95391680ab2108" category="list-text">Dans le menu, sélectionnez *Administration* puis *Informations d'identification*.</block>
   <block id="30551002ceb8abd5af0ee8907423b553" category="paragraph">Dans cette section, vous allez configurer un rôle IAM que Workload Factory assumera et qui inclut les autorisations et les politiques que vous venez de créer.</block>
-  <block id="f0497660975536e414a629b7d4f9f276" category="list-text">Sélectionnez *Un autre compte AWS* et copiez et collez l'ID de compte pour la gestion de la charge de travail FSx pour ONTAP à partir de l'interface utilisateur de Workload Factory.</block>
-  <block id="f97e7ca54bb60a402c14107162345b08" category="list-text">Sélectionnez *ID externe requis* et copiez et collez l'ID externe à partir de l'interface utilisateur de Workload Factory.</block>
-  <block id="fcf4437915eed569a9fd7691faf38a66" category="list-text">Revenez à la page Ajouter des informations d’identification dans Workload Factory, développez la section *Créer un rôle* sous *Configuration des autorisations* et collez l’ARN dans le champ _ARN du rôle_.</block>
   <block id="a9c4ed0c041add98b3c1c27e6191e29e" category="paragraph">La dernière étape consiste à saisir un nom pour les informations d’identification dans Workload Factory.</block>
   <block id="5976d02d7cdfb004e841934d0a6bf1b5" category="list-text">Depuis la page Ajouter des informations d’identification dans Workload Factory, développez *Nom des informations d’identification* sous *Configuration des autorisations*.</block>
   <block id="21f73823dc240b09e9b0a0896496f95d" category="paragraph">Vous pouvez ajouter des informations d'identification AWS à Workload Factory à l'aide d'une pile AWS CloudFormation en sélectionnant les fonctionnalités Workload Factory que vous souhaitez utiliser, puis en lançant la pile AWS CloudFormation dans votre compte AWS.  CloudFormation créera les politiques IAM et le rôle IAM en fonction des capacités de charge de travail que vous avez sélectionnées.</block>
@@ -1509,8 +1504,6 @@
   <block id="8215457eb88ef1fb110b79579b908e3d" category="paragraph">Vous pouvez ignorer l'analyse des configurations qui ne s'appliquent pas à vos environnements. Cela évite les alertes inutiles et des résultats d'optimisation inexacts.</block>
   <block id="8817b0c6f0795c52cab62044416eee8a" category="inline-link-macro">En savoir plus sur les règles personnalisées</block>
   <block id="821af7226458ea25572e88e8ab2026e4" category="paragraph">Vous pouvez également créer des règles personnalisées en langage clair pour valider vos environnements par rapport aux normes de votre organisation et aux meilleures pratiques NetApp. Testez les règles à blanc, puis planifiez leur exécution dans vos environnements. <block ref="ce039b478eb432b675a03c04866f31ab" category="inline-link-macro-rx"></block>.</block>
-  <block id="8be08850265c9930c26a8e5b28183a2e" category="paragraph">Vous pouvez également créer des règles personnalisées en langage clair pour valider vos environnements par rapport aux normes de votre organisation et aux bonnes pratiques NetApp. Testez les règles à blanc, puis planifiez leur exécution dans vos environnements.</block>
-  <block id="7c24f3892a999a3e8d688cabe068b17a" category="paragraph"><block ref="ce039b478eb432b675a03c04866f31ab" category="inline-link-macro-rx"></block>.</block>
   <block id="da0c92072a1db7fee3208bcad3ad822b" category="doc">Politiques d'autorisation IAM mises à jour pour les bases de données</block>
   <block id="e9e3af45119a834b75ee5ce8ad5fc96d" category="paragraph">Les autorisations pour les bases de données ont été mises à jour afin d'améliorer l'accès aux fonctionnalités et de limiter l'accès SSM lorsque cela n'est pas nécessaire.</block>
   <block id="6f70bfe68d48e1ab770cfb69bea59dfd" category="paragraph">Les autorisations de consultation, de planification et d'analyse sont limitées aux documents AWS SSM. Avec ces autorisations, vous pouvez consulter les hôtes, les instances et les bases de données. Vous pouvez également exécuter une analyse bien architecturée de base à la demande de vos ressources.</block>
@@ -1641,4 +1634,10 @@
   <block id="5243974c66976ebd592df24b62b1b9bf" category="paragraph"><block ref="5243974c66976ebd592df24b62b1b9bf" category="inline-link-macro-rx"></block></block>
   <block id="a8d7b4c293e04e8a879f9be70ed380ba" category="paragraph"><block ref="a8d7b4c293e04e8a879f9be70ed380ba" category="inline-link-macro-rx"></block></block>
   <block id="8d20116cd01bc3ce31dae628497af0dc" category="paragraph"><block ref="8d20116cd01bc3ce31dae628497af0dc" category="inline-link-macro-rx"></block></block>
+  <block id="e0d1a02b10ec781984ac246a7d6226fd" category="list-text">Sur la page Ajouter des informations d'identification, sélectionnez *Ajouter manuellement* puis suivez les étapes suivantes pour compléter chaque section sous _Configuration des autorisations_.</block>
+  <block id="4cba6cec5bdba739fed7cc1ed3ac5396" category="list-text">Depuis la page Ajouter des informations d'identification dans Workload Factory, développez *Créer un rôle* sous *Configuration des autorisations*.</block>
+  <block id="288d704e69ec643a96254456480c3998" category="list-text">Sélectionnez *code JSON* pour copier la règle.</block>
+  <block id="e7a1d840ae4199cc1f76836535606345" category="list-text">Sous *Type d'entité de confiance*, sélectionnez *Stratégie de confiance personnalisée*.</block>
+  <block id="a2908f77e830d0a907f60038a03cc446" category="list-text">Remplacez le contenu actuel de la zone de texte par le code JSON que vous avez copié à l'étape 2.</block>
+  <block id="0afa7405bb80320955bff5c5dafcba00" category="list-text">Retournez à la page Add Credentials dans Workload Factory, puis collez l'ARN du rôle dans le champ _Role ARN_.</block>
 </blocks>
