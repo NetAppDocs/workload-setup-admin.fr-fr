@@ -1,0 +1,92 @@
+= Suivre et contrôler les opérations
+:allow-uri-read: 
+
+
+Surveillez et suivez l'exécution de FSx for ONTAP, des informations d'identification et des opérations de lien, et surveillez la progression des tâches avec Tracker dans NetApp Workload Factory.
+
+.Description de la tâche
+Workload Factory propose Tracker, une fonctionnalité de surveillance, qui vous permet de surveiller et de suivre la progression et l'état de FSx for ONTAP, des informations d'identification et des opérations de lien, d'examiner les détails des tâches et sous-tâches d'opération, et de diagnostiquer tout problème ou échec.
+
+Plusieurs actions sont disponibles dans Tracker. Vous pouvez filtrer les tâches par période (dernières 24 heures, 7 jours, 14 jours ou 30 jours), charge de travail, statut et utilisateur ; rechercher des tâches à l'aide de la fonction de recherche ; et télécharger le tableau des tâches au format CSV. Vous pouvez actualiser Tracker à tout moment. Vous pouvez également relancer rapidement une opération ayant échoué ou modifier les paramètres d'une opération ayant échoué et réessayer l'opération.
+
+Tracker propose deux niveaux de surveillance selon l'opération. Chaque tâche, telle que le déploiement d'un système de fichiers, affiche la description de la tâche, le statut, l'heure de début, la durée de la tâche, l'utilisateur, la région, la ressource proxy, l'ID de la tâche et toutes les sous-tâches associées. Vous pouvez consulter les réponses de l'API pour comprendre ce qui s'est passé pendant l'opération.
+
+Niveaux de tâches de suivi avec exemples::
++
+--
+* Niveau 1 (tâche) : Suit le déploiement du système de fichiers.
+* Niveau 2 (sous-tâche) : Suit les sous-tâches liées au déploiement du système de fichiers.
+
+
+--
+État des opérations:: L'état des opérations dans Tracker est le suivant : _en cours_, _succès_ et _échec_.
++
+--
+Fréquence de fonctionnement:: La fréquence des opérations dépend du type de tâche et du planning des tâches.
+
+
+--
+Rétention des événements:: Les événements sont conservés dans l'interface utilisateur pendant 30 jours.
+
+
+
+
+[[track-and-monitor-operations]]
+== Suivre et contrôler les opérations
+
+Suivez et surveillez les opérations dans la NetApp Console grâce à Tracker.
+
+.Étapes
+. Connectez-vous en utilisant l'un des link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^].
+. Sélectionnez le menu image:workloads-menu-icon.png["L'icône du menu hamburger permet de naviguer vers des charges de travail telles que le stockage, eda, ai, bases de données, vmware et l'administration."] puis sélectionnez *Administration*.
+. Dans le menu Administration, sélectionnez *Tracker*.
+. Dans Tracker, utilisez les filtres ou la recherche pour affiner les résultats d'emploi. Vous pouvez également télécharger un rapport sur les emplois.
+
+
+
+
+[[view-api-request]]
+== Afficher la requête API
+
+Consultez la requête API dans le Codebox pour une tâche dans Tracker.
+
+.Étapes
+. Dans Tracker, sélectionnez une tâche.
+. Sélectionnez le menu Actions, puis *Afficher la requête API*.
+
+
+
+
+[[retry-a-failed-operation]]
+== Réessayer une opération ayant échoué
+
+Réessayez une opération ayant échoué dans Tracker. Vous pouvez également copier le message d'erreur d'une opération ayant échoué.
+
+
+NOTE: Seul un nombre x de tentatives est autorisé pour une opération ayant échoué.
+
+.Étapes
+. Dans Tracker, sélectionnez une opération ayant échoué.
+. Sélectionnez le menu Actions, puis sélectionnez *Réessayer*.
+
+
+.Résultat
+L'opération est relancée.
+
+
+
+[[edit-and-retry-a-failed-operation]]
+== Modifier et réessayer une opération ayant échoué
+
+Modifiez les paramètres de l'opération ayant échoué et réessayez l'opération en dehors de Tracker.
+
+.Étapes
+. Dans Tracker, sélectionnez une opération ayant échoué.
+. Sélectionnez le menu Actions, puis *Modifier et réessayer*.
++
+Vous êtes redirigé vers la page de l'opération où vous pouvez modifier les paramètres et réessayer l'opération.
+
+
+
+.Résultat
+L'opération a été relancée. Accédez à Tracker pour afficher l'état de l'opération.
