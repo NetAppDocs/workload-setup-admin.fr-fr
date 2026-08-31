@@ -1,0 +1,10 @@
+= Nouvelle expérience d'intégration pour les identifiants et les liens
+:allow-uri-read: 
+
+
+
+
+[[new-onboarding-experience-for-credentials-and-links]]
+=== Nouvelle expérience d'intégration pour les identifiants et les liens
+
+Workload Factory améliore l'expérience d'intégration pour les identifiants et les liens, ce qui facilite la prise en main. Après avoir créé votre compte et vous être connecté, sélectionnez *Commencer* dans n'importe quelle tuile de charge de travail, par exemple *Storage*, et la page suivante vous guide étape par étape dans le processus de configuration.
