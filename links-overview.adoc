@@ -1,0 +1,79 @@
+---
+sidebar: sidebar 
+permalink: links-overview.html 
+keywords: links, accounts, lambda 
+summary: Un lien Workload Factory crée une relation de confiance et une connectivité entre un compte Workload Factory et un ou plusieurs systèmes de fichiers FSx for ONTAP. 
+---
+= Découvrez les liens NetApp Workload Factory
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Un lien NetApp Workload Factory établit une relation de confiance et une connectivité entre un compte Workload Factory et un ou plusieurs systèmes de fichiers FSx for ONTAP. Cela vous permet de surveiller et de gérer certaines fonctionnalités du système de fichiers directement à partir des appels d'API REST ONTAP qui ne sont pas disponibles via l'API Amazon FSx for ONTAP.
+
+Vous n’avez pas besoin d’un lien pour démarrer avec Workload Factory, mais dans certains cas, vous devrez créer un lien pour déverrouiller toutes les fonctionnalités et capacités de charge de travail de Workload Factory.
+
+
+
+[[why-links-are-beneficial]]
+== Pourquoi les liens sont bénéfiques
+
+Les liens sont avantageux car ils permettent à Workload Factory d'effectuer des opérations qui ne sont pas disponibles nativement via l'API Amazon FSx for ONTAP. Les liens activent des fonctionnalités et des automatisations ONTAP avancées, ce qui améliore la gestion des systèmes de fichiers FSx for ONTAP.
+
+Voici quelques avantages de l'utilisation des liens :
+
+* Le lien permet à la NetApp Console d'envoyer des commandes ONTAP directement à votre système de fichiers FSx for ONTAP, apportant des fonctionnalités avancées d'ONTAP au-delà de ce qu'AWS propose nativement.
+* Les liens utilisent AWS Lambda pour exécuter du code en réponse à des événements. Cette approche sans serveur élimine la dépendance à une instance en cours d'exécution dans votre VPC.
+
+
+
+
+[[how-links-work]]
+== Comment fonctionnent les liens
+
+Les liens utilisent AWS Lambda. Lambda exécute du code en réponse à des événements et gère automatiquement les ressources de calcul nécessaires à ce code. Les liens que vous créez font partie de votre compte NetApp et sont associés à un compte AWS.
+
+Après avoir créé un lien, vous pouvez l'associer à un ou plusieurs systèmes de fichiers FSx pour ONTAP. Chaque système de fichiers ne peut être associé qu'à un seul lien au sein du même NetApp account. Si vous disposez de plusieurs NetApp accounts, un même système de fichiers peut être associé à des liens supplémentaires sous différents NetApp accounts.
+
+Vous créez et associez des liens à partir de la charge de travail Storage dans Workload Factory.
+
+Vous pouvez authentifier les liens à l'aide des informations d'identification stockées dans le service d'identification de Workload Factory ou avec vos informations d'identification stockées dans AWS Secrets Manager. Workload Factory ne prend pas en charge la modification des modes d'authentification.
+
+La connectivité de lien pour les comptes GovCloud est prise en charge. NetApp Workload Factory utilise des clés d’authentification GovCloud, permettant un accès sécurisé et sans agent à FSx for ONTAP via des mécanismes approuvés GovCloud.
+
+
+
+[[costs]]
+== Coûts
+
+Chaque transaction effectuée par Lambda engendre des frais. Étant donné que Lambda sert de proxy entre les deux systèmes, des frais sont facturés lorsque Lambda envoie une requête à l'API REST ONTAP sur un système de fichiers, et lorsqu'elle renvoie la réponse à NetApp Workload Factory.
+
+link:https://aws.amazon.com/lambda/pricing/["En savoir plus sur les coûts liés à l'utilisation d'AWS Lambda"^]
+
+
+
+[[when-a-link-is-required]]
+== Lorsqu'un lien est requis
+
+Workload Factory nécessite une liaison pour afficher certaines informations et effectuer certaines tâches. Si vous tentez d'effectuer une opération nécessitant une liaison et que vous n'avez associé aucune liaison au système de fichiers FSx for ONTAP, Workload Factory vous avertit que l'opération requiert une liaison.
+
+Les fonctionnalités qui nécessitent un lien incluent :
+
+* État bien architecturé des configurations du système de fichiers FSx for ONTAP pour la maintenance proactive, la fiabilité et l’optimisation du rapport coût-performance
+* Surveillance et alerte des événements ONTAP EMS
+* NetApp Autonomous Ransomware Protection (ARP/IA)
+* Amélioration de la visibilité globale de la capacité sur les systèmes de fichiers Amazon FSx for ONTAP
+* Réplication des données, gestion et surveillance des volumes et des machines virtuelles de stockage
+* Provisionnement et gestion des partages SMB/CIFS et des règles d'export NFS
+* Gestion des volumes iSCSI sur un système de fichiers FSx for ONTAP
+* Création et gestion des règles de snapshot pour les SLA de protection personnalisés
+* Améliorations de la gestion des inodes pour la gestion de la capacité automatique
+* Croissance automatique du volume pour une mise à l'échelle élastique
+* Création et gestion de clones, pour un clonage de données instantané et sur place
+* Affichage de métriques supplémentaires directement depuis ONTAP, telles que la version ONTAP
+* Affichage des détails des machines virtuelles de stockage et des LIF de cluster, notamment les rôles, les points de terminaison, les nœuds, les adresses IP et l’état
+
+
+Découvrez comment link:create-link.html["établir un lien vers un système de fichiers Amazon FSx for ONTAP"].

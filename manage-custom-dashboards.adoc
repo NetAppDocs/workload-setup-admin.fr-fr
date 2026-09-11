@@ -4,7 +4,7 @@ permalink: manage-custom-dashboards.html
 keywords: manage dashboards, delete dashboard, refresh dashboard, dashboard catalog 
 summary: Accédez à votre catalogue de tableaux de bord pour afficher, actualiser et supprimer des tableaux de bord personnalisés dans Workload Factory. 
 ---
-= Gérer les tableaux de bord personnalisés
+= Gérez les tableaux de bord personnalisés dans NetApp Workload Factory
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

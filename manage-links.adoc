@@ -1,0 +1,121 @@
+---
+sidebar: sidebar 
+permalink: manage-links.html 
+keywords: links, accounts, lambda, creating, associating, disassociating, deleting, editing 
+summary: 'Vous pouvez consulter les liens associés à votre compte, mettre à jour les mots de passe pour l"authentification des liens et supprimer un lien dans NetApp Workload Factory.' 
+---
+= Gérer les liens NetApp Workload Factory
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Gérez les liens que vous avez associés à votre compte Workload Factory. Vous pouvez consulter les liens associés à un système de fichiers Amazon FSx for ONTAP, fournir les mots de passe utilisés pour la méthode d'authentification des liens et supprimer des liens depuis la console Workload Factory.
+
+link:links-overview.html["En savoir plus sur les liens"] ou link:create-link.html["créer et associer un lien"].
+
+
+
+[[view-the-links-associated-with-your-account]]
+== Consultez les liens associés à votre compte
+
+Vous pouvez consulter les liens actuellement associés à votre compte.
+
+.Étapes
+. Connectez-vous en utilisant l'un des link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^].
+. Dans le menu Stockage, sélectionnez *Administration* puis *Liens*.
++
+Les liens existants apparaissent sur la page Links.
+
+. Pour afficher les systèmes de fichiers Amazon FSx for ONTAP associés à un lien, sélectionnez le bouton *Afficher* dans la section Ressources associées.
++
+image:screenshot-view-link-details.png["Capture d'écran montrant les systèmes de fichiers FSx for ONTAP qui utilisent un lien spécifique."]
+
+. Si vous avez besoin du nom de ressource Amazon (ARN) pour le lien, vous pouvez sélectionner l'icône _copie_ à côté du champ ARN.
+
+
+
+
+[[edit-a-link]]
+== Modifier un lien
+
+Il est impossible de modifier un lien depuis l'interface de NetApp Workload Factory. Si vous devez modifier un lien, vous devez créer un nouveau lien, puis l'associer à votre système de fichiers.
+
+
+NOTE: Vous pouvez modifier la configuration réseau Lambda (par exemple VPC, sous-réseaux et groupes de sécurité) à l'aide de la console AWS et les modifications seront reflétées dans l'interface utilisateur de gestion des liens ; cependant, ces modifications peuvent entraîner des problèmes de connectivité entre Lambda et ONTAP et ne sont pas recommandées.
+
+
+
+[[authenticate-a-link]]
+== Authentifier un lien
+
+Fournissez un mot de passe d'utilisateur administrateur pour les informations d'identification de Workload Factory ou un ARN secret AWS Secrets Manager pour connecter le lien à un système de fichiers FSx for ONTAP.
+
+AWS Secrets Manager n'est pas pris en charge lors de l'utilisation d'un agent de console.
+
+
+NOTE: Une seule méthode d'authentification est prise en charge par lien. Par exemple, si vous choisissez l'authentification du lien avec AWS Secrets Manager, vous ne pouvez pas modifier la méthode d'authentification par la suite.
+
+.Étapes
+. Connectez-vous en utilisant l'un des link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^].
+. Sélectionnez le menu image:workloads-menu-icon.png["L'icône du menu hamburger permet de naviguer vers des charges de travail telles que le stockage, eda, ai, bases de données, vmware et l'administration."] puis sélectionnez *Stockage*.
+. Dans le menu Stockage, sélectionnez *FSx for ONTAP*.
+. Dans *FSx for ONTAP*, sélectionnez le menu actions du système de fichiers auquel associer un lien, puis sélectionnez *Gérer*.
+. Dans la vue d'ensemble du système de fichiers, sélectionnez *Authentifier le lien*.
+. Sur la page du lien d'authentification, sélectionnez un mode d'authentification :
++
+** Workload Factory : saisissez le mot de passe deux fois.
+** AWS Secrets Manager : saisissez l’ARN secret.
+
+
+. Sélectionnez *appliquer*.
+
+
+.Résultat
+La connexion est authentifiée et vous pouvez effectuer des opérations ONTAP avancées
+
+
+
+[[update-the-password-for-link-authentication]]
+== Mettez à jour le mot de passe pour l'authentification par lien
+
+Lorsque le mot de passe administrateur est invalide, mettez à jour le mot de passe pour connecter le lien au système de fichiers FSx for ONTAP.
+
+.Étapes
+. Connectez-vous en utilisant l'un des link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^].
+. Sélectionnez le menu image:workloads-menu-icon.png["L'icône du menu hamburger permet de naviguer vers des charges de travail telles que le stockage, eda, ai, bases de données, vmware et l'administration."] puis sélectionnez *Stockage*.
+. Dans le menu Stockage, sélectionnez *FSx for ONTAP*.
+. Dans *FSx for ONTAP*, sélectionnez le menu actions du système de fichiers auquel associer un lien, puis sélectionnez *Gérer*.
+. Dans la vue d'ensemble du système de fichiers, sélectionnez *Mettre à jour le mot de passe*.
+. Sur la page du lien d'authentification, saisissez le nouveau mot de passe deux fois.
+. Sélectionnez *appliquer*.
+
+
+.Résultat
+Le mot de passe a été mis à jour et le lien est maintenant connecté au système de fichiers Amazon FSx for ONTAP.
+
+
+
+[[remove-a-link]]
+== Supprimer un lien
+
+Vous pouvez supprimer un lien que vous n'utilisez plus dans votre environnement. Tout système de fichiers FSx for ONTAP ou autre ressource qui utilisait ce lien ne pourra plus utiliser certaines fonctionnalités après la suppression du lien.
+
+Notez que le lien est uniquement supprimé de Workload Factory ; il n'est pas supprimé de votre environnement AWS. Vous devez supprimer la fonction Lambda de votre compte AWS après avoir supprimé le lien dans Workload Factory.
+
+.Étapes
+. Connectez-vous en utilisant l'un des link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^].
+. Sélectionnez le menu image:workloads-menu-icon.png["L'icône du menu hamburger permet de naviguer vers des charges de travail telles que le stockage, eda, ai, bases de données, vmware et l'administration."] puis sélectionnez *Stockage*.
+. Dans le menu Stockage, sélectionnez *Administration* puis *Liens*.
++
+Les liens existants apparaissent sur la page Links.
+
+. Sur la page Liens, sélectionnez le menu Actions du lien à supprimer, puis sélectionnez *Supprimer*.
++
+image:screenshot-remove-link.png["Capture d'écran montrant comment supprimer un lien de Workload Factory."]
+
+. Si vous êtes sûr, sélectionnez à nouveau *Supprimer*.
+
+
+Consultez la documentation AWS pour link:https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-awscli.html#with-userapp-walkthrough-custom-events-delete-function["supprimer la fonction Lambda"].

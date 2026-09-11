@@ -4,7 +4,7 @@ permalink: whats-next.html
 keywords: what you can do 
 summary: 'Une fois connecté et configuré NetApp Workload Factory, vous pouvez créer et gérer les systèmes de fichiers FSx for ONTAP et utiliser d"autres fonctionnalités de Workload Factory.' 
 ---
-= Optimisez les charges de travail avec NetApp Workload Factory
+= Fonctionnalités de charge de travail dans NetApp Workload Factory
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

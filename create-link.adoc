@@ -1,0 +1,317 @@
+---
+sidebar: sidebar 
+permalink: create-link.html 
+keywords: connect, connection, link, lambda link, associate link, create link, authenticate link 
+summary: Vous pouvez créer et gérer des liens pour établir une relation de confiance et une connectivité entre un compte NetApp Workload Factory et un ou plusieurs systèmes de fichiers FSx for ONTAP. 
+---
+= Connectez-vous à un système de fichiers Amazon FSx for ONTAP avec un lien Lambda
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Pour effectuer des opérations de gestion avancées ONTAP, établissez une connexion entre votre compte Workload Factory et un ou plusieurs systèmes de fichiers FSx for ONTAP. Cela implique d’associer des liens Lambda nouveaux et existants, et d’authentifier ces liens. L’association de liens vous permet de surveiller et de gérer certaines fonctionnalités directement depuis le système de fichiers FSx for ONTAP qui ne sont pas disponibles via l’API Amazon FSx for ONTAP.
+
+link:links-overview.html["En savoir plus sur les liens"].
+
+.Description de la tâche
+Les liens utilisent AWS Lambda pour exécuter du code en réponse à des événements et gérer automatiquement les ressources de calcul nécessaires à ce code. Les liens que vous créez font partie de votre compte NetApp et sont associés à un compte AWS.
+
+Vous pouvez créer un lien dans votre compte lors de la définition d’un système de fichiers FSx for ONTAP. Vous utilisez le lien pour ce système de fichiers, et vous pouvez également l’utiliser pour d’autres systèmes de fichiers FSx for ONTAP. Vous pouvez également associer un lien à un système de fichiers ultérieurement.
+
+Les liens nécessitent une authentification. Vous pouvez authentifier les liens à l'aide des informations d'identification stockées dans le service d'identification Workload Factory ou avec vos informations d'identification stockées dans AWS Secrets Manager. Une seule méthode d'authentification est prise en charge par lien. Par exemple, si vous sélectionnez l'authentification du lien avec AWS Secrets Manager, vous ne pourrez pas changer la méthode d'authentification ultérieurement.
+
+
+NOTE: AWS Secrets Manager n'est pas pris en charge lors de l'utilisation d'un agent de console.
+
+
+
+[[associate-a-new-link]]
+== Associer un nouveau lien
+
+L'association d'un nouveau lien comprend la création et l'association du lien.
+
+Vous avez deux options pour créer des liens dans ce flux de travail : automatiquement ou manuellement. Si vous avez un compte AWS GovCloud, vous devez créer un nouveau lien manuellement.
+
+* Automatiquement : Crée un lien avec enregistrement automatique via Workload Factory. Un lien créé automatiquement nécessite des jetons pour l’automatisation de Workload Factory et le code CloudFormation est de courte durée. Il ne peut être utilisé que pendant six heures maximum.
+* Manuellement : Crée un lien par enregistrement manuel en utilisant soit CloudFormation, soit Terraform depuis le Codebox. Le code est conservé, ce qui vous laisse plus de temps pour finaliser l’opération. Cela est utile lorsque vous travaillez avec différentes équipes comme la sécurité et DevOps qui pourraient d'abord devoir accorder les autorisations nécessaires à la création du lien.
+
+
+.Avant de commencer
+* Vous devez réfléchir à l'option de création de liens que vous allez utiliser.
+* Vous devez disposer d'au moins un système de fichiers FSx for ONTAP dans NetApp Workload Factory. Pour découvrir les systèmes de fichiers FSx for ONTAP, vous devez posséder un compte AWS avec des autorisations pour les instances FSx for ONTAP et link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html#overview["ajouter des informations d'identification dans Workload Factory"^] avec des autorisations de consultation, de planification et d'analyse pour la gestion du stockage.
+* Les ports suivants doivent être ouverts dans le groupe de sécurité associé au système de fichiers FSx for ONTAP pour la connectivité du lien.
++
+** Pour la console Workload Factory : port 443 (HTTPS)
+** Pour CloudShell et FSx pour ONTAP, analyse des événements du système de gestion des urgences (EMS) : port 22 (SSH)
+
+
+* Le lien doit pouvoir se connecter au point de terminaison suivant : https://api.workloads.netapp.com. La console Web contacte ce point de terminaison pour interagir avec les API NetApp Workload Factory afin de gérer et d'exploiter les charges de travail Amazon FSx for ONTAP.
+* Vous devez disposer des autorisations suivantes dans votre compte AWS lorsque vous ajoutez un lien à l'aide d'une pile CloudFormation :
++
+[%collapsible]
+====
+[source, json]
+----
+[
+  "cloudformation:GetTemplateSummary",
+  "cloudformation:CreateStack",
+  "cloudformation:DescribeStacks",
+  "cloudformation:ListStacks",
+  "cloudformation:DescribeStackEvents",
+  "cloudformation:ListStackResources",
+  "ec2:DescribeSubnets",
+  "ec2:DescribeSecurityGroups",
+  "ec2:DescribeVpcs",
+  "iam:ListRoles",
+  "iam:GetRolePolicy",
+  "iam:GetRole",
+  "iam:DeleteRolePolicy",
+  "iam:CreateRole",
+  "iam:DetachRolePolicy",
+  "iam:PutRolePolicy",
+  "iam:DeleteRole",
+  "iam:AttachRolePolicy",
+  "lambda:InvokeFunction",
+  "lambda:GetFunction",
+  "lambda:CreateFunction",
+  "lambda:DeleteFunction",
+  "iam:PassRole",
+  "lambda:TagResource",
+  "ecr:BatchGetImage",
+  "ecr:GetDownloadUrlForLayer",
+  "lambda:AddPermission",
+  "lambda:RemovePermission",
+  "cloudformation:DeleteStack",
+  "kms:CreateGrant",
+  "kms:GenerateDataKey"
+]
+----
+====
+
+
+[role="tabbed-block"]
+====
+.Créer automatiquement
+--
+Utilisez CloudFormation pour créer et enregistrer automatiquement le lien dans Workload Factory.
+
+
+NOTE: La création automatique de liens n'est pas prise en charge pour les comptes AWS GovCloud.
+
+.Étapes
+. Connectez-vous en utilisant l'un des link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^].
+. Sélectionnez le menu image:workloads-menu-icon.png["L'icône du menu hamburger permet de naviguer vers des charges de travail telles que le stockage, eda, ai, bases de données, vmware et l'administration."] puis sélectionnez *Administration*.
+. Dans le menu Administration, sélectionnez *Liens*.
+. Sur la page Liens, sélectionnez *Créer et associer*.
+. Dans la boîte de dialogue Associer un lien, sélectionnez le système de fichiers à associer au lien et sélectionnez *Continuer*.
+. Sélectionnez *Créer un nouveau lien* puis sélectionnez *Continuer*.
+. Sur la page Créer un lien, sélectionnez *Créer automatiquement* puis indiquez les informations suivantes :
++
+.. *Nom du lien* : Saisissez le nom que vous souhaitez utiliser pour ce lien. Le nom doit être unique au sein de votre compte.
+.. *AWS Secrets Manager* : Facultatif. Permet à Workload Factory de récupérer les informations d’identification d’accès FSx pour ONTAP depuis votre AWS Secrets Manager.
++
+La pile de déploiement de liens ajoute automatiquement l'expression régulière ARN du gestionnaire de secrets par défaut suivante à la stratégie d'autorisation Lambda : `arn:aws:secretsmanager:<link_deployment_region>:<link_deployment_account_id>:secret:FSxSecret*`.
+
++
+Vous pouvez soit créer des secrets conformes aux autorisations par défaut, soit attribuer vos propres autorisations à la stratégie de lien.
+
++
+*Configurer le point de terminaison privé VPC pour AWS Secrets Manager* est désactivé par défaut. Si vous sélectionnez cette option, le secret est stocké à l’aide du point de terminaison privé VPC au lieu d’être stocké localement.
+
+.. *Autorisations des liens* : Sélectionnez l’une des options suivantes pour les autorisations des liens :
++
+*** *Automatique* : Sélectionnez cette option pour que le code AWS CloudFormation crée automatiquement la stratégie d’autorisation et le rôle d’exécution Lambda.
+*** *Rôle d'exécution fourni par l'utilisateur* : sélectionnez cette option pour attribuer un rôle d'exécution Lambda spécifique et ses stratégies associées au lien Lambda. Les autorisations suivantes sont requises pour la stratégie d'autorisation Lambda. L' `secretsmanager:GetSecretValue`autorisation est requise uniquement si vous avez activé AWS Secrets Manager.
++
+[source, json]
+----
+"ec2:CreateNetworkInterface",
+"ec2:DescribeNetworkInterfaces",
+"ec2:DeleteNetworkInterface",
+"ec2:AssignPrivateIpAddresses",
+"ec2:UnassignPrivateIpAddresses",
+----
++
+Saisissez l'ARN du rôle d'exécution Lambda dans la zone de texte.
+
+
+
+.. *Étiquettes* : Vous pouvez éventuellement ajouter des étiquettes que vous souhaitez associer à ce lien afin de pouvoir catégoriser plus facilement vos ressources. Par exemple, vous pouvez ajouter une étiquette qui identifie ce lien comme étant utilisé par Amazon FSx pour les systèmes de fichiers ONTAP.
++
+Workload Factory récupère automatiquement le compte AWS, l'emplacement et le groupe de sécurité en fonction du système de fichiers FSx for ONTAP.
+
+
+
+. Sélectionnez *Créer*.
++
+La boîte de dialogue « Rediriger vers CloudFormation » s'affiche et explique comment créer le lien à partir du service AWS CloudFormation.
+
+. Sélectionnez *Continuer* pour ouvrir la console de gestion AWS, puis connectez-vous au compte AWS pour ce système de fichiers FSx for ONTAP.
+. Sur la page pile de création rapide, sous fonctionnalités, sélectionnez *Je reconnais que AWS CloudFormation peut créer des ressources IAM*.
++
+Le modèle CloudFormation accorde trois autorisations à Lambda lors de son lancement. Workload Factory utilise ces autorisations lors de l'utilisation de liens.
+
++
+[source, json]
+----
+"lambda:InvokeFunction",
+"lambda:GetFunction",
+"lambda:UpdateFunctionCode"
+----
+. Sélectionnez *Créer une pile* puis sélectionnez *Continuer*.
++
+Vous pouvez suivre l'état de la création du lien sur la page Événements. Cela ne devrait pas prendre plus de cinq minutes.
+
+. Retournez à l'interface de NetApp Workload Factory et vous verrez que le lien est associé au système de fichiers Amazon FSx for ONTAP.
+
+
+--
+.Créer manuellement
+--
+Vous pouvez créer un lien à l'aide de deux outils d'infrastructure en tant que code (IaC) depuis le Codebox : CloudFormation ou Terraform. Avec cette option, vous extrayez l'ARN du lien depuis AWS CloudFormation et le renseignez ici. Workload Factory enregistre manuellement le lien pour vous.
+
+.Étapes
+. Connectez-vous en utilisant l'un des link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^].
+. Sélectionnez le menu image:workloads-menu-icon.png["L'icône du menu hamburger permet de naviguer vers des charges de travail telles que le stockage, eda, ai, bases de données, vmware et l'administration."] puis sélectionnez *Administration*.
+. Dans le menu Administration, sélectionnez *Liens*.
+. Sur la page Liens, sélectionnez *Créer et associer*.
+. Dans la boîte de dialogue Associer un lien, sélectionnez le système de fichiers à associer au lien et sélectionnez *Continuer*.
+. Sélectionnez *Créer un nouveau lien* puis sélectionnez *Continuer*.
+. Sur la page Créer un lien, sélectionnez *Créer manuellement* puis sélectionnez CloudFormation ou Terraform dans la zone de code.
+. Sous Détails et identifiants, fournissez les informations suivantes :
++
+.. *Nom du lien* : Saisissez le nom que vous souhaitez utiliser pour ce lien. Le nom doit être unique au sein de votre compte.
+.. *AWS Secrets Manager* : Toujours activé pour GovCloud accounts. Optionnel pour les autres comptes. Permet à Workload Factory de récupérer les informations d’identification d’accès FSx for ONTAP depuis votre AWS Secrets Manager.
++
+Vous pouvez soit créer des secrets conformes aux autorisations par défaut, soit attribuer vos propres autorisations à la stratégie de lien.
+
++
+*Configurer le point de terminaison privé VPC pour AWS Secrets Manager* est désactivé par défaut. Si vous sélectionnez cette option, le secret est stocké à l’aide du point de terminaison privé VPC au lieu d’être stocké localement.
+
+.. *Autorisations des liens* : Sélectionnez l’une des options suivantes pour les autorisations des liens :
++
+*** *Automatique* : Sélectionnez cette option pour que le code AWS CloudFormation crée automatiquement la stratégie d’autorisation et le rôle d’exécution Lambda.
+*** *Fourni par l'utilisateur* : sélectionnez cette option pour attribuer un rôle d'exécution Lambda spécifique et ses stratégies associées au lien Lambda. Les autorisations suivantes sont requises pour la stratégie d'autorisation Lambda. L' `secretsmanager:GetSecretValue`autorisation est requise uniquement lors de l'utilisation d'AWS Secrets Manager.
++
+[source, json]
+----
+"ec2:CreateNetworkInterface",
+"ec2:DescribeNetworkInterfaces",
+"ec2:DeleteNetworkInterface",
+"ec2:AssignPrivateIpAddresses",
+"ec2:UnassignPrivateIpAddresses"
+----
++
+Saisissez l'ARN du rôle d'exécution Lambda dans la zone de texte.
+
+
+
+.. *Étiquettes* : Vous pouvez éventuellement ajouter des étiquettes que vous souhaitez associer à ce lien afin de pouvoir catégoriser plus facilement vos ressources. Par exemple, vous pouvez ajouter une étiquette qui identifie ce lien comme étant utilisé par Amazon FSx pour les systèmes de fichiers ONTAP.
+.. *Enregistrement du lien* : Sélectionnez CloudFormation ou Terraform pour obtenir les instructions d’enregistrement du lien, puis suivez-les.
++
+Le modèle CloudFormation accorde trois autorisations à Lambda lors de son lancement. Workload Factory utilise ces autorisations lors de l'utilisation de liens.
+
++
+[source, json]
+----
+"lambda:InvokeFunction",
+"lambda:GetFunction",
+"lambda:UpdateFunctionCode"
+----
++
+... Après avoir créé la pile avec succès, collez l'ARN Lambda dans le champ de texte de la console Workload Factory. Workload Factory récupère automatiquement le compte AWS, l'emplacement et le groupe de sécurité en fonction du système de fichiers FSx for ONTAP.
+... Sélectionnez *Créer*.
++
+Vous pouvez suivre l'état de la création du lien sur la page Événements. Cela ne devrait pas prendre plus de cinq minutes.
+
+
+
+
+
+
+
+--
+====
+.Résultat
+Workload Factory associe le lien au système de fichiers FSx for ONTAP. Vous pouvez effectuer des opérations ONTAP avancées.
+
+
+
+[[associate-an-existing-link-with-an-fsx-for-ontap-file-system]]
+== Associer un lien existant à un système de fichiers Amazon FSx for ONTAP
+
+Après avoir créé un lien, associez-le à un ou plusieurs systèmes de fichiers FSx for ONTAP.
+
+.Étapes
+. Connectez-vous en utilisant l'un des link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["expériences de la console"^].
+. Sélectionnez le menu image:workloads-menu-icon.png["L'icône du menu hamburger permet de naviguer vers des charges de travail telles que le stockage, eda, ai, bases de données, vmware et l'administration."] puis sélectionnez *Stockage*.
+. Dans le menu Stockage, sélectionnez *FSx for ONTAP*.
+. Dans *FSx pour ONTAP*, sélectionnez le menu actions du système de fichiers auquel associer un lien, puis sélectionnez *Associer un lien*.
+. Sur la page « Associer un lien », sélectionnez *Associer un lien existant*, sélectionnez le lien, puis sélectionnez *Continuer*.
+. Sélectionnez le mode d'authentification.
++
+** Workload Factory : saisissez le mot de passe deux fois.
+** AWS Secrets Manager : saisissez l’ARN secret.
++
+Vérifiez que l'ARN secret contient les paires clé-valeur suivantes, bien que _filesystemID_ soit facultatif.
+
++
+*** filesystemID = FSx_filesystem_id (facultatif)
+*** user = FSx_user
+*** mot de passe = user_password
++
+
+NOTE: L'authentification auprès d'AWS Secrets Manager requiert un utilisateur, soit l'utilisateur _FSx_user_ que vous fournissez, soit un autre utilisateur créé sur le système de fichiers FSx for ONTAP. L'utilisateur par défaut est  `fsxadmin` si vous n'en fournissez pas.
+
+
+
+
+
+. Sélectionnez *appliquer*.
+
+
+.Résultat
+Le lien est associé au système de fichiers Amazon FSx for ONTAP. Vous pouvez effectuer des opérations avancées ONTAP.
+
+.Informations connexes
+link:links-overview.html#when-a-link-is-required["En savoir plus sur les liens"].
+
+
+
+[[troubleshoot-issues-with-aws-secrets-manager-link-authentication]]
+== Résolvez les problèmes liés à l'authentification des liens AWS Secrets Manager
+
+Problème:: Le lien ne dispose pas des autorisations nécessaires pour récupérer le secret.
++
+--
+*Résolution* : Ajoutez les autorisations une fois le lien actif. Connectez-vous à la console AWS, localisez le lien Lambda et modifiez la stratégie d’autorisation associée.
+
+--
+Problème:: Le secret n'a pas été trouvé.
++
+--
+*Résolution* : Fournissez l’ARN secret correct.
+
+--
+Problème:: Le secret n'est pas au bon format.
++
+--
+*Solution* : Accédez à AWS Secrets Manager et modifiez le format.
+
+Le secret doit contenir les paires clé-valeur suivantes :
+
+* filesystemID = FSx_filesystem_id
+* nom_utilisateur = FSx_user
+* mot de passe = user_password
+
+
+--
+Problème:: Le secret ne contient pas d'identifiants ONTAP valides pour l'authentification du système de fichiers.
++
+--
+*Résolution* : Fournissez des informations d’identification permettant d’authentifier les systèmes de fichiers FSx pour ONTAP dans AWS Secrets Manager.
+
+--
+

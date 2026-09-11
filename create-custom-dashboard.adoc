@@ -4,7 +4,7 @@ permalink: create-custom-dashboard.html
 keywords: create dashboard, custom dashboard, AI dashboard, dashboard creation, personalized dashboard 
 summary: 'Créez un tableau de bord personnalisé à l"aide d"invites guidées par l"IA pour surveiller ce qui compte le plus pour vos charges de travail et vos priorités opérationnelles.' 
 ---
-= Créer un tableau de bord personnalisé
+= Créez un tableau de bord personnalisé dans NetApp Workload Factory
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

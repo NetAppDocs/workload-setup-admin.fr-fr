@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
-permalink: sign-up-saas.html 
+permalink: sign-up-and-log-in.html 
 keywords: sign up, signing up, sign in, signing in, login with netapp, log in with netapp, create account, account, log in with nss, nss, nss login 
 summary: Workload Factory est accessible depuis une console Web.  Lorsque vous démarrez avec Workload Factory, votre première étape consiste à vous inscrire à l’aide de vos informations d’identification du site de support NetApp existantes ou en créant une connexion au cloud NetApp . 
 ---
-= Inscrivez-vous à NetApp Workload Factory
+= Inscrivez-vous et connectez-vous à NetApp Workload Factory
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -77,3 +77,43 @@ Consultez la documentation de la NetApp Console pour link:https://docs.netapp.co
 
 .Résultat
 L'utilisateur invité recevra un courriel contenant les instructions pour rejoindre votre compte Workload Factory.
+
+
+
+[[log-in-to-netapp-workload-factory]]
+== Connectez-vous à NetApp Workload Factory
+
+Une fois inscrit à NetApp Workload Factory, vous pouvez vous connecter à tout moment à partir de la console Web pour commencer à gérer vos charges de travail et vos systèmes de fichiers FSx for ONTAP .
+
+Vous pouvez vous connecter à la console Web Workload Factory à l’aide de l’une des options suivantes :
+
+* Vos identifiants existants du site de support NetApp (NSS)
+* Un identifiant NetApp Cloud avec votre adresse e-mail et un mot de passe
+
+
+.Étapes
+. Ouvrez un navigateur Web et accédez à la https://console.workloads.netapp.com["Console Workload Factory"^] .
+. Sur la page *connexion*, entrez l'adresse e-mail associée à votre connexion.
+. En fonction de la méthode d'authentification associée à votre connexion, vous serez invité à saisir vos informations d'identification :
++
+** Identifiants cloud NetApp : saisissez votre mot de passe
+** Utilisateur fédéré : saisissez vos informations d'identification fédérées
+** Entrez votre compte sur le site de support NetApp : saisissez vos identifiants du site de support NetApp
+
+
+. Sélectionnez *connexion*.
++
+Si vous vous êtes connecté avec succès dans le passé, vous verrez la page d'accueil de Workload Factory et vous utiliserez le compte par défaut.
+
++
+Si c'est la première fois que vous vous connectez, vous serez dirigé vers la page *compte*.
+
++
+** Si vous êtes membre d'un seul compte, sélectionnez *Continuer*.
+** Si vous êtes membre de plusieurs comptes, sélectionnez le compte et sélectionnez *Continuer*.
+
+
+
+
+.Résultat
+Vous êtes maintenant connecté et pouvez commencer à utiliser Workload Factory pour gérer les systèmes de fichiers FSx for ONTAP et vos charges de travail.
