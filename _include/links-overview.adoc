@@ -67,4 +67,11 @@ Les fonctionnalités qui nécessitent un lien incluent :
 * Affichage des détails des machines virtuelles de stockage et des LIF de cluster, notamment les rôles, les points de terminaison, les nœuds, les adresses IP et l’état
 
 
-Découvrez comment link:create-link.html["établir un lien vers un système de fichiers Amazon FSx for ONTAP"].
+
+
+[[related-information]]
+== Informations connexes
+
+* link:https://docs.netapp.com/us-en/workload-setup-admin/create-link.html["Connectez un lien à un système de fichiers FSx for ONTAP"]
+* link:https://docs.netapp.com/us-en/workload-setup-admin/manage-links.html["Gérer les liens"]
+
