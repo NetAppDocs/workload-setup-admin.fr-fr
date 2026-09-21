@@ -13,7 +13,7 @@ Il vous suffit de décrire en langage clair ce que vous souhaitez suivre, et l'I
 
 Les tableaux de bord personnalisés sont en lecture seule, ils ne peuvent donc pas modifier vos paramètres de stockage ni de charge de travail. Toute personne disposant d’un compte Workload Factory peut consulter et gérer ces tableaux de bord, ce qui permet aux équipes de partager facilement des informations et de rester alignées.
 
-link:learn-custom-dashboards.html["En savoir plus sur les tableaux de bord personnalisés"]
+link:https://docs.netapp.com/us-en/workload-setup-admin/learn-custom-dashboards.html["En savoir plus sur les tableaux de bord personnalisés"]
 
 
 
