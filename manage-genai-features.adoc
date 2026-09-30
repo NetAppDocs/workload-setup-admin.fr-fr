@@ -21,7 +21,7 @@ Contrôlez l'accès aux fonctionnalités d'IA dans Workload Factory. Vous pouvez
 [[about-ai-features]]
 == À propos des fonctionnalités d'IA
 
-Workload Factory inclut plusieurs fonctionnalités basées sur l'IA qui améliorent votre expérience, telles que Ask Me, des tableaux de bord personnalisés et des analyseurs pour EMS, les journaux de base de données et la latence.
+Workload Factory inclut plusieurs fonctionnalités basées sur l'IA qui améliorent votre expérience, telles que Ask Me, des agents IA, des tableaux de bord personnalisés, Rule builder et des analyseurs pour EMS, les journaux de base de données et la latence.
 
 En tant qu'administrateur de Workload Factory, vous pouvez contrôler la manière dont ces fonctionnalités utilisent l'IA sur la page des paramètres d'IA.
 
@@ -41,7 +41,7 @@ NetApp-managed Bedrock (Recommandé):: Utilisez un service AWS Bedrock géré pa
 
 
 --
-Fonctionnalités GenAI désactivées:: Désactive toutes les fonctionnalités d'IA. Les utilisateurs ne peuvent plus utiliser Ask Me, les analyseurs, les tableaux de bord personnalisés, le générateur de règles ni aucun autre outil basé sur l'IA.
+Fonctionnalités GenAI désactivées:: Désactive toutes les fonctionnalités d'IA. Les utilisateurs ne peuvent plus utiliser Ask Me, l'agent IA, les analyseurs, les tableaux de bord personnalisés, le générateur de règles ni aucun autre outil basé sur l'IA.
 
 
 

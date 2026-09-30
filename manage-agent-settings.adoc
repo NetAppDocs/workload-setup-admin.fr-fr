@@ -1,0 +1,141 @@
+---
+sidebar: sidebar 
+permalink: manage-agent-settings.html 
+keywords: agents settings, aiops, agent configuration, ai agent, agent mode, credentials, read-only, read-write, custom prompt, verbose, slack integration 
+summary: 'Configurez les paramètres des agents d"IA, tels que le mode de fonctionnement, les autorisations d"accès, les instructions personnalisées et les niveaux de détail des réponses, afin de contrôler leur fonctionnement dans votre environnement Workload Factory.' 
+---
+= Gérer les paramètres des agents d'IA dans NetApp Workload Factory
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Configurez le fonctionnement des agents d'IA dans votre environnement Workload Factory. Vous pouvez choisir leur mode de fonctionnement, définir les identifiants qu'ils peuvent utiliser, ajouter des invites personnalisées et ajuster le niveau de détail des réponses.
+
+
+
+[[before-you-begin]]
+== Avant de commencer
+
+* Nous recommandons à un administrateur de compte de configurer les paramètres des agents.
+* Avant d'activer le mode lecture-écriture, assurez-vous de bien comprendre les risques de sécurité liés au fait d'autoriser des agents à agir pour votre compte.
+
+
+
+NOTE: Si l'administrateur de votre compte a désactivé les fonctionnalités d'IA, les agents d'IA ne seront pas disponibles. link:manage-genai-features.html["Découvrez comment gérer les fonctionnalités d'IA"].
+
+
+
+[[access-agents-settings]]
+== Paramètres des agents d'accès
+
+.Étapes
+. Connectez-vous en utilisant l'un des link:console-experiences.html["expériences de la console"^].
+. Accédez aux paramètres des agents à l’aide de l’une de ces méthodes :
++
+** Dans le menu, sélectionnez *Administration*, *Paramètres*, puis *Agents*.
+** Dans l'expérience de chat des agents, sélectionnez le lien vers *Paramètres des agents*.
+
+
+
+
+
+
+[[set-up-agents-operation-mode]]
+== Configurer le mode de fonctionnement des agents
+
+Choisissez si les agents fonctionnent en mode lecture seule ou en mode lecture-écriture.
+
+.Description de la tâche
+Le mode de fonctionnement des agents détermine les actions qu'ils peuvent effectuer :
+
+Mode lecture seule (par défaut):: Les agents peuvent afficher et analyser vos données, mais ils ne peuvent pas modifier vos ressources. Ils peuvent répondre aux questions, identifier les risques, formuler des recommandations et aider à résoudre les problèmes.
+Mode lecture-écriture:: Les agents peuvent agir en votre nom en utilisant les identifiants que vous avez sélectionnés. Avant toute action, ils vous présentent un récapitulatif et attendent votre accord. Ils n'entreprendront aucune action sans votre autorisation.
+
+
+.Étapes
+. Dans le menu, sélectionnez *Administration*, *Paramètres*, puis *Agents*.
+. Sur la page *Paramètres des agents*, accédez à la section *Mode des agents*.
+. Sélectionnez le mode de fonctionnement.
+. Sélectionnez *appliquer*.
+
+
+
+
+[[select-credentials-for-agents-access]]
+== Sélectionnez les identifiants pour l'accès des agents
+
+Choisissez les identifiants AWS que les agents peuvent utiliser pour accéder à votre environnement cloud. Par défaut, tous les identifiants sont sélectionnés, mais vous pouvez limiter cette sélection à un sous-ensemble de vos identifiants configurés.
+
+.Description de la tâche
+Vous pouvez sélectionner aucune, une, certaines ou toutes vos identifiants configurés. Si vous ne sélectionnez aucun identifiant, les agents peuvent répondre à des questions générales, mais ne peuvent pas analyser les ressources de votre environnement.
+
+.Étapes
+. Sur la page *Paramètres des agents*, accédez à la section *Identifiants*.
+. Dans la liste déroulante *Nom des identifiants*, sélectionnez les identifiants que les agents peuvent utiliser.
++
+Si aucun identifiant n'est configuré, vous verrez une option vous permettant d'ajouter des identifiants pour votre compte Workload Factory.
+
+. Sélectionnez *appliquer*.
+
+
+
+
+[[slack-integration]]
+== Intégration Slack
+
+Vous pouvez connecter les agents à Slack et interagir directement avec eux dans votre espace de travail Slack.
+
+Pour plus d'informations sur la configuration de l'intégration Slack, consultez la documentation sur l'intégration Slack ou contactez votre représentant NetApp concernant les agents.
+
+
+
+[[add-a-custom-prompt]]
+== Ajouter une invite personnalisée
+
+Ajoutez des directives, des préférences ou des règles personnalisées que les agents devront suivre lorsqu'ils répondront à vos demandes.
+
+.Description de la tâche
+Un message personnalisé guide les agents dans leurs réponses afin qu'ils respectent les politiques, le langage et les procédures de votre organisation. Il s'applique à chaque interaction d'un agent.
+
+Le champ d'invite personnalisée est vide par défaut. Vous pouvez ajouter, modifier ou supprimer l'invite personnalisée à tout moment.
+
+.Étapes
+. Sur la page *Paramètres des agents*, accédez à la section *Invite personnalisée*.
+. Dans le champ de texte, saisissez vos directives personnalisées pour les agents.
++
+Par exemple, vous pouvez définir des règles de dénomination, des formats de réponse préférés ou des politiques d’entreprise que les agents doivent suivre.
+
+. Sélectionnez *appliquer*.
+
+
+.Résultat
+Les agents utiliseront votre invite personnalisée ainsi que leurs fonctionnalités intégrées pour répondre à vos demandes.
+
+Pour modifier ou supprimer l’invite personnalisée, revenez à cette page, modifiez la zone de texte et sélectionnez *Appliquer*.
+
+
+
+[[configure-verbosity-options]]
+== Configurer les options de verbosité
+
+Choisissez le niveau de détail que les agents partagent sur leur raisonnement et leur utilisation des outils.
+
+.Description de la tâche
+Les options de verbosité vous permettent de voir plus d’informations sur la manière dont les agents parviennent à leurs réponses et sur les outils qu’ils utilisent pour recueillir des informations :
+
+Raisonnement verbeux:: Lorsque cette option est activée, les agents expliquent comment ils parviennent à leurs réponses et prennent des décisions. Cela vous permet de comprendre pourquoi ils recommandent certaines actions ou arrivent à des conclusions spécifiques.
+Description détaillée des outils:: Une fois activés, les agents indiquent les outils et les API qu'ils utilisent pour collecter les données et effectuer les analyses. Cela vous permet de comprendre comment ils interagissent avec votre environnement.
+
+
+Ces deux options sont désactivées par défaut afin de garantir des réponses concises. Activez-les lorsque vous avez besoin de plus de transparence ou pour résoudre les problèmes de comportement des agents.
+
+.Étapes
+. Sur la page *Paramètres des agents*, accédez à la section *Niveau de verbosité*.
+. Sélectionnez les options de verbosité que vous souhaitez activer.
+. Sélectionnez *appliquer*.
+

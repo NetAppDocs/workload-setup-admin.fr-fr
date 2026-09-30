@@ -1,0 +1,112 @@
+---
+sidebar: sidebar 
+permalink: learn-agent.html 
+keywords: agent, ai agent, aiops, ask me, explore agent, ai assistant, environment-aware, read-only, read-write, agents settings 
+summary: 'Découvrez comment les agents d"IA de Workload Factory peuvent analyser votre environnement, identifier les risques et les moyens d"améliorer les performances, et prendre des mesures pour vous avec votre approbation.' 
+---
+= Découvrez les agents d'IA dans NetApp Workload Factory
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Workload Factory AIOps utilise l'IA pour analyser votre environnement et recommander des améliorations. Si vous l'approuvez, il peut également effectuer des actions à l'aide des identifiants et des autorisations que vous avez configurés.
+
+
+NOTE: Si l'administrateur de votre compte a désactivé les fonctionnalités d'IA, un message s'affichera et vous ne pourrez pas utiliser les agents. Contactez votre administrateur ou link:manage-genai-features.html["Découvrez l'administration de l'IA"].
+
+
+
+[[before-you-begin]]
+== Avant de commencer
+
+Assurez-vous que votre compte Workload Factory dispose des identifiants AWS et des autorisations IAM dont les agents ont besoin pour accéder aux ressources. Si vous activez le mode lecture-écriture, ces autorisations doivent également permettre les modifications prises en charge.
+
+link:add-credentials.html["Découvrez comment ajouter des informations d'identification AWS et configurer les autorisations IAM"^].
+
+
+
+[[data-usage-and-privacy]]
+== Utilisation des données et confidentialité
+
+Vos données ne sont pas utilisées pour entraîner des modèles d'IA. Les agents utilisent vos identifiants pour accéder en toute sécurité aux ressources AWS via les API AWS standard et répondre en fonction de votre environnement réel. Toutes les activités des agents sont conformes aux politiques de confidentialité de NetApp et aux contrôles de sécurité AWS.
+
+
+
+[[why-use-ai-agents]]
+== Pourquoi utiliser des agents d'IA
+
+Les agents d'IA vous aident à travailler plus efficacement dans Workload Factory :
+
+* Obtenez des réponses et des recommandations adaptées à votre environnement.
+* Identifiez les risques et les opportunités d'optimisation.
+* Résolvez les problèmes et prenez les mesures approuvées dans un seul flux de travail.
+* Effectuez des vérifications planifiées et recevez des mises à jour dans l'historique des conversations.
+* Travaillez dans les environnements FSx for ONTAP et ONTAP sur site.
+
+
+
+
+[[access-the-ai-agents]]
+== Accédez aux agents IA
+
+Depuis la page d'accueil Ask Me:: Sur la page d'accueil « Posez-moi vos questions », sélectionnez *Explorer les agents*. Le panneau latéral des agents IA s'ouvre avec un message de bienvenue présentant les capacités des agents.
+À partir des liens de redirection des agents:: Lorsque vous utilisez **Ask Me** ou d'autres fonctionnalités, vous pouvez voir des liens qui vous redirigent vers les agents pour une assistance plus avancée.
+
+
+
+
+[[how-ai-agents-work]]
+== Comment fonctionnent les agents IA
+
+
+
+[[how-agents-access-your-environment]]
+=== Comment les agents accèdent à votre environnement
+
+Les agents peuvent accéder aux ressources uniquement lorsqu'elles sont incluses dans votre périmètre Workload Factory actuel et prises en charge par les identifiants sélectionnés dans link:manage-agent-settings.html["Paramètres des agents"]. Les agents ne peuvent fonctionner que lorsque ces deux contrôles s'appliquent. Les ressources auxquelles ils peuvent accéder dépendent également des autorisations attribuées à leurs identifiants AWS. Par défaut, tous les identifiants sont sélectionnés, mais vous pouvez limiter cela à un sous-ensemble de vos identifiants configurés.
+
+Votre périmètre actuel comprend :
+
+* *Comptes AWS* : comptes AWS auxquels les agents peuvent accéder.
+* *Identifiants* : quels identifiants les agents peuvent utiliser.
+* *Régions* : régions AWS auxquelles les agents peuvent accéder.
+
+
+Dans Workload Factory, les filtres définissent le périmètre de la page actuelle, notamment les comptes AWS et les régions affichés. Les paramètres des agents déterminent quels identifiants les agents sont autorisés à utiliser dans ce périmètre. L'accès aux ressources dépend également des autorisations IAM attribuées à ces identifiants.
+
+
+NOTE: La sélection d'un identifiant dans les *paramètres des agents* n'octroie pas d'autorisations AWS supplémentaires. Assurez-vous que les identifiants disposent des autorisations IAM requises pour que les agents puissent accéder aux ressources que vous souhaitez qu'ils analysent ou gèrent.
+
+
+
+[[read-only-mode-default]]
+=== Mode lecture seule (par défaut)
+
+Par défaut, les agents fonctionnent en mode lecture seule. Dans ce mode, ils peuvent :
+
+* Répondez aux questions sur votre environnement.
+* Analysez vos systèmes de fichiers FSx for ONTAP, vos bases de données et vos charges de travail.
+* Identifiez les risques, les erreurs de configuration et les opportunités d'optimisation.
+* Formuler des recommandations pour améliorer les performances, la disponibilité, la protection et le rapport coût-efficacité.
+* Résoudre les problèmes et suggérer des mesures correctives.
+
+
+Ils ne peuvent pas modifier les ressources en mode lecture seule. Si vous demandez une action nécessitant un accès en écriture, l'agent explique la limitation et fournit un lien vers les paramètres des agents.
+
+
+
+[[read-write-mode-opt-in]]
+=== Mode lecture-écriture (optionnel)
+
+Vous pouvez activer les fonctionnalités de lecture-écriture dans link:manage-agent-settings.html["Paramètres des agents"]. Dans ce mode, les agents expliquent chaque action prise en charge et requièrent votre approbation avant d’effectuer toute modification.
+
+Ce processus d'approbation s'applique à toutes les expériences des agents, y compris les intégrations Slack et NetApp Console.
+
+
+
+[[what-users-see-when-ai-agents-have-no-data-or-activity]]
+== Ce que les utilisateurs voient lorsque les agents d'IA n'ont aucune donnée ni activité
+
+Si les agents n'ont pas d'identifiants, ils peuvent tout de même fournir des conseils généraux. Cependant, ils ne peuvent pas examiner vos ressources ni fournir d'informations propres à votre environnement.

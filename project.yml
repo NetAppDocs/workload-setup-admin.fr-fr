@@ -56,6 +56,12 @@ sidebar:
       url: "/monitor-operations.html"
     - title: Gérer les fonctionnalités d'IA
       url: "/manage-genai-features.html"
+    - title: Workload Factory AIOps
+      entries:
+      - title: Découvrez les agents IA
+        url: "/learn-agent.html"
+      - title: Gérer les paramètres des agents d’IA
+        url: "/manage-agent-settings.html"
     - title: Tableaux de bord personnalisés
       entries:
       - title: Découvrez les tableaux de bord personnalisés

@@ -15,6 +15,87 @@ Découvrez les nouveautés concernant les fonctionnalités d'administration de W
 
 
 
+[[27-september-2026]]
+== 27 septembre 2026
+
+
+
+[[ai-agents-for-workload-factory]]
+=== Agents d'IA pour Workload Factory
+
+Workload Factory AIOps utilise l'IA pour analyser votre environnement et recommander des améliorations. Avec votre accord, il peut également agir en utilisant les identifiants et les autorisations que vous avez définis. Des agents d'IA analysent votre environnement, vous aidant à identifier les risques, à améliorer les workloads et à résoudre les problèmes dans Workload Factory et Slack.
+
+Accédez aux agents d'IA dans la nouvelle section *Explore Agents* de Ask Me. Par défaut, les agents fonctionnent en mode lecture seule et fournissent des recommandations et des analyses.
+
+Utilisez *Agents settings* pour contrôler le fonctionnement des agents. Vous pouvez :
+
+* Choisissez le mode lecture seule ou lecture-écriture
+* Sélectionnez les identifiants que les agents peuvent utiliser
+* Ajouter des instructions personnalisées
+* Ajustez le niveau de détail des réponses
+
+
+Ces contrôles supplémentaires vous offrent une meilleure visibilité et un contrôle accru. En mode lecture-écriture, les agents doivent obtenir votre approbation avant d’apporter des modifications à AWS, ONTAP ou aux API prises en charge. Vous pouvez également choisir le niveau de détail à afficher dans les réponses, notamment les informations relatives au raisonnement de l’agent et, dans Slack, à l’activité de ses outils.
+
+Les agents prennent également en charge les environnements multi-comptes et une configuration simplifiée. Un seul agent peut fonctionner en toute sécurité sur plusieurs comptes AWS avec plusieurs identifiants.
+
+link:learn-agent.html["Découvrez les agents IA"]
+
+link:manage-agent-settings.html["Gérer les paramètres des agents"]
+
+
+
+[[scheduled-tasks-in-ask-me]]
+=== Tâches planifiées dans Ask Me
+
+Vous pouvez désormais personnaliser une invite dans la conversation Ask Me pour créer des tâches planifiées. Utilisez les tâches planifiées pour demander à Ask Me d'effectuer des vérifications régulières et d'envoyer des mises à jour dans la conversation selon la planification que vous définissez.
+
+Exemples d'invites :
+
+* Vérifiez toutes les heures l'état de santé et le statut du cycle de vie de tous les systèmes de fichiers FSx for NetApp ONTAP afin de détecter les problèmes le plus tôt possible.
+* Répertoriez tous les systèmes de fichiers AWS FSx accessibles toutes les heures afin de maintenir un inventaire à jour.
+
+
+link:workload-factory-overview.html#features["En savoir plus sur Ask Me"]
+
+
+
+[[ontap-support-in-ask-me]]
+=== Prise en charge de ONTAP dans Ask Me
+
+Ask Me prend désormais en charge FSx for ONTAP et les systèmes ONTAP sur site. Bénéficiez de la même interface de chat pour obtenir des réponses et des informations sur l'ensemble de votre infrastructure ONTAP.
+
+link:workload-factory-overview.html#features["En savoir plus sur Ask Me"]
+
+
+
+[[notifications-update]]
+=== Mise à jour des notifications
+
+Les notifications de NetApp Console sont désormais activées par défaut. Les utilisateurs de NetApp Console recevront automatiquement les notifications de Workload Factory sans configuration supplémentaire.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.html["Notifications de Workload Factory"]
+
+
+
+[[link-creation-notification-email]]
+=== Courriel de notification de création de lien
+
+Workload Factory vous rappelle désormais de finaliser l'association des liens après avoir ajouté avec succès des identifiants. Bien que les identifiants permettent la découverte des ressources, les fonctionnalités avancées d'ONTAP nécessitent l'association des liens avec les systèmes de fichiers découverts. Vous recevrez la notification par e-mail une fois par semaine, le lundi. Après avoir finalisé l'association des liens, les notifications s'arrêtent.
+
+
+
+[[lambda-link-version-notifications-and-upgrade-guidance]]
+=== Notifications de version des liens Lambda et guide de mise à niveau
+
+Workload Factory vous avertit désormais lorsqu'un lien Lambda n'utilise pas la dernière image disponible. Si les mises à jour automatiques ne sont pas prises en charge pour un lien, la notification indique lorsqu'une version plus récente est disponible.
+
+Vous pouvez consulter les instructions de mise à niveau sur la page Liens. Ces instructions expliquent comment mettre à jour manuellement l'image du lien Lambda et activer les mises à niveau automatiques lorsqu'elles sont disponibles. Maintenir les liens à jour vous permet de bénéficier des dernières fonctionnalités, de corriger les problèmes connus et d'appliquer les mises à jour de sécurité les plus récentes.
+
+Vous recevez également une alerte dans le tableau de bord FSx for ONTAP lorsqu'une version plus récente du lien est disponible pour un lien qui ne prend pas en charge les mises à niveau automatiques.
+
+
+
 [[30-august-2026]]
 == 30 août 2026
 

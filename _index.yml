@@ -54,6 +54,12 @@ indexpage:
     - title: Visualisez et analysez les événements EMS pour les charges de travail
         de stockage.
       url: https://docs.netapp.com/us-en/workload-fsx-ontap/analyze-events.html
+  - title: agents d’IA
+    links:
+    - title: Découvrez les agents IA
+      url: "/learn-agent.html"
+    - title: Gérer les paramètres des agents d’IA
+      url: "/manage-agent-settings.html"
   - title: Tableaux de bord personnalisés
     links:
     - title: Découvrez les tableaux de bord personnalisés

@@ -31,11 +31,21 @@ Gestion du cycle de vie des bases de données:: Découvrez les workloads de base
 opérations de stockage EDA:: Rationalisez vos opérations de stockage Electronic Design Automation (EDA) dans NetApp Workload Factory en optimisant les performances, en intégrant votre IaC pour automatiser les paramètres de stockage et en garantissant la santé opérationnelle.
 Calculateurs d'économies pour réduire les coûts:: Analysez vos déploiements actuels qui utilisent le stockage Amazon Elastic Block Store (EBS), Elastic File System (EFS) ou le serveur de fichiers Amazon FSX pour Windows pour voir les économies que vous pouvez réaliser en adoptant Amazon FSX pour NetApp ONTAP. Vous pouvez également utiliser le calculateur pour effectuer un scénario de simulation pour un déploiement futur que vous prévoyez.
 Comptes de service pour promouvoir l'automatisation:: Utilisez des comptes de service pour automatiser les opérations NetApp Workload Factory de manière sécurisée et fiable.  Les comptes de service offrent une automatisation fiable et durable sans aucune restriction de gestion des utilisateurs et sont plus sécurisés car ils fournissent uniquement un accès API.
-Demandez-moi l'assistant IA:: Posez des questions à l'assistant IA sur la gestion et l'exploitation des systèmes de fichiers FSx for ONTAP .  À l'aide du protocole de contexte de modèle (MCP), Ask Me s'interface en toute sécurité avec des environnements externes et interroge les outils API pour fournir des réponses adaptées à votre environnement de stockage spécifique.
+Demandez-moi l'assistant IA:: Posez des questions à l'assistant IA sur la gestion et l'exécution de FSx for ONTAP et des systèmes de fichiers ONTAP sur site. Ask Me se connecte en toute sécurité à votre environnement et utilise des API pour fournir des réponses adaptées à votre configuration de stockage.
++
+--
+Exemples d'invites :
+
+* Vérifiez toutes les heures l'état de santé et le statut du cycle de vie de tous les systèmes de fichiers FSx for NetApp ONTAP afin de détecter les problèmes le plus tôt possible.
+* Répertoriez tous les systèmes de fichiers AWS FSx accessibles toutes les heures afin de maintenir un inventaire à jour.
+
+
+--
+agents d’IA:: Workload Factory AIOps utilise l'IA pour analyser votre environnement et recommander des améliorations. Avec votre accord, il peut également effectuer des actions à l'aide des identifiants et des autorisations que vous avez configurés. Les agents IA aident Ask Me à vous fournir des informations pertinentes à l'aide de vos comptes connectés. Ouvrez la section « Explore Agents » dans Ask Me pour obtenir rapidement des réponses, identifier les risques et les opportunités, résoudre les problèmes et recevoir des recommandations. Par défaut, les agents peuvent uniquement afficher les informations. En mode lecture-écriture, ils peuvent effectuer des actions dans AWS, ONTAP et les API prises en charge uniquement après votre approbation. Vous pouvez également utiliser les identifiants de plusieurs comptes AWS, ajouter des invites personnalisées et choisir le niveau de détail à inclure dans les réponses, y compris le raisonnement et l'activité des outils dans Slack. link:learn-agent.html["Découvrez les agents d'IA"].
 
 
 
-NOTE: Les administrateurs de compte peuvent activer ou désactiver les fonctionnalités d'IA. Si un administrateur les désactive, l'assistant IA Ask Me ne sera pas disponible. link:manage-genai-features.html["Découvrez comment gérer les fonctionnalités d'IA"].
+NOTE: Les administrateurs de compte peuvent activer ou désactiver les fonctionnalités d’IA. Si un administrateur les désactive, l’assistant Ask Me AI et les agents IA ne seront pas disponibles. link:manage-genai-features.html["Découvrez comment gérer les fonctionnalités d'IA"].
 
 
 
