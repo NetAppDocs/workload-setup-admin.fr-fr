@@ -60,10 +60,10 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overvie
 
 
 
-[[ontap-support-in-ask-me]]
-=== Prise en charge de ONTAP dans Ask Me
+[[storage-support-in-ask-me]]
+=== Prise en charge du stockage dans Ask Me
 
-Ask Me prend désormais en charge FSx for ONTAP et les systèmes ONTAP sur site. Bénéficiez de la même interface de chat pour obtenir des réponses et des informations sur l'ensemble de votre infrastructure ONTAP.
+Ask Me prend désormais en charge FSx for ONTAP et Google Cloud NetApp Volumes. Bénéficiez de la même expérience de chat pour obtenir des réponses et des informations sur l’ensemble de vos environnements de stockage pris en charge.
 
 link:https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html#features["En savoir plus sur Ask Me"]
 

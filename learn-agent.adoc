@@ -43,7 +43,7 @@ Les agents d'IA vous aident à travailler plus efficacement dans Workload Factor
 * Identifiez les risques et les opportunités d'optimisation.
 * Résolvez les problèmes et prenez les mesures approuvées dans un seul flux de travail.
 * Effectuez des vérifications planifiées et recevez des mises à jour dans l'historique des conversations.
-* Travaillez dans les environnements FSx for ONTAP et ONTAP sur site.
+* Travaillez dans les environnements FSx for ONTAP et Google Cloud NetApp Volumes.
 
 
 

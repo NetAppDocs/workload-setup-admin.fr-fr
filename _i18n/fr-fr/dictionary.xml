@@ -1864,8 +1864,6 @@
   <block id="ff51f1512e81cb44e19946405c4c3751" category="paragraph">Exemples d'invites :</block>
   <block id="9c51276de03bc7f0cc89565810a9583c" category="list-text">Vérifiez toutes les heures l'état de santé et le statut du cycle de vie de tous les systèmes de fichiers FSx for NetApp ONTAP afin de détecter les problèmes le plus tôt possible.</block>
   <block id="7c232a692347d9efae9eafb444b454ef" category="list-text">Répertoriez tous les systèmes de fichiers AWS FSx accessibles toutes les heures afin de maintenir un inventaire à jour.</block>
-  <block id="fcc3c37c09c2649e94509997e3e32ace" category="section-title">Prise en charge de ONTAP dans Ask Me</block>
-  <block id="5887518ab4bafe0e2cd30ee6d85ca830" category="paragraph">Ask Me prend désormais en charge FSx for ONTAP et les systèmes ONTAP sur site. Bénéficiez de la même interface de chat pour obtenir des réponses et des informations sur l'ensemble de votre infrastructure ONTAP.</block>
   <block id="61ac51994f4e558eb3be753f892d08aa" category="section-title">Mise à jour des notifications</block>
   <block id="02796e8ea898eccf4fc1ec43b8c9a990" category="paragraph">Les notifications de NetApp Console sont désormais activées par défaut. Les utilisateurs de NetApp Console recevront automatiquement les notifications de Workload Factory sans configuration supplémentaire.</block>
   <block id="21342e11f90d32dc68b1110fcbb8adc2" category="inline-link-macro">Notifications de Workload Factory</block>
@@ -1889,7 +1887,6 @@
   <block id="f41dc5b513f7a5678f949fafbb672e71" category="list-text">Identifiez les risques et les opportunités d'optimisation.</block>
   <block id="45747fdf81b9f650b9ab26706866db24" category="list-text">Résolvez les problèmes et prenez les mesures approuvées dans un seul flux de travail.</block>
   <block id="6fd44b1c4edd80ad7b595f1fcb4c7483" category="list-text">Effectuez des vérifications planifiées et recevez des mises à jour dans l'historique des conversations.</block>
-  <block id="e974804a88a47e4bcdb4ff1c718951bc" category="list-text">Travaillez dans les environnements FSx for ONTAP et ONTAP sur site.</block>
   <block id="4eeb2bca1dddd7a796d908c266d60075" category="section-title">Accédez aux agents IA</block>
   <block id="e6478bab5c49062e219e1290c4442eed" category="list-text">Depuis la page d'accueil Ask Me</block>
   <block id="b3c72178808d9fa6e9c876b76d5d1928" category="list-text">Sur la page d'accueil « Posez-moi vos questions », sélectionnez *Explorer les agents*. Le panneau latéral des agents IA s'ouvre avec un message de bienvenue présentant les capacités des agents.</block>
@@ -1966,7 +1963,6 @@
   <block id="5af9190832e86a39b32955d77e972b2e" category="list-text">Sélectionnez les options de verbosité que vous souhaitez activer.</block>
   <block id="17f306dd010c4f9182635b5f5e336fa1" category="paragraph">Workload Factory inclut plusieurs fonctionnalités basées sur l'IA qui améliorent votre expérience, telles que Ask Me, des agents IA, des tableaux de bord personnalisés, Rule builder et des analyseurs pour EMS, les journaux de base de données et la latence.</block>
   <block id="cbdbc1bacc2d0ff55d93219e225f857a" category="list-text">Désactive toutes les fonctionnalités d'IA. Les utilisateurs ne peuvent plus utiliser Ask Me, l'agent IA, les analyseurs, les tableaux de bord personnalisés, le générateur de règles ni aucun autre outil basé sur l'IA.</block>
-  <block id="346e26a9cf03697a4cc5fa74d552d528" category="list-text">Posez des questions à l'assistant IA sur la gestion et l'exécution de FSx for ONTAP et des systèmes de fichiers ONTAP sur site. Ask Me se connecte en toute sécurité à votre environnement et utilise des API pour fournir des réponses adaptées à votre configuration de stockage.</block>
   <block id="c04236280596e42d063458cddb934506" category="list-text">agents d’IA</block>
   <block id="3189c2a21a0d40fdf4391d22fec8b33c" category="inline-link-macro">Découvrez les agents d'IA</block>
   <block id="b91ab34707ef60b3cb9e7b43383594ea" category="list-text">Workload Factory AIOps utilise l'IA pour analyser votre environnement et recommander des améliorations. Avec votre accord, il peut également effectuer des actions à l'aide des identifiants et des autorisations que vous avez configurés. Les agents IA aident Ask Me à vous fournir des informations pertinentes à l'aide de vos comptes connectés. Ouvrez la section « Explore Agents » dans Ask Me pour obtenir rapidement des réponses, identifier les risques et les opportunités, résoudre les problèmes et recevoir des recommandations. Par défaut, les agents peuvent uniquement afficher les informations. En mode lecture-écriture, ils peuvent effectuer des actions dans AWS, ONTAP et les API prises en charge uniquement après votre approbation. Vous pouvez également utiliser les identifiants de plusieurs comptes AWS, ajouter des invites personnalisées et choisir le niveau de détail à inclure dans les réponses, y compris le raisonnement et l'activité des outils dans Slack. <block ref="4688d09efacd50ccc7831795bcbb59e1" category="inline-link-macro-rx"></block>.</block>
@@ -1977,4 +1973,8 @@
   <block id="92ef509d26c2f4b8f1eafc483dafc514" category="paragraph"><block ref="92ef509d26c2f4b8f1eafc483dafc514" category="inline-link-macro-rx"></block></block>
   <block id="ff60e6cb69fa35fc765fb6716dc86a1d" category="paragraph"><block ref="ff60e6cb69fa35fc765fb6716dc86a1d" category="inline-link-macro-rx"></block></block>
   <block id="5ff6cb415ca5edb6088a3bb92aadbf41" category="list-text">*Notifications par e-mail* : Pour recevoir des notifications par e-mail, configurez les destinataires des notifications et les préférences de gravité dans <block ref="7532dfde8c533672ea63a5b546224a97" category="inline-link-macro-rx"></block> les paramètres de notification.</block>
+  <block id="d757afa220ac7f97f408903182fddee2" category="section-title">Prise en charge du stockage dans Ask Me</block>
+  <block id="541644294bd888a59c4f26e19102bfb2" category="paragraph">Ask Me prend désormais en charge FSx for ONTAP et Google Cloud NetApp Volumes. Bénéficiez de la même expérience de chat pour obtenir des réponses et des informations sur l’ensemble de vos environnements de stockage pris en charge.</block>
+  <block id="54ba8fb885319acf274731794ecf9b35" category="list-text">Travaillez dans les environnements FSx for ONTAP et Google Cloud NetApp Volumes.</block>
+  <block id="3ddb8c8ba0ebed85a3c1d3ddf7cc424c" category="list-text">Posez des questions à l’assistant IA sur la gestion et l’exécution de FSx for ONTAP et de Google Cloud NetApp Volumes. Ask Me se connecte en toute sécurité à votre environnement et utilise des API pour fournir des réponses basées sur votre configuration de stockage.</block>
 </blocks>
