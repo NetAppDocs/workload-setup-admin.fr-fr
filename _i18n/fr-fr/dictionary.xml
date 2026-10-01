@@ -1970,7 +1970,6 @@
   <block id="5af9190832e86a39b32955d77e972b2e" category="list-text">Sélectionnez les options de verbosité que vous souhaitez activer.</block>
   <block id="17f306dd010c4f9182635b5f5e336fa1" category="paragraph">Workload Factory inclut plusieurs fonctionnalités basées sur l'IA qui améliorent votre expérience, telles que Ask Me, des agents IA, des tableaux de bord personnalisés, Rule builder et des analyseurs pour EMS, les journaux de base de données et la latence.</block>
   <block id="cbdbc1bacc2d0ff55d93219e225f857a" category="list-text">Désactive toutes les fonctionnalités d'IA. Les utilisateurs ne peuvent plus utiliser Ask Me, l'agent IA, les analyseurs, les tableaux de bord personnalisés, le générateur de règles ni aucun autre outil basé sur l'IA.</block>
-  <block id="301497b54979bb49bba5249c4f44b4ad" category="section-title">27 septembre 2026</block>
   <block id="346e26a9cf03697a4cc5fa74d552d528" category="list-text">Posez des questions à l'assistant IA sur la gestion et l'exécution de FSx for ONTAP et des systèmes de fichiers ONTAP sur site. Ask Me se connecte en toute sécurité à votre environnement et utilise des API pour fournir des réponses adaptées à votre configuration de stockage.</block>
   <block id="c04236280596e42d063458cddb934506" category="list-text">agents d’IA</block>
   <block id="3189c2a21a0d40fdf4391d22fec8b33c" category="inline-link-macro">Découvrez les agents d'IA</block>
@@ -1978,4 +1977,5 @@
   <block id="4b448c1a229bebc97e97cee06ea0fced" category="admonition">Les administrateurs de compte peuvent activer ou désactiver les fonctionnalités d’IA. Si un administrateur les désactive, l’assistant Ask Me AI et les agents IA ne seront pas disponibles. <block ref="56d2e09cbb0a828478db20ff2d11774d" category="inline-link-macro-rx"></block>.</block>
   <block id="64f2f595f7dd037774e1dbd99cb2ab7b" category="sidebar">Gérer les paramètres des agents d’IA</block>
   <block id="737f86fc6a3bb3563670dac4c0b49585" category="sidebar">Workload Factory AIOps</block>
+  <block id="74bc5d714652a3ae18c64ee93e4ba085" category="section-title">30 septembre 2026</block>
 </blocks>
