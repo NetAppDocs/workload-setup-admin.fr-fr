@@ -15,6 +15,36 @@ Découvrez les nouveautés concernant les fonctionnalités d'administration de W
 
 
 
+[[04-october-2026]]
+== 04 octobre 2026
+
+
+
+[[custom-dashboard-updates]]
+=== Mises à jour personnalisées du tableau de bord
+
+Les tableaux de bord personnalisés facilitent désormais la gestion de votre travail.
+
+Vous pouvez modifier les tableaux de bord directement depuis le catalogue, y compris les indicateurs, les graphiques et les plages horaires.
+
+Lorsque vous modifiez un tableau de bord, Workload Factory rouvre la conversation avec vos invites et messages précédents. Vous pouvez alors mettre à jour le tableau de bord, enregistrer vos modifications ou restaurer la version précédente.
+
+Seul le créateur du tableau de bord peut le modifier. Pendant la modification, les autres utilisateurs ne peuvent pas voir vos modifications tant que vous ne les avez pas enregistrées.
+
+Le catalogue des tableaux de bord comprend désormais davantage de filtres pour vous aider à trouver rapidement des tableaux de bord en fonction de leur catégorie et de leur statut.
+
+Si votre administrateur désactive les fonctionnalités d'IA ou si votre limite de crédit mensuelle est atteinte, vous ne pouvez plus créer ni modifier de tableau de bord.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/learn-custom-dashboards.html["Découvrez les tableaux de bord personnalisés"]
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/create-custom-dashboard.html["Créer un tableau de bord personnalisé"]
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/manage-custom-dashboards.html["Gérer les tableaux de bord personnalisés"]
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/troubleshoot-custom-dashboards.html["Dépannage des tableaux de bord personnalisés"]
+
+
+
 [[30-september-2026]]
 == 30 septembre 2026
 

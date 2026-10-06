@@ -1433,15 +1433,6 @@
   <block id="dffad8b6380340c5079727deb13bb3f2" category="list-text">Consultez la liste du tableau de bord.</block>
   <block id="9e3f16aef1d22400bdae48c5cb77b00f" category="section-title">Actualiser les données du tableau de bord</block>
   <block id="4e424a1ad37782627141d4d50f79b586" category="paragraph">Les données du tableau de bord se chargent à l'ouverture de celui-ci. Vous pouvez l'actualiser pour afficher les informations les plus récentes.</block>
-  <block id="6835e72df37e141c78401ea8d4bfcf90" category="paragraph">Le tableau de bord recharge les données de vos charges de travail. L'heure de la dernière mise à jour change pour indiquer quand les données ont été actualisées.</block>
-  <block id="74ee9feffcb1603b7eeb47c099c0e5a5" category="section-title">Supprimer un tableau de bord</block>
-  <block id="e54360b7371199d6607f76cd1ae6ad17" category="paragraph">Supprimez les tableaux de bord dont vous n'avez plus besoin. Cette action est permanente et ne peut pas être annulée.</block>
-  <block id="3325f3a5c13a73bb87ed2dabebb0b6a3" category="list-text">Sur la page *Tableaux de bord personnalisés*, repérez le tableau de bord que vous souhaitez supprimer.</block>
-  <block id="0ce6306187e44bdf505a14f5d0676bb6" category="list-text">Dans le menu déroulant *Actions* de ce tableau de bord, sélectionnez *Supprimer*.</block>
-  <block id="b26a5fa549c938ffb56d20623c3f69c0" category="list-text">Confirmez la suppression.</block>
-  <block id="22e8351c82677bcc78bd23d6fb170bc8" category="paragraph">Le tableau de bord est définitivement supprimé de votre compte Workload Factory et tous les utilisateurs perdent l'accès à celui-ci.</block>
-  <block id="9537d9160ef701530bdd875698475957" category="inline-link-macro">Créer des tableaux de bord personnalisés supplémentaires</block>
-  <block id="1258b44f1520a3cf10d648fb08dbf72e" category="list-text"><block ref="1258b44f1520a3cf10d648fb08dbf72e" category="inline-link-macro-rx"></block></block>
   <block id="0c5896a9e6c8d2cff1b4d007852b1732" category="paragraph">Utilisez ces informations pour résoudre les problèmes courants que vous pourriez rencontrer lors de la création ou de l'utilisation de tableaux de bord personnalisés.</block>
   <block id="2e00365fe32c89b1fd1ad214f291ca85" category="section-title">La création du tableau de bord a échoué</block>
   <block id="09a8c59ab236b488dde6ce993a012c63" category="paragraph">**Problème :** Vous voyez le message d’erreur « Impossible de comprendre la requête et de générer le code » lors de la création d’un tableau de bord.</block>
@@ -1977,4 +1968,28 @@
   <block id="541644294bd888a59c4f26e19102bfb2" category="paragraph">Ask Me prend désormais en charge FSx for ONTAP et Google Cloud NetApp Volumes. Bénéficiez de la même expérience de chat pour obtenir des réponses et des informations sur l’ensemble de vos environnements de stockage pris en charge.</block>
   <block id="54ba8fb885319acf274731794ecf9b35" category="list-text">Travaillez dans les environnements FSx for ONTAP et Google Cloud NetApp Volumes.</block>
   <block id="3ddb8c8ba0ebed85a3c1d3ddf7cc424c" category="list-text">Posez des questions à l’assistant IA sur la gestion et l’exécution de FSx for ONTAP et de Google Cloud NetApp Volumes. Ask Me se connecte en toute sécurité à votre environnement et utilise des API pour fournir des réponses basées sur votre configuration de stockage.</block>
+  <block id="77c39d029270c567ae2816d2c688ea3b" category="doc">Mises à jour personnalisées du tableau de bord</block>
+  <block id="b4a3fedd52cfe46140994157b6fa12ec" category="paragraph">Les tableaux de bord personnalisés facilitent désormais la gestion de votre travail.</block>
+  <block id="5d95426dd9834d03b33e051ae7f9fb5c" category="paragraph">Vous pouvez modifier les tableaux de bord directement depuis le catalogue, y compris les indicateurs, les graphiques et les plages horaires.</block>
+  <block id="e57137dc0ab44a9b0797700e3e8c851c" category="paragraph">Lorsque vous modifiez un tableau de bord, Workload Factory rouvre la conversation avec vos invites et messages précédents. Vous pouvez alors mettre à jour le tableau de bord, enregistrer vos modifications ou restaurer la version précédente.</block>
+  <block id="8f44990f66d79c05eb2b8e612e7e18b5" category="paragraph">Seul le créateur du tableau de bord peut le modifier. Pendant la modification, les autres utilisateurs ne peuvent pas voir vos modifications tant que vous ne les avez pas enregistrées.</block>
+  <block id="14dd0ad1c8f18e92cbbc77ecf3a2645b" category="paragraph">Le catalogue des tableaux de bord comprend désormais davantage de filtres pour vous aider à trouver rapidement des tableaux de bord en fonction de leur catégorie et de leur statut.</block>
+  <block id="fb1ecdb5253f537a735a53d5e9e2eba6" category="paragraph">Si votre administrateur désactive les fonctionnalités d'IA ou si votre limite de crédit mensuelle est atteinte, vous ne pouvez plus créer ni modifier de tableau de bord.</block>
+  <block id="f736e966e4394f88a05cee94fdba57ff" category="paragraph"><block ref="f736e966e4394f88a05cee94fdba57ff" category="inline-link-macro-rx"></block></block>
+  <block id="e703f5c9737234e07b6d50b473d03d31" category="paragraph"><block ref="e703f5c9737234e07b6d50b473d03d31" category="inline-link-macro-rx"></block></block>
+  <block id="a6624b6c8238a8d2fecbcab00748683a" category="paragraph"><block ref="a6624b6c8238a8d2fecbcab00748683a" category="inline-link-macro-rx"></block></block>
+  <block id="6690aacdf8125a25e4539caa3239e86f" category="paragraph"><block ref="6690aacdf8125a25e4539caa3239e86f" category="inline-link-macro-rx"></block></block>
+  <block id="b2174789d5314bb12b464a8d03a18be6" category="list-text">Modifiez les tableaux de bord pour changer les informations affichées, notamment les indicateurs, les graphiques et les plages horaires</block>
+  <block id="0d4c6d4cadfc35e450177a6f124a12ce" category="admonition">Si l'administrateur de votre compte a désactivé les fonctionnalités d'IA, un message s'affichera et vous ne pourrez ni créer ni modifier de tableaux de bord. Contactez votre administrateur ou <block ref="51cc9b1bceb3cdf8e5a226d8fb6d37eb" category="inline-link-macro-rx"></block>.</block>
+  <block id="3dacf374ca39e9d1e2ccd73b21e8d75a" category="paragraph">Vous pouvez modifier des tableaux de bord depuis le catalogue et mettre à jour le nom, la description, la catégorie ou la requête de surveillance du tableau de bord avant de décider si vous souhaitez enregistrer la version révisée.</block>
+  <block id="09716803bbab78d4545cc7210ae61d90" category="paragraph">Le tableau de bord recharge les données de vos charges de travail.</block>
+  <block id="d2258a9653c6a977efeeb955b27c66e9" category="section-title">Modifier les tableaux de bord</block>
+  <block id="4e2f12e496523d85bae4a969657d45aa" category="paragraph">Vous pouvez modifier un tableau de bord pour en changer les éléments affichés, notamment les indicateurs, les graphiques et les plages horaires.</block>
+  <block id="b13bad0dcb6df4e403e8e2af9058dfe5" category="list-text">Sur la page *Tableaux de bord personnalisés*, repérez le tableau de bord que vous souhaitez modifier.</block>
+  <block id="d431f68c965a7131bbc2f48128983c25" category="list-text">Dans le menu *Actions* de ce tableau de bord, sélectionnez *Modifier le tableau de bord*.</block>
+  <block id="63f40ecf20824ff6d561a306d3a25fd1" category="list-text">Dans la boîte de dialogue IA, décrivez les modifications que vous souhaitez apporter.</block>
+  <block id="3184c7e78934ef4b37ea845f1d56789a" category="paragraph">Ce processus est similaire à la création d'un nouveau tableau de bord. Vous pouvez modifier les charges de travail, les indicateurs ou les plages horaires que le tableau de bord suit.</block>
+  <block id="f66306510aaf399aef8bdf649739a15e" category="list-text">Vérifiez les modifications et sélectionnez **Enregistrer**.</block>
+  <block id="89806ea6a9ed9b0bb6cb322f912aff65" category="paragraph">Le tableau de bord se met à jour avec vos modifications. La date de dernière modification se met également à jour.</block>
+  <block id="6cd19393862a5a23e39bb63b43a86baa" category="section-title">04 octobre 2026</block>
 </blocks>

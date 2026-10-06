@@ -18,7 +18,7 @@ Les tableaux de bord personnalisés utilisent l'IA pour créer des vues personna
 Tous les utilisateurs de votre compte Workload Factory peuvent consulter tous les tableaux de bord personnalisés. Cette configuration partagée aide les équipes à collaborer et à voir les mêmes informations opérationnelles dans l'ensemble de votre organisation.
 
 
-NOTE: Si l'administrateur de votre compte a désactivé les fonctionnalités d'IA, un message s'affichera et vous ne pourrez pas créer de tableaux de bord. Contactez votre administrateur ou link:manage-genai-features.html["Découvrez l'administration de l'IA"].
+NOTE: Si l'administrateur de votre compte a désactivé les fonctionnalités d'IA, un message s'affichera et vous ne pourrez ni créer ni modifier de tableaux de bord. Contactez votre administrateur ou link:manage-genai-features.html["Découvrez l'administration de l'IA"].
 
 
 
@@ -46,6 +46,11 @@ Lors de la configuration, le dialogue guidé par l'IA vous aide à définir :
 * Vues par région, charge de travail ou autres catégories
 * Règles ou exigences que vous devez suivre et afficher
 
+
+Vous pouvez modifier des tableaux de bord depuis le catalogue et mettre à jour le nom, la description, la catégorie ou la requête de surveillance du tableau de bord avant de décider si vous souhaitez enregistrer la version révisée.
+
+
+NOTE: Seul le créateur du tableau de bord peut le modifier. Pendant la modification, les autres utilisateurs ne peuvent pas voir vos modifications tant que vous ne les avez pas enregistrées.
 
 
 
