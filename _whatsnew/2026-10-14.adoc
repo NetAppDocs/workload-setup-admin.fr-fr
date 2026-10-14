@@ -1,0 +1,16 @@
+= Utilisez votre propre instance Amazon Bedrock pour les outils d'IA
+:allow-uri-read: 
+
+
+
+
+[[use-your-own-amazon-bedrock-instance-for-ai-tools]]
+=== Utilisez votre propre instance Amazon Bedrock pour les outils d'IA
+
+Workload Factory inclut désormais une option supplémentaire sur la page des paramètres d'IA qui permet aux clients d'utiliser leur propre instance Amazon Bedrock.
+
+Cette option est disponible dans le cadre de Bedrock géré par le client pour les outils d’IA et est prise en charge par tous les services Workload Factory AI.
+
+Une fois la connexion établie, Workload Factory vous indique si elle a réussi.
+
+link:https://docs.netapp.com/us-en/workload-setup-admin/manage-genai-features.html["Découvrez comment gérer les fonctionnalités d'IA"]

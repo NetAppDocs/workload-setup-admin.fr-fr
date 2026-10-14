@@ -14,7 +14,7 @@ summary: Accédez à votre catalogue de tableaux de bord pour afficher, actualis
 Gérez vos tableaux de bord personnalisés depuis le catalogue de tableaux de bord. À partir de là, vous pouvez consulter les détails, partager des tableaux de bord, actualiser les données ou supprimer les tableaux de bord dont vous n'avez plus besoin.
 
 .Description de la tâche
-Vous pouvez consulter et gérer les tableaux de bord personnalisés depuis le catalogue de tableaux de bord. Les tableaux de bord privés ne sont visibles que par vous, tandis que les tableaux de bord publics sont visibles par tous les utilisateurs de votre compte Workload Factory. Chaque tableau de bord affiche des informations de base telles que le nom du créateur, la date de création et un libellé de visibilité (Privé ou Public).
+Vous pouvez consulter et gérer les tableaux de bord personnalisés à partir du catalogue des tableaux de bord. Les tableaux de bord privés ne sont visibles que par vous, tandis que les tableaux de bord publics sont visibles par tous les utilisateurs de votre compte Workload Factory. Chaque tableau de bord affiche des informations de base telles que le nom du créateur, la date de création et un libellé de visibilité (Privé ou Public).
 
 Les tableaux de bord personnalisés sont en lecture seule. Ils ne permettent pas de modifier vos paramètres de stockage ni de charge de travail.
 

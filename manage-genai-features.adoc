@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: manage-genai-features.html 
 keywords: gen ai, generative ai, bedrock, ask me, custom dashboards, rules builder, cloudshell ai, ems analyzer, db log analyzer, latency analyzer, byom, bring your own model, administration 
-summary: 'Contrôlez l"accès aux fonctionnalités d"IA basées sur Bedrock dans Workload Factory. Vous pouvez désactiver les fonctionnalités d"IA ou utiliser NetApp-managed AWS Bedrock.' 
+summary: 'Contrôlez l"accès aux fonctionnalités d"IA basées sur Bedrock dans Workload Factory. Vous pouvez désactiver les fonctionnalités d"IA ou utiliser Bedrock géré par NetApp ou par le client.' 
 ---
 = Gérez les fonctionnalités d'IA dans NetApp Workload Factory
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Contrôlez l"accès aux fonctionnalités d"IA basées sur Bedrock dans
 
 
 [role="lead"]
-Contrôlez l'accès aux fonctionnalités d'IA dans Workload Factory. Vous pouvez désactiver les fonctionnalités d'IA ou utiliser AWS Bedrock géré par NetApp.
+Contrôlez l'accès aux fonctionnalités d'IA dans Workload Factory. Vous pouvez désactiver les fonctionnalités d'IA ou utiliser AWS Bedrock géré par NetApp ou votre organisation.
 
 
 
@@ -41,6 +41,13 @@ NetApp-managed Bedrock (Recommandé):: Utilisez un service AWS Bedrock géré pa
 
 
 --
+Bedrock géré par le client:: Utilisez votre propre configuration AWS Bedrock.
++
+--
+* Pour des résultats optimaux, NetApp recommande d'utiliser Anthropic Claude Sonnet 4.5 ou 4.6 avec votre configuration Amazon Bedrock
+
+
+--
 Fonctionnalités GenAI désactivées:: Désactive toutes les fonctionnalités d'IA. Les utilisateurs ne peuvent plus utiliser Ask Me, l'agent IA, les analyseurs, les tableaux de bord personnalisés, le générateur de règles ni aucun autre outil basé sur l'IA.
 
 
@@ -50,7 +57,11 @@ Fonctionnalités GenAI désactivées:: Désactive toutes les fonctionnalités d'
 == Avant de commencer
 
 * Nous recommandons qu'un administrateur de compte configure les fonctionnalités d'IA.
+* Si vous utilisez Bedrock géré par le client, mettez à jour la stratégie AWS pour les informations d'identification liées au rôle IAM de Workload Factory.
 
+
+
+NOTE: Ajoutez les autorisations requises à la stratégie AWS pour les informations d'identification liées au rôle IAM de Workload Factory.
 
 
 
@@ -59,14 +70,24 @@ Fonctionnalités GenAI désactivées:: Désactive toutes les fonctionnalités d'
 
 .Étapes
 . Connectez-vous en utilisant l'un des link:console-experiences.html["expériences de la console"^].
-. Dans le menu, sélectionnez *Administration* puis *Paramètres IA*.
-. Sur la page *Paramètres IA*, sélectionnez votre configuration préférée :
+. Dans le menu, sélectionnez *Administration* > *Paramètres* > *Outils d'IA*.
+. Sur la page *Outils d'IA*, sélectionnez votre configuration préférée :
 +
 ** *NetApp-managed Bedrock (Recommandé)* : Utilisez NetApp-managed AWS Bedrock.
-** *Fonctionnalités d'IA désactivées* : désactivez toutes les fonctionnalités d'IA.
+** *Bedrock géré par le client*:
++
+... Sélectionnez les informations d'identification AWS et la région associées au rôle IAM de Workload Factory
+... Veuillez indiquer le profil d'inférence que vous souhaitez utiliser
+... Sélectionnez *Valider la configuration*.
++
+Workload Factory affiche une notification indiquant si la connexion réussit ou échoue
 
 
-. Sélectionnez *Enregistrer les préférences*.
+
+** *Fonctionnalités GenAI désactivées* : Désactivez toutes les fonctionnalités d’IA.
+
+
+. Sélectionnez *Enregistrer les modifications*.
 
 
 .Résultat
@@ -79,7 +100,7 @@ Si les fonctionnalités d'IA sont désactivées, un message s'affiche lorsque le
 [[budget-controls-and-credit-limits]]
 == Contrôles budgétaires et limites de crédit
 
-NetApp gère les contrôles budgétaires des fonctionnalités d’IA lors de l’utilisation de la configuration par défaut gérée par NetApp.
+NetApp gère les contrôles budgétaires des fonctionnalités d’IA uniquement lorsque vous utilisez la configuration par défaut gérée par NetApp.
 
 
 
