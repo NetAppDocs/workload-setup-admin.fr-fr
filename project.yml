@@ -82,6 +82,8 @@ sidebar:
       url: "/use-cloudshell.html"
     - title: Supprimer les informations d'identification
       url: "/manage-credentials.html"
+  - title: FAQ
+    url: "/faq-workload-factory.html"
   - title: Connaissances et support
     entries:
     - title: S'inscrire pour obtenir de l'aide
