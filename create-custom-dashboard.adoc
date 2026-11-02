@@ -16,7 +16,7 @@ Créez des tableaux de bord personnalisés en décrivant clairement ce que vous 
 .Description de la tâche
 Les tableaux de bord personnalisés utilisent un dialogue guidé par l'IA pour comprendre ce que vous souhaitez visualiser. Vous décrivez vos besoins de surveillance en langage naturel, et le système pose des questions de clarification afin de s'assurer que le tableau de bord réponde à vos exigences.
 
-Une fois créée, vous pouvez actualiser le tableau de bord pour voir les données mises à jour.
+Une fois créé, vous pouvez vérifier la date de la dernière actualisation des indicateurs de votre tableau de bord et demander une mise à jour à la demande. link:manage-custom-dashboards.html#refresh-dashboard-data["Découvrez comment actualiser les données du tableau de bord"].
 
 N'oubliez pas que les tableaux de bord personnalisés sont conçus pour être en lecture seule et ne peuvent pas modifier vos configurations de stockage ou de charge de travail.
 
@@ -58,10 +58,10 @@ Vous recevrez une notification lorsque votre tableau de bord sera prêt. S'il ne
 Après la création, vous pouvez :
 
 * Modifiez la visibilité du tableau de bord pour la partager avec votre équipe
+* Vérifiez la date et l'heure de la *Dernière mise à jour* et sélectionnez *Actualiser les données* pour demander des métriques mises à jour
 * Actualisez les données du tableau de bord pour afficher les informations les plus récentes
 * Modifiez les tableaux de bord pour changer les informations affichées, notamment les indicateurs, les graphiques et les plages horaires
 * Supprimez les tableaux de bord dont vous n'avez plus besoin
-* Consultez les détails du tableau de bord, y compris qui l'a créé et quand il a été mis à jour pour la dernière fois
 
 
 

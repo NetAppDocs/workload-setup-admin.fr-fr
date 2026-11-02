@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: manage-custom-dashboards.html 
-keywords: manage dashboards, delete dashboard, refresh dashboard, dashboard catalog 
+keywords: manage dashboards, delete dashboard, refresh dashboard, dashboard catalog, refresh data, load data, last updated 
 summary: Accédez à votre catalogue de tableaux de bord pour afficher, actualiser et supprimer des tableaux de bord personnalisés dans Workload Factory. 
 ---
 = Gérez les tableaux de bord personnalisés dans NetApp Workload Factory
@@ -60,9 +60,28 @@ Le tableau de bord se met à jour instantanément. L'étiquette de visibilité s
 [[refresh-dashboard-data]]
 == Actualiser les données du tableau de bord
 
-Les données du tableau de bord se chargent à l'ouverture de celui-ci. Vous pouvez l'actualiser pour afficher les informations les plus récentes.
+Vérifiez la date de la dernière actualisation de votre tableau de bord et demandez une analyse à la demande lorsque vous avez besoin de données à jour.
 
-Le tableau de bord recharge les données de vos charges de travail.
+.Description de la tâche
+L'infobulle *Actualiser les données* affiche un horodatage *Dernière mise à jour* indiquant la date et l'heure de la dernière actualisation du tableau de bord. Cet horodatage se rapporte aux données collectées, et non à la dernière modification de la configuration du tableau de bord.
+
+Sélectionner *Actualiser les données* lance une nouvelle analyse. Pendant l'analyse, le bouton est désactivé et son infobulle indique qu'une analyse est en cours.
+
+Workload Factory enregistre un événement dans Tracker lorsque vous sélectionnez *Actualiser les données* ou *Charger maintenant*. link:monitor-operations.html["Découvrez comment surveiller les opérations avec Tracker"].
+
+.Étapes
+. Dans le catalogue des tableaux de bord, ouvrez le tableau de bord que vous souhaitez consulter.
+. Survolez *Actualiser les données* pour vérifier la date et l’heure de la *Dernière mise à jour*.
+. Pour demander des métriques mises à jour, sélectionnez *Actualiser les données*.
++
+Une bannière indique qu'une analyse a commencé. Veuillez patienter jusqu'à la fin de l'analyse.
+
+. Lorsque de nouvelles données sont disponibles, une bannière affiche le message suivant : « De nouvelles données sont disponibles. Chargez-les maintenant ou cliquez sur Refresh data à tout moment pour mettre à jour l’affichage. »
+. Sélectionnez « Charger maintenant » dans la bannière pour charger les données disponibles dans le tableau de bord. Vous pouvez également sélectionner « Actualiser les données » pour mettre à jour l’affichage.
+
+
+.Résultat
+Le tableau de bord affiche les indicateurs mis à jour.
 
 
 

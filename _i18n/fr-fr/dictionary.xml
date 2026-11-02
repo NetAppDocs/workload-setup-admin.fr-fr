@@ -1363,7 +1363,6 @@
   <block id="dfc2a77d9b383cd28cba1a1e99f9a378" category="doc">Créer un tableau de bord personnalisé</block>
   <block id="43d2bb31c641fd8b871b835572bc7441" category="paragraph">Créez des tableaux de bord personnalisés en décrivant clairement ce que vous souhaitez surveiller. L’IA vous guide tout au long de la configuration afin que vos tableaux de bord correspondent à vos charges de travail et à vos priorités.</block>
   <block id="463a1f1058198f82800c115a2a913de5" category="paragraph">Les tableaux de bord personnalisés utilisent un dialogue guidé par l'IA pour comprendre ce que vous souhaitez visualiser. Vous décrivez vos besoins de surveillance en langage naturel, et le système pose des questions de clarification afin de s'assurer que le tableau de bord réponde à vos exigences.</block>
-  <block id="5af1607522ddad534f7fc3e5976684e5" category="paragraph">Une fois créée, vous pouvez actualiser le tableau de bord pour voir les données mises à jour.</block>
   <block id="a8f8e9b8eb3f376a4b560c169094087e" category="paragraph">N'oubliez pas que les tableaux de bord personnalisés sont conçus pour être en lecture seule et ne peuvent pas modifier vos configurations de stockage ou de charge de travail.</block>
   <block id="1490f3908001d2cdf7587ba480973340" category="section-title">Créer un tableau de bord</block>
   <block id="342a19841e494c61bf9c06a5879eaffa" category="inline-image-macro">L'icône du menu hamburger permet de naviguer vers des charges de travail telles que le stockage, eda, ai, bases de données, vmware et l'administration.</block>
@@ -1381,7 +1380,6 @@
   <block id="fb3b6f147b0a44a08f4c961dc053571e" category="paragraph">Après la création, vous pouvez :</block>
   <block id="a5c04615d2baa4c3104d2afbb5b85c59" category="list-text">Actualisez les données du tableau de bord pour afficher les informations les plus récentes</block>
   <block id="7bff2130a08698224667671d85a34ed4" category="list-text">Supprimez les tableaux de bord dont vous n'avez plus besoin</block>
-  <block id="ed5184af3d39b3e314759db5b95ba675" category="list-text">Consultez les détails du tableau de bord, y compris qui l'a créé et quand il a été mis à jour pour la dernière fois</block>
   <block id="d10995cac5dfc264a5da7f4abec9025d" category="inline-link-macro">Gérez vos tableaux de bord personnalisés</block>
   <block id="1c028f2c092927e5beff0c52bcc2456a" category="list-text"><block ref="1c028f2c092927e5beff0c52bcc2456a" category="inline-link-macro-rx"></block></block>
   <block id="1703fc0755f2533bd9d727fa0298c500" category="inline-link-macro">Dépannage des tableaux de bord personnalisés</block>
@@ -1432,7 +1430,6 @@
   <block id="04b69ec1d9e5301be209cb2b652a1602" category="paragraph">Le catalogue des tableaux de bord affiche tous les tableaux de bord personnalisés de votre compte Workload Factory.</block>
   <block id="dffad8b6380340c5079727deb13bb3f2" category="list-text">Consultez la liste du tableau de bord.</block>
   <block id="9e3f16aef1d22400bdae48c5cb77b00f" category="section-title">Actualiser les données du tableau de bord</block>
-  <block id="4e424a1ad37782627141d4d50f79b586" category="paragraph">Les données du tableau de bord se chargent à l'ouverture de celui-ci. Vous pouvez l'actualiser pour afficher les informations les plus récentes.</block>
   <block id="0c5896a9e6c8d2cff1b4d007852b1732" category="paragraph">Utilisez ces informations pour résoudre les problèmes courants que vous pourriez rencontrer lors de la création ou de l'utilisation de tableaux de bord personnalisés.</block>
   <block id="2e00365fe32c89b1fd1ad214f291ca85" category="section-title">La création du tableau de bord a échoué</block>
   <block id="09a8c59ab236b488dde6ce993a012c63" category="paragraph">**Problème :** Vous voyez le message d’erreur « Impossible de comprendre la requête et de générer le code » lors de la création d’un tableau de bord.</block>
@@ -1974,7 +1971,6 @@
   <block id="b2174789d5314bb12b464a8d03a18be6" category="list-text">Modifiez les tableaux de bord pour changer les informations affichées, notamment les indicateurs, les graphiques et les plages horaires</block>
   <block id="0d4c6d4cadfc35e450177a6f124a12ce" category="admonition">Si l'administrateur de votre compte a désactivé les fonctionnalités d'IA, un message s'affichera et vous ne pourrez ni créer ni modifier de tableaux de bord. Contactez votre administrateur ou <block ref="51cc9b1bceb3cdf8e5a226d8fb6d37eb" category="inline-link-macro-rx"></block>.</block>
   <block id="3dacf374ca39e9d1e2ccd73b21e8d75a" category="paragraph">Vous pouvez modifier des tableaux de bord depuis le catalogue et mettre à jour le nom, la description, la catégorie ou la requête de surveillance du tableau de bord avant de décider si vous souhaitez enregistrer la version révisée.</block>
-  <block id="09716803bbab78d4545cc7210ae61d90" category="paragraph">Le tableau de bord recharge les données de vos charges de travail.</block>
   <block id="d2258a9653c6a977efeeb955b27c66e9" category="section-title">Modifier les tableaux de bord</block>
   <block id="4e2f12e496523d85bae4a969657d45aa" category="paragraph">Vous pouvez modifier un tableau de bord pour en changer les éléments affichés, notamment les indicateurs, les graphiques et les plages horaires.</block>
   <block id="b13bad0dcb6df4e403e8e2af9058dfe5" category="list-text">Sur la page *Tableaux de bord personnalisés*, repérez le tableau de bord que vous souhaitez modifier.</block>
@@ -2147,4 +2143,50 @@
   <block id="fb28d89a6b0c6ce8708edc67fed69652" category="paragraph-title">De quoi ai-je besoin pour créer et utiliser des tableaux de bord personnalisés ?</block>
   <block id="548b72381df096d33b738a36b3370ab7" category="paragraph">L'administrateur de votre compte doit activer les fonctionnalités d'IA. Vous avez besoin d'identifiants AWS avec un accès en lecture aux services que vous souhaitez surveiller. Vous avez besoin d'un Link pour vous connecter aux systèmes de fichiers FSx for ONTAP. Les tableaux de bord sont en lecture seule et ne permettent pas de modifier vos paramètres de stockage ou de charge de travail.</block>
   <block id="1fe917b01f9a3f87fa2d7d3b7643fac1" category="sidebar">FAQ</block>
+  <block id="d5700d6fbdfdaa11c8c6dcbd565d8446" category="doc">Vérifier et actualiser les données du tableau de bord personnalisé</block>
+  <block id="a2ace9589bb1ff3e1b64e40ba9982721" category="paragraph">Vous pouvez désormais consulter la date et l'heure de la dernière mise à jour des indicateurs de votre tableau de bord personnalisé et les actualiser manuellement. Survolez *Actualiser les données* pour afficher la date et l'heure de la dernière mise à jour.</block>
+  <block id="6497706c70a607634590a156941b4e50" category="paragraph">Sélectionnez *Actualiser les données* pour lancer une nouvelle analyse. Une bannière confirme que l'analyse a démarré, et le bouton est désactivé jusqu'à la fin de l'analyse.</block>
+  <block id="2895998bd3d7c5fdb39e7fddc2bd608a" category="paragraph">Lorsque de nouvelles données sont disponibles, sélectionnez *Charger maintenant* dans la bannière de notification pour mettre à jour le tableau de bord.</block>
+  <block id="f418ba29e821ca3da1b907e6156d2db5" category="paragraph">Les options *Refresh data* et *Load it now* créent toutes deux des événements de collecte de données dans Tracker.</block>
+  <block id="0b62b5947fe6e091e6c0c1e387e32e69" category="inline-link-macro">Découvrez comment actualiser les données du tableau de bord personnalisé</block>
+  <block id="348426e840eb5ae32d612438487c2065" category="paragraph"><block ref="348426e840eb5ae32d612438487c2065" category="inline-link-macro-rx"></block></block>
+  <block id="524f9b4ee818c419ee1585959e10855c" category="section-title">Spécifiez les régions pour les tableaux de bord personnalisés</block>
+  <block id="9aca8419896ce9b5d75b523be971bafb" category="paragraph">Les tableaux de bord personnalisés vous invitent désormais à sélectionner une ou plusieurs régions si votre requête ne les inclut pas. Les données du tableau de bord sont limitées aux régions sélectionnées.</block>
+  <block id="35a63836682befdc98086e583b61298a" category="inline-link-macro">Apprenez à créer un tableau de bord personnalisé</block>
+  <block id="c41b815c81909f8ff39eb5b52d29746d" category="paragraph"><block ref="c41b815c81909f8ff39eb5b52d29746d" category="inline-link-macro-rx"></block></block>
+  <block id="cc2d0ca75f186230ede0faa3f7692c06" category="section-title">Politique IAM pour la création de liens</block>
+  <block id="20721709cc5df2882070722a30cc34c3" category="paragraph">Le modèle CloudFormation et le code Terraform permettant de créer des liens utilisent désormais une stratégie IAM au lieu des autorisations Lambda intégrées.</block>
+  <block id="38b63c1d391fa52af61b987953824171" category="paragraph"><block ref="38b63c1d391fa52af61b987953824171" category="inline-link-macro-rx"></block></block>
+  <block id="b3e7d6d7f8501adc86f1a7337ebfb531" category="section-title">Audit et suivi des actions des agents d’IA</block>
+  <block id="fc5902f94dd3899ad0ce791954b6f521" category="paragraph">Vous pouvez désormais utiliser Tracker pour consulter les modifications apportées aux paramètres des agents IA et, en mode lecture-écriture, chaque demande d'approbation, y compris la question de l'agent et la réponse de l'utilisateur.</block>
+  <block id="25d50a8630b3c335d684f59cca6d3ace" category="paragraph">Le service Workload Factory qui effectue l’opération journalise les modifications de ressources effectuées via les API de Workload Factory.</block>
+  <block id="db0781c4ffb5f26ba7ad4f2ffe3dfdbd" category="inline-link-macro">Découvrez comment auditer et suivre les actions des agents</block>
+  <block id="9b06f95ad3e4fc8477f2ca89d854a603" category="paragraph"><block ref="9b06f95ad3e4fc8477f2ca89d854a603" category="inline-link-macro-rx"></block></block>
+  <block id="3714dde7378ac290c154f62d9c080369" category="section-title">Améliorations de la création de liens</block>
+  <block id="73501dc89cd2fc3be142f43eaffe971b" category="paragraph">Workload Factory a mis à jour la sortie de Codebox pour la création de liens en remplaçant les autorisations Lambda intégrées par la stratégie IAM pour le modèle CloudFormation et Terraform.</block>
+  <block id="0e43f192242267f4b6ae5962e9f5b38c" category="inline-link-macro">Découvrez comment actualiser les données du tableau de bord</block>
+  <block id="05aeb0d0c1502e57f980bbf322cf31a6" category="paragraph">Une fois créé, vous pouvez vérifier la date de la dernière actualisation des indicateurs de votre tableau de bord et demander une mise à jour à la demande. <block ref="831e74ba37d5e8d2f1bf86cd0b468bf4" category="inline-link-macro-rx"></block>.</block>
+  <block id="a0029b147e3a4c22ba57efcbb020c23e" category="list-text">Vérifiez la date et l'heure de la *Dernière mise à jour* et sélectionnez *Actualiser les données* pour demander des métriques mises à jour</block>
+  <block id="6d852ab3090e66a5f1f1a6d5675164cb" category="paragraph-title">Où apparaissent les paramètres et les actions de l'agent pour l'audit ?</block>
+  <block id="0f679622d131d4b9f3abef96c35743be" category="paragraph">Tracker enregistre les modifications apportées aux paramètres des agents et, en mode lecture-écriture, chaque demande d'approbation, y compris la question de l'agent et la réponse de l'utilisateur. Les modifications de ressources effectuées via les API Workload Factory sont consignées par le service Workload Factory qui effectue l'opération.</block>
+  <block id="4c1cd3a1bad23fecc0286da543614cd7" category="paragraph"><block ref="bc36590c397b325a073c2ae9b60e53fd" category="inline-link-macro-rx"></block>.</block>
+  <block id="b70a9e9de689b4f17365d6060076d3b8" category="section-title">Audit et suivi des actions des agents</block>
+  <block id="774a23889a059a060f089bac423f3b00" category="paragraph">En mode lecture-écriture, Tracker enregistre chaque demande d'approbation, y compris la question de l'agent et la réponse de l'utilisateur. Les modifications de ressources effectuées via les API Workload Factory sont consignées par le service Workload Factory qui effectue l'opération. Par exemple, un volume créé via Workload Factory apparaît sous l'étiquette de service *Storage*, et non *Agent*.</block>
+  <block id="1c25d10ad7fe7b9def7bd90be9bb63ac" category="section-title">Vérifiez si les données sont à jour</block>
+  <block id="40d839f036c0870ce0f44a810dc01fd9" category="paragraph">Vous pouvez consulter la date de la dernière mise à jour des données de votre tableau de bord et demander une actualisation à tout moment. Une infobulle affiche la date et l'heure de la dernière mise à jour.</block>
+  <block id="3943baa01d778cb77042aa99b8829491" category="paragraph">Sélectionnez *Actualiser les données* pour lancer une nouvelle analyse. Ce bouton est indisponible pendant qu’une analyse est en cours. Lorsque les nouvelles données sont prêtes, une bannière s'affiche avec une option permettant de mettre à jour le tableau de bord.</block>
+  <block id="80aab7a96b15f6ce5d375faafb077b13" category="paragraph"><block ref="831e74ba37d5e8d2f1bf86cd0b468bf4" category="inline-link-macro-rx"></block>.</block>
+  <block id="4561b6d16c60561c7dfef3363842359b" category="paragraph">Vérifiez la date de la dernière actualisation de votre tableau de bord et demandez une analyse à la demande lorsque vous avez besoin de données à jour.</block>
+  <block id="cb19e9f8b4fdf3bf166690f03f0888ff" category="paragraph">L'infobulle *Actualiser les données* affiche un horodatage *Dernière mise à jour* indiquant la date et l'heure de la dernière actualisation du tableau de bord. Cet horodatage se rapporte aux données collectées, et non à la dernière modification de la configuration du tableau de bord.</block>
+  <block id="34839e5b2cbe60267b78999786be488f" category="paragraph">Sélectionner *Actualiser les données* lance une nouvelle analyse. Pendant l'analyse, le bouton est désactivé et son infobulle indique qu'une analyse est en cours.</block>
+  <block id="13ab1a7b5cd6ff60fb50525984ba6258" category="inline-link-macro">Découvrez comment surveiller les opérations avec Tracker</block>
+  <block id="b6b3389b8e77a02f15ea3aba7cce028e" category="paragraph">Workload Factory enregistre un événement dans Tracker lorsque vous sélectionnez *Actualiser les données* ou *Charger maintenant*. <block ref="74993bbdd897b4c73c70c66a0dd88655" category="inline-link-macro-rx"></block>.</block>
+  <block id="b2f99e18989e76354ebba4fd4d399227" category="list-text">Dans le catalogue des tableaux de bord, ouvrez le tableau de bord que vous souhaitez consulter.</block>
+  <block id="b01e2768b9cf649d978bf4ea1879ea19" category="list-text">Survolez *Actualiser les données* pour vérifier la date et l’heure de la *Dernière mise à jour*.</block>
+  <block id="669bf0e2d3a5223b736f207a1738dcea" category="list-text">Pour demander des métriques mises à jour, sélectionnez *Actualiser les données*.</block>
+  <block id="2c40fb628cd47c18fe14a2939979ebf9" category="paragraph">Une bannière indique qu'une analyse a commencé. Veuillez patienter jusqu'à la fin de l'analyse.</block>
+  <block id="dd2142eca6bec99aaba2fbc5a1fef1f5" category="list-text">Lorsque de nouvelles données sont disponibles, une bannière affiche le message suivant : « De nouvelles données sont disponibles. Chargez-les maintenant ou cliquez sur Refresh data à tout moment pour mettre à jour l’affichage. »</block>
+  <block id="f5f7ef3c1692aa4447b9fb26ad98940c" category="list-text">Sélectionnez « Charger maintenant » dans la bannière pour charger les données disponibles dans le tableau de bord. Vous pouvez également sélectionner « Actualiser les données » pour mettre à jour l’affichage.</block>
+  <block id="abff96b75117f320254f372b6518244b" category="paragraph">Le tableau de bord affiche les indicateurs mis à jour.</block>
+  <block id="8b253c1d4259c21c8314fc85adcb31d6" category="section-title">01 novembre 2026</block>
 </blocks>

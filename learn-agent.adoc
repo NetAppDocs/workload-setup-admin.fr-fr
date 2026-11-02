@@ -106,6 +106,15 @@ Ce processus d'approbation s'applique à toutes les expériences des agents, y c
 
 
 
+[[audit-and-tracking-for-agent-actions]]
+=== Audit et suivi des actions des agents
+
+En mode lecture-écriture, Tracker enregistre chaque demande d'approbation, y compris la question de l'agent et la réponse de l'utilisateur. Les modifications de ressources effectuées via les API Workload Factory sont consignées par le service Workload Factory qui effectue l'opération. Par exemple, un volume créé via Workload Factory apparaît sous l'étiquette de service *Storage*, et non *Agent*.
+
+link:manage-agent-settings.html#audit-and-tracking-for-agent-actions["Découvrez comment auditer et suivre les actions des agents"].
+
+
+
 [[what-users-see-when-ai-agents-have-no-data-or-activity]]
 == Ce que les utilisateurs voient lorsque les agents d'IA n'ont aucune donnée ni activité
 
