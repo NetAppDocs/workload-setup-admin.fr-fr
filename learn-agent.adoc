@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: learn-agent.html 
-keywords: agent, ai agent, aiops, ask me, explore agent, ai assistant, environment-aware, read-only, read-write, agents settings 
+keywords: agent, ai agent, aiops, ask me, explore agent, ai assistant, environment-aware, read-only, read, write, agents settings 
 summary: 'Découvrez comment les agents d"IA de Workload Factory peuvent analyser votre environnement, identifier les risques et les moyens d"améliorer les performances, et prendre des mesures pour vous avec votre approbation.' 
 ---
 = Découvrez les agents d'IA dans NetApp Workload Factory
@@ -11,7 +11,7 @@ summary: 'Découvrez comment les agents d"IA de Workload Factory peuvent analyse
 
 
 [role="lead"]
-Workload Factory AIOps utilise l'IA pour analyser votre environnement et recommander des améliorations. Si vous l'approuvez, il peut également effectuer des actions à l'aide des identifiants et des autorisations que vous avez configurés.
+Workload Factory AIOps utilise des agents d'IA pour analyser votre environnement, identifier les risques et recommander des améliorations. Avec votre accord, ces agents peuvent également agir en utilisant les identifiants et les autorisations que vous avez définis.
 
 
 NOTE: Si l'administrateur de votre compte a désactivé les fonctionnalités d'IA, un message s'affichera et vous ne pourrez pas utiliser les agents. Contactez votre administrateur ou link:manage-genai-features.html["Découvrez l'administration de l'IA"].
@@ -21,7 +21,7 @@ NOTE: Si l'administrateur de votre compte a désactivé les fonctionnalités d'I
 [[before-you-begin]]
 == Avant de commencer
 
-Assurez-vous que votre compte Workload Factory dispose des identifiants AWS et des autorisations IAM dont les agents ont besoin pour accéder aux ressources. Si vous activez le mode lecture-écriture, ces autorisations doivent également permettre les modifications prises en charge.
+Assurez-vous que votre compte Workload Factory dispose des identifiants AWS et des autorisations IAM dont les agents ont besoin pour accéder aux ressources auxquelles ils accèdent. Si vous activez le mode lecture/écriture, ces autorisations doivent également permettre les modifications prises en charge.
 
 link:add-credentials.html["Découvrez comment ajouter des informations d'identification AWS et configurer les autorisations IAM"^].
 
@@ -52,7 +52,7 @@ Les agents d'IA vous aident à travailler plus efficacement dans Workload Factor
 == Accédez aux agents IA
 
 Depuis la page d'accueil Ask Me:: Sur la page d'accueil « Posez-moi vos questions », sélectionnez *Explorer les agents*. Le panneau latéral des agents IA s'ouvre avec un message de bienvenue présentant les capacités des agents.
-À partir des liens de redirection des agents:: Lorsque vous utilisez **Ask Me** ou d'autres fonctionnalités, vous pouvez voir des liens qui vous redirigent vers les agents pour une assistance plus avancée.
+À partir des liens de redirection des agents:: Lorsque vous utilisez **Ask Me** ou d’autres fonctionnalités, des liens peuvent vous rediriger vers les agents pour obtenir une assistance plus avancée.
 
 
 
@@ -65,7 +65,7 @@ Depuis la page d'accueil Ask Me:: Sur la page d'accueil « Posez-moi vos questi
 [[how-agents-access-your-environment]]
 === Comment les agents accèdent à votre environnement
 
-Les agents peuvent accéder aux ressources uniquement lorsqu'elles sont incluses dans votre périmètre Workload Factory actuel et prises en charge par les identifiants sélectionnés dans link:manage-agent-settings.html["Paramètres des agents"]. Les agents ne peuvent fonctionner que lorsque ces deux contrôles s'appliquent. Les ressources auxquelles ils peuvent accéder dépendent également des autorisations attribuées à leurs identifiants AWS. Par défaut, tous les identifiants sont sélectionnés, mais vous pouvez limiter cela à un sous-ensemble de vos identifiants configurés.
+Les agents peuvent accéder aux ressources uniquement lorsque celles-ci sont incluses dans votre périmètre Workload Factory actuel et prises en charge par les informations d'identification sélectionnées dans link:manage-agent-settings.html["Paramètres des agents"]. Les agents ne peuvent opérer que lorsque ces deux contrôles s'appliquent. Les ressources auxquelles ils peuvent accéder dépendent également des autorisations attribuées à leurs informations d'identification AWS. Par défaut, toutes les informations d'identification sont sélectionnées, mais vous pouvez limiter la sélection à un sous-ensemble de vos informations d'identification configurées.
 
 Votre périmètre actuel comprend :
 
@@ -97,10 +97,10 @@ Ils ne peuvent pas modifier les ressources en mode lecture seule. Si vous demand
 
 
 
-[[read-write-mode-opt-in]]
-=== Mode lecture-écriture (optionnel)
+[[readwrite-mode-opt-in]]
+=== Mode lecture/écriture (optionnel)
 
-Vous pouvez activer les fonctionnalités de lecture-écriture dans link:manage-agent-settings.html["Paramètres des agents"]. Dans ce mode, les agents expliquent chaque action prise en charge et requièrent votre approbation avant d’effectuer toute modification.
+Vous pouvez activer les fonctionnalités de lecture/écriture dans link:manage-agent-settings.html["Paramètres des agents"]. Dans ce mode, les agents expliquent chaque action prise en charge et nécessitent votre approbation avant d’effectuer toute modification.
 
 Ce processus d'approbation s'applique à toutes les expériences des agents, y compris les intégrations Slack et NetApp Console.
 
@@ -109,9 +109,7 @@ Ce processus d'approbation s'applique à toutes les expériences des agents, y c
 [[audit-and-tracking-for-agent-actions]]
 === Audit et suivi des actions des agents
 
-En mode lecture-écriture, Tracker enregistre chaque demande d'approbation, y compris la question de l'agent et la réponse de l'utilisateur. Les modifications de ressources effectuées via les API Workload Factory sont consignées par le service Workload Factory qui effectue l'opération. Par exemple, un volume créé via Workload Factory apparaît sous l'étiquette de service *Storage*, et non *Agent*.
-
-link:manage-agent-settings.html#audit-and-tracking-for-agent-actions["Découvrez comment auditer et suivre les actions des agents"].
+En mode lecture/écriture, Tracker enregistre chaque demande d'approbation, y compris la question de l'agent et la réponse de l'utilisateur. Le service Workload Factory qui effectue l'opération consigne les modifications de ressources réalisées via les API Workload Factory. Par exemple, un volume créé via Workload Factory apparaît sous l'étiquette de service *Storage*, et non *Agent*.
 
 
 

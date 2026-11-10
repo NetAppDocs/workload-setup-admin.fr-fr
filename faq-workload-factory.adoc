@@ -231,7 +231,7 @@ link:manage-genai-features.html["Gérer les fonctionnalités d'IA"].
 .Où apparaissent les paramètres et les actions de l'agent pour l'audit ?
 Tracker enregistre les modifications apportées aux paramètres des agents et, en mode lecture-écriture, chaque demande d'approbation, y compris la question de l'agent et la réponse de l'utilisateur. Les modifications de ressources effectuées via les API Workload Factory sont consignées par le service Workload Factory qui effectue l'opération.
 
-link:manage-agent-settings.html#audit-and-tracking-for-agent-actions["Découvrez comment auditer et suivre les actions des agents"].
+link:learn-agent.html["Découvrez comment auditer et suivre les actions des agents"].
 
 .Existe-t-il une limite à l'utilisation de l'IA ?
 Oui. Avec Bedrock géré par NetApp, chaque compte a une limite mensuelle de dépenses pour chaque fonctionnalité d'IA. Lorsque la limite est atteinte, Workload Factory désactive les fonctionnalités d'IA, grise les parties correspondantes de l'interface et affiche une infobulle. Pour obtenir plus de crédits, contactez votre représentant NetApp.
