@@ -2189,4 +2189,149 @@
   <block id="96cfa5d0ba0465e0823c0e513cf4c99e" category="section-title">Mode lecture/écriture (optionnel)</block>
   <block id="d5d99b2701dfd466ab6b6fd722283931" category="paragraph">Vous pouvez activer les fonctionnalités de lecture/écriture dans <block ref="503a0786471e5d22d87709a40b737283" category="inline-link-macro-rx"></block>. Dans ce mode, les agents expliquent chaque action prise en charge et nécessitent votre approbation avant d’effectuer toute modification.</block>
   <block id="ab5a798de828a6dee38052f42293a03d" category="paragraph">En mode lecture/écriture, Tracker enregistre chaque demande d'approbation, y compris la question de l'agent et la réponse de l'utilisateur. Le service Workload Factory qui effectue l'opération consigne les modifications de ressources réalisées via les API Workload Factory. Par exemple, un volume créé via Workload Factory apparaît sous l'étiquette de service *Storage*, et non *Agent*.</block>
+  <block id="1435394aa3265f9336e4c355ba1c6f91" category="section-title">Impacts de la suppression des autorisations des stratégies IAM de stockage</block>
+  <block id="b8d5263f7edffcc848740c4d49dcbc85" category="paragraph">Pour des raisons de sécurité, il peut être judicieux de supprimer certaines autorisations des stratégies IAM de stockage. Les tableaux suivants décrivent l'impact de la suppression d'autorisations pour chaque stratégie.</block>
+  <block id="f918d1bc2d31c17bf3c8eb9f0707340c" category="example-title">Autorisations de consultation, de planification et d'analyse</block>
+  <block id="ed5dea09095f671b801bee34ea28a319" category="cell">Autorisation</block>
+  <block id="2f78465faf6b35c158b3490812d27200" category="cell">Impact en cas de suppression</block>
+  <block id="9349a794fa768e1599f8ace228e030c9" category="cell">Découvrir et afficher la configuration du système de fichiers</block>
+  <block id="62d60e644ea4ce90ea930757d329034a" category="cell">Aucun système de fichiers visible</block>
+  <block id="d142f9916e862d91d5813143ad2e09da" category="cell">Lister les volumes et leurs propriétés</block>
+  <block id="0d136e1cccb806b03a884972006775bb" category="cell">Volumes non affichés</block>
+  <block id="1e363fd948b82d37a2d76b18812445fa" category="cell">Liste des machines virtuelles de stockage, des protocoles et de la configuration DNS</block>
+  <block id="c1e73e49a746e89e78be011af6c2d6ad" category="cell">SVM non affichées</block>
+  <block id="3f184c6ec7aa32fb415beea39c717036" category="cell">Lister les sauvegardes disponibles</block>
+  <block id="21c269d94f6e77117eb73640901cb47c" category="cell">Informations de sauvegarde indisponibles</block>
+  <block id="b1760e333b811a87e36233dd6ec3de14" category="cell">Afficher les balises de ressource</block>
+  <block id="339580788d2d270f9b6b39fca6855b1d" category="cell">Balises manquantes</block>
+  <block id="9282617ce66e2af0270165613067ca35" category="cell">fsx:DescribeSharedVpcConfigurations</block>
+  <block id="c23a56854a0ef96353c03f6b810cbf81" category="cell">Détecter les déploiements VPC partagés</block>
+  <block id="d81cf9d5bf11b70cf465c37344171386" category="cell">Informations sur le VPC partagé indisponibles</block>
+  <block id="20baf1e597a706588b91fec0ae6fd718" category="cell">fsx:DescribeS3AccessPointAttachments</block>
+  <block id="afd55b5f4b148237b2b3f0c4249d478a" category="cell">Répertorier les points d'accès S3 sur les volumes</block>
+  <block id="0e0c16f585ce22f9921b88e758a0499f" category="cell">Informations sur le point d'accès S3 manquantes</block>
+  <block id="c9dc5418b2ecf1f813d94b9b15e2815f" category="cell">s3:GetAccessPoint</block>
+  <block id="b015e4aade9a81e18029d66b2a0ff823" category="cell">Récupérer les détails du point d'accès S3</block>
+  <block id="bf724374f02d304fb12fda34a912cfbc" category="cell">Informations sur le point d'accès indisponibles</block>
+  <block id="26ae99204d7fb6d48f58719cf89d3eb5" category="cell">Récupérer les indicateurs de performance et de capacité</block>
+  <block id="cc08be2cb8bbcbb6df598ca9c47b924d" category="cell">Tableaux de bord et graphiques vides</block>
+  <block id="0bd29c054d4fcf6e456a095ddc5f4f3a" category="cell">Surveillance de l'utilisation des capacités</block>
+  <block id="1f6250a67769ad721a3be8f887210174" category="cell">Les fonctionnalités de gestion des capacités sont désactivées</block>
+  <block id="05344dc15ca59599838482ee89ce1760" category="cell">Découvrez les charges de travail de calcul utilisant le stockage FSx</block>
+  <block id="58d26d190713d3dfd7f70b6c8fae9ac8" category="cell">Topologie de la charge de travail incomplète</block>
+  <block id="6d43570de1d5d469e7f3bf943efaddcc" category="cell">Découverte des volumes EBS pour la comparaison du stockage</block>
+  <block id="ed16b74121dfb17633da8d07d7660714" category="cell">Analyse des économies incomplète</block>
+  <block id="c6bbfdc62326381fd0ae68d555a0b224" category="cell">Énumération des VPC pour le contexte réseau</block>
+  <block id="651c5416580716b479cd3842089d4176" category="cell">Sélection du VPC indisponible</block>
+  <block id="8ff367027117223fa9ad68172913268c" category="cell">Énumération des sous-réseaux pour les décisions de placement</block>
+  <block id="f3cfb60403e4d46e167772a3aa9110e1" category="cell">Sélection du sous-réseau indisponible</block>
+  <block id="8b2ddc1a2c2ff92995c2a7f2e797caea" category="cell">Découverte et validation des groupes de sécurité</block>
+  <block id="bd2b9759638a449106f05f7b47fae387" category="cell">Informations manquantes sur le groupe de sécurité</block>
+  <block id="6102b066491471ae2db4893bf763962a" category="cell">Cartographie des routes du réseau</block>
+  <block id="638775e83462e80726bcd4d316ebd6da" category="cell">Informations de routage indisponibles</block>
+  <block id="c9a7389016b9197e5d054eb3ded760f5" category="cell">Découverte de l'interface réseau</block>
+  <block id="a5be2eab467d8c18e2a186d4650ed0a7" category="cell">Vérifications de connectivité dégradées</block>
+  <block id="3ad71d60b7900e9aa47b325d4a4237ed" category="cell">elasticfilesystem:DescribeFileSystems</block>
+  <block id="974323f679c4256140a19ea493a600c1" category="cell">Découverte d'EFS pour l'analyse de migration et d'économies</block>
+  <block id="ac3bde40f86a23b1d00783b02d627dae" category="cell">EFS non inclus dans les économies</block>
+  <block id="f4da089e5e70bd0a3dae4fd23d2abbec" category="cell">Données de coûts pour les calculs d'économies</block>
+  <block id="d84a36711bf3e0fe05c4ec559a0fe79a" category="cell">Analyse des coûts indisponible</block>
+  <block id="f422c6e1c29092e175923bc3ae790d62" category="cell">Requêtes sur les balises d’allocation des coûts</block>
+  <block id="90f16d107dd58491b34cd47f8c4327cc" category="cell">Les vues de coûts basées sur les balises échouent</block>
+  <block id="f3b855147f73c247b684a9d057868359" category="paragraph">Portée de la ressource : Toutes les ressources <block ref="3389dae361af79b04c9c8e7057f60cc6" prefix="(" category="inline-code"></block>). Il s’agit d’actions Describe/Get/List en lecture seule.</block>
+  <block id="b56355ff191ba375c264bc65836c6feb" category="example-title">Autorisations d’opérations et de correction</block>
+  <block id="6c59c2bbdb0cb159609534e2e76648ce" category="paragraph">Les autorisations d’opérations et de correction permettent la gestion du cycle de vie des volumes, la gestion des sauvegardes, les points d’accès S3, le catalogue de métadonnées et l’analyse des événements optimisée par l’IA.</block>
+  <block id="887edbd46ccc8a2079ffac1d735cfd40" category="paragraph">Portée de la ressource : toutes les ressources <block ref="3389dae361af79b04c9c8e7057f60cc6" prefix="(" category="inline-code"></block>), à l’exception des actions CloudTrail conditionnées par la balise<block ref="f170a53a18059c014b62d8f493919791" prefix=" " category="inline-code"></block>.</block>
+  <block id="21a0e93a539a78f748f2394924d25025" category="admonition">L'inférence IA s'exécute dans votre compte AWS à l'aide de vos profils d'inférence Bedrock. Aucune donnée n'est envoyée en dehors de votre compte à des fins de diagnostic IA.</block>
+  <block id="088758c5f1801338b7483d3a2cda15aa" category="cell">Créer de nouveaux volumes</block>
+  <block id="fa3b5cb3ebb4984a72ac0f175e377869" category="cell">Création de volume indisponible</block>
+  <block id="f91674f3b22216fc484532cd24dda908" category="cell">Supprimer les volumes</block>
+  <block id="6a86b9f15f03c4e25df7354fc53848a3" category="cell">Suppression du volume impossible</block>
+  <block id="ea5cbd4d4ca7e99177668dafe74cdecb" category="cell">Modifier le débit et la capacité de stockage</block>
+  <block id="0026c0277af733fa58b5bf5b56c4e265" category="cell">Mises à jour du système de fichiers et gestion automatique de la capacité désactivées</block>
+  <block id="3dff03a0108a146e5d7154a9412532a5" category="cell">Modifier les paramètres SVM</block>
+  <block id="015f1b5e4ee18c67d546a973495094ff" category="cell">Modifications de configuration SVM indisponibles</block>
+  <block id="0113c8f82c61f60bac546b96483a5960" category="cell">Modifier la taille du volume, la hiérarchisation et la QoS</block>
+  <block id="fbec9af804af9f8cdb2c2e2ef488ae4d" category="cell">Modifications de volume indisponibles</block>
+  <block id="c91ff5b89781f9b20673d63d2fbc4481" category="cell">Créer des sauvegardes à la demande</block>
+  <block id="65ab8b07001bb8f8b516a7e5eb550827" category="cell">Création manuelle de sauvegarde indisponible</block>
+  <block id="51240a355c39cfd66a0dc4e3e8311430" category="cell">Restaurer un volume à partir d'une sauvegarde</block>
+  <block id="c62c97ef77ae0db142dfb07dccc3e7a0" category="cell">Restauration à partir d'une sauvegarde impossible</block>
+  <block id="031c48368130399d783d057806883851" category="cell">Supprimer les sauvegardes</block>
+  <block id="3a780af44e8536909502bbf9e9e02c00" category="cell">Suppression de la sauvegarde impossible</block>
+  <block id="1a4bc448942085bf81642f5ba9a6e727" category="cell">fsx:TagResource / fsx:UntagResource</block>
+  <block id="bf3b22d9591f3b1d31c0103e827da7cd" category="cell">Gérer les balises de ressource FSx</block>
+  <block id="a55fbfcda3bd24df11266b58443ddc3d" category="cell">Les opérations d'étiquetage échouent</block>
+  <block id="b79df2be7588aa32a38e03b1888992f6" category="cell">Créer un point d'accès S3 sur un volume</block>
+  <block id="4d7db9d34f315ceb6bc5ee516b3a74d1" category="cell">Création du point d'accès S3 indisponible</block>
+  <block id="0cdc355d34ed398e9ae2c2154646189e" category="cell">Supprimer un point d'accès S3 d'un volume</block>
+  <block id="2a8c0e99bf92338e0c9b10c92620864a" category="cell">Suppression du point d'accès S3 impossible</block>
+  <block id="3baeda83791b2f68c03a99f71a079535" category="cell">s3:CreateAccessPoint / s3:DeleteAccessPoint</block>
+  <block id="af24761a596ceceabee701dc0e1c8245" category="cell">Cycle de vie du point d'accès S3</block>
+  <block id="954bbc1cc4345916892531a5bc5283ed" category="cell">Les opérations du point d'accès S3 échouent</block>
+  <block id="3117fb917dfb2476d00e378e0dde69b6" category="cell">s3:TagResource / s3:UntagResource / s3:ListTagsForResource</block>
+  <block id="31b604571bc5de88d264b18de4038cc3" category="cell">Étiquetage des ressources S3</block>
+  <block id="25e4e02c8161668fc14b96627068af2b" category="cell">Les opérations d'étiquetage S3 échouent</block>
+  <block id="fc3ce0ffe9d7ccf3d0d6479c35ec1c4d" category="cell">s3:GetObjectTagging / s3:ListBucket</block>
+  <block id="494b2a25d3033a0b4f5de2b94792e2ee" category="cell">Interroger le contenu du catalogue de métadonnées</block>
+  <block id="94c03df3b871107621049af61a785a3f" category="cell">Requêtes du catalogue de métadonnées dégradées</block>
+  <block id="e0dc40d5af80e57b143ff08a2fcce26d" category="cell">bedrock:InvokeModel / bedrock:InvokeModelWithResponseStream</block>
+  <block id="51dd2eb2b4db20f3cdb9ddc0b87ba5db" category="cell">Analyse et diagnostics basés sur l'IA</block>
+  <block id="631cf95ad93ec9fd57dd9c5eb61d6127" category="cell">Fonctionnalités d'analyse IA indisponibles</block>
+  <block id="b77076d555e0b023ea73d0f161eab78c" category="cell">bedrock:ListInferenceProfiles / bedrock:GetInferenceProfile</block>
+  <block id="8dd2176fbb44f4139adb8fdece97b03e" category="cell">Énumérer les modèles d'IA disponibles</block>
+  <block id="bf4c64fe2d90e193626b89daf73a739f" category="cell">Impossible de configurer les fonctionnalités d'IA</block>
+  <block id="90fe2d58743cddcc65e1d8e3e758b9e8" category="cell">s3tables:CreateTableBucket / s3tables:CreateTable / s3tables:CreateNamespace</block>
+  <block id="7fbbbd1670a5f39a9477bb85f3eb7e8a" category="cell">Créer des structures de catalogue de métadonnées</block>
+  <block id="e5283afcc997fc2ec9f88b61a713f5a2" category="cell">La création du catalogue de métadonnées a échoué</block>
+  <block id="2c4952cb6325725129c69ac68f677912" category="cell">s3tables:GetTable / s3tables:GetTableBucket / s3tables:GetNamespace / s3tables:GetTableMetadataLocation</block>
+  <block id="0467b47e3228d90b8d834456ff16af46" category="cell">Lire la configuration du catalogue de métadonnées</block>
+  <block id="f9e1f60bd1409074b891847bdf518602" category="cell">Échec de la lecture du catalogue de métadonnées</block>
+  <block id="0c2803db512e334e32fc98dcd2eaee34" category="cell">s3tables:PutTableData / s3tables:GetTableData</block>
+  <block id="52706d77b4afd4a328e789a641721c64" category="cell">Écrire et lire des entrées de catalogue de métadonnées</block>
+  <block id="c878418605a08d6767c8e14f791b78e4" category="cell">Les opérations du catalogue de métadonnées échouent</block>
+  <block id="a4117636cfc7c6353f5ca920356303a1" category="cell">s3tables:ListTables / s3tables:ListNamespaces / s3tables:ListTableBuckets</block>
+  <block id="ca91427d83081e1b24fe493470645a74" category="cell">Énumérer les objets du catalogue de métadonnées</block>
+  <block id="12942890e74425896c753a486d3c3f52" category="cell">La navigation dans le catalogue de métadonnées échoue</block>
+  <block id="6134c676616d96ebf74a26f3d96ca946" category="cell">Mise à jour des pointeurs de métadonnées du catalogue</block>
+  <block id="3e803c28c81b5d228d093d7576c7f906" category="cell">Les mises à jour de l'emplacement du catalogue échouent</block>
+  <block id="5cc6b90b4c24e189563c6ffcffc1e11a" category="cell">s3tables:ListTagsForResource / s3tables:TagResource</block>
+  <block id="aa1e61f534734e88502defb09c9bef79" category="cell">Étiquetage du catalogue de métadonnées</block>
+  <block id="068eb08210f9914b343b9655d2f75b56" category="cell">Les opérations sur les étiquettes du catalogue échouent</block>
+  <block id="aa6ff5a3cb85056a88da316b1d008d64" category="cell">cloudtrail:PutEventSelectors / cloudtrail:GetEventSelectors</block>
+  <block id="bede9cda144ea785638f340cb29690dc" category="cell">Journalisation des modifications du catalogue de métadonnées</block>
+  <block id="e573fb6c3e15dd1c0cecaa569db55cee" category="cell">Journalisation du catalogue indisponible</block>
+  <block id="5718ba980466f79bc709fc4be4130e2a" category="example-title">Autorisations de création du système de fichiers</block>
+  <block id="8de260ceaa34ef074c48f6d89e713eca" category="paragraph">Les autorisations de création de système de fichiers permettent le provisionnement et le déprovisionnement des systèmes de fichiers FSx for ONTAP et des machines virtuelles de stockage.</block>
+  <block id="81c5909b882cae4c4b6b321177bb8185" category="cell">Provisionner de nouveaux systèmes de fichiers FSx for ONTAP</block>
+  <block id="cd044d577ec15a914900168bdbc15798" category="cell">Création du système de fichiers impossible</block>
+  <block id="3bde7ff5999ce728621d93fd54b590c2" category="cell">Supprimer les systèmes de fichiers</block>
+  <block id="f85eec4522faaeb814f92f972069c711" category="cell">Suppression du système de fichiers impossible</block>
+  <block id="00310f2ddf48124910dd598ccd60ac9b" category="cell">Créer des machines virtuelles de stockage</block>
+  <block id="fb448a1ba6fb548e45d11c2ba8d90788" category="cell">Création de SVM indisponible</block>
+  <block id="9393c776921e41141dd5017cc128f31f" category="cell">Supprimer les machines virtuelles de stockage</block>
+  <block id="9e16a199e6e5e3a788e086fa947ee5ab" category="cell">Suppression de SVM indisponible</block>
+  <block id="3218ddc767a21d559cc078a9102f2bd2" category="cell">Ajouter des balises aux ressources lors de leur création</block>
+  <block id="7ced2dcc7533261162d7d75c0a562d3d" category="cell">Ressources créées sans étiquette</block>
+  <block id="0039975c150eb5aacb73e63dda42c7d8" category="cell">Autorisez FSx à utiliser votre clé KMS pour le chiffrement au repos</block>
+  <block id="cec50985cf3b3429d7f8846b9ab95324" category="cell">La création du système de fichiers chiffré échoue</block>
+  <block id="584110ac03ea059316953df05f8288bc" category="cell">kms:DescribeKey / kms:ListKeys / kms:ListAliases</block>
+  <block id="582a11f3a4d812bfc0a502125c20b72a" category="cell">Énumérer les clés KMS disponibles pour la sélection</block>
+  <block id="51170b88c3e026cdb768bcbda4d7f7ad" category="cell">Sélecteur de clés KMS vide</block>
+  <block id="feaeaac2e35c4ff125e0472b2966f32b" category="cell">Créer le rôle lié au service FSx (une seule fois)</block>
+  <block id="7936bd9fe06e71969c73e7d44a9f5835" category="cell">La création du premier système de fichiers échoue si le rôle n'existe pas</block>
+  <block id="60a4cb5647a6fe7c5fa2b4530ed22536" category="cell">ec2:CreateSecurityGroup / ec2:CreateTags</block>
+  <block id="de37761a04065672d4ee465d0ceb7a6a" category="cell">Créer un groupe de sécurité pour le nouveau système de fichiers</block>
+  <block id="b89940bc45125055d0e9a289c04d000f" category="cell">Échec de la création du système de fichiers</block>
+  <block id="61c92add34d163913b5b31eae6302cf3" category="cell">Vérifier l'état du stockage sous-jacent</block>
+  <block id="b6f32473834007a410d5abddd5f177f8" category="cell">Vérifications d’état dégradées</block>
+  <block id="c285fdd035eeb8fc83856000cb9c0dd6" category="cell">ec2:AuthorizeSecurityGroupEgress / ec2:AuthorizeSecurityGroupIngress</block>
+  <block id="f88b006360d3a818966f84f1a48cef2b" category="cell">Configurer les règles du groupe de sécurité pour l'accès à ONTAP</block>
+  <block id="019a7e154e0d017cf041ac3bea3d683b" category="cell">Règles réseau non appliquées</block>
+  <block id="1b83f78839e2aa92852e3c3d54d1c9ca" category="cell">ec2:RevokeSecurityGroupEgress / ec2:RevokeSecurityGroupIngress</block>
+  <block id="5a8a6f2066c5b040adad4a0704399cf0" category="cell">Supprimer les règles du groupe de sécurité lors de la suppression</block>
+  <block id="0bf129bc06af30babee90ce8b1bba8a4" category="cell">Les règles obsolètes demeurent</block>
+  <block id="0a5a55ef86ce8d6a99addaac01429ff1" category="cell">Supprimer le groupe de sécurité lors de la suppression du système de fichiers</block>
+  <block id="ce2e385c56a5fe4ee43ddce918ace3d0" category="cell">Groupes de sécurité orphelins</block>
+  <block id="129816675b3df3f0fe475cfb20d8f666" category="paragraph">Portée des ressources : les actions de modification des groupes de sécurité (Autoriser, Révoquer, Supprimer) sont limitées aux ressources étiquetées<block ref="ca26362c93e15a413626a4bafd6cc62f" prefix=" " category="inline-code"></block>.</block>
 </blocks>
